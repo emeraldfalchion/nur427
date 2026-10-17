@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<!-- SOURCES
+     Deck:        slides/Day 1 - 1 Respiratory.pptx (25 slides)
+     Transcript:  transcripts/Day 1 - Resp.txt
+     Built:       2026-10-12
+     Cross-checked against the deck: 2026-10-12
+     Revised:     2026-10-12, from Holly's calibration markup
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Respiratory and Progressive Issues in Critical Care — NUR427</title>
+<script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="assets/styles.css?v=20261017q">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<main id="content">
+<div class="page-inner">
+
+  <header class="page-head">
+    <p class="eyebrow">Day 1 · Topic 1</p>
+    <h1>Respiratory and Progressive Issues in Critical Care</h1>
+  </header>
+
+  <h2 class="block" id="bring-forward">Things to Bring Forward</h2>
+
+  <div class="card" id="prior-content" data-nohide>
+    <h4>Earlier Content This Topic Builds On</h4>
+    <ul>
+      <!-- Each bullet's bold lead links to the review block that teaches it (Holly,
+           2026-10-13). Chest tubes and ABG interpretation have review pages of their
+           own, so those leads link to the page. The Glasgow Coma Scale is taught on the
+           Neuro Review (Holly, 2026-10-12).
+           The last two bullets were said later in the recording, not on the
+           bring-forward slide. The card lists those too (Holly, 2026-10-13). -->
+      <li><b><a class="rev-link" href="review-respiratory.html#oxygen-delivery-devices">Oxygen delivery devices</a>:</b> when to use a nasal cannula or a non-rebreather, what CPAP does, why positive airway pressure is needed.</li>
+      <li><b><a class="rev-link" href="review-respiratory.html#respiratory-assessment">Respiratory assessment</a>:</b> every aspect, not only breath sounds, O2 sat and respiratory rate. Know the treatments for each abnormal finding, such as the interventions for <b>rhonchi</b>.</li>
+      <li><b><a class="rev-link" href="review-respiratory.html#respiratory-diagnostics">Respiratory diagnostics</a>:</b> chest x-ray, CT scan, thoracentesis. What each one tells you, when it is used, the nurse's responsibilities.</li>
+      <li><b><a class="rev-link" href="review-chest-tubes.html">Chest tubes</a>:</b> care, normal and abnormal findings, expected drainage.</li>
+      <li><b><a class="rev-link" href="review-respiratory-diseases.html#copd">COPD</a> (emphysema, chronic bronchitis), <a class="rev-link" href="review-respiratory-diseases.html#asthma">asthma</a>, and <a class="rev-link" href="review-respiratory-diseases.html#pneumonia">pneumonia</a>:</b> the basics, and why this patient is in the ICU. A COPD patient is usually there for pneumonia or an exacerbation.</li>
+      <li><b><a class="rev-link" href="review-abgs.html">ABG interpretation</a>:</b> <b>simple</b> interpretation of PaO2, PaCO2, bicarb and pH.</li>
+      <li><b><a class="rev-link" href="review-neuro.html#glasgow-coma-scale">Glasgow Coma Scale (GCS)</a>:</b> the scale and its scores.</li>
+      <li><b><a class="rev-link" href="review-respiratory-diseases.html#venous-thromboembolism">Venous thromboembolism</a>:</b> who is at high risk for a PE, and preventing DVTs and PEs.</li>
+    </ul>
+  </div>
+
+  <h2 class="block" id="advanced-assessment">Advanced Respiratory Assessment</h2>
+
+  <div class="table-wrap" id="assessment-factors"><table>
+    <thead><tr><th>Factor</th><th>What to Assess</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Neurological status</td><td><ul>
+        <li>Altered level of consciousness or sedation: can the patient <b>maintain a patent airway</b>?</li>
+        <li>Effective cough and a gag reflex?</li>
+        <li>Aware enough to follow instructions to deep breathe and cough?</li>
+      </ul></td></tr>
+      <tr><td class="term">Pain, procedures, conditions</td><td><ul>
+        <li><b>Where the pain is</b> matters. Chest surgery (bypass) and big abdominal surgery make deep breaths hard: watch for, treat and prevent <b>atelectasis</b> and pneumonia.</li>
+        <li>Anxiety and panic: breathing 40 times a minute blows off CO2 and prevents the deep breaths needed for effective gas exchange.</li>
+      </ul></td></tr>
+      <tr><td class="term">Weakness and coughing</td><td><ul>
+        <li>Weakness follows an ICU stay, big surgery, big trauma or a long time in bed, even with mobilization.</li>
+        <li>A weak patient cannot protect the airway as effectively. <b>Cough</b> is a major indicator of respiratory function and risk.</li>
+        <li>Is the cough <b>effective</b>? How frequent? What does the sputum look like?</li>
+        <li>Ineffective cough: pre-medicate for pain or change position.</li>
+        <li>Oral or nasal suction may be needed.</li>
+        <li>Concerning: coughing that is not productive and is blocking the airway.</li>
+      </ul></td></tr>
+      <tr><td class="term">Medications</td><td><ul>
+        <li>Some help respiratory function and some inhibit it.</li>
+        <li>Watch pain medication and sedation: heavy opioid use, a sleepy patient, recent anesthesia.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub" id="gcs">Glasgow Coma Scale and Airway Protection</h3>
+
+  <!-- Left off: the line that the other cues have to match the score (a GCS of 11 is not
+       alert and oriented times three). Extraneous on the page (Holly, 2026-10-12). It is
+       advice for writing the assignments, and exam-hints.md keeps it. -->
+  <div class="continuum four" id="gcs-airway">
+    <div class="cont-step ill">
+      <h4>3</h4>
+      <p>Minimum score.</p>
+    </div>
+    <div class="cont-step warn">
+      <h4>Less Than 8</h4>
+      <p>Usually indicates <b>coma</b>.</p>
+    </div>
+    <div class="cont-step mid">
+      <h4>9 to 12</h4>
+      <p><b>Airway protection</b> becomes the concern.</p>
+    </div>
+    <div class="cont-step well">
+      <h4>15</h4>
+      <p>Highest score.</p>
+    </div>
+  </div>
+  <div class="cont-axis"><span>← Lower level of consciousness</span><span>Higher level of consciousness →</span></div>
+
+  <h2 class="block" id="acute-respiratory-failure">Acute Respiratory Failure</h2>
+
+  <p class="note"><b>Inability of the respiratory system to provide oxygen and/or remove carbon dioxide from the body.</b> Most common admitting diagnosis in critical care units, as the primary problem (severe pneumonia) or the result of another condition (major surgery with blood loss, time on a ventilator, sepsis).</p>
+
+  <div class="two-col" id="oxygenation-vs-ventilatory">
+    <div class="card">
+      <h4>Oxygenation Failure: Hypoxemia</h4>
+      <ul>
+        <li><b>PaO2 less than 60</b> (partial pressure of arterial oxygen), found on an <b>ABG</b>.</li>
+        <li>PaO2 is the most accurate oxygen level. An O2 sat is affected by perfusion to the fingers, warmth and arterial disease.</li>
+        <li>See below for causes.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Ventilatory Failure: Hypercapnia</h4>
+      <ul>
+        <li><b>PaCO2 greater than 50</b> on an ABG. A venous CO2 is not as diagnostic as an arterial one.</li>
+        <li>Can be related to <b>chronic</b> respiratory failure, but not mutually exclusive. A stressor such as a respiratory infection overwhelms a system already compromised by COPD.</li>
+        <li>Also related to <span class="gloss">hypoventilation</span> and/or V/Q mismatch.</li>
+        <li>Hypercapnia significantly <b>increases cerebral blood flow</b>, so <b>CNS changes</b> occur: anxiety, restlessness, rising intracranial pressure. LOC changes come more quickly than in oxygenation failure.</li>
+        <li><span class="gloss">Hypoventilation</span> leaves CO2 sitting in the alveoli: <b>respiratory acidosis</b> develops quickly. The kidneys cannot compensate the way the lungs can.</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="note">A patient is not usually labelled as one type. Look at the clinical picture and decide whether it is both, or primarily an oxygen problem.</p>
+
+  <h3 class="sub" id="oxygenation-mechanisms">Five Mechanisms of Oxygenation Failure</h3>
+
+  <div class="table-wrap" id="oxygenation-failure-mechanisms"><table>
+    <thead><tr><th>Mechanism</th><th>What Happens</th></tr></thead>
+    <tbody>
+      <!-- "Rate or depth": she first says "the rate and depth of respirations is severely
+           decreased", then that it can be slow and deep, or a normal rate that is very
+           shallow. The two are written as one statement (Holly, 2026-10-12).
+           The glossary entry for hypoventilation is this row, on every page that marks
+           it (Holly, 2026-10-14). The row teaches it, so the term is not marked here. -->
+      <tr><td class="term">Hypoventilation</td><td><ul>
+        <li>Alveoli do not get the oxygen they need from outside. <b>Rate or depth</b> of respirations severely decreased (slow and deep at 4 to 6 breaths a minute, or a normal rate of 16 but very shallow).</li>
+        <li>CO2 problems often come with it.</li>
+        <li>Examples: CNS depression (overdose, brain injury), after anesthesia, pain.</li>
+      </ul></td></tr>
+      <tr><td class="term">Intrapulmonary shunting</td><td><ul>
+        <li><b>Blood flow reaches the alveoli, but the alveoli cannot exchange gas.</b></li>
+        <li>Examples: alveoli that are not <span class="gloss" data-term="compliance">compliant</span> (as in emphysema) or are filled with something (as in chronic bronchitis or pneumonia).</li>
+      </ul></td></tr>
+      <tr><td class="term">V/Q mismatch</td><td><ul>
+        <li>Ventilation-perfusion mismatching. Gas exchange depends on the balance between the <b>ventilated</b> (V) and the <b>perfused</b> (Q) areas of the lungs.</li>
+        <li>Example: ventilation without perfusion (as in pulmonary embolism).</li>
+      </ul></td></tr>
+      <tr><td class="term">Diffusion defects</td><td><ul>
+        <li>Defect in the <b>alveolar-capillary membrane</b>, where the alveoli meet the pulmonary capillaries.</li>
+        <li>Examples: fluid accumulation (as in pneumonia) or fibrotic changes (as in COPD or pulmonary fibrosis).</li>
+      </ul></td></tr>
+      <tr><td class="term">Decreased barometric pressure</td><td><ul>
+        <li>Example: high altitude.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="note">Oxygenation also fails with <b>low cardiac output</b> (the heart is not pumping oxygenated blood where it needs to go) and <b>low hemoglobin</b> (too anemic to carry oxygen to the tissues).</p>
+
+  <h3 class="sub" id="recognizing-failure">How Respiratory Failure Is Recognized</h3>
+
+  <div class="card" id="respiratory-failure-signs">
+    <h4>Signs That Point to Respiratory Failure</h4>
+    <ul>
+      <li><b>Increased work of breathing.</b></li>
+      <li><b>Increasing O2 needs.</b> Turned up from 2 L to 6 L with no improvement: not good.</li>
+      <li>Chest x-ray.</li>
+      <li>Labs: H&amp;H and <b>ABG</b> (PaO2, PaCO2).</li>
+    </ul>
+  </div>
+
+  <h3 class="sub" id="failure-interventions">Interventions for Respiratory Failure</h3>
+
+  <!-- SpO2, not SaO2: slide 8 prints "Goal PaO2 >60, SaO2>90%" and the recording corrects
+       it aloud ("my SPO2 that's greater than 90%, sorry, that should say SPO2"). -->
+  <div class="table-wrap" id="arf-interventions"><table>
+    <thead><tr><th>Intervention</th><th>What to Do</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Maintain a patent airway</td><td><ul>
+        <li>Head tilt, chin lift. Get the patient into the best position first: sitting up, airway open.</li>
+        <li>Oral airway, bag mask, or intubation if needed.</li>
+      </ul></td></tr>
+      <tr><td class="term">Optimize O2 delivery</td><td><ul>
+        <li>Goal: <b>PaO2 above 60, SpO2 above 90%</b>.</li>
+        <li>Start with supplemental O2, turn it up, then advance to higher levels.</li>
+      </ul></td></tr>
+      <tr><td class="term">Minimize O2 demand</td><td><ul>
+        <li>Avoid physical activity: no bed bath, no turning, no walking.</li>
+        <li>Even a breathing treatment may have to wait. Involve respiratory therapy.</li>
+        <li>May ultimately need to <b>sedate and paralyze</b>.</li>
+      </ul></td></tr>
+      <tr><td class="term">Treat the cause</td><td><ul>
+        <li>Provide rest, reduce fever, treat pain.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="callout-danger" id="oxygen-in-acute-decline"><b>Declining quickly: give the oxygen the patient needs, even in chronic COPD.</b> CO2 and oxygen toxicity are dealt with as they come.</div>
+
+  <!-- "Syndrome": slide 9's title prints "Acute Respiratory Distress System: ARDS". A typo, fixed. -->
+  <h2 class="block" id="ards">Acute Respiratory Distress Syndrome (ARDS)</h2>
+
+  <p class="note"><b>Most severe version of acute respiratory failure,</b> and a disease process of its own. Anyone in ARDS is in acute respiratory failure.</p>
+
+  <div class="table-wrap" id="ards-criteria"><table>
+    <thead><tr><th>Criterion</th><th>What It Means</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Acute onset</td><td><ul>
+        <li>Within <b>1 week</b> of a clinical insult.</li>
+        <li>Abrupt. Not someone who became very sick from a chronic respiratory issue.</li>
+      </ul></td></tr>
+      <tr><td class="term">Bilateral pulmonary opacities</td><td><ul>
+        <li>Both lungs "whited out" on chest x-ray. Dark lung means airflow and gas exchange.</li>
+        <li><b>Not explained by another condition</b> such as pneumonia or pulmonary fibrosis.</li>
+      </ul></td></tr>
+      <tr><td class="term">Altered PaO2/<span class="gloss">FiO2</span> ratio</td><td><ul>
+        <li>Arterial oxygen (PaO2) not responding to the oxygen being given (<span class="gloss">FiO2</span>).</li>
+        <li>Measured while on positive airway pressure: PEEP or CPAP.</li>
+        <li>The number determines diagnosis and severity.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-ards-chest-xray">View ARDS and normal chest x-rays</button>
+  <div class="fig-store" id="fig-ards-chest-xray" hidden>
+    <figure class="figure">
+      <img src="images/day1-respiratory/ards-chest-xray.jpg" alt="Two chest x-rays side by side. The one labelled ARDS has both lungs whited out. The one labelled Normal has dark, clear lung fields." loading="lazy">
+      <figcaption><b>Bilateral pulmonary opacities.</b> Dark lung is airflow, and airflow means gas exchange. In ARDS both lungs are whited out.</figcaption>
+    </figure>
+  </div>
+
+  <h3 class="sub" id="ards-causes-heading">Causes of ARDS</h3>
+
+  <div class="two-col" id="ards-causes">
+    <div class="card">
+      <h4>Direct Causes</h4>
+      <ul>
+        <li>Aspiration of gastric contents</li>
+        <li>Fat embolism</li>
+        <li>Inhalation of toxic gases</li>
+        <li>Multisystem trauma (chest and/or lung injury)</li>
+        <li>Near-drowning</li>
+        <li>Pneumonia</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Indirect Causes</h4>
+      <ul>
+        <li>Burns</li>
+        <li>Cardiopulmonary bypass</li>
+        <li>Drug overdose</li>
+        <li>Fractures, especially of the pelvis or long bones (through fat embolism)</li>
+        <li>Multiple transfusions</li>
+        <li>Multisystem trauma (without chest and/or lung injury)</li>
+        <li>Pancreatitis</li>
+        <li>Sepsis</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mnemonic" id="ards-highest-risk"><b>Highest-frequency risk factors:</b> new-onset pneumonia, sepsis, aspiration and trauma. <b>Two or more together</b>, such as pneumonia followed by sepsis, is very high risk.</div>
+
+  <h3 class="sub" id="ards-patho-heading">Pathophysiology of ARDS</h3>
+
+  <div class="card" id="ards-pathophysiology">
+    <h4>From Lung Injury to Hypoxemia</h4>
+    <ol>
+      <li><b>Acute and diffuse injury</b> to the lungs.</li>
+      <li><b>Inflammatory response:</b> a cell-mediated, overly aggressive immune response damages the <b>alveolar-capillary membrane</b>.</li>
+      <li>Massive platelet aggregation and intravascular thrombi. Sputum is often blood-tinged or pink.</li>
+      <li>The membrane becomes very permeable. Fluid, protein and blood cells leak into the alveoli, and massive fluid leakage throughout the body causes <b>edema</b>.</li>
+      <li><b>Alveolar flooding:</b> noncardiogenic pulmonary edema (not heart failure), shunting, V/Q mismatch, decreased <span class="gloss">compliance</span>, hypoxemia. The edema sitting in the lungs puts the patient at very high risk of pneumonia.</li>
+      <li><span class="gloss">Pulmonary hypertension</span> causes further shunting. Dead space grows and surfactant is not produced.</li>
+    </ol>
+  </div>
+
+  <!-- Left off: the three ARDS phases (acute, proliferative, fibrotic). Said not to be
+       tested: "you don't need to know them, I'm not testing you specifically on them"
+       (Holly, 2026-10-12). -->
+
+  <!-- Left off: the ARDS pathophysiology flow chart (slide 14). Said not to need
+       memorizing (Holly, 2026-10-12). -->
+
+  <h3 class="sub" id="ards-findings-heading">Assessment Findings in ARDS</h3>
+
+  <!-- "Tachypnea" is slide 15's word. The recording has "tachycardia" at this point. The rise
+       in pulse is on the same slide and is carried in its own bullet, so neither is lost. -->
+  <div class="two-col" id="ards-assessment-findings">
+    <div class="card">
+      <h4>Acute Onset, Not Yet Intubated</h4>
+      <ul>
+        <li>Dyspnea, <span class="gloss">tachypnea</span>.</li>
+        <li><b>Hypoxemia not responding to supplemental O2</b> (refractory hypoxemia). <span class="gloss">FiO2</span> goes up through high flow, CPAP and intubation, and PaO2 and SpO2 still do not rise.</li>
+        <li>Fine crackles from fluid in the alveoli. Often no breath sounds at all.</li>
+        <li>Restlessness, disorientation, decreasing LOC.</li>
+        <li>Pulse and temperature may increase.</li>
+        <li>PaO2 continues to decrease and dyspnea becomes severe. Central cyanosis when severe enough.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Intubated Patient</h4>
+      <ul>
+        <li>Usually sedated, paralyzed and ventilated.</li>
+        <li><b>Peak pressures increasing:</b> how the ventilator shows <b>decreased <span class="gloss">compliance</span></b>.</li>
+        <li>Increasing O2 needs, with no rise in SpO2 or PaO2.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="sub" id="ards-interventions-heading">ARDS Interventions</h3>
+
+  <div class="mnemonic" id="ards-primary-goal"><b>Primary goal: adequate oxygenation.</b></div>
+
+  <div class="table-wrap" id="ards-interventions"><table>
+    <thead><tr><th>Intervention</th><th>What It Does</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Mechanical ventilation</td><td><ul>
+        <li><b>Usually needed.</b> Not many patients manage on CPAP or BiPAP.</li>
+        <li>Settings are <b>protective</b>: as minimal as possible. Max settings cause permanent lung damage.</li>
+        <li>The PaO2 goal may be 50 to 55 instead of above 60.</li>
+      </ul></td></tr>
+      <tr><td class="term">ECMO</td><td><ul>
+        <li>Bypasses the lungs and oxygenates for them, giving the lungs a chance to rest.</li>
+      </ul></td></tr>
+      <tr><td class="term">Corticosteroids</td><td><ul>
+        <li>Dampen the inflammatory response that is causing ARDS.</li>
+      </ul></td></tr>
+      <tr><td class="term">Prone positioning</td><td><ul>
+        <li>Patient is turned onto the stomach.</li>
+        <li>Brings in alveoli that are not used as often and are less likely to be damaged.</li>
+      </ul></td></tr>
+      <tr><td class="term">Therapeutic hypothermia</td><td><ul>
+        <li>Turns the body's metabolic demands down very low for a period of time.</li>
+        <li>Preserves function, especially in the brain, when PaO2 is very low.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-prone-and-ecmo">View prone positioning and ECMO</button>
+  <div class="fig-store" id="fig-prone-and-ecmo" hidden>
+    <div class="figure-pair">
+      <figure class="figure">
+        <img src="images/day1-respiratory/prone-positioning.jpg" alt="An ICU patient lying face down, strapped into a rotating bed frame, with a ventilator circuit and several IV pumps attached." loading="lazy">
+        <figcaption><b>Prone positioning.</b> The patient is turned onto the stomach.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/day1-respiratory/ecmo.jpg" alt="An ECMO machine beside an ICU bed, with tubing carrying blood between the patient and the machine." loading="lazy">
+        <figcaption><b>ECMO.</b> Bypasses the lungs and oxygenates for them.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <h3 class="sub" id="ards-consequences-heading">ARDS Consequences</h3>
+
+  <!-- "Multidisciplinary Care", not care "to prevent" them: slide 17 says "Try and prevent
+       with multidisciplinary care", and the measures treat and minimize the problems. They
+       do not prevent them (Holly, 2026-10-12). -->
+  <div class="two-col" id="ards-consequences">
+    <div class="card">
+      <h4>Problems Common After ARDS</h4>
+      <ul>
+        <li><b>PTSD, anxiety and depression:</b> more than half of survivors, within two years of recovery.</li>
+        <li>Weakness, mobility issues, breathing issues.</li>
+        <li>Nausea, swelling, memory issues, fatigue.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Multidisciplinary Care</h4>
+      <ul>
+        <li><b>PT/OT:</b> mobility, to prevent weakness.</li>
+        <li><b>RT and MD:</b> ventilator management and sedation needs.</li>
+        <li><b>Nutrition:</b> usually a Dobhoff tube and high levels of supplemental nutrition.</li>
+        <li><b>Psychosocial and mental health:</b> early treatment and awareness, beginning in the ICU and continuing through discharge and beyond.</li>
+        <li>Outpatient critical care follow-up for long-term needs.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="block" id="pulmonary-embolism">Pulmonary Embolism</h2>
+
+  <div class="card" id="pe-embolus-types">
+    <h4>What Can Lodge in the Pulmonary Circulation</h4>
+    <ul>
+      <li><b>Clot from a DVT:</b> most common, from a lower extremity.</li>
+      <li>Fat emboli.</li>
+      <li>Septic <span class="gloss" data-term="vegetations">vegetation</span>, from a heart valve in sepsis.</li>
+      <li>Catheter fragment, from a PICC or central line.</li>
+      <li>Amniotic fluid emboli in pregnant women.</li>
+    </ul>
+  </div>
+
+  <p class="note">Most PEs and DVTs are never identified, because the lungs have an enormous capacity to compensate. One that does present is usually very dangerous.</p>
+
+  <!-- "Mortality": slide 19 prints "30-80% morality rate". A typo, fixed. -->
+  <div class="callout-danger" id="massive-pe"><b>Massive PE: systolic hypotension below 90</b> related to the PE. Mortality rate of 30 to 80%.</div>
+
+  <h3 class="sub" id="pe-gas-exchange">Shunting, V/Q Mismatch and the Death Spiral</h3>
+
+  <!-- "Blood flow beyond the occlusion stops" is slide 19's wording. The recording is garbled
+       here ("but we have blood flow beyond that occlusion, so ... there's no gas exchange"). -->
+  <div class="card" id="pe-vq-mismatch">
+    <h4>Shunting and V/Q Mismatch in a PE</h4>
+    <ul>
+      <li><b>Airflow is there.</b> The patient can take breaths in.</li>
+      <li><b>Blood cannot get to the alveoli</b> to perform gas exchange.</li>
+      <li>Blood flow beyond the occlusion stops, so there is no gas exchange beyond it.</li>
+    </ul>
+  </div>
+
+  <div class="continuum four" id="pe-death-spiral">
+    <div class="cont-step well">
+      <h4>Pulmonary Embolism</h4>
+      <p>Blood cannot flow freely through the pulmonary vasculature. Pulmonary pressures rise.</p>
+    </div>
+    <div class="cont-step mid">
+      <h4>Increased Pulmonary Vascular Resistance</h4>
+      <p>The lungs back up against the blockage.</p>
+    </div>
+    <div class="cont-step warn">
+      <h4>RV Dilation</h4>
+      <p>Increased RV wall stress and ineffective contraction. The septum bows into the LV and decreases LV filling.</p>
+    </div>
+    <div class="cont-step ill">
+      <h4>Hypotension</h4>
+      <p>RV hypoperfusion and ischemia, and more fluid given by the physician, dilate the RV further. Can end in right heart failure and death.</p>
+    </div>
+  </div>
+
+  <div class="mnemonic" id="pe-priority-concerns"><b>Two worries in a PE:</b> hypotension, and no ability to perform gas exchange because a huge embolism is blocking blood flow.</div>
+
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-pe-diagrams">View shunt, dead space and the death spiral</button>
+  <div class="fig-store" id="fig-pe-diagrams" hidden>
+    <div class="figure-pair">
+      <figure class="figure">
+        <img src="images/day1-respiratory/shunt-normal-dead-space.jpg" alt="Three hand-drawn alveoli, each sitting on a blood vessel, labelled Shunt, Normal and Dead Space. Only the normal one shows oxygen going in and carbon dioxide leaving." loading="lazy">
+        <figcaption><b>Shunt, normal and dead space.</b> Only the normal alveolus is exchanging gas.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/day1-respiratory/pe-death-spiral.jpg" alt="Diagram titled Pulmonary Embolism Death Spiral. A pulmonary embolism increases pulmonary vascular resistance, which dilates the right ventricle, which leads to hypotension, which feeds back into more right ventricular dilation." loading="lazy">
+        <figcaption><b>Pulmonary embolism death spiral.</b> Every path from RV dilation ends in hypotension, and hypotension dilates the RV further.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <h3 class="sub" id="pe-identification">PE Identification and Assessment Findings</h3>
+
+  <div class="card" id="pe-assessment-findings">
+    <h4>Assessment Findings</h4>
+    <ul>
+      <li>Symptoms are usually vague and nondescript, with no hallmark sign.</li>
+      <li><b>Classic:</b> pleuritic chest pain, shortness of breath, hypoxia.</li>
+      <li><b>Less common:</b> <span class="gloss">tachypnea</span>, crackles, accentuated S2 heart sound, tachycardia, fever.</li>
+      <li><b>Suspect a PE in any patient with respiratory distress that cannot be easily explained.</b></li>
+      <li>Pregnancy is a very high risk for PE.</li>
+    </ul>
+  </div>
+
+  <p class="xref-line"><a class="xref" href="review-respiratory-diseases.html#vte-who-is-at-risk">
+    <span><b>Who is at high risk for a PE</b> is taught in the <b>Respiratory Diseases</b> review</span>
+  </a></p>
+
+  <div class="table-wrap" id="pe-diagnostics"><table>
+    <thead><tr><th>Test</th><th>What It Shows</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Chest x-ray</td><td><ul>
+        <li><b>Does not show a PE.</b> It shows ventilation, and ventilation is not the problem.</li>
+        <li>Lungs look clear while the patient cannot breathe.</li>
+      </ul></td></tr>
+      <tr><td class="term">D-dimer</td><td><ul>
+        <li>Lab: a product of fibrin (clot) breakdown.</li>
+        <li><b>Positive</b> can indicate thrombus formation.</li>
+        <li>Quick and easy. Points toward a PE but is not diagnostic alone.</li>
+      </ul></td></tr>
+      <tr><td class="term">V/Q scan</td><td><ul>
+        <li>Noninvasive nuclear medicine scan of airflow and blood flow in the lungs. Can show dead space.</li>
+        <li>Once the hallmark test. Little used now that CT is so available.</li>
+      </ul></td></tr>
+      <tr><td class="term">Spiral CT scan</td><td><ul>
+        <li><b>Preferred: the most accurate.</b></li>
+        <li>Pregnant patients cannot have a CT scan.</li>
+      </ul></td></tr>
+      <tr><td class="term">Pulmonary angiography</td><td><ul>
+        <li>Direct anatomical visualization.</li>
+        <li>Invasive and difficult. Done in the cath lab, and not often.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub" id="pe-treatment">PE Treatment</h3>
+
+  <!-- Drug names here are read from a garbled recording: "a Pixivan at home, or Eliquiz
+       long-term" is taken as apixaban (Eliquis), and "ECOS catheter" as EKOS. The words
+       "Tine inhibitors" that follow are read as Xa inhibitors (Holly, 2026-10-12).
+       Generic names only (Holly, 2026-10-13): the recording's "Lovenox" is written as
+       enoxaparin here and under Prevention below, and Eliquis is dropped. -->
+  <div class="continuum" id="pe-treatment-by-severity">
+    <div class="cont-step well">
+      <h4>Less Severe</h4>
+      <p>At home on blood thinners: enoxaparin, or Xa inhibitors such as apixaban long term. Follow-up, and risk factors addressed.</p>
+    </div>
+    <div class="cont-step mid">
+      <h4>Severe</h4>
+      <p><b>IV heparin and a bolus immediately</b>, then transition to enoxaparin. <b>Warfarin started immediately</b> as well, for long-term prevention and management.</p>
+    </div>
+    <div class="cont-step ill">
+      <h4>Massive</h4>
+      <p>Surgical or catheter embolectomy. EKOS catheter: ultrasound with heparin, placed right in the pulmonary circulation. ECMO when very severe.</p>
+    </div>
+  </div>
+  <div class="cont-axis"><span>← Less severe</span><span>Massive PE →</span></div>
+
+  <div class="card" id="pe-supportive-care">
+    <h4>IVC Filter, Oxygenation and Prevention</h4>
+    <ul>
+      <li><b>IVC filter:</b> often placed. Sits in the inferior vena cava to catch clots that dislodge from the lower extremities.</li>
+      <li><b>Optimize oxygenation</b> acutely, as well as you can. Intubation may be needed but does not solve the problem, which is blood flow to the lungs.</li>
+      <li><b>Prevention:</b> heparin shots or enoxaparin, SCDs, mobilizing.</li>
+    </ul>
+  </div>
+
+  <p class="xref-line"><a class="xref" href="review-respiratory-diseases.html#preventing-dvt-and-pe">
+    <span><b>Preventing DVTs and PEs</b> is taught in the <b>Respiratory Diseases</b> review</span>
+  </a></p>
+
+  <h2 class="block" id="other-topics">Other Respiratory Topics and Diagnostics</h2>
+
+  <h3 class="sub" id="monitoring-heading">Hemodynamic Monitoring in Respiratory Problems</h3>
+
+  <!-- Left off: the high-SvO2 statement, that a high reading in a patient who is not
+       oxygenating "can actually indicate an acidotic state", with its example values
+       (70, 80, 90). It sounds wrong, and it is left off rather than corrected
+       (Holly, 2026-10-12). -->
+  <div class="table-wrap" id="respiratory-monitoring"><table>
+    <thead><tr><th>Monitoring</th><th>What It Tells You</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Capnography</td><td><ul>
+        <li>Monitors CO2 as <b>end-tidal CO2</b>, shown as a waveform.</li>
+        <li>Read through a nasal cannula that measures CO2, or through the ventilator.</li>
+        <li>Used to measure effective CPR.</li>
+      </ul></td></tr>
+      <tr><td class="term">Arterial line</td><td><ul>
+        <li>Usually in the radial artery.</li>
+        <li>Gives <b>frequent ABG access</b>: PaO2, PaCO2 and pH as often as every hour or every 30 minutes.</li>
+      </ul></td></tr>
+      <tr><td class="term">PA pressure</td><td><ul>
+        <li>Pulmonary artery pressure. Looks at pulmonary vascular resistance.</li>
+      </ul></td></tr>
+      <tr><td class="term">SvO2</td><td><ul>
+        <li>Venous oxygen saturation, also called mixed venous: the oxygen content of blood returning to the right side of the heart after perfusing the body.</li>
+        <li><b>Normal: 60 to 80%.</b> The tissues take only about 20 to 40%.</li>
+        <li><b>Low (30 to 50%):</b> the body is extracting more. Not enough oxygen for a very high demand.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- Left off: the chart of normal and abnormal capnography waveforms (slide 24). The
+       waveforms were said not to need knowing (Holly, 2026-10-12). -->
+
+  <h3 class="sub" id="medications-heading">Medications Frequently Used in Respiratory Issues</h3>
+
+  <!-- "Bumetanide": the recording has "furosemide or budesinide, which is Bumex or
+       Lasix". Bumex is bumetanide. Generic names only (Holly, 2026-10-13), so the two
+       brand names are not written. The bronchospasm bullet is read from a garbled passage,
+       and its wording is Holly's (2026-10-12). -->
+  <div class="table-wrap" id="respiratory-medications"><table>
+    <thead><tr><th>Medication</th><th>Use</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Corticosteroids<br>(inhaled, IV, PO)</td><td><ul>
+        <li><b>Reduce airway inflammation.</b> Also part of ARDS treatment.</li>
+        <li>Inhaled treatment for <span class="gloss">bronchospasm</span>. Inhaled epinephrine is used a lot.</li>
+      </ul></td></tr>
+      <tr><td class="term">IV diuretics</td><td><ul>
+        <li><b>Pulmonary congestion and edema.</b></li>
+        <li>Furosemide, bumetanide.</li>
+      </ul></td></tr>
+      <tr><td class="term">Antibiotics</td><td><ul>
+        <li><b>Treatment</b> of pneumonia.</li>
+        <li><b>Prevention:</b> preventative IV antibiotics for a very high-risk patient.</li>
+      </ul></td></tr>
+      <tr><td class="term">Benzodiazepines,<br>opioids, paralytics</td><td><ul>
+        <li><b>Sedation and pain management.</b></li>
+        <li>Consider how each one affects the respiratory system.</li>
+      </ul></td></tr>
+      <tr><td class="term">Breathing treatments<br>(nebulizer)</td><td><ul>
+        <li>Albuterol, acetylcysteine, bronchodilators: <b>open constricted airways</b>.</li>
+        <li>Given by respiratory therapy. The nurse knows when they are due, whether they were given, and how the patient responded.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <nav class="page-flip" data-page-flip></nav>
+  <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
+
+</div>
+</main>
+
+<script src="assets/site.js?v=20261017q"></script>
+<script src="data/glossary.js?v=20261017q"></script>
+<script src="assets/study.js?v=20261017q"></script>
+</body>
+</html>

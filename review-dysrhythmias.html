@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<!-- SOURCES
+     A review page: built from earlier-course sources, and only from the slides and
+     transcript lines that review-map.md lists for the items in review-list.md
+     (Dysrhythmias).
+     Deck:        slides/medsurg2/Week 2 - Dysrhythmias for canvas-1.pptx (84 slides. Used: 2, 5-9, 20-37, 40, 42-43, 45-50, 52-56, 58-64, 68-76, 79-84)
+                  Not asked: slides 10-19, telemetry, lead placement, the 12-lead, artifact
+     Transcript:  transcripts/medsurg2/Week 2 - dysrhythmias.txt (lines 58-208, 353-484)
+     Transcript:  transcripts/medsurg2/Week 2 - sinus dysrhythmias.txt (whole)
+     Transcript:  transcripts/medsurg2/Week 2 - atrial dysrhythmias.txt (whole)
+     Transcript:  transcripts/medsurg2/Week 2 - ventricular dysrhythmias.txt (whole)
+     Built:       2026-10-16
+     Cross-checked against the deck: 2026-10-16
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dysrhythmias — NUR427</title>
+<script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="assets/styles.css?v=20261017q">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<main id="content">
+<div class="page-inner">
+
+  <header class="page-head">
+    <p class="eyebrow">Review · Topic 9</p>
+    <h1>Dysrhythmias</h1>
+  </header>
+
+  <h2 class="block" id="reading-a-strip">Reading a Rhythm Strip</h2>
+
+  <p class="further-study">For further study, see <b>Med Surg II Week 2 – Dysrhythmias</b>.</p>
+
+  <!-- The review item, from Day 2 Rhythms: rhythm interpretation, "rates, visual
+       identification, is this a wide, is this a narrow QRS". Slides 3-9 with lines 58-208.
+       What each wave shows is the recording's (lines 93-147). The values are slide 8's
+       picture with the recording: the PR interval 0.12 to 0.20 seconds ("do you need to
+       remember that? Yes, you do"), the QRS 0.10 or less, with the recording's "I think
+       somewhere else it says 0.12 seconds or less". The QT interval is slide 8's picture
+       only, never said aloud.
+       PR interval: the recording says once "from the beginning of the P to the end of the P
+       is called a PR interval". The pictures on slides 5 and 8 run it from the start of the P
+       to the start of the QRS, which fits the recording's own account of it: the pause while
+       the impulse goes through the AV node. The pictures are followed.
+       The ST segment and troponin (lines 167-173) tell a STEMI, an NSTEMI and angina apart,
+       taught on the Heart Disease Review: the strip below points there.
+       "Depolarization", "repolarization" and "atrial kick" are the recording's, glossary
+       entries. -->
+  <div class="table-wrap" id="ekg-waves"><table>
+    <thead><tr><th>Wave</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">P wave</td><td><b>Atrial <span class="gloss">depolarization</span>:</b> the <span class="gloss">atrial kick</span>. A little bump.</td></tr>
+      <tr><td class="term">PR interval</td><td>From the start of the P to the start of the QRS: the pause while the impulse goes through the AV node. <b>0.12 to 0.20 seconds.</b> Longer: something is wrong with conduction between the atria and the ventricles.</td></tr>
+      <tr><td class="term">QRS complex</td><td><b>Ventricular <span class="gloss">depolarization</span>:</b> a big spike, where cardiac output happens. Atrial <span class="gloss">repolarization</span> is buried in it. <b>0.10 seconds or less</b>, 0.12 in some sources: skinny. <b>Wide is not normal.</b></td></tr>
+      <tr><td class="term">ST segment</td><td>Back on the baseline (the isoelectric line). <b>Elevated:</b> may indicate an MI.</td></tr>
+      <tr><td class="term">T wave</td><td><b>Ventricular <span class="gloss">repolarization</span>.</b> <b>Peaked:</b> may be a potassium imbalance.</td></tr>
+      <tr><td class="term">QT interval</td><td>Under 0.38 seconds.</td></tr>
+      <tr><td class="term">R to R interval</td><td>The tip of one R to the tip of the next. Equal intervals that "march out" make a <b>regular</b> rhythm.</td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="xref-line"><a class="xref" href="review-heart-disease.html#acs-ekg-troponin">
+    <span><b>ST elevation and troponin,</b> telling a STEMI from an NSTEMI, are taught in the <b>Heart Disease</b> review</span>
+  </a></p>
+
+  <!-- Slide 9 with lines 179-208. A strip on a test is always six seconds: "every strip will
+       be six seconds. So you always just multiply it by 10". -->
+  <div class="card" id="measuring-a-strip">
+    <h4>Measuring a Six-Second Strip</h4>
+    <ul>
+      <li><b>One small box: 0.04 seconds.</b> Five small boxes, one big box: 0.20 seconds.</li>
+      <li><b>Six seconds:</b> every strip on a test. The marks at the top are 3 seconds apart.</li>
+      <li><b>Heart rate:</b> the QRSs in the six seconds, times 10.</li>
+      <li><b>Regular or not:</b> march out the R to R intervals.</li>
+    </ul>
+  </div>
+
+  <!-- Slides 8 and 9: the intervals with their values, the boxes, and a strip with its
+       3-second marks. Slides 5-7 repeat slide 8 and are left off. -->
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-ekg-waves">View the EKG waves and the strip's boxes</button>
+  <div class="fig-store" id="fig-ekg-waves" hidden>
+    <div class="figure-pair">
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/ekg-intervals.jpg" alt="One EKG complex on a red isoelectric line, with the P wave, the QRS, the ST segment and the T wave labelled. Below it: PR interval 0.12 to 0.20 seconds, QRS 0.10 seconds or less, QT interval under 0.38." loading="lazy">
+        <figcaption><b>The EKG intervals.</b> PR 0.12 to 0.20 seconds, QRS 0.10 seconds or less.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/strip-boxes.jpg" alt="A grid of EKG paper with a short strip, amplitude up the side and duration along the bottom. One big box is blown up: five small boxes across it make 0.20 seconds, and one small box is 0.04 seconds wide." loading="lazy">
+        <figcaption><b>The boxes.</b> One small box is 0.04 seconds, one big box 0.20.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/six-second-strip.jpg" alt="A rhythm strip with a mark at the top every 3 seconds, so the strip between the outer marks is six seconds. Nine QRS complexes are numbered along the bottom." loading="lazy">
+        <figcaption><b>A six-second strip.</b> Nine QRSs: a heart rate of 90.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <h3 class="sub" id="dysrhythmia-classes-heading">Two Ways to Sort Dysrhythmias</h3>
+
+  <!-- Slide 20 with lines 353-363. The SA node's rate: lines 358-359 and slide 26. -->
+  <div class="two-col" id="dysrhythmia-classes">
+    <div class="card">
+      <h4>By Rate: Early, Slow, Fast</h4>
+      <ul>
+        <li><b>Premature complexes:</b> early beats.</li>
+        <li><b>Bradydysrhythmias:</b> a heart rate <b>below 60</b>.</li>
+        <li><b>Tachydysrhythmias:</b> a heart rate <b>above 100</b>.</li>
+        <li><b>Why 60 and 100:</b> the SA node fires 60 to 100 times a minute on its own.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>By Site of Origin</h4>
+      <ul>
+        <li><b>Sinus:</b> from the SA node.</li>
+        <li><b>Atrial:</b> from the atria.</li>
+        <li><b>Ventricular:</b> from the ventricles.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="block" id="cardiac-output-by-rhythm">Rhythms and Cardiac Output</h2>
+
+  <p class="further-study">For further study, see <b>Med Surg II Week 2 – Dysrhythmias</b>.</p>
+
+  <!-- The review item, from Day 2 Rhythms: "What do these rhythms do to cardiac output, and
+       in general, all the rhythms decrease cardiac output." Slides 21-23 with lines
+       364-484, and what each class of rhythm does from the rhythm recordings (atrial 59-73
+       and 266-271, ventricular 10-14, 58-75 and 107-116).
+       Cardiac output itself is taught on the Cardiovascular Review (settled 2026-10-15):
+       the strip points there.
+       Slides 21 and 22 mark each effect with a smiley or a frowny face: good or bad. The
+       cards keep them as "a good thing" and "a bad thing" where the recording says so. -->
+  <p class="xref-line"><a class="xref" href="review-cardiovascular.html#heart-function">
+    <span><b>Cardiac output,</b> and what low cardiac output means, is taught in the <b>Cardiovascular</b> review</span>
+  </a></p>
+
+  <div class="two-col" id="brady-vs-tachy">
+    <div class="card">
+      <h4>Bradydysrhythmias: Below 60</h4>
+      <ul>
+        <li><b>Myocardial oxygen demand:</b> reduced, a good thing. Beta blockers slow the heart rate on purpose for it.</li>
+        <li><b>Coronary perfusion:</b> the coronary arteries perfuse in diastole. A slow rate prolongs diastole: more perfusion time. <b>Too slow:</b> perfusion falls, and <span class="gloss">angina</span> may start.</li>
+        <li><b>Cardiac output:</b> may be tolerated if the BP is adequate. An athlete resting at 54 with a good BP goes about the day. Another patient at 54 is symptomatic.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Tachydysrhythmias: Above 100</h4>
+      <ul>
+        <li><b>Myocardial oxygen demand:</b> raised by the extra workload, a bad thing. Worse in a compromised heart.</li>
+        <li><b>Coronary perfusion:</b> a shorter diastole shortens perfusion time, and <span class="gloss">angina</span> may start.</li>
+        <li><b>Cardiac output:</b> may rise at first, with the BP: compensation. Faster or sustained, the ventricles cannot fill: stroke volume falls, and with it cardiac output and BP. 104 is usually tolerable. 120 or 130 cannot be sustained.</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="note"><b>Either, if not tolerated, can lead to:</b> myocardial ischemia or infarct, dysrhythmias, hypotension, heart failure.</p>
+
+  <!-- Lines 413-414 and 483-484, and sinus lines 73-76: "next best nursing action is I'm
+       going to go check on my patient ... take a set of vital signs because that blood
+       pressure is an indirect measure of my cardiac output". -->
+  <div class="mnemonic" id="bp-measures-co"><b>Blood pressure is the indirect measure of cardiac output.</b> A rate outside 60 to 100: go check on the patient, and take a set of vital signs.</div>
+
+  <h3 class="sub" id="key-features-heading">Key Features of a Sustained Tachy- or Bradydysrhythmia</h3>
+
+  <!-- Slide 23's list, every item, grouped by what each says about perfusion, with the
+       recording's reasons (lines 423-484). "This slide, very important. I will refer back
+       to it." The S3 or S4: "you don't need to know the particulars of what a gallop is".
+       Crackles and JVD as signs of left- and right-sided heart failure are the recording's:
+       heart failure is taught on the Heart Disease Review.
+       "Pulse deficit": lines 444-452, a glossary entry. -->
+  <div class="card" id="key-features">
+    <h4>What Too Slow or Too Fast Looks Like</h4>
+    <ul>
+      <li><b>Heart:</b> <span class="gloss">angina</span>, from a lack of coronary perfusion. An S3 or S4, a gallop. Palpitations, with a tachycardia. Hypotension.</li>
+      <li><b>Brain, poorly perfused:</b> restlessness, anxiety, confusion. Dizziness, syncope.</li>
+      <li><b>Lungs:</b> shortness of air, <span class="gloss">tachypnea</span>. Pulmonary crackles, a sign of left-sided heart failure. Orthopnea.</li>
+      <li><b>Periphery:</b> a <span class="gloss">pulse deficit</span>. JVD, a sign of right-sided heart failure. Pale, cool skin, diaphoresis, delayed cap refill. Weakness, fatigue.</li>
+      <li><b>Kidneys, poorly perfused:</b> decreased urine output. Watch it closely.</li>
+      <li><b>GI:</b> nausea and vomiting.</li>
+    </ul>
+  </div>
+
+  <h3 class="sub" id="atria-vs-ventricles-heading">The Atria Versus the Ventricles</h3>
+
+  <!-- Atrial lines 41-73 and 266-271: "can you live with AFib? Yes ... because what really
+       matters is the ventricular rate", the AV node as the gatekeeper, a controlled rate of
+       90. Day 4 Hemodynamics adds the atrial kick's share of cardiac output
+       (day4-hemodynamics.html#co-determinants). -->
+  <div class="card" id="atrial-rhythms-and-co">
+    <h4>Atrial Dysrhythmias: the Ventricular Rate Matters</h4>
+    <ul>
+      <li><b>The <span class="gloss">atrial kick</span> is lost</b> in AFib, and inconsistent in flutter.</li>
+      <li><b>The ventricular rate is what matters:</b> the left ventricle is the powerhouse chamber. The AV node, the gatekeeper, lets only some atrial impulses through.</li>
+      <li><b>Controlled:</b> AFib with a ventricular rate of 90 is not ideal, but livable.</li>
+      <li><b>Too fast:</b> no time for the ventricles to fill. Stroke volume and cardiac output fall.</li>
+    </ul>
+  </div>
+
+  <!-- Ventricular lines 14-16, 58-75 and 107-116: "if a patient has enough PVCs, they may
+       actually go into V-tach", "what happens if V-tach isn't treated, the concern is that
+       they go into V-fib ... And the further they do that, the treatment doesn't work as
+       well." "Bigeminy": the recording's "bi-gemini", a glossary entry. -->
+  <div class="continuum" id="ventricular-rhythms-and-co">
+    <div class="cont-step mid">
+      <h4>PVCs</h4>
+      <p><b>Typically do not perfuse.</b> With <span class="gloss">bigeminy</span>, only every other beat perfuses.</p>
+    </div>
+    <div class="cont-step warn">
+      <h4>VTach</h4>
+      <p><b>Seriously decreases cardiac output:</b> too fast for the ventricles to fill. A pulse means it is perfusing.</p>
+    </div>
+    <div class="cont-step ill">
+      <h4>VFib</h4>
+      <p><b>No cardiac output:</b> the ventricles only quiver. A deadly rhythm.</p>
+    </div>
+  </div>
+  <div class="cont-axis"><span>← Least severe</span><span>Most severe →</span></div>
+
+  <p class="note"><b>Untreated, each slips into the next,</b> and the further it goes, the less well treatment works.</p>
+
+  <div class="mnemonic" id="live-with-afib"><b>You can live with AFib. You cannot live with VFib.</b></div>
+
+  <h2 class="block" id="the-rhythms">The Eleven Rhythms</h2>
+
+  <p class="further-study">For further study, see <b>Med Surg II Week 2 – Sinus Dysrhythmias</b>, <b>Med Surg II Week 2 – Atrial Dysrhythmias</b> and <b>Med Surg II Week 2 – Ventricular Dysrhythmias</b>.</p>
+
+  <!-- The review items, from Day 2 Rhythms: identifying each rhythm, its common causes and
+       caring for the patient, and its treatment. Slide 24 lists the eleven rhythms Med
+       Surg II teaches. Heart blocks and junctional rhythms are not among them.
+       Torsades and asystole, on the Day 2 list, are not in Med Surg II: they need the 326
+       week five lecture, which has not arrived. Each has a glossary entry from outside the
+       lectures, marked on the Day 2 card (Holly, 2026-10-16).
+       Slide 2 asks four questions of every rhythm: what causes it, what the patient will look
+       like, how we treat it, how to read the strip. They are the columns of each table.
+       What each rhythm does to cardiac output is in the block above. -->
+
+  <h3 class="sub" id="sinus-rhythms-heading">Sinus Rhythms</h3>
+
+  <!-- Slide 25 brackets the two as "Normal cardiac rhythms". Slides 26-27 with sinus lines
+       1-42. -->
+  <div class="card" id="normal-sinus-rhythms">
+    <h4>The Two Normal Sinus Rhythms</h4>
+    <ul>
+      <li><b>Normal sinus rhythm (NSR):</b> the SA node fires 60 to 100, with normal conduction. A P before every QRS, all alike, and the R to R regular. Often just called "sinus".</li>
+      <li><b>Sinus arrhythmia:</b> the same, but the R to R is not quite regular. Changes in intrathoracic pressure with breathing change the SA node's firing. A normal physiological phenomenon, seen in young, healthy people. <b>Not treated:</b> an assessment finding.</li>
+    </ul>
+  </div>
+
+  <!-- Slides 28-37 with sinus lines 42-150.
+       Digoxin toxicity: slide 29 prints "Digitoxin toxicity". The recording says "digoxin
+       toxicity ... if the patient becomes digitoxic", as slide 69's "Digitalis toxicity" is
+       read for PSVT. Digoxin is the generic name.
+       Anemia: the recording's "I don't have enough buses", the red cells.
+       "Anxiolytic": the recording has "an oxalitic, such as, you know, benzodiazepine".
+       Atropine's dose and pacing are below, under the drugs and Pacing. -->
+  <div class="table-wrap" id="sinus-dysrhythmias"><table>
+    <thead><tr><th>Rhythm</th><th>On the Strip</th><th>Causes</th><th>What the Patient Looks Like</th><th>Treatment</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Sinus bradycardia</td><td><ul>
+        <li>The SA node fires <b>below 60</b>.</li>
+        <li>A P before every QRS.</li>
+      </ul></td><td><ul>
+        <li><b>Vagal stimulation:</b> carotid sinus massage (provider only), vomiting or gagging, Valsalva maneuvers, eyeball pressure, parasympathomimetic drugs.</li>
+        <li><b>Digoxin toxicity.</b></li>
+        <li><b>Hyperkalemia:</b> slows <span class="gloss">depolarization</span>.</li>
+        <li><b>MI.</b></li>
+        <li>Normal in a well-conditioned athlete, and during sleep.</li>
+      </ul></td><td><ul>
+        <li><b>May be asymptomatic,</b> but for the slow rate.</li>
+        <li><b>Symptomatic:</b> lightheaded, nauseous, about to pass out, a low BP. The key features above.</li>
+      </ul></td><td><ul>
+        <li><b>Not symptomatic:</b> monitor, and do not treat.</li>
+        <li><b>Symptomatic:</b> IV atropine.</li>
+        <li><b>Still symptomatic:</b> transcutaneous pacing, right away.</li>
+        <li><b>Persistent:</b> a permanent pacemaker.</li>
+      </ul></td></tr>
+      <tr><td class="term">Sinus tachycardia</td><td><ul>
+        <li>The SA node fires <b>above 100</b>, from vagal inhibition.</li>
+        <li>A P before every QRS.</li>
+      </ul></td><td><ul>
+        <li>Physical activity, anxiety, pain, stress, fever.</li>
+        <li><b>Anemia:</b> the heart speeds up to circulate the red cells there are.</li>
+        <li><b>Hypoxia.</b></li>
+        <li><b>Compensating for a low BP:</b> dehydration or hypovolemia, MI, heart failure. A low stroke volume raises the heart rate.</li>
+      </ul></td><td><ul>
+        <li><b>May be asymptomatic,</b> but for the fast rate.</li>
+        <li><b>Not tolerated:</b> palpitations, with the key features above.</li>
+      </ul></td><td><ul>
+        <li><b>Treat the cause:</b> fluid replacement, an analgesic, an antipyretic, an anxiolytic such as a benzodiazepine.</li>
+        <li><b>Beta blockers</b> reduce the rate and myocardial oxygen demand. The cause comes first.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- The strips on slides 26, 27, 28 and 34. Slide 27's cartoon of inspiration and
+       expiration and slide 38's comparison of the three sinus strips are left off: each
+       repeats a strip here. -->
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-sinus-strips">View the sinus rhythm strips</button>
+  <div class="fig-store" id="fig-sinus-strips" hidden>
+    <div class="figure-pair">
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/normal-sinus-rhythm.jpg" alt="A six-second strip of normal sinus rhythm in lead II. Each complex has a P wave, a QRS and a T wave, all alike, and red arcs show the R to R intervals are equal." loading="lazy">
+        <figcaption><b>Normal sinus rhythm.</b> Every complex alike, the R to R regular.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/sinus-arrhythmia.jpg" alt="A strip of sinus arrhythmia. The complexes look alike, but green arcs over them show the R to R intervals are unequal, some wider than others." loading="lazy">
+        <figcaption><b>Sinus arrhythmia.</b> Alike complexes, but the R to R intervals are not equal.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/sinus-bradycardia.jpg" alt="A six-second strip of sinus bradycardia: five widely spaced complexes, each with a P wave before the QRS." loading="lazy">
+        <figcaption><b>Sinus bradycardia.</b> Five QRSs in six seconds: a rate of 50.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/sinus-tachycardia.jpg" alt="A strip of sinus tachycardia: closely spaced, regular complexes, each with a P wave before the QRS." loading="lazy">
+        <figcaption><b>Sinus tachycardia.</b> A rate above 100.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <h3 class="sub" id="atrial-dysrhythmias-heading">Atrial Dysrhythmias</h3>
+
+  <!-- Slides 40-54 and 68-70 with atrial lines 1-113 and 245-273, in slide 40's order.
+       "Ectopic focus": the recording's "impulses that are taking place outside of the SA
+       node", a glossary entry. "Paroxysmal" (slide 68) and "SVT" (lines 249-261) are
+       glossary entries.
+       Each rhythm's treatment is below, under Treatment, where it is too long for a cell.
+       The stroke from AFib is slide 49's title with lines 77-84. -->
+  <div class="table-wrap" id="atrial-dysrhythmias"><table>
+    <thead><tr><th>Rhythm</th><th>On the Strip</th><th>Causes</th><th>What the Patient Looks Like</th><th>Treatment</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Premature atrial<br>contraction (PAC)</td><td><ul>
+        <li>An <span class="gloss">ectopic focus</span> in the atria fires before the SA node: <b>one early beat</b>.</li>
+        <li>Equal R to R intervals, one early beat, then equal again.</li>
+      </ul></td><td><ul>
+        <li><b>Usually benign.</b></li>
+        <li><b>Electrolytes:</b> check them, especially magnesium, calcium and potassium.</li>
+        <li>Stress, stimulants such as caffeine, atrial pathology.</li>
+      </ul></td><td><ul>
+        <li><b>Benign</b> most of the time. In a hospital patient, it may be pathologic.</li>
+        <li><b>New, or more frequent:</b> may be about to convert to AFib. Time can be of the essence.</li>
+      </ul></td><td><ul>
+        <li><b>Benign:</b> nothing.</li>
+        <li><b>New or more frequent:</b> check the electrolytes and tell the provider. The drugs given for AFib may prevent it.</li>
+      </ul></td></tr>
+      <tr><td class="term">Atrial fibrillation<br>(AFib)</td><td><ul>
+        <li>Many <span class="gloss" data-term="ectopic focus">ectopic foci</span> fire at once, and the atria quiver. <b>No P waves:</b> tiny, irregular "f" waves.</li>
+        <li>Atrial rate above 400, ventricular rate 100 to 175. <b>R to R irregularly irregular.</b></li>
+      </ul></td><td><ul>
+        <li><b>Underlying heart disease,</b> almost any.</li>
+        <li>Electrolyte imbalance, hypoxia.</li>
+        <li><b>Cardiac surgery:</b> often postoperatively.</li>
+        <li><b>The most common dysrhythmia,</b> more common with age.</li>
+      </ul></td><td><ul>
+        <li><b>Depends on</b> the ventricular rate, how long the rhythm has lasted, and the cardiovascular status.</li>
+        <li><b>Onset usually fast:</b> the key features of a tachydysrhythmia.</li>
+        <li><b>Clots:</b> blood pools in the quivering atria. An embolus from the left atrium causes a stroke.</li>
+      </ul></td><td><ul>
+        <li><b>Rate control first,</b> then rhythm control, and preventing an embolic stroke. See below.</li>
+      </ul></td></tr>
+      <tr><td class="term">Atrial flutter</td><td><ul>
+        <li>One <span class="gloss">ectopic focus</span>: recurring, regular <b>sawtooth "F" waves</b>, not P waves.</li>
+        <li>Atrial rate may be above 250, the ventricular rate slower. <b>R to R usually regular,</b> sometimes irregular.</li>
+      </ul></td><td><ul>
+        <li><b>Underlying heart condition,</b> any. Rare in a healthy heart, and less common than AFib.</li>
+        <li><b>Electrolyte imbalance:</b> check them.</li>
+      </ul></td><td><ul>
+        <li><b>As with AFib:</b> depends on the ventricular rate, how long, and the cardiovascular status. Onset usually fast.</li>
+        <li><b>At risk for emboli</b> too.</li>
+      </ul></td><td><ul>
+        <li><b>As for AFib.</b> See below.</li>
+      </ul></td></tr>
+      <tr><td class="term"><span class="gloss">Paroxysmal</span><br><span class="gloss" data-term="SVT">supraventricular<br>tachycardia</span> (PSVT)</td><td><ul>
+        <li>A run of repeated premature beats, from a focus anywhere above the bundle of His.</li>
+        <li>Usually starts with a PAC, and stops as abruptly as it began.</li>
+      </ul></td><td><ul>
+        <li><b>In a normal heart:</b> overexertion, emotional stress, stimulants. Not terribly uncommon.</li>
+        <li><b>More serious:</b> digoxin toxicity, heart disease.</li>
+      </ul></td><td><ul>
+        <li><b>Depends on</b> how long it lasts and how fast the ventricular rate.</li>
+        <li><b>Too fast:</b> the key features of a tachydysrhythmia.</li>
+        <li><b>Sustained <span class="gloss">SVT</span></b> does not stop on its own: it needs treating.</li>
+      </ul></td><td><ul>
+        <li><b>On the monitor:</b> <span class="gloss">vagal maneuvers</span>, then adenosine, then cardioversion. See below.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- The strips on slides 42, 45, 52 and 68, and the diagrams on slides 47 and 49, spoken
+       about at atrial lines 61-64 and 77-84. Left off: slide 46's comparison of a normal and
+       an AFib strip and heart, which repeats slides 45 and 47. -->
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-atrial-strips">View the atrial rhythm strips</button>
+  <div class="fig-store" id="fig-atrial-strips" hidden>
+    <div class="figure-pair">
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/pac.jpg" alt="A strip of sinus rhythm with one PAC. Red arcs over the R to R intervals are equal, then one is shorter where the early beat comes, then they are equal again." loading="lazy">
+        <figcaption><b>A PAC.</b> One early beat between equal R to R intervals.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/atrial-fibrillation.jpg" alt="A strip of atrial fibrillation. Between irregularly spaced QRS complexes, the baseline wavers with small waves marked f, and there are no P waves." loading="lazy">
+        <figcaption><b>AFib.</b> No P waves, only f waves, and the R to R irregularly irregular.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/atrial-flutter.jpg" alt="A strip of atrial flutter with 4:1 conduction: sawtooth waves marked F, four to each QRS complex." loading="lazy">
+        <figcaption><b>Atrial flutter.</b> Sawtooth F waves, here four to each QRS.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/psvt.jpg" alt="A strip that begins with a few normal beats, then an arrow marks the start of a run of fast, narrow, regular complexes, and a second arrow marks where it ends abruptly and normal beats return." loading="lazy">
+        <figcaption><b>PSVT.</b> The arrows mark its abrupt start and end.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-afib">View AFib in the heart</button>
+  <div class="fig-store" id="fig-afib" hidden>
+    <div class="figure-pair">
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/afib-ectopic-foci.jpg" alt="Drawing of the heart with ectopic sites scattered over the atria, firing at 400 to 600 a minute. Only some of the atrial impulses are conducted through the AV node to the ventricles. Below, the strip shows unrecognizable f waves, an erratic wavy baseline before the QRS complexes." loading="lazy">
+        <figcaption><b>Ectopic foci in AFib.</b> The AV node conducts only some of their impulses.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/afib-embolus.jpg" alt="Drawing of a person with the heart and brain shown. A thrombus forms in the left atrium in atrial fibrillation, an embolus travels up the common and internal carotid arteries, and blocks blood flow to part of the brain." loading="lazy">
+        <figcaption><b>AFib and stroke.</b> A clot from the left atrium travels to the brain.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <h3 class="sub" id="ventricular-dysrhythmias-heading">Ventricular Dysrhythmias</h3>
+
+  <!-- Slides 78-83 with ventricular lines 1-116. The patterns are slide 80's picture,
+       transcribed, with lines 33-60: "I only say it here and probably nowhere else".
+       Bigeminy, trigeminy, quadrigeminy, unifocal and multifocal are glossary entries.
+       VFib's cause is lines 107-109. Pulseless VTach is defibrillated: slide 84 and lines
+       137-140. -->
+  <div class="table-wrap" id="ventricular-dysrhythmias"><table>
+    <thead><tr><th>Rhythm</th><th>On the Strip</th><th>Causes</th><th>What the Patient Looks Like</th><th>Treatment</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Premature ventricular<br>contraction (PVC)</td><td><ul>
+        <li>From an <span class="gloss">ectopic focus</span> in the <b>ventricles</b>: early, with no normal P wave. <b>Wide and distorted</b> beside the normal QRS.</li>
+        <li><b>Patterns:</b> <span class="gloss">bigeminy</span>, <span class="gloss">trigeminy</span>, <span class="gloss">quadrigeminy</span>. <span class="gloss">Unifocal</span> or <span class="gloss">multifocal</span>: multifocal is worse.</li>
+      </ul></td><td><ul>
+        <li>Stimulants, <b>electrolytes</b>, hypoxia, fever, exercise, emotional stress, cardiovascular disease.</li>
+      </ul></td><td><ul>
+        <li><b>Isolated:</b> can be benign. Chronic for some patients.</li>
+        <li><b>New, or more frequent:</b> may be about to convert to VTach, a crisis. Watch closely, and tell the provider.</li>
+      </ul></td><td><ul>
+        <li><b>Treat the cause.</b></li>
+        <li><b>Drugs:</b> beta blockers, lidocaine or amiodarone.</li>
+      </ul></td></tr>
+      <tr><td class="term">Ventricular<br>tachycardia (VTach)</td><td><ul>
+        <li><b>3 or more PVCs</b> in a row: an ectopic focus in the ventricles takes control, and the atria do not contract.</li>
+        <li>Rate <b>150 to 200</b>, usually regular. <b>No P wave,</b> no measurable PR.</li>
+      </ul></td><td><ul>
+        <li>MI, CAD, significant electrolyte abnormalities, heart failure, drug toxicity.</li>
+      </ul></td><td><ul>
+        <li><b>Symptomatic very quickly,</b> unless it converts back.</li>
+        <li><b>Pulse or pulseless: the first question.</b> No pulse, no perfusion.</li>
+      </ul></td><td><ul>
+        <li><b>ACLS,</b> by the pulse. <b>Pulseless:</b> defibrillation.</li>
+        <li><b>An antidysrhythmic:</b> a beta blocker, calcium channel blocker or amiodarone.</li>
+        <li><b>Electrolytes:</b> checked, and replaced at once.</li>
+      </ul></td></tr>
+      <tr><td class="term">Ventricular<br>fibrillation (VFib)</td><td><ul>
+        <li><b>Irregular waveforms</b> of varying shapes and sizes.</li>
+        <li><b>No QRSs.</b></li>
+      </ul></td><td><ul>
+        <li><b>Untreated VTach</b> slips into VFib.</li>
+      </ul></td><td><ul>
+        <li><b>The ventricles just quiver:</b> no effective contractions. Cardiac arrest, unconscious.</li>
+      </ul></td><td><ul>
+        <li><b>CPR, ACLS, defibrillation.</b> Call a code.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- The strips on slides 79, 80, 82 and 83. Slide 81's VTach strip repeats slide 82's. -->
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-ventricular-strips">View the ventricular rhythm strips</button>
+  <div class="fig-store" id="fig-ventricular-strips" hidden>
+    <div class="figure-pair">
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/pvc.jpg" alt="A strip of normal sinus rhythm in lead II with one isolated PVC, marked by an arrow: an early, wide complex with no P wave before it, much taller and wider than the normal beats." loading="lazy">
+        <figcaption><b>An isolated PVC.</b> Early, wide and distorted.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/pvc-patterns.jpg" alt="Three strips of PVC patterns with the PVCs circled. Bigeminy: every second beat is a PVC. Trigeminy: every third beat. Quadrigeminy: every fourth beat, where the first circled PVC points up and the second points down." loading="lazy">
+        <figcaption><b>PVC patterns.</b> The quadrigeminy PVCs differ in shape: multifocal.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/ventricular-tachycardia.jpg" alt="A strip of sustained ventricular tachycardia: wide, regular, closely spaced complexes with no P waves." loading="lazy">
+        <figcaption><b>Sustained VTach.</b> Wide, fast and regular, with no P waves.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/ventricular-fibrillation.jpg" alt="A strip of ventricular fibrillation in lead II: a wavy, irregular line of varying shapes and sizes, with no QRS complexes." loading="lazy">
+        <figcaption><b>VFib.</b> Irregular waves, no QRSs.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <h2 class="block" id="dysrhythmia-treatment">Treatment</h2>
+
+  <p class="further-study">For further study, see <b>Med Surg II Week 2 – Atrial Dysrhythmias</b> and <b>Med Surg II Week 2 – Ventricular Dysrhythmias</b>.</p>
+
+  <!-- The review item, from Day 2 Rhythms: "Treatment for dysrhythmias: pharmacology review,
+       electrolytes, other nursing interventions" (slide 2). Each rhythm's treatment is in
+       its table above. What is too long for a cell is here: AFib and flutter (slides 55-64,
+       atrial lines 114-242), PSVT (slides 71-76, lines 274-323), and cardioversion against
+       defibrillation (slides 59-60 and 84, atrial lines 143-191, ventricular lines 116-145).
+       The electrolytes: ventricular lines 23-24 ("We always care what electrolytes are when
+       patients are having dysrhythmias") and 102-103. Which ones matter, and why, is on the
+       Cardiovascular Review: the strip points there. -->
+  <div class="mnemonic" id="always-check-electrolytes"><b>Always check the electrolytes</b> in a patient with a dysrhythmia. Imbalances cause PACs, AFib, flutter, PVCs and VTach. In VTach, replace them at once.</div>
+
+  <p class="xref-line"><a class="xref" href="review-cardiovascular.html#cv-labs">
+    <span><b>The electrolytes that matter,</b> potassium, calcium and magnesium, are taught in the <b>Cardiovascular</b> review</span>
+  </a></p>
+
+  <h3 class="sub" id="afib-flutter-treatment-heading">AFib and Atrial Flutter</h3>
+
+  <!-- Slide 55's three goals, in its order, with lines 114-131: "rate is priority".
+       "Dofetilide": slide 55 prints "doFETilide". The recording has "difidatil, difedalide".
+       "Diltiazem, verapamil": the recording has "Dothiazam and Barapamil". -->
+  <div class="card" id="afib-flutter-goals">
+    <h4>Three Goals of Treatment</h4>
+    <ol>
+      <li><b>Rate control,</b> the ventricular rate: the priority. Beta blockers such as metoprolol, or calcium channel blockers such as diltiazem and verapamil. IV at first.</li>
+      <li><b>Rhythm control:</b> amiodarone or dofetilide. IV at first.</li>
+      <li><b>Preventing an embolic stroke:</b> warfarin, or another anticoagulant.</li>
+    </ol>
+  </div>
+
+  <!-- Slides 56-58 with lines 131-149, slide 57's picture explained in words (lines
+       136-143). "Hemodynamically compromised": the recording's "it just means their vital
+       signs are unstable and they're not tolerating it well", the glossary's hemodynamically
+       unstable. Digoxin: slide 56 prints "digitalis", the recording "digoxin digitalis".
+       Slide 58 drops digoxin and amiodarone from slide 56's list: slide 56 is kept whole. -->
+  <div class="two-col" id="stable-vs-unstable-afib">
+    <div class="card">
+      <h4>Stable, but Symptomatic</h4>
+      <ul>
+        <li><b>Slow the ventricular rate:</b> an IV calcium channel blocker, beta blocker, digoxin or amiodarone.</li>
+        <li><b>Often a bolus and a drip:</b> the bolus raises the drug level at once, and the drip keeps it there. A drip alone takes too long.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Unstable</h4>
+      <ul>
+        <li><b><span class="gloss" data-term="hemodynamically unstable">Hemodynamically compromised</span>:</b> synchronized cardioversion. See below.</li>
+        <li><b>Emergent cardioversion:</b> low-molecular-weight heparin or a heparin drip is started as well.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Slide 61 with lines 191-209. The weeks before cardioversion: slide 61 prints "3 to 4
+       weeks before cardioversion and for 3 to 4 weeks after". The recording reads it as
+       "four to six weeks before". Holly, 2026-10-16: combine them as 3 to 6 weeks before.
+       See decisions.md.
+       Who needs anticoagulation is left off the Hematology Review, where warfarin itself is
+       taught. Here it is part of cardioverting AFib safely. -->
+  <div class="card" id="before-cardioversion">
+    <h4>Before Cardioverting AFib</h4>
+    <ul>
+      <li><b>AFib for more than 48 hours:</b> clots may have formed in the atria. Cardioversion restores the kick and throws the clot to the brain: a stroke.</li>
+      <li><b>Anticoagulation,</b> usually warfarin: <b>3 to 6 weeks before</b> cardioversion, and 3 to 4 weeks after.</li>
+      <li><b>A TEE</b> may be done first, to make sure there are no clots in the atria.</li>
+    </ul>
+  </div>
+
+  <p class="xref-line"><a class="xref" href="review-hematology.html#oral-anticoagulants">
+    <span><b>Long-term anticoagulation</b> when treatment fails, warfarin and the newer drugs, is taught in the <b>Hematology</b> review</span>
+  </a></p>
+
+  <!-- Slides 63-66 with lines 223-242. Left off: the drawings on slides 65 and 66, and the
+       techniques (radiofrequency or cryothermal, the arrangement of the incisions). One
+       level deep. -->
+  <p class="note"><b>Drugs often work, but fail often and can be toxic.</b> Two treatments are not drugs:</p>
+
+  <div class="two-col" id="ablation-vs-maze">
+    <div class="card">
+      <h4>Catheter Ablation</h4>
+      <ul>
+        <li><b>Invasive:</b> destroys the irritable focus causing the dysrhythmia.</li>
+        <li><b>First:</b> electrophysiology (EP) studies and mapping, to locate the focus.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Maze Procedure</h4>
+      <ul>
+        <li><b>Surgical:</b> incisions in the atrium disrupt the re-entrant circuits.</li>
+        <li><b>Leaves one path</b> from the SA node to the AV node, like a children's maze.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="sub" id="psvt-treatment-heading">PSVT</h3>
+
+  <!-- Slides 71-76 with lines 274-323, in their order: vagal maneuvers, then adenosine "if
+       fail", then cardioversion. Adenosine's details are in the drug table below. -->
+  <div class="continuum" id="psvt-ladder">
+    <div class="cont-step well">
+      <h4>Vagal Maneuvers</h4>
+      <p><b>First,</b> on the monitor.</p>
+    </div>
+    <div class="cont-step mid">
+      <h4>Adenosine</h4>
+      <p><b>If they fail:</b> IV push.</p>
+    </div>
+    <div class="cont-step ill">
+      <h4>Synchronized Cardioversion</h4>
+      <p><b>If both fail,</b> or the patient becomes <span class="gloss">hemodynamically unstable</span>.</p>
+    </div>
+  </div>
+
+  <!-- Slides 71 and 73 with lines 274-297. Carotid sinus massage is named only: slide 72's
+       drawing of where the carotid sinus is, is left off. The suctioned patient is the
+       recording's, from the ICU. Vagal maneuvers is a glossary entry, not marked in this
+       card, which teaches it. -->
+  <div class="card" id="vagal-maneuvers">
+    <h4>Vagal Maneuvers for PSVT</h4>
+    <ul>
+      <li><b>Valsalva, the most effective:</b> bear down as for a bowel movement. Hold the breath 10 to 15 seconds, hard enough to distend the neck veins, then breathe.</li>
+      <li><b>Coughing:</b> a ventilated patient can be suctioned to make them cough.</li>
+      <li><b>Carotid sinus massage:</b> provider only. Never the nurse.</li>
+      <li><b>Diving reflex:</b> the face in cold water. Rarely used now.</li>
+    </ul>
+  </div>
+
+  <h3 class="sub" id="cardioversion-vs-defib-heading">Cardioversion Versus Defibrillation</h3>
+
+  <!-- Slide 84's cartoon, transcribed, with slides 59-60 and atrial lines 143-191 and
+       ventricular lines 116-145. Energy: slide 60 starts at 50 to 100 joules, "increase if
+       needed". Slide 84 and the recording give 50 to 200 in all.
+       After cardioversion: slide 60's nursing care. "Document results" is kept: whether it
+       worked decides whether it is tried again at more joules (lines 189-191).
+       Left off: slide 59's photos of the defibrillator and its sync button. -->
+  <div class="two-col" id="cardioversion-vs-defibrillation">
+    <div class="card">
+      <h4>Synchronized Cardioversion</h4>
+      <ul>
+        <li><b>For:</b> a <span class="gloss">hemodynamically unstable</span> supraventricular tachydysrhythmia: AFib, flutter, <span class="gloss">SVT</span>. Needs an R wave.</li>
+        <li><b>Sync on:</b> the shock lands on the R wave of the QRS. Unsynchronized, a shock on the wrong part of the complex can trigger a life-threatening dysrhythmia.</li>
+        <li><b>Energy:</b> 50 to 100 joules at first, raised if needed: 50 to 200 in all.</li>
+        <li><b>The patient:</b> usually elective, awake, and sedated first unless it is an emergency. A consent form, and the EKG monitor.</li>
+        <li><b>Pulseless after:</b> the QRS is lost. Sync off, and defibrillate.</li>
+        <li><b>After:</b> a patent airway and oxygen, vital signs and level of consciousness, watch for dysrhythmias, emotional support. Document whether it worked.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Defibrillation</h4>
+      <ul>
+        <li><b>For:</b> VFib and pulseless VTach: no cardiac output. An emergency: call a code.</li>
+        <li><b>Sync off:</b> there is no QRS to sense, so with the sync on it would never fire. It fires the moment the button is pushed.</li>
+        <li><b>Energy:</b> more than cardioversion. Begins at 200 joules, up to 360.</li>
+        <li><b>The patient:</b> unconscious, on the cardiac monitor.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout-danger" id="all-clear"><b>All clear before any shock:</b> no one touching the patient or the bed.</div>
+
+  <!-- Slide 84's cartoon: "If it's V-Fib you DeFib ... Call a code!" -->
+  <div class="mnemonic" id="vfib-defib"><b>If it's VFib, you defib,</b> and call a code.</div>
+
+  <h2 class="block" id="dysrhythmia-drugs">The Drugs</h2>
+
+  <p class="further-study">For further study, see <b>Med Surg II Week 2 – Sinus Dysrhythmias</b> and <b>Med Surg II Week 2 – Atrial Dysrhythmias</b>.</p>
+
+  <!-- The review item, from Day 2 Rhythms: "what is amiodarone, what is beta-blocker, what
+       is adenosine, atropine", from the drug matrices, with metoprolol and labetalol on its
+       slide 13. What It Does opens with what Med Surg II says of each: atropine slide 31 and
+       sinus lines 88-92, adenosine atrial lines 299-301, beta blockers slide 37 and
+       dysrhythmias lines 373-375, amiodarone slide 55. The last line of each What It Does
+       cell, and the labetalol line, are general knowledge. Holly, 2026-10-16: the drug
+       matrices were student-built and are not trusted, so the gaps are filled from outside
+       the lectures, each line marked and logged under "Added From Outside the Lecture" in
+       decisions.md. Labetalol has no row of its own: no source says what it is used for or
+       how it is given here, and its line says why it is mostly a blood pressure drug.
+       How each is used: slides 31, 55-56, 74 and 79, and ventricular lines 29-30 and 99-100.
+       Beta blockers, calcium channel blockers and digoxin as a class are on the Heart
+       Disease Review (settled 2026-10-15): the strip points there.
+       "Adenosine and atropine both start with A": lines 299-301.
+       Left off: slide 75's picture of a stopcock set-up for adenosine. -->
+  <div class="table-wrap" id="dysrhythmia-drug-table"><table>
+    <thead><tr><th>Drug</th><th>What It Does</th><th>Used For</th><th>How It Is Given</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Atropine</td><td><ul>
+        <li><b>Vagolytic:</b> blocks the vagus nerve, the main nerve of the parasympathetic nervous system.</li>
+        <li><b>Speeds up</b> the heart rate.</li>
+        <li><b>An anticholinergic:</b> with the vagus nerve's brake off, the SA node fires faster and impulses cross the AV node faster.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li>
+      </ul></td><td><ul>
+        <li><b>Symptomatic sinus bradycardia.</b></li>
+      </ul></td><td><ul>
+        <li><b>1 mg IV every 3 to 5 minutes, 3 mg max.</b> Aim: a rate back in 60 to 100.</li>
+        <li><b>Not working:</b> transcutaneous pacing.</li>
+      </ul></td></tr>
+      <tr><td class="term">Adenosine</td><td><ul>
+        <li><b>Slows</b> the heart rate.</li>
+        <li><b>Briefly blocks conduction through the AV node,</b> which most PSVT needs to keep going: the rhythm breaks, and the SA node takes back over.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li>
+      </ul></td><td><ul>
+        <li><b>PSVT,</b> when <span class="gloss">vagal maneuvers</span> fail.</li>
+      </ul></td><td><ul>
+        <li><b>IV push, very fast, then a rapid NS flush:</b> a very short half-life. Often two syringes of saline, pushed together.</li>
+        <li><b>Onset:</b> 10 to 40 seconds. Lasts 1 to 2 minutes.</li>
+        <li><b>A pause on the strip,</b> a period of <span class="gloss">asystole</span>. The patient may be aware of it: tell them first.</li>
+      </ul></td></tr>
+      <tr><td class="term">Beta blockers,<br>such as metoprolol</td><td><ul>
+        <li><b>Slow</b> the heart rate, reducing myocardial oxygen demand.</li>
+        <li><b>Slow conduction through the AV node:</b> fewer of the atria's impulses reach the ventricles.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li>
+        <li><b>Labetalol also blocks alpha receptors,</b> so the arteries widen too: mostly a blood pressure drug.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li>
+      </ul></td><td><ul>
+        <li><b>AFib and flutter:</b> rate control.</li>
+        <li><b>Sinus tachycardia,</b> once the cause is treated.</li>
+        <li><b>PVCs, and VTach.</b></li>
+      </ul></td><td><ul>
+        <li><b>IV at first</b> for AFib and flutter, often a bolus and a drip.</li>
+      </ul></td></tr>
+      <tr><td class="term">Amiodarone</td><td><ul>
+        <li><b>An antidysrhythmic:</b> rhythm control.</li>
+        <li><b>Prolongs <span class="gloss">repolarization</span>:</b> the heart's cells take longer before they can fire again, which suppresses fast rhythms from the atria and the ventricles.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li>
+      </ul></td><td><ul>
+        <li><b>AFib and flutter:</b> rhythm control. Also slows the ventricular rate when the patient is stable but symptomatic.</li>
+        <li><b>PVCs, and VTach.</b></li>
+      </ul></td><td><ul>
+        <li><b>IV at first</b> for AFib and flutter, often a bolus and a drip.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="mnemonic" id="adenosine-vs-atropine"><b>Adenosine and atropine both start with A.</b> Adenosine slows the heart rate. Atropine speeds it up. Do not mix them up.</div>
+
+  <p class="xref-line"><a class="xref" href="review-heart-disease.html#hf-cad-htn-drugs">
+    <span><b>Beta blockers, calcium channel blockers and digoxin,</b> their examples and what to watch for, are taught in the <b>Heart Disease</b> review</span>
+  </a></p>
+
+  <h2 class="block" id="pacing">Pacing</h2>
+
+  <p class="further-study">For further study, see <b>Med Surg II Week 2 – Sinus Dysrhythmias</b>.</p>
+
+  <!-- The review item, from Day 2 Rhythms: pacemakers and ICDs, and their restrictions.
+       Med Surg II shows transcutaneous pacing and a permanent pacemaker only, as the steps
+       after atropine for sinus bradycardia (slides 31-33, lines 93-115). ICDs and the
+       restrictions are below, from outside the lectures. -->
+  <div class="two-col" id="transcutaneous-vs-permanent">
+    <div class="card">
+      <h4>Transcutaneous Pacing</h4>
+      <ul>
+        <li><b>When:</b> symptomatic sinus bradycardia that atropine does not fix. Right here, right now.</li>
+        <li><b>How:</b> pads on the patient, and the device paces the heart through the skin. It stands in for the SA node.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Permanent Pacemaker</h4>
+      <ul>
+        <li><b>When:</b> a persistent bradycardia that responds to nothing else. The provider decides.</li>
+        <li><b>How:</b> under the skin, usually just below the clavicle. Fires when the SA node is not cooperating.</li>
+        <li><b>Paces as needed:</b> every sixth beat in one patient, every beat in another.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Slides 32 and 33, spoken about at lines 99-111. -->
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-pacing">View transcutaneous pacing and a permanent pacemaker</button>
+  <div class="fig-store" id="fig-pacing" hidden>
+    <div class="figure-pair">
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/transcutaneous-pacing.jpg" alt="Photo of a training mannequin on a bed with a pacing pad on the chest, its cable running up to a monitor and defibrillator on top of a red crash cart." loading="lazy">
+        <figcaption><b>Transcutaneous pacing.</b> Pads on the chest, paced from the device.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/review-dysrhythmias/permanent-pacemaker.jpg" alt="Drawing of the chest with a pacemaker pulse generator under the skin below the collarbone. Its leads run through a vein into the heart: one lead in the right atrium and one in the right ventricle." loading="lazy">
+        <figcaption><b>A permanent pacemaker,</b> under the skin below the clavicle.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <h3 class="sub" id="icds-heading">ICDs and Device Restrictions</h3>
+
+  <!-- ICDs and the restrictions of pacemakers: no course that has arrived teaches them.
+       Holly, 2026-10-16: a brief explanation from outside the lectures, every line marked,
+       logged under "Added From Outside the Lecture" in decisions.md. Day 2 teaches what an
+       ICD is, who gets one, and the MRI, machinery and airport restrictions
+       (day2-rhythms-pacemakers.html#pacemakers-and-icds): they are not repeated here, and the
+       strip points there. -->
+  <div class="card" id="icd-shock">
+    <h4>When an ICD Fires</h4>
+    <ul>
+      <li><b>The patient feels the shock:</b> a sudden, hard thump or kick in the chest.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li>
+      <li><b>One shock, and the patient feels well after:</b> call the provider that day.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li>
+      <li><b>More than one shock, or chest pain, dizziness or shortness of breath:</b> call 911.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li>
+    </ul>
+  </div>
+
+  <div class="card" id="living-with-a-device">
+    <h4>Living With a Pacemaker or ICD</h4>
+    <ul>
+      <li><b>For the first few weeks:</b> keep the arm on the device side below the shoulder, and lift nothing heavy with it, while the leads settle in.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li>
+      <li><b>Magnets and cell phones at least 6 inches from the device:</b> no phone in a shirt pocket over it.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li>
+      <li><b>Carry the device ID card</b> at all times.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li>
+    </ul>
+  </div>
+
+  <p class="xref-line"><a class="xref" href="day2-rhythms-pacemakers.html#pacemakers-and-icds">
+    <span><b>Pacemakers and ICDs,</b> who gets one, and the MRI, machinery and airport restrictions, are taught in <b>Rhythms &amp; Pacemaker Review</b></span>
+  </a></p>
+
+  <nav class="page-flip" data-page-flip></nav>
+  <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
+
+</div>
+</main>
+
+<script src="assets/site.js?v=20261017q"></script>
+<script src="data/glossary.js?v=20261017q"></script>
+<script src="assets/study.js?v=20261017q"></script>
+</body>
+</html>

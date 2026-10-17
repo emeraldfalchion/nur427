@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<!-- SOURCES
+     Deck:        slides/Day 1 - 3 Hematologic.pptx (18 slides)
+     Transcript:  transcripts/Day 1 - Hem.txt
+     Built:       2026-10-13
+     Cross-checked against the deck: 2026-10-13
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hematologic Issues in Critical Care — NUR427</title>
+<script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="assets/styles.css?v=20261017q">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<main id="content">
+<div class="page-inner">
+
+  <header class="page-head">
+    <p class="eyebrow">Day 1 · Topic 3</p>
+    <h1>Hematologic Issues in Critical Care</h1>
+  </header>
+
+  <h2 class="block" id="bring-forward">Things to Bring Forward</h2>
+
+  <div class="card" id="prior-content" data-nohide>
+    <h4>Earlier Content This Topic Builds On</h4>
+    <ul>
+      <!-- Each lead links to its block on the Hematology Review (built 2026-10-16). The
+           first five are slide 2's list. Bleeding precautions are named as review later
+           in the recording ("which just kind of review that"), and the card lists those
+           too (Holly, 2026-10-13).
+           Coagulation and medications: the lead links to the heparin drip block, the
+           example the bullet names, written from outside the lectures (Holly,
+           2026-10-16). Warfarin and the newer oral anticoagulants follow it on the review
+           page. See review-list.md. -->
+      <li><b><a class="rev-link" href="review-hematology.html#cbc-and-hh">Blood components</a>:</b> how to interpret an H&amp;H and what a CBC shows, as general principles.</li>
+      <li><b><a class="rev-link" href="review-hematology.html#heparin-drips">Coagulation and medications</a>:</b> for a patient on anticoagulation such as a heparin drip, the nurse's responsibilities, the labs to draw, and the signs and symptoms of an adverse reaction.</li>
+      <li><b><a class="rev-link" href="review-transfusions.html#transfusions">Transfusions and blood products</a>:</b> the nurse's responsibility in transfusing, what to look for and how to do it, and the different blood products.</li>
+      <li><b><a class="rev-link" href="review-transfusions.html#transfusion-reactions">Blood transfusion reactions</a>:</b> what to look for, and telling a reaction that needs little from one that is a full stop.</li>
+      <li><b><a class="rev-link" href="review-hematology.html#anemia-signs">Anemia signs and symptoms</a>:</b> recognizing them and pointing them out.</li>
+      <li><b><a class="rev-link" href="review-hematology.html#bleeding-precautions">Bleeding precautions</a>:</b> what a patient on them needs.</li>
+    </ul>
+  </div>
+
+  <h2 class="block" id="anemia">Anemia</h2>
+
+  <div class="card" id="anemia-why-it-matters">
+    <h4>Why Anemia Is a Big Deal</h4>
+    <ul>
+      <li><b>Low hemoglobin or decreased RBCs.</b> RBCs (erythrocytes) carry oxygen on their hemoglobin.</li>
+      <li>Either the RBCs are lacking, after a large loss of blood volume, or the hemoglobin is.</li>
+      <li>Not enough oxygen circulates to feed the tissues, which survive on <b>aerobic metabolism</b>.</li>
+    </ul>
+  </div>
+
+  <h3 class="sub" id="anemia-signs-heading">General Signs and Symptoms of All Types of Anemia</h3>
+
+  <!-- The table is slide 3's, with what the recording adds to each row.
+       Selective perfusion, "Loss of urine output": the recording has "they will lose
+       your output". Read as urine output.
+       Increased CO: the recording says "the first compensatory mechanism of fluid volume
+       deficit which anemia is a type of fluid volume deficit is tachycardia". The claim
+       that anemia is a type of fluid volume deficit sounds wrong and is left off (Holly,
+       2026-10-14). -->
+  <div class="table-wrap" id="anemia-signs-and-symptoms"><table>
+    <thead><tr><th>Response</th><th>What Is Happening</th><th>Signs and Symptoms</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Tissue hypoxia</td><td><ul>
+        <li>Hypoxia-related symptoms develop if the anemia is severe.</li>
+        <li>Whole body: each tissue shows its own lack of oxygen. The GI tract cramps, the brain aches or goes lightheaded, the muscles cramp.</li>
+      </ul></td><td>Fatigue, SOB, <span class="gloss">angina</span>, <span class="gloss">intermittent claudication</span>, muscle cramps, headache, lightheadedness, syncope, abdominal cramping, nausea.</td></tr>
+      <tr><td class="term">Selective increase in tissue perfusion</td><td><ul>
+        <li><b>Selective vasoconstriction</b> shunts blood to the priority organs: <b>brain, heart, lungs</b>.</li>
+        <li>Skin is restricted first.</li>
+        <li>Kidneys next. They take about 20% of cardiac output, so they take a big hit: acute kidney injury.</li>
+        <li>GI system after that: blood flow to the gut is cut.</li>
+      </ul></td><td>Pale skin and pale mucous membranes, cool to touch. Loss of urine output. Nausea, lack of appetite.</td></tr>
+      <tr><td class="term">Increased cardiac output</td><td><ul>
+        <li>Heart works harder to deliver oxygen.</li>
+        <li><b>Tachycardia first:</b> the first compensatory mechanism of fluid volume deficit.</li>
+        <li>Vessels clamp down to raise the blood pressure. Stroke volume rises if it can, which is unlikely when volume has been lost.</li>
+        <li><span class="gloss">Angina</span>: the heart is working harder and may not be getting the oxygen it needs.</li>
+      </ul></td><td>Increased HR, BP and SV. <span class="gloss">Angina</span>. Severe, down the road: high-output cardiac failure, cardiomegaly.</td></tr>
+      <tr><td class="term">Increased pulmonary function</td><td><ul>
+        <li>Due to hypoxia: the respiratory rate rises to compensate.</li>
+        <li>Often what patients talk about most: getting from the bed to the chair uses all their energy.</li>
+      </ul></td><td><span class="gloss">Tachypnea</span>. SOB, exertional or at rest.</td></tr>
+      <tr><td class="term">Increased RBC function</td><td><ul>
+        <li><b>Longer-term</b> compensatory mechanism.</li>
+        <li>More erythropoietin is produced, so more RBCs are made.</li>
+        <li><span class="gloss" data-term="reticulocyte">Reticulocytes</span> are not as effective as fully mature RBCs.</li>
+      </ul></td><td>Stress reticulocytosis: an increased <span class="gloss">reticulocyte</span> count.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub" id="timing-heading">Timing</h3>
+
+  <div class="mnemonic" id="anemia-timing-rule"><b>All the symptoms of anemia are based on timing:</b> how fast it came on, and whether the compensatory responses had time to kick in.</div>
+
+  <div class="two-col" id="sudden-vs-slow-blood-loss">
+    <div class="card">
+      <h4>Sudden Loss</h4>
+      <ul>
+        <li><b>All of the symptoms, very quickly:</b> short of breath immediately, headache, lightheadedness, altered level of consciousness.</li>
+        <li>Compensatory responses have not had time to kick in.</li>
+        <li>Example: trauma with liters of blood lost.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Slow Loss</h4>
+      <ul>
+        <li><b>May be sitting up and talking</b> with the same H&amp;H as the trauma patient, even a hemoglobin of 4 and a hematocrit of 12.</li>
+        <li>The body has had time to compensate.</li>
+        <li>Example: a slow GI bleed.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="sub" id="mechanisms-heading">Mechanisms of Anemia</h3>
+
+  <div class="table-wrap" id="anemia-mechanisms"><table>
+    <thead><tr><th>Mechanism</th><th>Examples</th></tr></thead>
+    <tbody>
+      <tr><td class="term">RBC production</td><td>Chronic kidney disease. Radiation that has irradiated the bone marrow.</td></tr>
+      <tr><td class="term">RBC destruction</td><td>Hemolytic anemia: an autoimmune problem, or the wrong blood transfusion.</td></tr>
+      <tr><td class="term">Blood loss</td><td>The most common: post-op, trauma, GI bleed.</td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="note"><b>The signs and symptoms are essentially the same whatever the mechanism.</b></p>
+
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-anemia-flow-chart">View the anemia flow chart</button>
+  <div class="fig-store" id="fig-anemia-flow-chart" hidden>
+    <figure class="figure">
+      <img src="images/day1-hematologic/anemia-flow-chart.jpg" alt="Flow chart. An anemia triggering event leads to decreased RBC and hemoglobin, then decreased oxygen carrying capacity, then tissue hypoxia. Mechanisms: RBC production, RBC destruction, blood loss. Major manifestations: neuro (vertigo, irritability, inability to concentrate), GI (anorexia), skin (pale skin and mucous membranes), general (activity and temperature intolerance). Compensatory responses: heart (increased BP, HR, SV and oxygen demand on the heart, angina possible), lungs (increased respiratory rate, depth and work of breathing, dyspnea, orthopnea), kidneys (increased RAAS activity and erythropoietin secretion, stimulation of bone marrow, bone marrow discomfort)." loading="lazy">
+      <figcaption><b>From the triggering event to tissue hypoxia.</b> Major manifestations on the left. Compensatory responses of the heart, lungs and kidneys on the right.</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="block" id="bleeding-patient">The Bleeding Patient</h2>
+
+  <p class="note"><b>Identify the source and treat the cause.</b></p>
+
+  <!-- "Bone marrow replacement": the recording has "bone hair replacement". -->
+  <div class="table-wrap" id="bleeding-source-and-treatment"><table>
+    <thead><tr><th>Source</th><th>Treating the Cause</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Chronic GI bleed</td><td>Surgery to clip the bleed. Or, on a blood thinner, reverse it and give product.</td></tr>
+      <tr><td class="term">Trauma</td><td>The OR, to clamp and sew off the bleeding.</td></tr>
+      <tr><td class="term">Chronic kidney disease</td><td>Erythropoietin supplementation.</td></tr>
+      <tr><td class="term">Bone marrow not working</td><td>Medications to replace what is lost. A change to the radiation, or bone marrow replacement.</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- "von Willebrand syndrome": the recording has "von wilderbrand syndrome". Her word
+       "syndrome" is kept.
+       Left off: that the factor drugs are very expensive and were given by a pharmacist
+       or an MD where she worked. One hospital's practice. -->
+  <div class="card" id="coagulopathies">
+    <h4>Coagulopathies</h4>
+    <ul>
+      <li><b>Abnormalities in one of the stages of clotting:</b> the clotting cascade is altered.</li>
+      <li>Bleeding patients often develop one, and very quickly when actively bleeding, even on no anticoagulation. Seen in surgery and trauma.</li>
+      <li><b>Temperature</b> plays a big role in clotting, which is why it is regulated in trauma and surgery.</li>
+      <li>Examine the <b>bleeding times and coags</b> of every bleeding patient.</li>
+      <li>No known reason for the bleeding: think of an inherited coagulopathy (hemophilia, von Willebrand syndrome) or an acquired one (a medication, chemo).</li>
+      <li>Corrected with vitamin K or a factor VII drug, usually as a one-time dose. Given quite a bit in trauma and post-op recovery.</li>
+    </ul>
+  </div>
+
+  <div class="mnemonic" id="concerning-findings"><b>What is concerning: perfusion to the vital organs.</b> No urine output in 6 or 7 hours matters more than pale, cool skin, which is an expected finding.</div>
+
+  <!-- Generic names only: the recording has "is he on warfarin does he take cumin cumin in
+       eliquis" (Coumadin, Eliquis) and "a low venox order" (Lovenox). -->
+  <div class="card" id="bleeding-patient-medications">
+    <h4>Medications and the Bleeding Patient</h4>
+    <ul>
+      <li><b>Always know what medications the patient is on.</b></li>
+      <li>Bright red blood in the sputum from an ET tube, on a heparin drip: does the drip need to stop?</li>
+      <li>GI bleed with a history of atrial fibrillation: is the patient on warfarin or apixaban?</li>
+      <li>Known to be bleeding after surgery, with an enoxaparin order: question it. It is sometimes still given, because the risk of DVT is so high.</li>
+    </ul>
+  </div>
+
+  <p class="note"><b>Why it matters: active bleeding can lead to hypovolemic shock,</b> which is low blood volume shock.</p>
+
+  <h3 class="sub" id="coagulation-factors-heading">What Can Affect Coagulation</h3>
+
+  <!-- The nine rows are slide 6's SmartArt, in its order. Splenectomy: the recording is
+       garbled there ("we never talk about the spleen because it doesn't do has a
+       spleenectomy"), and only the risk is clear. -->
+  <div class="table-wrap" id="what-affects-coagulation"><table>
+    <thead><tr><th>Factor</th><th>How It Affects Coagulation</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Alcohol, poisons, substances</td><td>All can affect bleeding times and coagulation. High levels of ethanol make the blood thinner.</td></tr>
+      <tr><td class="term">Blood clots (clotting disorders)</td><td>A history of blood clots is a huge risk for more, and a reason to worry about a clotting disorder.</td></tr>
+      <tr><td class="term">Liver disease</td><td>The liver makes a lot of the clotting factors, so bleeding times are prolonged.</td></tr>
+      <tr><td class="term">Active bleeding, especially with a lot of loss</td><td>Affects the coagulation cascade. Plasma and clotting factors often need replacing as well.</td></tr>
+      <tr><td class="term">Cardiac bypass</td><td>A lot of blood thinner is given to go on bypass. Blood touching what it normally does not can develop a <span class="gloss">coagulopathy</span>. The longer on bypass, the more risk.</td></tr>
+      <tr><td class="term">Splenectomy</td><td>Higher risk for bleeding issues.</td></tr>
+      <tr><td class="term">Radiation, for cancer or from exposure</td><td>Bone marrow is irradiated or suppressed, and it makes the platelets and RBCs. Very high risk.</td></tr>
+      <tr><td class="term">Previous transfusions</td><td>A lot of transfusions means a lot more antibodies, and can also alter coagulation.</td></tr>
+      <tr><td class="term">Infections and inflammatory states</td><td>Inflammatory responses can disrupt coagulation, as in DIC. See below.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="labs">Labs</h2>
+
+  <!-- Bleeding time: the recording has "pt ptt inr not generally inr not generally inr um
+       in like an acute bleed".
+       Left off: how to interpret a TEG. Slide 8 is a picture of a TEG tracing and a table
+       of its five components (R time, K time, alpha angle, maximum amplitude, LY30), with
+       the normal value, the problem and the product to give for each. Said not to be
+       asked: "you're not responsible for interpreting it". What a TEG is for stays. -->
+  <div class="table-wrap" id="bleeding-labs"><table>
+    <thead><tr><th>Lab</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">CBC and H&amp;H</td><td><ul>
+        <li><b>Can be deceptive.</b> The same H&amp;H can belong to a patient who is talking and to one who is unresponsive, so H&amp;H and CBC are <b>trended</b>, not read as one value.</li>
+        <li>H&amp;H may not reflect the anemia accurately, because plasma is lost equally.</li>
+        <li>As bleeding continues, fluid shifts intravascularly and dilutes the remaining blood cells.</li>
+        <li>IV fluid resuscitation dilutes further. It can make the hematocrit seem lower than it is, so look at the hemoglobin as well.</li>
+        <li>Full extent of an acute bleed cannot be evaluated for <b>at least 48 to 72 hours</b>.</li>
+      </ul></td></tr>
+      <tr><td class="term">Reticulocyte count</td><td><ul>
+        <li>Becomes elevated within several days, about as quickly as the kidneys can help.</li>
+      </ul></td></tr>
+      <tr><td class="term">Bleeding time (coags)</td><td><ul>
+        <li>PT and PTT. INR, but not generally in an acute bleed.</li>
+        <li>Fibrinogen, a clotting product.</li>
+      </ul></td></tr>
+      <tr><td class="term">TEG (thromboelastogram)</td><td><ul>
+        <li>Used to <b>examine <span class="gloss">coagulopathy</span></b>: the shape of the tracing tells which part of the clotting cascade is abnormal.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="bleeding-interventions">Interventions for the Critically Ill Bleeding Patient</h2>
+
+  <!-- "Anticoagulants off": slide 9 prints "Coags off → bleeding precautions". The
+       recording explains it as no heparin drip in a patient who is actively bleeding.
+       "Enoxaparin may still be needed": the recording has "they may need low not just
+       depending on what's going on". Read as Lovenox, as in the Medications card above.
+       Limiting invasive procedures and weighing dressings are said, and not on slide 9. -->
+  <div class="table-wrap" id="bleeding-patient-interventions"><table>
+    <thead><tr><th>Intervention</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Assessment</td><td><ul>
+        <li>Oxygenation, cardiac output, level of consciousness.</li>
+        <li>Skin, urine, stool and secretions, for evidence of active bleeding. Mucous membranes and pulmonary secretions too.</li>
+        <li><b>Dressings:</b> bleeding into them can be <span class="gloss">insidious</span>, and they may need to be weighed.</li>
+      </ul></td></tr>
+      <tr><td class="term">Transfuse</td><td><ul>
+        <li><b>What products do they need?</b> A TEG can show a need for something other than packed cells, or whether packed cells are needed at all.</li>
+      </ul></td></tr>
+      <tr><td class="term">Fluid resuscitation</td><td><ul>
+        <li>A bleeding patient is volume depleted and eventually becomes <b>hypotensive</b>.</li>
+        <li>Blood is a finite resource, so fluid is given in addition.</li>
+      </ul></td></tr>
+      <tr><td class="term">Monitoring labs</td><td><ul>
+        <li>Monitored closely.</li>
+      </ul></td></tr>
+      <tr><td class="term">Anticoagulants off</td><td><ul>
+        <li>Off when appropriate: <b>no heparin drip while actively bleeding</b>.</li>
+        <li>Enoxaparin may still be needed, depending on the situation.</li>
+      </ul></td></tr>
+      <tr><td class="term">Bleeding precautions</td><td><ul>
+        <li>Depend more on the <b>platelet count</b> than on the H&amp;H.</li>
+        <li>A low H&amp;H means the patient is actively bleeding, not necessarily at higher risk for bleeding.</li>
+      </ul></td></tr>
+      <tr><td class="term">Limit invasive procedures</td><td><ul>
+        <li>Active bleeding or altered coagulation times: not the best time to place a long-term port.</li>
+        <li>A central line that is needed still goes in. Expect the site to bleed, and be ready for it.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="blood-products">Blood Products</h2>
+
+  <!-- Blood products are named as review. Trimmed 2026-10-16 to what the lecture adds,
+       by the 2026-10-14 rule, then restored the same day at Holly's ask, for ease of
+       studying: the Includes column and the two Uses bullets (FFP "Replaces coagulation
+       factors", albumin "Increases blood volume") are back as slide 11's chart has them,
+       though the Hematology Review teaches what each product is too. The strip under the
+       table links there. See decisions.md.
+       The Includes, Uses and Infusion Rate columns are slide 11's chart, a picture. The
+       last bullet of the PRBC, platelet and whole blood Uses cells is what the recording
+       adds.
+       Albumin, "pulls fluid into the vascular space": the recording has "pull fluid in
+       from the vascular space". The chart says it is "used to ↑ blood volume".
+       Infusion rate: the chart and the recording differ. The chart gives the rates in
+       the column. The recording says that in practice platelets, plasma, cryo and
+       albumin were given "very very quickly", "just kind of wide open". Both are
+       written: the chart in the column, the recording in the note under the table
+       (Holly, 2026-10-14).
+       Platelets: the recording has "less than 50 less than 40 maybe even less than 20".
+       Cryoprecipitate has no column on the chart, only "Cryoprecipitate is derived from
+       plasma", so its rate is empty. TTP is on the chart and never explained. -->
+  <div class="table-wrap" id="blood-product-types"><table>
+    <thead><tr><th>Product</th><th>Includes</th><th>Uses</th><th>Infusion Rate</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Whole blood</td><td>RBCs, WBCs, platelets and plasma.</td><td><ul>
+        <li>Severe trauma and blood loss.</li>
+        <li>Typically reserved for trauma, the ICU and the ED. Research is finding it very beneficial, so that may change.</li>
+      </ul></td><td>As fast as the patient can tolerate, for severe blood loss.</td></tr>
+      <tr><td class="term">Packed red blood cells (PRBCs)</td><td>Concentrated RBCs, separated from the platelets and plasma.</td><td><ul>
+        <li>Anemia, GI bleed, trauma or surgery.</li>
+        <li><b>Primarily what is replaced</b> in a patient who is actively bleeding.</li>
+      </ul></td><td>2 to 4 hours on average.</td></tr>
+      <tr><td class="term">Platelets</td><td>Cell fragments for blood clotting.</td><td><ul>
+        <li>Low platelets, leukemia, chemotherapy.</li>
+        <li>Given only when the count is <b>very low</b>: usually under 50,000, 40,000 or even 20,000, depending on active bleeding.</li>
+      </ul></td><td>30 to 60 minutes, faster if needed.</td></tr>
+      <tr><td class="term">Fresh frozen plasma (FFP)</td><td>Liquid portion of blood. Contains water, electrolytes, proteins and antibodies.</td><td><ul>
+        <li>Clotting disorders (DIC, TTP), severe blood loss.</li>
+        <li>Replaces <b>coagulation factors</b>.</li>
+      </ul></td><td>1 to 4 hours on average.</td></tr>
+      <tr><td class="term">Albumin</td><td>Plasma protein. No clotting factors.</td><td><ul>
+        <li>Shock, burns, ascites.</li>
+        <li>Increases blood volume: pulls fluid into the vascular space.</li>
+      </ul></td><td>Individualized rate. Check hospital policy.</td></tr>
+      <tr><td class="term">Cryoprecipitate (cryo)</td><td>Derived from plasma. Has some clotting factors.</td><td><ul>
+        <li>Helps stop bleeding.</li>
+      </ul></td><td></td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="note"><b>In practice, platelets, plasma, cryo and albumin are often run wide open,</b> unless the patient is at really high risk for pulmonary edema. PRBCs are different: start slow, typically over 2 hours, and done within 4.</p>
+
+  <p class="xref-line"><a class="xref" href="review-transfusions.html#blood-products">
+    <span><b>What each product is, compatibility and giving PRBCs</b> are taught in the <b>Transfusions</b> review</span>
+  </a></p>
+
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-blood-products">View what each blood product contains</button>
+  <div class="fig-store" id="fig-blood-products" hidden>
+    <figure class="figure">
+      <img src="images/day1-hematologic/blood-products.jpg" alt="Drawing titled Blood Products, with four bags. Whole blood: RBCs, WBCs, platelets and plasma. Packed red blood cells (PRBCs): RBCs, separated from platelets and plasma. Platelet transfusions. Fresh frozen plasma: albumin and cryoprecipitate." loading="lazy">
+      <figcaption><b>What each blood product contains.</b> Albumin and cryoprecipitate sit under fresh frozen plasma.</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="block" id="mass-transfusion">Mass Transfusion</h2>
+
+  <div class="mnemonic" id="mtp-ratio"><b>1:1:1:1 ratio.</b> One PRBC : one FFP : one platelet : one cryo. A mass transfusion is never just PRBCs.</div>
+
+  <!-- The ratio and the two fibrinogen lines are slide 12's text box, a picture.
+       "Ordered by an MD": the recording has "an order placed by an nd".
+       "Tranexamic acid": the recording has "trans-exchemic acid".
+       The Level 1: the recording guesses at its speed ("I can't remember how quick it
+       is ... I want to say in like two to three minutes"). Written as "in minutes".
+       Left off: the "Steps for Massive Transfusion Protocol (MTP)" poster on slide 12,
+       seven numbered steps with doses and lab thresholds. Never spoken about, its ratio
+       (1:1:1 or 1:1:2, with cryoprecipitate added) is not the slide's 1:1:1:1, and at
+       800 by 2000 pixels it is too tall to read in the lightbox (Holly, 2026-10-14). -->
+  <div class="card" id="mass-transfusion-protocol">
+    <h4>Massive Transfusion Protocol (MTP)</h4>
+    <ul>
+      <li><b>For a patient who is bleeding to death.</b> Rapid transfusion, by the hospital's or the unit's protocol.</li>
+      <li>Ordered by an MD, in coordination with a doctor from the blood bank.</li>
+      <li>Blood does <b>not have to be <span class="gloss" data-term="crossmatch">cross-matched</span></b> initially.</li>
+      <li>Why the ratio: PRBCs alone fall out of wherever the patient is bleeding. FFP, platelets and cryo help clot the bleed while the PRBCs fill the tank.</li>
+      <li><b>Fibrinogen</b> may be especially important in obstetric hemorrhage. Supplemented with fibrinogen concentrates or cryoprecipitate. These patients usually receive tranexamic acid as well.</li>
+      <li><b>A Level 1 or a Belmont</b> gives a whole unit of blood in minutes, and warms it.</li>
+      <li>Most products are very cold, and a hypothermic patient's blood does not clot as effectively. Warm the patient, give warm products, replace clotting factors, replace volume.</li>
+    </ul>
+  </div>
+
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-level-1-device">View a Level 1</button>
+  <div class="fig-store" id="fig-level-1-device" hidden>
+    <figure class="figure">
+      <img src="images/day1-hematologic/level-1-device.jpg" alt="A rapid transfusion device on a wheeled stand. Two bags hang in clear pressure chambers at the top of the pole, and tubing runs down through a central unit marked with a large red number 1." loading="lazy">
+      <figcaption><b>A Level 1.</b> It gives blood products very fast, and it has a warmer.</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="block" id="thrombocytopenia">Thrombocytopenia and HIT</h2>
+
+  <!-- Skin assessment: slide 13 has "petechiae, purpura, ecchymosis". The recording has
+       "petechiae or purpuracamosis".
+       Labs, "Dropping platelets: off anticoagulation": the recording has "if their
+       platelets stop dropping, they need to be off of anticoagulation usually". "Stop
+       dropping" is read as a garble: dropping platelets are the reason to come off.
+       Left off: slide 14's two tables of drugs associated with thrombocytopenia, by
+       type of agent. Said not to need memorizing. The three kinds she names stay in the
+       "Evaluate meds" row. -->
+  <div class="table-wrap" id="thrombocytopenia-essentials"><table>
+    <thead><tr><th>Topic</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Platelet count</td><td><ul>
+        <li>Thrombocytopenia is <b>low platelets</b>: technically under 150,000.</li>
+        <li><b>Under 30,000 is critically low,</b> and a risk for a <b>spontaneous bleed</b>.</li>
+        <li>Transfusion usually waits until the count is much more critically low.</li>
+      </ul></td></tr>
+      <tr><td class="term">Causes</td><td><ul>
+        <li>Usually a <b>bone marrow issue</b>: chemo, radiation, a bone marrow cancer.</li>
+        <li>Increased destruction of platelets, or their sequestration or abnormal distribution.</li>
+        <li>Also cardiac bypass surgery, <b>heparin-induced thrombocytopenia (HIT)</b>, sepsis, cancers.</li>
+        <li>Identify the cause and address it. HIT: <b>stop the heparin</b>.</li>
+      </ul></td></tr>
+      <tr><td class="term">Skin assessment</td><td><ul>
+        <li><span class="gloss">Petechiae</span>, <span class="gloss">purpura</span>, <span class="gloss">ecchymosis</span>.</li>
+        <li>Oozing mucous membranes: bleeding from the nose, mouth and lips.</li>
+      </ul></td></tr>
+      <tr><td class="term">Where to look</td><td><ul>
+        <li>Wounds, stool, urine, nose and pulmonary secretions: where a bleed is most likely to be evident.</li>
+      </ul></td></tr>
+      <tr><td class="term">Bleeding precautions</td><td><ul>
+        <li>Needed most of the time, especially with a really low count.</li>
+      </ul></td></tr>
+      <tr><td class="term">Evaluate meds</td><td><ul>
+        <li>Done by the team and pharmacy: nothing given should make a low count even lower. A medication that lowers platelets may need to stop, but sometimes it is necessary.</li>
+        <li>Some antibiotics, antidysrhythmics such as amiodarone, and NSAIDs can cause thrombocytopenia. Avoided in these patients, and a possible cause when none is known.</li>
+      </ul></td></tr>
+      <tr><td class="term">Labs</td><td><ul>
+        <li><b>Serotonin release assay (SRA):</b> detects platelet activation in the presence of antibodies, so it tells whether this is HIT. Technically challenging, and not easy to obtain.</li>
+        <li>Platelets trending down on a heparin drip: <b>HIT is assumed</b>.</li>
+        <li>Dropping platelets: off anticoagulation, usually, especially when the count is really low.</li>
+        <li>Coags, H&amp;H and CBC are monitored.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- The ten precautions are slide 14's "Box 28-4 Thrombocytopenic Precautions", a
+       picture, in its order. -->
+  <div class="card" id="thrombocytopenic-precautions">
+    <h4>Thrombocytopenic Precautions</h4>
+    <ul>
+      <li>Toothettes for oral care.</li>
+      <li>No flossing.</li>
+      <li>Electric shaver only.</li>
+      <li>Gentle nose blowing and coughing.</li>
+      <li>Avoid invasive procedures: enemas, rectal thermometers, suppositories, needle sticks.</li>
+      <li>No tourniquets.</li>
+      <li>No tampons.</li>
+      <li>Assess fall risk.</li>
+      <li>No aspirin or aspirin products.</li>
+      <li>Avoid constipation.</li>
+    </ul>
+  </div>
+
+  <p class="note"><b>Needle sticks are often not avoidable at a higher level of care.</b> A central line or an arterial line saves frequent sticks, but those lines are at high risk of bleeding and oozing. Pressure dressings, or special dressings for oozing areas, go on them.</p>
+
+  <h2 class="block" id="dic">DIC: Disseminated Intravascular Coagulation</h2>
+
+  <div class="callout-danger" id="dic-emergency"><b>DIC is an emergency.</b> The patient is having microemboli (small clots) and is also bleeding. A very dangerous scenario.</div>
+
+  <!-- The four steps follow slide 15's definition: "Exaggerated microvascular
+       coagulation, depletion of clotting factors, and subsequent bleeding". The recording
+       gives a second account of the bleeding, and both are written: "your body is sensing
+       that I need to have thinner blood because of these clots, but by that time, the
+       clots have already kind of lodged where they are".
+       Left off: the "Pathogenesis of DIC" diagram on slide 16. Said not to need
+       memorizing. -->
+  <div class="continuum four" id="dic-sequence">
+    <div class="cont-step well">
+      <h4>Trigger</h4>
+      <p>Vessel injury from a disease state, tissue injury or a foreign body in the bloodstream. <b>Trauma, burns and sepsis</b> are the most common.</p>
+    </div>
+    <div class="cont-step mid">
+      <h4>Microvascular Clotting</h4>
+      <p>Exaggerated coagulation. Uncontrolled microclots lodge in the small vessels: <b>organ ischemia and necrosis</b>.</p>
+    </div>
+    <div class="cont-step warn">
+      <h4>Clotting Factors Depleted</h4>
+      <p>The body also senses the clots and tries to thin the blood, but the clots have already lodged.</p>
+    </div>
+    <div class="cont-step ill">
+      <h4>Bleeding</h4>
+      <p>Really prolonged bleeding time. Any area that can bleed will bleed.</p>
+    </div>
+  </div>
+
+  <div class="card" id="dic-clinical-picture">
+    <h4>Clinical Picture and Diagnosis of DIC</h4>
+    <ul>
+      <li>An organ dies when microclots clog its circulation: liver, kidneys, lungs, heart.</li>
+      <li><b>Skin, lungs and kidneys</b> are most commonly affected.</li>
+      <li>Manifests as thrombophlebitis, pulmonary embolism, stroke, GI bleeding and renal failure, often all at once.</li>
+      <li>Skin manifestations: sometimes only on the hands, the feet and the tips of the toes.</li>
+      <li>Generally acute and life threatening. A chronic low-grade DIC exists.</li>
+      <li><b>Diagnosis:</b> by risk factors, presentation and lab values (coags).</li>
+    </ul>
+  </div>
+
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-dic-skin">View the skin manifestations of DIC</button>
+  <div class="fig-store" id="fig-dic-skin" hidden>
+    <figure class="figure">
+      <img src="images/day1-hematologic/dic-skin.jpg" alt="Three photographs of a patient in an intensive care bed. Dark purple blotches cover the skin of the chest and abdomen and both legs, down to the feet." loading="lazy">
+      <figcaption><b>Skin manifestations of DIC.</b> An extremely severe case.</figcaption>
+    </figure>
+  </div>
+
+  <h3 class="sub" id="dic-interventions-heading">Nursing Interventions for DIC</h3>
+
+  <p class="note"><b>Goal: preserve organ function.</b></p>
+
+  <!-- Hypotension: the recording has "they're going to have low volume, so that's where
+       the hypertension". Slide 17 says hypotension.
+       Heparin: the recording has "prevent further clotting and fibrosis". "Fibrosis"
+       could be a garble of more than one word, so only "further clotting" is written. -->
+  <div class="table-wrap" id="dic-interventions"><table>
+    <thead><tr><th>Intervention</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Correct hypotension, hypoxemia, acidosis</td><td><ul>
+        <li>Hypotension: low volume.</li>
+        <li>Hypoxemia: active blood loss means fewer circulating RBCs.</li>
+        <li>Acidosis: tissue ischemia related to organ death.</li>
+      </ul></td></tr>
+      <tr><td class="term">Treat the underlying cause</td><td><ul>
+        <li>Trauma or sepsis: try to reverse it.</li>
+      </ul></td></tr>
+      <tr><td class="term">Replace clotting factors and platelets</td><td><ul>
+        <li><b>Platelets are the highest priority:</b> they provide the platelet plug at the beginning of the clotting cascade.</li>
+        <li>FFP replaces fibrinogen and other clotting factors.</li>
+      </ul></td></tr>
+      <tr><td class="term">Heparin</td><td><ul>
+        <li>A potent thrombin inhibitor. In <b>very low doses</b> it blocks the clotting processes that initiate DIC and prevents further clotting.</li>
+        <li>Counterintuitive in a patient who might be actively bleeding.</li>
+      </ul></td></tr>
+      <tr><td class="term">Treat pain and address comfort</td><td><ul>
+        <li>Very painful: organs and tissues are dying from the microclots.</li>
+        <li>Pain is treated whether the patient is awake or sedated.</li>
+      </ul></td></tr>
+      <tr><td class="term">Monitor labs</td><td><ul>
+        <li>Monitored very closely.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="immunocompromised-patient">Care of the Immunocompromised Patient</h2>
+
+  <!-- CD4 counts: the recording has "if this is a solid organ or if this is AIDS, HIV, we
+       can examine CD4 counts". "Solid organ" is read as a solid organ transplant, which
+       she names two sentences earlier. -->
+  <div class="table-wrap" id="immunocompromised-essentials"><table>
+    <thead><tr><th>Topic</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">What it is</td><td><ul>
+        <li>WBCs are <b>either decreased or non-functioning</b>.</li>
+        <li>Usually <b>asymptomatic until an infection</b>. The patient may not look very sick, but a lot could go wrong.</li>
+        <li>Congenital or acquired.</li>
+      </ul></td></tr>
+      <tr><td class="term">Who</td><td><ul>
+        <li>Organ transplant, bone marrow transplant, chemo, AIDS.</li>
+      </ul></td></tr>
+      <tr><td class="term">Labs</td><td><ul>
+        <li>CBC: the white blood cell count shows leukopenia.</li>
+        <li>CD4 counts, for a solid organ transplant or HIV and AIDS.</li>
+      </ul></td></tr>
+      <tr><td class="term">Infection</td><td><ul>
+        <li><b>Watch for opportunistic infections,</b> and for infections in general.</li>
+        <li>No normal white blood cell response, so the patient cannot mount a response to an infection.</li>
+        <li><b>Temperature:</b> usually at the bottom of the list of vital signs, but not here. A very low white count makes a temp very concerning.</li>
+        <li>Infection and sepsis are the <b>primary cause of death</b>.</li>
+      </ul></td></tr>
+      <tr><td class="term">Precautions</td><td><ul>
+        <li>Protective isolation or neutropenic precautions.</li>
+        <li>Masks worn all the time. A HEPA filter room may be needed.</li>
+        <li>Dietary restrictions, such as no raw fruits and vegetables.</li>
+      </ul></td></tr>
+      <tr><td class="term">Teaching for home</td><td><ul>
+        <li>Wash fruits and vegetables. No raw fish or sushi. Cook meat thoroughly.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <nav class="page-flip" data-page-flip></nav>
+  <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
+
+</div>
+</main>
+
+<script src="assets/site.js?v=20261017q"></script>
+<script src="data/glossary.js?v=20261017q"></script>
+<script src="assets/study.js?v=20261017q"></script>
+</body>
+</html>

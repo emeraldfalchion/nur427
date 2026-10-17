@@ -1,0 +1,1120 @@
+/* ============================================================
+   styles.css — one stylesheet for the whole study guide.
+   No build step, no framework, no dependencies. Every page loads
+   this one file.
+
+   ------------------------------------------------------------
+   CHANGING THE THEME
+   ------------------------------------------------------------
+   Every colour on the site comes from the variables in the two
+   :root blocks: light mode here, dark mode further down under
+   DARK THEME. Ready-made palettes are listed in the PALETTE
+   SWATCHES block beneath the dark-mode block. Copy a swatch's
+   light lines over the light block and its dark lines over the
+   dark block, and set --table-head to the swatch's LIGHT --brand.
+
+     brand  = structure  (nav bar, headings, table headers, buttons)
+     accent = highlights (hover underline, mnemonics, cross-reference
+                          strips, small tags)
+   ============================================================ */
+
+:root{
+  /* ---- neutrals: greys with a faint tint of the brand hue ---- */
+  --bg:#f6f7f9;
+  --surface:#ffffff;
+  --surface-2:#eef0f3;
+  --surface-3:#e4e8ed;
+  --border:#e0e4ea;
+  --border-strong:#cbd1da;
+  --text:#1e2530;
+  --text-soft:#556070;
+  --text-faint:#89929f;
+  --stripe:#f6f8fa;            /* zebra striping on table rows */
+
+  /* ---- brand: navy ---- */
+  --brand:#2f4a73;
+  --brand-strong:#243b5c;
+  --brand-deep:#1b2d47;
+  --brand-tint:#eef2f8;
+  --brand-tint-2:#dce4f0;
+
+  /* ---- table header rows ----
+     Deliberately NOT redefined in the dark block. Dark --brand flips
+     light, and white header text on it is hard to read, so headers use
+     this one dark colour in both modes. Set it to the swatch's LIGHT
+     --brand when recolouring. */
+  --table-head:#2f4a73;
+
+  /* ---- accent: coral ---- */
+  --accent:#d1604f;
+  --accent-strong:#ab4638;
+  --accent-tint:#fdeeeb;
+
+  /* ---- text sitting ON the brand-coloured nav bar ---- */
+  --on-brand-soft:#dae2ef;     /* nav links at rest */
+  --on-brand-faint:#a6b8d1;    /* nav subtitle */
+  --on-brand-dim:#c9d5e6;
+
+  /* ---- gradients ---- */
+  --chrome-a:#1e3050;          /* dark-mode nav, from */
+  --chrome-b:#141f34;          /* dark-mode nav, to   */
+  --flash-a:#3d5c88;           /* dark-mode flashcard back, from */
+  --flash-b:#243b5c;           /* dark-mode flashcard back, to   */
+
+  /* ---- hairlines on the tinted callouts ---- */
+  --line-accent:#f5d3cd;
+  --line-bad:#f3d2ce;
+
+  /* ---- semantic ---- */
+  --ok:#2f8f6b;
+  --ok-strong:#237a58;
+  --ok-tint:#e6f4ee;
+  --bad:#c0392b;
+  --bad-strong:#a52f22;
+  --bad-tint:#fbeceb;
+  --warn:#bf8417;              /* amber: the step before red on a continuum */
+  --warn-strong:#85590c;
+  --warn-tint:#fcf4de;
+
+  /* ---- metrics (rarely worth changing) ---- */
+  --nav-max:1300px;
+  --content-max:1120px;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow-sm:0 1px 3px rgba(24,28,45,.07),0 1px 2px rgba(24,28,45,.04);
+  --shadow-md:0 4px 14px rgba(24,28,45,.10);
+  --shadow-lg:0 12px 30px rgba(24,28,45,.16);
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--sans);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:var(--serif); color:var(--brand-deep); margin:0 0 .3em; line-height:1.25;}
+a{color:var(--brand);}
+img{max-width:100%;}
+
+.skip-link{
+  position:absolute; left:-999px; top:0; z-index:200;
+  background:var(--brand); color:#fff; padding:10px 16px; border-radius:0 0 8px 0;
+  font-weight:700; font-size:.85rem;
+}
+.skip-link:focus{left:0;}
+
+/* ============================================================
+   LAYOUT: horizontal top nav + centered content
+   ============================================================ */
+.topnav{
+  position:sticky; top:0; z-index:100;
+  background:linear-gradient(120deg,var(--brand-strong),var(--brand-deep));
+  color:#fff; box-shadow:var(--shadow-md);
+}
+.topnav__inner{
+  max-width:var(--nav-max); margin:0 auto; padding:0 24px;
+  display:flex; align-items:center; gap:22px; min-height:60px;
+}
+.brand{ display:flex; flex-direction:column; justify-content:center; text-decoration:none; color:#fff; line-height:1.12; flex:none; }
+.brand__name{ font-family:var(--serif); font-weight:700; font-size:1.08rem; }
+.brand__sub{ font-size:.62rem; letter-spacing:.1em; text-transform:uppercase; color:var(--on-brand-faint); margin-top:1px; }
+
+.topnav__menu{ margin-left:auto; align-self:stretch; display:flex; }
+.menu{ list-style:none; margin:0; padding:0; display:flex; align-items:stretch; gap:2px; }
+.top-item{ position:relative; display:flex; align-items:center; }
+.toplink{
+  /* The bar has to hold Home plus one item per day. site.js measures whether it
+     fits and collapses to the hamburger when it does not (see fitNav), so adding
+     a day needs no change here. */
+  display:flex; align-items:center; gap:5px; padding:9px 14px; border-radius:8px;
+  color:var(--on-brand-soft); text-decoration:none; font-size:.9rem; font-weight:600; cursor:pointer; white-space:nowrap;
+  transition:background .14s,color .14s;
+}
+.toplink:hover{ background:rgba(255,255,255,.12); color:#fff; }
+.toplink.is-active{ background:rgba(255,255,255,.15); color:#fff; }
+.caret{ font-size:1.05rem; opacity:.9; transition:transform .18s; }
+
+.dropdown{
+  list-style:none; margin:0; padding:6px; position:absolute; top:100%; left:0; min-width:236px;
+  background:var(--surface); border-radius:0 12px 12px 12px; box-shadow:var(--shadow-lg);
+  display:none; z-index:120;
+}
+.top-item:last-child .dropdown{ left:auto; right:0; border-radius:12px 0 12px 12px; }
+@media (min-width:900px){
+  .has-dropdown:hover > .dropdown,
+  .has-dropdown:focus-within > .dropdown{ display:block; }
+  /* hovered / active top links get an accent underline (no background pill) */
+  .toplink{ position:relative; }
+  .toplink::after{
+    content:""; position:absolute; left:14px; right:14px; bottom:7px; height:2px;
+    background:var(--accent); border-radius:2px; transform:scaleX(0); transform-origin:center;
+    transition:transform .2s ease;
+  }
+  .toplink:hover, .toplink.is-active{ background:transparent; color:#fff; }
+  .toplink:hover::after,
+  .toplink.is-active::after,
+  .has-dropdown:focus-within > .toplink::after{ transform:scaleX(1); }
+  /* keep each dropdown title on one line; the panel auto-widens to fit */
+  .dropdown .droplink{ white-space:nowrap; }
+}
+.droplink{
+  display:flex; align-items:center; gap:10px; padding:9px 11px; border-radius:8px;
+  color:var(--text); text-decoration:none; font-size:.88rem;
+}
+.droplink:hover{ background:var(--brand-tint); color:var(--brand-strong); }
+.droplink.is-active{ background:var(--brand-tint); color:var(--brand-strong); font-weight:700; }
+.droplink .num{
+  flex:none; width:22px; height:22px; border-radius:6px; display:inline-flex; align-items:center; justify-content:center;
+  background:var(--brand-tint-2); color:var(--brand-strong); font-size:.72rem; font-weight:700;
+}
+
+.nav-toggle{
+  display:none; margin-left:auto; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.22);
+  color:#fff; width:40px; height:40px; border-radius:9px; cursor:pointer; align-items:center; justify-content:center; padding:0;
+}
+.nav-toggle svg{ width:22px; height:22px; }
+
+#content{ max-width:var(--content-max); margin:0 auto; padding:34px 40px 100px; }
+.page-inner{ max-width:100%; margin:0 auto; }
+
+/* ============================================================
+   PAGE HEADER / TYPOGRAPHY
+   ============================================================ */
+.page-head{ margin:6px 0 22px; }
+.eyebrow{
+  margin:0 0 6px; font-size:.74rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--accent-strong);
+}
+.page-head h1{ font-size:2rem; margin:0; }
+@media(min-width:900px){ .page-head h1{ font-size:2.25rem; } }
+
+
+h2.block{
+  font-size:1.4rem; color:var(--brand-strong);
+  border-bottom:2px solid var(--brand-tint-2); padding-bottom:8px; margin-top:46px;
+}
+h3.sub{ font-size:1.08rem; color:var(--brand-deep); margin-top:28px; }
+p.note{ color:var(--text-soft); font-size:.9rem; margin-top:2px; }
+/* The first line under a review section's heading: the earlier-course
+   recording the section was built from, so there is somewhere to go for more.
+   REVIEW PAGES ONLY. A plain line with an accent bar and the recording's name
+   in the heading colour: easy to find, and not a callout. */
+p.further-study{
+  color:var(--text); font-size:.88rem; margin:4px 0 14px;
+  padding:1px 0 1px 10px; border-left:3px solid var(--accent);
+}
+p.further-study b{ font-weight:700; color:var(--brand-strong); }
+
+/* ============================================================
+   TABLES
+   ============================================================ */
+.table-wrap{ overflow-x:auto; margin:14px 0 8px; border-radius:var(--radius); box-shadow:var(--shadow-sm); border:1px solid var(--border); }
+table{ border-collapse:collapse; width:100%; background:var(--surface); font-size:.9rem; }
+thead th{
+  background:var(--table-head); color:#fff; text-align:left;
+  padding:11px 13px; font-weight:600; font-size:.82rem; letter-spacing:.02em;
+}
+tbody td{ padding:10px 13px; border-bottom:1px solid var(--border); vertical-align:top; }
+tbody tr:last-child td{ border-bottom:none; }
+tbody tr:nth-child(even){ background:var(--stripe); }
+tbody tr:hover{ background:var(--brand-tint); }
+td.term{ font-weight:700; color:var(--brand-strong); white-space:nowrap; width:1%; }
+/* A bullet list inside a table cell. No margin above it, or its first line
+   sits lower than the plain text in the cells beside it. And the bullet at
+   the cell's left edge, not indented, so the text keeps the column's width.
+   The companion rule is in the markup: in a column where some cells are
+   lists, every cell is one, the one-item cells included. */
+tbody td ul{ margin:0; padding-left:1.05em; }
+tbody td li{ margin:0 0 4px; }
+tbody td li:last-child{ margin-bottom:0; }
+
+/* ---- Cross-reference strip -------------------------------------------------
+   Marks a topic this lecture repeats but that is taught in full on another page,
+   so content lives in exactly one place. A solid outline and a trailing arrow
+   make it read as navigation, distinct from .mnemonic (a rule of thumb) and
+   .callout-danger (red = clinical emergency). It takes the BRAND colour, for
+   the reason given at CALLOUTS below.
+   Use .xref on its own line inside <p class="xref-line">, or add .xref-mini
+   for the compact version that sits inside a table cell. */
+p.xref-line{ margin:14px 0 10px; }
+.xref{
+  display:flex; align-items:center; gap:10px;
+  padding:11px 14px; border-radius:10px; text-decoration:none;
+  background:var(--brand-tint); color:var(--brand-strong);
+  border:1px solid var(--brand); border-left-width:4px;
+  font-size:.86rem; font-weight:600; line-height:1.45;
+  transition:border-color .14s, box-shadow .14s;
+}
+.xref::after{
+  content:"↗"; margin-left:auto; flex:none;
+  font-size:1rem; font-weight:700; transition:transform .14s;
+}
+.xref:hover{ border-color:var(--brand-strong); box-shadow:var(--shadow-sm); }
+.xref:hover::after{ transform:translate(2px,-2px); }
+
+/* compact variant for use inside a table cell */
+.xref.xref-mini{
+  display:inline-flex; margin-top:7px;
+  padding:6px 10px; border-radius:8px; border-left-width:3px;
+  font-size:.78rem; gap:7px; line-height:1.35;
+}
+.xref.xref-mini::after{ margin-left:3px; font-size:.88rem; }
+
+/* inline variant: the bold lead of a "Things to Bring Forward" bullet, linked
+   to the review block that teaches it. A lead with no link has no block yet. */
+a.rev-link{
+  color:var(--accent-strong); text-decoration:underline;
+  text-decoration-thickness:1px; text-underline-offset:3px;
+}
+a.rev-link:hover{ text-decoration-thickness:2px; }
+
+/* ============================================================
+   DEFINITION HIDE / SHOW (self-quiz)
+   ============================================================ */
+.def-btn{
+  background:var(--surface); color:var(--brand-strong); border:1px solid var(--border-strong); padding:7px 13px; border-radius:8px;
+  font-size:.78rem; font-weight:700; cursor:pointer; transition:.14s; font-family:inherit;
+}
+.def-btn:hover{ background:var(--brand-tint); }
+.def-btn.show{ background:var(--surface); color:var(--brand-strong); border:1px solid var(--border-strong); }
+.def-btn.show:hover{ background:var(--brand-tint); }
+
+td.def-cell{ transition:background .15s; }
+.icon-eye{
+  width:17px; height:17px; display:inline-block;
+  background-size:contain; background-repeat:no-repeat; background-position:center;
+}
+td.def-hidden{ background:repeating-linear-gradient(135deg, var(--brand-tint) 0 8px, var(--brand-tint-2) 8px 16px) !important; }
+td.def-hidden .def-text{ display:none; }
+td.def-hidden{ cursor:pointer; }                 /* a click reveals that row */
+
+/* ---- quiz mode: the eye on a card, and the page-wide "Hide all answers" ----
+   study.js adds .card-eye and wraps what follows the h4 in .card-body. A hidden
+   body keeps its size (the children are invisible, not removed), so two cards
+   side by side never change height when one is revealed. */
+.page-tools{ display:flex; flex-wrap:wrap; gap:8px; }
+.page-quiz-btn{ display:inline-flex; align-items:center; gap:7px; margin:0; }
+.page-quiz-btn svg, .card-eye svg{ display:block; width:16px; height:16px; flex:none; }
+.page-quiz-btn .eye-off, .card-eye .eye-off{ display:none; }
+.page-quiz-btn.is-on .eye-on, .card.quiz-hidden > .card-eye .eye-on{ display:none; }
+.page-quiz-btn.is-on .eye-off, .card.quiz-hidden > .card-eye .eye-off{ display:block; }
+.card.has-eye{ position:relative; }
+.card.has-eye > h4{ padding-right:30px; }
+.card-eye{
+  position:absolute; top:11px; right:11px; padding:3px; border:none; background:none; cursor:pointer;
+  color:var(--text-faint); border-radius:6px; line-height:0; transition:color .14s;
+}
+.card-eye:hover, .card.quiz-hidden > .card-eye{ color:var(--brand-strong); }
+.card-body{ border-radius:6px; }
+.card.quiz-hidden > .card-body{
+  background:repeating-linear-gradient(135deg, var(--brand-tint) 0 8px, var(--brand-tint-2) 8px 16px);
+  color:transparent; cursor:pointer;
+}
+.card.quiz-hidden > .card-body > *{ visibility:hidden; }
+
+/* white-stroke eye icon variants for use on dark table headers */
+.icon-show-w{ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/svg%3E"); }
+.icon-hide-w{ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24'/%3E%3Cline x1='1' y1='1' x2='23' y2='23'/%3E%3C/svg%3E"); display:none; }
+thead th.th-eye-cell{ position:relative; padding-right:32px; }
+.th-eye{
+  position:absolute; right:8px; top:50%; transform:translateY(-50%);
+  background:none; border:none; cursor:pointer; padding:2px; opacity:.7;
+  transition:opacity .15s; border-radius:6px; display:inline-flex; line-height:0;
+}
+.th-eye:hover{ opacity:1; }
+
+/* ============================================================
+   CALLOUTS: mnemonic (brand) + danger (red)
+   The mnemonic and the cross-reference strip (.xref, above) take the
+   BRAND colour, not the accent. This palette's accent is coral, and a
+   coral box is too easy to mistake for the red danger callout. So red
+   on a page always means danger: the mnemonic is a blue box, the
+   cross-reference a blue strip with an outline and an arrow.
+   ============================================================ */
+.mnemonic{
+  background:var(--brand-tint); border:1px solid var(--brand-tint-2); border-left:4px solid var(--brand);
+  border-radius:var(--radius-sm); padding:12px 16px; margin:16px 0; font-size:.9rem;
+}
+.mnemonic b{ color:var(--brand-strong); }
+/* A letter mnemonic: one bullet per word of it, under its title line. */
+.mnemonic ul{ margin:6px 0 0; padding-left:18px; }
+.mnemonic li{ margin-bottom:3px; }
+.mnemonic li:last-child{ margin-bottom:0; }
+.callout-danger{
+  background:var(--bad-tint); border:1px solid var(--line-bad); border-left:4px solid var(--bad);
+  border-radius:var(--radius-sm); padding:12px 16px; margin:16px 0; font-size:.9rem;
+}
+.callout-danger b{ color:var(--bad-strong); }
+
+/* ============================================================
+   CARDS / TWO-COLUMN
+   ============================================================ */
+.two-col{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:16px 0; }
+
+/* a wide content table with a companion card beside it; stacks on narrow screens */
+.table-aside{ display:grid; grid-template-columns:minmax(0,1.7fr) minmax(0,1fr); gap:18px; align-items:start; margin:14px 0 8px; }
+.table-aside > *{ min-width:0; }
+.table-aside .table-wrap{ margin:0; }
+.table-aside .note{ margin:10px 0 0; }
+@media (max-width:900px){ .table-aside{ grid-template-columns:1fr; gap:12px; } }
+.card{
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+  padding:15px 17px; box-shadow:var(--shadow-sm); border-top:4px solid var(--brand);
+}
+.card.alt{ border-top-color:var(--accent); }
+/* A card sitting on its own in the page flow supplies its own spacing; inside
+   .two-col / .table-aside the grid gap already separates them, so scope this to
+   top-level cards only or consecutive boxes end up double-gapped. */
+.page-inner > .card, .section-body > .card{ margin:16px 0; }
+.card h4{ margin-bottom:8px; color:var(--brand-strong); font-size:.98rem; }
+.card.alt h4{ color:var(--accent-strong); }
+.card ul, .card ol{ margin:0; padding-left:18px; font-size:.9rem; }
+.card ol{ padding-left:22px; }
+.card li{ margin-bottom:5px; }
+
+/* ============================================================
+   FIGURES + LIGHTBOX: lecture diagrams never sit inline
+   ============================================================ */
+/* labeled figures / lecture diagrams (displayed inside the lightbox) */
+figure.figure{ margin:0 0 18px; }
+figure.figure:last-child{ margin-bottom:0; }
+figure.figure img{
+  display:block; max-width:100%; height:auto; margin:0 auto;
+  border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow-sm);
+  background:#fff;
+}
+figure.figure figcaption{ margin-top:8px; font-size:.82rem; color:var(--text-soft); text-align:center; }
+/* two diagrams shown side by side, forced to the same height */
+.figure-pair{ display:grid; grid-template-columns:1fr 1fr; gap:16px; align-items:start; }
+.figure-pair figure.figure{ margin:0; min-width:0; }
+.figure-pair figure.figure img{ width:100%; height:min(56vh,400px); object-fit:contain; }
+@media(max-width:640px){
+  .figure-pair{ grid-template-columns:1fr; }
+  .figure-pair figure.figure img{ height:auto; }
+}
+
+/* trigger button: opens a table/section's diagram(s) in the lightbox */
+.fig-trigger{
+  display:inline-flex; align-items:center; gap:7px;
+  background:var(--brand-tint); color:var(--brand-strong); border:1px solid var(--brand-tint-2);
+  padding:7px 14px; border-radius:999px; font-size:.8rem; font-weight:700; cursor:pointer;
+  margin:10px 0 24px; font-family:inherit; transition:background .14s;
+}
+.fig-trigger:hover{ background:var(--brand-tint-2); }
+
+/* lightbox: dims the page and centers the diagram(s) in a white card */
+.lightbox-overlay{
+  position:fixed; inset:0; z-index:300; background:rgba(20,22,35,.72);
+  display:flex; align-items:center; justify-content:center; padding:24px;
+  opacity:0; pointer-events:none; transition:opacity .2s;
+}
+.lightbox-overlay.show{ opacity:1; pointer-events:auto; }
+.lightbox-box{
+  background:#fff; border-radius:var(--radius); max-width:min(1000px,94vw); max-height:88vh;
+  overflow-y:auto; padding:28px 26px 22px; box-shadow:var(--shadow-lg); position:relative;
+}
+.lightbox-close{
+  position:absolute; top:12px; right:12px; background:var(--surface-2); border:none; border-radius:50%;
+  width:34px; height:34px; cursor:pointer; font-size:1.1rem; line-height:1; color:var(--text-soft);
+  display:flex; align-items:center; justify-content:center;
+}
+.lightbox-close:hover{ background:var(--border); color:var(--text); }
+@media(max-width:640px){ .lightbox-box{ padding:22px 16px 16px; } }
+
+/* Vertical timeline: a dated or ordered sequence read top to bottom.
+   .tl-item.key marks the one step that matters most. */
+.timeline{ position:relative; margin:24px 0 10px; padding-left:6px; }
+.timeline::before{ content:""; position:absolute; left:20px; top:6px; bottom:6px; width:3px; background:var(--brand-tint-2); border-radius:3px; }
+.tl-item{ position:relative; padding:0 0 22px 46px; }
+.tl-item::before{ content:""; position:absolute; left:12px; top:2px; width:18px; height:18px; border-radius:50%; background:var(--brand); border:3px solid var(--surface); box-shadow:0 0 0 2px var(--brand); }
+.tl-item.key::before{ background:var(--accent); box-shadow:0 0 0 2px var(--accent); }
+.tl-item .when{ font-weight:700; color:var(--brand-strong); font-size:.86rem; }
+.tl-item p{ margin:2px 0 0; font-size:.88rem; }
+
+/* Left-to-right continuum strip: three or four stages read across the screen.
+   Stacks on narrow screens. The stage colours run .well (green), .mid (blue),
+   .warn (amber), .ill (red), and every stage takes its own: no two stages of
+   a strip share a colour.
+   .cont-axis is OPTIONAL. It names the two ends of a scale ("Lower", "Higher")
+   and goes straight after the strip. A chain of events has no ends to name and
+   gets none. */
+.continuum{
+  display:grid; grid-template-columns:repeat(3,1fr); margin:16px 0;
+  border:1px solid var(--border); border-radius:var(--radius);
+  overflow:hidden; box-shadow:var(--shadow-sm);
+}
+.cont-step{
+  padding:14px 16px; background:var(--surface);
+  border-left:1px solid var(--border); border-top:4px solid var(--border-strong);
+}
+.cont-step:first-child{ border-left:none; }
+.cont-step h4{ font-size:.86rem; margin:0 0 6px; letter-spacing:.01em; }
+.cont-step p{ font-size:.86rem; line-height:1.5; margin:0; color:var(--text); }
+.cont-step.well{ background:var(--ok-tint); border-top-color:var(--ok); }
+.cont-step.well h4{ color:var(--ok-strong); }
+/* .mid is the brand, not the accent: a coral middle step would look the same
+   as the red .ill step beside it. */
+.cont-step.mid{ background:var(--brand-tint); border-top-color:var(--brand); }
+.cont-step.mid h4{ color:var(--brand-strong); }
+.cont-step.warn{ background:var(--warn-tint); border-top-color:var(--warn); }
+.cont-step.warn h4{ color:var(--warn-strong); }
+.cont-step.ill{ background:var(--bad-tint); border-top-color:var(--bad); }
+.cont-step.ill h4{ color:var(--bad-strong); }
+/* The negative top margin pulls the labels up under the strip: the strip's own
+   bottom margin is there for a strip that has no axis. */
+.cont-axis{
+  display:flex; justify-content:space-between; gap:12px;
+  font-size:.74rem; font-weight:700; color:var(--text-soft);
+  margin:-9px 3px 18px;
+}
+/* A four-stage progression. */
+.continuum.four{ grid-template-columns:repeat(4,1fr); }
+@media(max-width:700px){
+  .continuum, .continuum.four{ grid-template-columns:1fr; }
+  .cont-step{ border-left:none; border-top:1px solid var(--border); }
+  .cont-step:first-child{ border-top:none; }
+  .cont-axis{ flex-direction:column; gap:2px; }
+}
+
+/* ============================================================
+   GLOSSARY TERMS
+   <span class="gloss">term</span> is a key term whose definition is in
+   data/glossary.js. The dotted underline says "there is a definition
+   here", and study.js shows it in .gloss-pop: on hover or keyboard
+   focus, and on tap where there is no hover.
+   The pop-up is ONE element on <body>, placed by study.js. It is never
+   inside the page content, so a definition is not counted, searched or
+   hidden as page text, and a table's overflow cannot clip it.
+   ============================================================ */
+.gloss{
+  text-decoration:underline dotted var(--brand); text-decoration-thickness:2px; text-underline-offset:3px;
+  cursor:help; border-radius:3px; transition:background .14s;
+}
+/* --brand-tint-2, not --brand-tint: a hovered table row is already --brand-tint */
+.gloss:hover, .gloss.is-open{ background:var(--brand-tint-2); }
+.gloss:focus{ outline:none; }
+.gloss:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+.gloss-pop{
+  position:absolute; z-index:150; top:0; left:0; pointer-events:none;
+  width:max-content; max-width:min(320px,calc(100vw - 16px));
+  background:var(--surface); color:var(--text);
+  border:1px solid var(--border-strong); border-top:3px solid var(--brand);
+  border-radius:var(--radius-sm); box-shadow:var(--shadow-lg);
+  padding:9px 13px 10px; font-size:.86rem; line-height:1.45;
+}
+.gloss-pop[hidden]{ display:none; }
+.gloss-pop .gloss-term{
+  display:block; margin-bottom:2px;
+  font-family:var(--serif); font-weight:700; font-size:.92rem; color:var(--brand-strong);
+}
+/* The little pointer, on whichever edge faces the term. study.js sets
+   --gloss-arrow to the term's centre. Above the term it is a corner of the
+   box itself. Below, it is a peak on the brand-coloured top border. */
+.gloss-pop::after{ content:""; position:absolute; left:var(--gloss-arrow,50%); }
+.gloss-pop.is-above::after{
+  bottom:-6px; width:10px; height:10px; background:inherit;
+  border:solid var(--border-strong); border-width:0 1px 1px 0;
+  transform:translateX(-50%) rotate(45deg);
+}
+.gloss-pop.is-below::after{
+  bottom:100%; margin-bottom:3px; width:14px; height:7px; background:var(--brand);
+  clip-path:polygon(50% 0,0 100%,100% 100%); transform:translateX(-50%);
+}
+
+/* ============================================================
+   FLASHCARDS
+   ============================================================ */
+.flash-toolbar{ display:flex; gap:10px; margin:12px 0 20px; flex-wrap:wrap; align-items:center; }
+.flash-btn{
+  background:var(--brand); color:#fff; border:none; padding:9px 15px; border-radius:8px;
+  font-size:.8rem; font-weight:700; cursor:pointer; transition:.14s; font-family:inherit;
+}
+.flash-btn:hover{ background:var(--brand-strong); }
+.flash-btn.alt{ background:var(--surface); color:var(--brand-strong); border:1px solid var(--border-strong); }
+.flash-btn.alt:hover{ background:var(--brand-tint); }
+.flash-count{ align-self:center; font-size:.8rem; color:var(--text-faint); margin-left:2px; }
+.flash-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(235px,1fr)); gap:16px; margin-bottom:36px; }
+.flash-card{ perspective:1200px; height:190px; }
+.flash-card:focus{ outline:none; }
+.flash-card:focus-visible{ outline:3px solid var(--accent); outline-offset:3px; border-radius:var(--radius); }
+.flash-inner{ position:relative; width:100%; height:100%; transition:transform .5s cubic-bezier(.4,.2,.2,1); transform-style:preserve-3d; cursor:pointer; }
+.flash-card.flipped .flash-inner{ transform:rotateY(180deg); }
+.flash-front,.flash-back{
+  position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
+  border-radius:var(--radius); padding:18px; display:flex; flex-direction:column;
+  justify-content:center; align-items:center; text-align:center; font-size:.86rem; box-shadow:var(--shadow-sm);
+}
+/* These faces are FLEX containers, so any inline element inside (<i>, <b>) becomes
+   its own flex item and drops onto its own line. A face whose text contains an
+   inline tag must wrap all of its content in a single <span>; plain-text faces
+   need no wrapper. */
+.flash-front{ background:var(--surface); border:1px solid var(--border-strong); color:var(--brand-deep); font-weight:600; }
+.flash-back{ background:linear-gradient(160deg,var(--brand),var(--brand-strong)); color:#fff; transform:rotateY(180deg); font-weight:500; }
+
+/* ============================================================
+   PREV / NEXT PAGE NAV
+   ============================================================ */
+.page-flip{ display:flex; gap:12px; margin:48px 0 0; flex-wrap:wrap; }
+.page-flip a{
+  flex:1 1 220px; display:flex; flex-direction:column; gap:3px;
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+  padding:14px 16px; text-decoration:none; color:var(--text); box-shadow:var(--shadow-sm);
+  transition:border-color .14s,box-shadow .14s,transform .14s;
+}
+.page-flip a:hover{ border-color:var(--brand); box-shadow:var(--shadow-md); transform:translateY(-1px); }
+.page-flip a.next{ text-align:right; align-items:flex-end; }
+.page-flip .dir{ font-size:.72rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--accent-strong); }
+.page-flip .ttl{ font-weight:600; font-size:.92rem; color:var(--brand-deep); }
+
+footer.site-foot{
+  margin-top:40px; padding-top:20px; border-top:1px solid var(--border);
+  text-align:center; color:var(--text-faint); font-size:.78rem;
+}
+
+/* ============================================================
+   FROM OUTSIDE THE LECTURES
+   A line Holly asked for from outside the lectures ends with
+     <span class="outside" role="img" title="Added from outside the course
+       lectures" aria-label="Added from outside the course lectures"></span>
+   The diamond is drawn here, not written in the page, so the search index
+   and the flashcards never read it. study.js adds the key line above the
+   page-flip links of any page that has one, and the mark inside a glossary
+   pop-up whose entry is outside: true.
+   ============================================================ */
+.outside{ cursor:help; }
+.outside::after{
+  content:"\25C6"; margin-left:.2em;
+  font-size:.95em; line-height:0; vertical-align:super;
+  color:var(--warn);
+}
+.outside-key{ margin-top:32px; font-size:.82rem; color:var(--text-soft); }
+.outside-key::before{ content:"\25C6"; margin-right:.4em; color:var(--warn); }
+
+/* ============================================================
+   HOME PAGE
+   ============================================================ */
+.home-section{ margin:30px 0; }
+.home-section > h2{ font-size:1.3rem; color:var(--brand-strong); margin-bottom:14px; }
+.home-section > p.note{ margin:0 0 14px; }
+.tile-grid{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+@media (max-width:900px){ .tile-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:560px){ .tile-grid{ grid-template-columns:1fr; } }
+
+/* Home: a section with no day badge (study tools, if any are ever added).
+   Its tiles are indented by hand to line up with the daily ones: the 34px
+   badge plus the .day-row gap. The grid gap matches .day-strip as well, so the
+   columns land on the same edges. */
+.home-tools .tile-grid{ margin-left:52px; gap:12px; }
+@media (max-width:560px){ .home-tools .tile-grid{ margin-left:46px; } }
+.tile{
+  display:flex; gap:13px; align-items:flex-start;
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+  padding:16px; text-decoration:none; color:var(--text); box-shadow:var(--shadow-sm);
+  transition:border-color .14s,box-shadow .14s,transform .14s;
+}
+.tile:hover{ border-color:var(--brand); box-shadow:var(--shadow-md); transform:translateY(-2px); }
+.tile .tnum{
+  flex:none; width:34px; height:34px; border-radius:9px; display:inline-flex; align-items:center; justify-content:center;
+  background:var(--brand-tint); color:var(--brand-strong); font-weight:800; font-size:.95rem;
+}
+.tile .tbody h3{ margin:0 0 3px; font-size:1rem; color:var(--brand-deep); }
+.tile .tbody p{ margin:0; font-size:.82rem; color:var(--text-soft); }
+/* Tiles with no description: vertically center the title against the number badge */
+.tile:not(:has(.tbody p)){ align-items:center; }
+.tile:not(:has(.tbody p)) .tbody h3{ margin:0; }
+
+/* Home: compact per-day rows — a square day badge (solid brand, to contrast
+   with the light tinted topic numbers) sits centered beside that day's tiles. */
+.home-days{ margin:22px 0; }
+.home-days .day-row{
+  display:flex; gap:18px; align-items:center;
+  padding:16px 0; border-top:1px solid var(--border);
+}
+.home-days .day-row:first-child,
+.home-days h2 + .day-row{ border-top:none; padding-top:4px; }
+.home-days .day-badge{
+  flex:none; width:34px; height:34px; border-radius:9px;
+  display:inline-flex; align-items:center; justify-content:center;
+  background:var(--brand); color:#fff; font-weight:800; font-size:1rem;
+}
+.home-days .day-strip{
+  flex:1; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px;
+}
+@media (max-width:900px){
+  .home-days .day-strip{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:560px){
+  .home-days .day-row{ gap:12px; }
+  .home-days .day-strip{ grid-template-columns:1fr; }
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn{
+  font-family:inherit; font-size:.88rem; font-weight:700; padding:11px 20px; border-radius:9px;
+  border:1px solid transparent; cursor:pointer; transition:.14s;
+}
+.btn-primary{ background:var(--brand); color:#fff; }
+.btn-primary:hover{ background:var(--brand-strong); }
+.btn-ghost{ background:var(--surface); color:var(--brand-strong); border-color:var(--border-strong); }
+.btn-ghost:hover{ background:var(--brand-tint); }
+.btn:disabled{ opacity:.5; cursor:not-allowed; }
+.hidden{ display:none !important; }
+
+/* ============================================================
+   RESPONSIVE — tablet/mobile: hamburger top nav + stacked tables
+   ============================================================ */
+@media (max-width:899px){
+  .topnav__inner{ padding:0 16px; min-height:54px; gap:12px; }
+  .nav-toggle{ display:inline-flex; }
+  .topnav__menu{
+    display:none; position:absolute; top:100%; left:0; right:0;
+    background:var(--brand-deep); box-shadow:var(--shadow-lg);
+    max-height:calc(100vh - 54px); overflow-y:auto;
+  }
+  .topnav.open .topnav__menu{ display:block; }
+  .menu{ flex-direction:column; align-items:stretch; gap:0; padding:8px 14px 18px; }
+  .top-item{ position:static; }
+  .toplink{ justify-content:space-between; padding:12px; font-size:.95rem; border-radius:9px; }
+  .has-dropdown.expanded .caret{ transform:rotate(180deg); }
+
+  /* dropdowns become inline accordions on mobile (tap a group to expand) */
+  .dropdown{
+    position:static; background:transparent; border:none; box-shadow:none; min-width:0;
+    padding:0 0 4px 10px;
+  }
+  .has-dropdown.expanded > .dropdown{ display:block; }
+  .droplink{ color:var(--on-brand-soft); padding:10px 12px; }
+  .droplink:hover, .droplink.is-active{ background:rgba(255,255,255,.12); color:#fff; }
+  .droplink .num{ background:rgba(255,255,255,.16); color:#fff; }
+
+  #content{ max-width:100%; padding:22px 18px 80px; }
+}
+
+/* ---- .nav-compact: the hamburger nav ABOVE 900px ----------------------------
+   site.js sets this class on <html> when the full nav bar does not fit the
+   window (it measures, so it stays right as days are added). These rules are
+   the NAV half of the max-width:899px blocks, restated under the class. The
+   content padding, page TOC and back-to-top rules are deliberately NOT here:
+   those follow the window's width, not the nav's. Keep the two in step if the
+   mobile nav is ever restyled. */
+:root.nav-compact .topnav__inner{ gap:12px; }
+:root.nav-compact .nav-toggle{ display:inline-flex; margin-left:6px; order:3; }
+:root.nav-compact .nav-utils{ margin-left:auto; order:2; }
+:root.nav-compact .topnav__menu{
+  display:none; position:absolute; top:100%; left:0; right:0;
+  background:var(--brand-deep); box-shadow:var(--shadow-lg);
+  max-height:calc(100vh - 60px); overflow-y:auto;
+}
+:root[data-theme="dark"].nav-compact .topnav__menu{ background:var(--surface); }
+:root.nav-compact .topnav.open .topnav__menu{ display:block; }
+:root.nav-compact .menu{ flex-direction:column; align-items:stretch; gap:0; padding:8px 14px 18px; }
+:root.nav-compact .top-item{ position:static; }
+:root.nav-compact .toplink{ justify-content:space-between; padding:12px; font-size:.95rem; border-radius:9px; }
+/* undo the desktop hover treatment: no underline, pill background back */
+:root.nav-compact .toplink::after{ display:none; }
+:root.nav-compact .toplink:hover{ background:rgba(255,255,255,.12); color:#fff; }
+:root.nav-compact .toplink.is-active{ background:rgba(255,255,255,.15); color:#fff; }
+:root.nav-compact .has-dropdown.expanded .caret{ transform:rotate(180deg); }
+:root.nav-compact .dropdown{
+  position:static; background:transparent; border:none; box-shadow:none; min-width:0;
+  padding:0 0 4px 10px;
+}
+/* dropdowns open on tap, not hover. The .expanded rule must stay AFTER this one. */
+:root.nav-compact .has-dropdown:hover > .dropdown,
+:root.nav-compact .has-dropdown:focus-within > .dropdown{ display:none; }
+:root.nav-compact .has-dropdown.expanded > .dropdown{ display:block; }
+:root.nav-compact .dropdown .droplink{ white-space:normal; }
+:root.nav-compact .droplink{ color:var(--on-brand-soft); padding:10px 12px; }
+:root.nav-compact .droplink:hover, :root.nav-compact .droplink.is-active{ background:rgba(255,255,255,.12); color:#fff; }
+:root.nav-compact .droplink .num{ background:rgba(255,255,255,.16); color:#fff; }
+
+@media (max-width:640px){
+  .page-head h1{ font-size:1.6rem; }
+  h2.block{ font-size:1.2rem; margin-top:34px; }
+  .two-col{ grid-template-columns:1fr; gap:12px; }
+  .flash-grid{ grid-template-columns:1fr; }
+  .flash-card{ height:auto; min-height:150px; }
+
+  /* stacked "card" tables instead of horizontal scroll */
+  .table-wrap{ overflow-x:visible; border:none; box-shadow:none; }
+  .table-wrap table{ display:block; width:100%; background:transparent; }
+  .table-wrap table caption{ margin-bottom:10px; padding:0; background:transparent; }
+  /* The header row is hidden for the stacked-card layout, but it also holds
+     each table's hide/show eye button — so collapse <thead> down to just
+     that one cell instead of hiding it, keeping the self-quiz usable on a
+     phone. Tables with data-nohide have no .th-eye-cell, so their thead
+     collapses to nothing. */
+  .table-wrap thead{ display:block; }
+  .table-wrap thead tr{ display:block; }
+  .table-wrap thead th{ display:none; }
+  .table-wrap thead th.th-eye-cell{
+    display:block; position:relative; height:36px; padding:0;
+    background:transparent; border:none;
+  }
+  .table-wrap thead th.th-eye-cell .th-eye{
+    right:0; top:2px; transform:none; opacity:1;
+    padding:7px 11px; border-radius:9px; background:var(--table-head);
+  }
+  .table-wrap tbody{ display:block; }
+  .table-wrap tbody tr{
+    display:block; background:var(--surface) !important; border:1px solid var(--border);
+    border-radius:var(--radius); padding:12px 15px 3px; margin-bottom:12px; box-shadow:var(--shadow-sm);
+  }
+  .table-wrap td{ display:block; width:auto !important; padding:8px 0 !important; border-bottom:1px solid var(--border); }
+  .table-wrap td:last-child{ border-bottom:none; }
+  .table-wrap td[data-label]::before{
+    content:attr(data-label); display:block; font-size:.66rem; font-weight:800; letter-spacing:.05em;
+    text-transform:uppercase; color:var(--brand-strong); opacity:.75; margin-bottom:3px;
+  }
+  .table-wrap td.term{ font-size:1rem; padding-bottom:10px !important; border-bottom:2px solid var(--brand-tint-2) !important; white-space:normal; }
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{ transition:none !important; scroll-behavior:auto !important; }
+  .flash-inner{ transition:none !important; }
+}
+
+/* ============================================================
+   SECTION ANCHORS — offset jumps under the sticky nav
+   ============================================================ */
+h2.block, h3.sub{ scroll-margin-top:80px; }
+/* every content block carries an id too, and a link can land on any of them */
+.page-inner [id]{ scroll-margin-top:80px; }
+
+/* ============================================================
+   NAV UTILITIES: search + dark-mode buttons
+   ============================================================ */
+.nav-utils{ display:flex; align-items:center; gap:4px; margin-left:14px; flex:none; }
+.nav-icon{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:38px; height:38px; border-radius:9px; cursor:pointer; padding:0;
+  background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.16); color:var(--on-brand-soft);
+  transition:background .14s,color .14s;
+}
+.nav-icon:hover{ background:rgba(255,255,255,.2); color:#fff; }
+.nav-icon svg{ width:19px; height:19px; }
+.nav-icon .ico-sun{ display:none; }
+.nav-icon .ico-moon{ display:block; }
+:root[data-theme="dark"] .nav-icon .ico-sun{ display:block; }
+:root[data-theme="dark"] .nav-icon .ico-moon{ display:none; }
+
+/* ============================================================
+   READING PROGRESS BAR
+   ============================================================ */
+.read-progress{ position:fixed; top:0; left:0; right:0; height:3px; z-index:200; pointer-events:none; background:transparent; }
+.read-progress span{ display:block; height:100%; width:0; background:var(--accent); transition:width .08s linear; }
+
+/* ============================================================
+   BACK-TO-TOP BUTTON
+   ============================================================ */
+.to-top{
+  position:fixed; right:20px; bottom:20px; z-index:90;
+  width:44px; height:44px; border-radius:50%; cursor:pointer; padding:0;
+  background:var(--brand); color:#fff; border:1px solid var(--brand-strong);
+  box-shadow:var(--shadow-md); display:flex; align-items:center; justify-content:center;
+  opacity:0; transform:translateY(10px); pointer-events:none; transition:opacity .18s,transform .18s,background .14s;
+}
+.to-top.show{ opacity:1; transform:none; pointer-events:auto; }
+.to-top:hover{ background:var(--brand-strong); }
+.to-top svg{ width:22px; height:22px; }
+
+/* ============================================================
+   PAGE TABS
+   A long page can split its sections into .tab-panel wrappers;
+   site.js builds the strip of buttons from each panel's
+   data-tab-label and hides all but one panel. The strip sits
+   inside .page-top, above the "On this page" box, which re-renders
+   to list only the visible panel's sections.
+   ============================================================ */
+.tab-bar{
+  display:flex; align-items:flex-end; gap:6px; width:100%;
+  border-bottom:3px solid var(--brand); margin:0 0 6px;
+  overflow-x:auto; scrollbar-width:none; -ms-overflow-style:none;
+}
+.tab-bar::-webkit-scrollbar{ display:none; }
+/* Every tab carries a tinted background; the selected one is solid brand.
+   The tokens flip in dark mode, so there the unselected tabs are the darker
+   ones and the selected tab the lighter. Selected text uses --bg so it
+   contrasts in both modes. */
+.tab-btn{
+  flex:none; appearance:none; background:var(--brand-tint-2); border:0;
+  padding:10px 18px; border-radius:8px 8px 0 0; cursor:pointer;
+  font-family:var(--serif); font-size:.95rem; font-weight:700;
+  color:var(--brand-strong); white-space:nowrap;
+  box-shadow:inset 0 -3px 0 transparent;
+  transition:color .14s, background .14s, box-shadow .14s;
+}
+.tab-btn:hover{ box-shadow:inset 0 -3px 0 var(--brand); }
+.tab-btn.is-active{ color:var(--bg); background:var(--brand); box-shadow:none; }
+.tab-btn:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+/* data-tab-end: a panel outside the sequence. Accent-coloured so it does not
+   read as "the next one". It sits at the END of the strip, right after the
+   others, simply because the panel is last in the page. */
+.tab-btn-end{ background:var(--accent-tint); color:var(--accent-strong); }
+.tab-btn-end:hover{ box-shadow:inset 0 -3px 0 var(--accent); }
+.tab-btn-end.is-active{ color:var(--bg); background:var(--accent); box-shadow:none; }
+
+.tab-panel[hidden]{ display:none; }
+.tab-panel:focus{ outline:none; }
+.tab-empty{ color:var(--text-soft); font-style:italic; margin:26px 0 6px; }
+
+@media (max-width:640px){
+  .tab-btn{ padding:9px 12px; font-size:.9rem; }
+}
+
+/* ============================================================
+   "ON THIS PAGE" TABLE OF CONTENTS
+   ============================================================ */
+.page-toc{
+  background:var(--surface); border:1px solid var(--border); border-left:4px solid var(--accent);
+  border-radius:var(--radius-sm); padding:4px 16px; margin:0 0 22px; box-shadow:var(--shadow-sm); font-size:.9rem;
+}
+.page-toc > summary{
+  cursor:pointer; list-style:none; padding:9px 0; font-weight:800; color:var(--brand-strong);
+  font-size:.74rem; text-transform:uppercase; letter-spacing:.08em; display:flex; align-items:center; gap:8px;
+}
+.page-toc > summary::-webkit-details-marker{ display:none; }
+.page-toc > summary::before{ content:"▸"; font-size:1.4rem; line-height:1; color:var(--accent-strong); transition:transform .15s; }
+.page-toc[open] > summary::before{ transform:rotate(90deg); }
+.page-toc nav ul{
+  list-style:none; margin:0 0 10px; padding:0;
+  display:block;
+}
+.page-toc nav a{
+  display:block; padding:5px 8px; border-radius:6px; text-decoration:none;
+  color:var(--text-soft); border-left:2px solid transparent;
+}
+.page-toc nav a:hover{ background:var(--brand-tint); color:var(--brand-strong); border-left-color:var(--brand); }
+
+/* ============================================================
+   SITE SEARCH OVERLAY
+   ============================================================ */
+.search-overlay{
+  position:fixed; inset:0; z-index:400; background:rgba(20,22,35,.62);
+  display:flex; align-items:flex-start; justify-content:center; padding:12vh 20px 20px;
+  opacity:0; pointer-events:none; transition:opacity .16s;
+}
+.search-overlay.show{ opacity:1; pointer-events:auto; }
+.search-box{
+  width:min(640px,100%); background:var(--surface); border:1px solid var(--border);
+  border-radius:var(--radius); box-shadow:var(--shadow-lg); overflow:hidden; max-height:76vh; display:flex; flex-direction:column;
+}
+.search-head{ display:flex; align-items:center; gap:10px; padding:12px 14px; border-bottom:1px solid var(--border); }
+.search-ico{ width:20px; height:20px; color:var(--text-faint); flex:none; }
+.search-input{
+  flex:1; border:none; outline:none; background:transparent; color:var(--text);
+  font-family:inherit; font-size:1.02rem; padding:4px 0;
+}
+.search-close{
+  flex:none; background:var(--surface-2); border:none; border-radius:7px; width:30px; height:30px;
+  cursor:pointer; color:var(--text-soft); font-size:.95rem; line-height:1;
+}
+.search-close:hover{ background:var(--border); color:var(--text); }
+.search-results{ overflow-y:auto; padding:6px; }
+.search-hit{
+  display:flex; flex-direction:column; gap:1px; padding:9px 12px; border-radius:8px;
+  text-decoration:none; color:var(--text);
+}
+.search-hit:hover, .search-hit.is-sel{ background:var(--brand-tint); }
+.search-hit .hit-kw{ font-weight:600; font-size:.95rem; color:var(--brand-deep); }
+.search-hit .hit-kw mark{ background:var(--accent-tint); color:var(--accent-strong); padding:0 2px; border-radius:3px; }
+.search-hit .hit-crumb{ font-size:.76rem; color:var(--text-faint); }
+.search-empty{ padding:20px 14px; text-align:center; color:var(--text-faint); font-size:.9rem; margin:0; }
+.search-hint{ margin:0; padding:9px 14px; border-top:1px solid var(--border); font-size:.72rem; color:var(--text-faint); text-align:center; }
+
+/* ============================================================
+   FLASHCARD SELF-GRADING (Got it / Review + drill missed)
+   ============================================================ */
+.fc-grade{ display:flex; gap:8px; margin-top:14px; }
+.fc-g{
+  font-family:inherit; font-size:.72rem; font-weight:700; cursor:pointer;
+  padding:6px 11px; border-radius:7px; color:#fff;
+  background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.45); transition:.14s;
+}
+.fc-g-known:hover{ background:var(--ok); border-color:#fff; }
+.fc-g-review:hover{ background:var(--accent); border-color:#fff; }
+.flash-front{ overflow:hidden; }
+.flash-front .fc-mark{ position:absolute; top:0; right:0; width:0; height:0; border-top:26px solid transparent; border-left:26px solid transparent; display:none; }
+.flash-card.fc-known .flash-front{ border-color:var(--ok); }
+.flash-card.fc-known .fc-mark{ display:block; border-top-color:var(--ok); }
+.flash-card.fc-review .flash-front{ border-color:var(--accent); }
+.flash-card.fc-review .fc-mark{ display:block; border-top-color:var(--accent); }
+.flash-card.fc-hide{ display:none !important; }
+.fc-switch{ display:inline-flex; align-items:center; background:var(--surface-2); border:1px solid var(--border); border-radius:999px; padding:3px; }
+.fc-switch button{ font-family:inherit; border:none; background:transparent; cursor:pointer; padding:7px 13px; border-radius:999px; font-size:.78rem; font-weight:700; color:var(--text-soft); display:inline-flex; align-items:center; gap:6px; transition:background .12s,color .12s; }
+.fc-switch button.active{ background:var(--surface); color:var(--brand-strong); box-shadow:var(--shadow-sm); }
+.fc-switch button[data-mode="missed"].active{ color:var(--accent-strong); }
+.fc-switch button:disabled{ opacity:.45; cursor:not-allowed; }
+.fc-switch .fc-remain{ display:inline-block; min-width:17px; padding:0 5px; border-radius:999px; background:var(--brand-tint-2); color:var(--brand-strong); font-size:.7rem; font-weight:800; text-align:center; }
+.fc-switch button[data-mode="missed"].active .fc-remain{ background:var(--accent-tint); color:var(--accent-strong); }
+.fc-reset-btn{ color:var(--text-faint); }
+
+/* ============================================================
+   DARK THEME
+   ============================================================ */
+:root[data-theme="dark"]{
+  --bg:#12161a; --surface:#1b2027; --surface-2:#232a33; --surface-3:#2c343f;
+  --border:#323b47; --border-strong:#45505f;
+  --text:#e6eaef; --text-soft:#a7b1bd; --text-faint:#7b8593;
+  --stripe:rgba(255,255,255,.025);
+  --brand:#8aa6cf; --brand-strong:#a9c0e0; --brand-deep:#c9daee;
+  --brand-tint:#1e3050; --brand-tint-2:#28405f;
+  --accent:#e88574; --accent-strong:#f4a595; --accent-tint:#3a221d;
+  --on-brand-soft:#dae2ef; --on-brand-faint:#a6b8d1; --on-brand-dim:#c9d5e6;
+  --chrome-a:#1e3050; --chrome-b:#141f34;
+  --flash-a:#3d5c88; --flash-b:#243b5c;
+  --line-accent:#4a2f2b; --line-bad:#4a2f2b;
+  --ok:#43b085; --ok-strong:#6bcfa4; --ok-tint:#173029;
+  --bad:#e46557; --bad-strong:#f28c82; --bad-tint:#361f1d;
+  --warn:#d9a441; --warn-strong:#ecc477; --warn-tint:#33290f;
+  --shadow-sm:0 1px 3px rgba(0,0,0,.45);
+  --shadow-md:0 4px 14px rgba(0,0,0,.5);
+  --shadow-lg:0 12px 30px rgba(0,0,0,.6);
+}
+
+/* ============================================================
+   PALETTE SWATCHES — copy one set over the two :root blocks.
+   Each swatch gives the lines that actually matter. The semantic
+   colours and metrics stay as they are. The neutrals carry a faint
+   tint of the current brand hue: leave them, or retint them to the
+   new brand if the greys start to look off beside it.
+   Remember --table-head: set it to the swatch's LIGHT --brand.
+   ------------------------------------------------------------
+
+   FOREST + AMBER  (earthy, high contrast)
+     light: --brand:#3c5a48; --brand-strong:#2f4839; --brand-deep:#24382c;
+            --brand-tint:#edf3ef; --brand-tint-2:#dce8e0;
+            --accent:#b4762a; --accent-strong:#8e5b1c; --accent-tint:#faf1e3;
+            --on-brand-soft:#dbe7df; --on-brand-faint:#a8c2b2; --on-brand-dim:#cbdfd3;
+            --chrome-a:#22362a; --chrome-b:#16241c;
+            --flash-a:#48674f; --flash-b:#2f4839;
+            --line-accent:#eeddbf;
+     dark:  --brand:#8bb69a; --brand-strong:#a9cdb5; --brand-deep:#c8e2d1;
+            --brand-tint:#22362a; --brand-tint-2:#2c4435;
+            --accent:#dda54f; --accent-strong:#eec179; --accent-tint:#372a15;
+            --line-accent:#4a3c22;
+
+   SLATE + TEAL  (the NUR418 palette — professional, subject-neutral)
+     light: --brand:#40566b; --brand-strong:#334657; --brand-deep:#263544;
+            --brand-tint:#eef1f5; --brand-tint-2:#dfe5ec;
+            --accent:#2b8a83; --accent-strong:#1e6b66; --accent-tint:#e7f4f2;
+            --on-brand-soft:#dbe3ea; --on-brand-faint:#a9bccb; --on-brand-dim:#cdd8e1;
+            --chrome-a:#22303d; --chrome-b:#18222c;
+            --flash-a:#4a6478; --flash-b:#334657;
+            --line-accent:#c9e5e1;
+     dark:  --brand:#8aa4bd; --brand-strong:#a9c0d5; --brand-deep:#c9d9e6;
+            --brand-tint:#22303d; --brand-tint-2:#2b3c4b;
+            --accent:#5cb8b0; --accent-strong:#7fd3cb; --accent-tint:#1c3330;
+            --line-accent:#2c4a47;
+
+   INDIGO + ROSE  (the NUR332 palette — warm, softer)
+     light: --brand:#5b4b8a; --brand-strong:#463a6e; --brand-deep:#372e57;
+            --brand-tint:#efecf8; --brand-tint-2:#e3ddf1;
+            --accent:#c15b7c; --accent-strong:#9f3f60; --accent-tint:#fbeef2;
+            --on-brand-soft:#e2ddf1; --on-brand-faint:#c3b9e4; --on-brand-dim:#d9d4ee;
+            --chrome-a:#2a2450; --chrome-b:#1b1734;
+            --flash-a:#5a4d93; --flash-b:#3f356e;
+            --line-accent:#f0d3dd;
+     dark:  --brand:#8f80c4; --brand-strong:#b3a6e0; --brand-deep:#d3caee;
+            --brand-tint:#282540; --brand-tint-2:#332e4e;
+            --accent:#d67e99; --accent-strong:#ec9fb6; --accent-tint:#3a2431;
+            --line-accent:#4a3a44;
+
+   NAVY + CORAL  (the current palette — crisp, clinical)
+     light: --brand:#2f4a73; --brand-strong:#243b5c; --brand-deep:#1b2d47;
+            --brand-tint:#eef2f8; --brand-tint-2:#dce4f0;
+            --accent:#d1604f; --accent-strong:#ab4638; --accent-tint:#fdeeeb;
+            --on-brand-soft:#dae2ef; --on-brand-faint:#a6b8d1; --on-brand-dim:#c9d5e6;
+            --chrome-a:#1e3050; --chrome-b:#141f34;
+            --flash-a:#3d5c88; --flash-b:#243b5c;
+            --line-accent:#f5d3cd;
+     dark:  --brand:#8aa6cf; --brand-strong:#a9c0e0; --brand-deep:#c9daee;
+            --brand-tint:#1e3050; --brand-tint-2:#28405f;
+            --accent:#e88574; --accent-strong:#f4a595; --accent-tint:#3a221d;
+            --line-accent:#4a2f2b;
+   ============================================================ */
+/* keep the chrome dark even though the brand vars are lightened for text */
+:root[data-theme="dark"] .topnav{ background:linear-gradient(120deg,var(--chrome-a),var(--chrome-b)); }
+:root[data-theme="dark"] .flash-back{ background:linear-gradient(160deg,var(--flash-a),var(--flash-b)); color:#fff; }
+:root[data-theme="dark"] thead th{ color:#fff; }
+/* SOLID BUTTONS IN DARK MODE. Dark --brand is a LIGHT colour, there for text,
+   and a white button label on it is unreadable. The fill STAYS that light
+   colour and the LABEL goes dark instead: --bg, the same near-black the
+   selected tab uses on this fill. Do not make the button itself dark: it then
+   sits too close to its card and stops reading as a button.
+   A NEW SOLID BUTTON MUST BE ADDED HERE, or its label stays white in dark mode. */
+:root[data-theme="dark"] .btn-primary,
+:root[data-theme="dark"] .flash-btn:not(.alt),
+:root[data-theme="dark"] .to-top,
+:root[data-theme="dark"] .skip-link{ color:var(--bg); }
+:root[data-theme="dark"] tbody tr:nth-child(even){ background:rgba(255,255,255,.025); }
+:root[data-theme="dark"] .callout-danger{ border-color:var(--line-bad); }
+:root[data-theme="dark"] .lightbox-box{ background:var(--surface); }
+/* one step lighter than the cards the pop-up floats over */
+:root[data-theme="dark"] .gloss-pop{ background:var(--surface-2); }
+:root[data-theme="dark"] .search-hit .hit-kw mark{ background:var(--accent-tint); }
+
+/* ============================================================
+   RESPONSIVE + PRINT for the site chrome
+   ============================================================ */
+@media (max-width:899px){
+  .nav-utils{ margin-left:auto; order:2; }
+  .nav-toggle{ margin-left:6px; order:3; }
+  .to-top{ right:14px; bottom:14px; width:40px; height:40px; }
+  :root[data-theme="dark"] .topnav__menu{ background:var(--surface); }
+}
+
+@media print{
+  .topnav, .nav-utils, .nav-toggle, .read-progress, .to-top, .search-overlay,
+  .flash-toolbar, .fig-trigger, .page-flip, .lightbox-overlay,
+  .fc-grade, .page-toc, .page-tools, .card-eye, .sec-caret, .gloss-pop{ display:none !important; }
+  .gloss{ text-decoration:none; }
+  .card.quiz-hidden > .card-body{ background:none !important; color:inherit !important; }
+  .card.quiz-hidden > .card-body > *{ visibility:visible !important; }
+  .tab-bar{ display:none !important; }
+  .tab-panel[hidden]{ display:block !important; }   /* print every tab, not just the open one */
+  .section-body, .section-body.section-collapsed{ display:block !important; }
+  body{ background:#fff; color:#000; }
+  #content{ padding:0; max-width:100%; }
+  .table-wrap{ overflow:visible; box-shadow:none; }
+  td.def-hidden{ background:none !important; }
+  td.def-hidden .def-text{ display:inline !important; }
+  .flash-card{ height:auto; }
+  .flash-inner{ transform:none !important; }
+  .flash-back, .flash-front{ position:static; box-shadow:none; -webkit-backface-visibility:visible; backface-visibility:visible; }
+  .flash-front .fc-mark{ display:none !important; }
+  .flash-back{ transform:none !important; background:none !important; color:#000 !important; border:1px solid #ccc; }
+  .card, table, tr{ page-break-inside:avoid; }
+}
+
+/* ============================================================
+   COLLAPSIBLE MAIN SECTIONS (h2.block)
+   ============================================================ */
+h2.block.section-h{ display:flex; align-items:center; justify-content:space-between; gap:12px; cursor:pointer; }
+h2.block.section-h .sec-caret{ flex:none; font-size:1.6rem; line-height:1; color:var(--accent-strong); transition:transform .18s; }
+h2.block.section-h.collapsed .sec-caret{ transform:rotate(-90deg); }
+h2.block.section-h:hover .sec-caret{ color:var(--accent); }
+.section-body.section-collapsed{ display:none; }
+
+/* ============================================================
+   PAGE TOP: "On this page" TOC, with the collapse/expand-all
+   headings button directly underneath it.
+   ============================================================ */
+.page-top{ display:flex; flex-direction:column; align-items:flex-start; gap:10px; margin:0 0 24px; }
+.page-top .page-toc{ margin:0; width:fit-content; max-width:100%; }
+.page-toc nav a{ white-space:nowrap; }
+.page-toc-collapse-btn{ margin:0; }   /* sits in .page-tools, beside "Hide all answers" */
+@media (max-width:640px){
+  .page-toc nav a{ white-space:normal; }
+}
+
+/* Keep a single lightbox diagram within the viewport (no scroll on a normal screen) */
+.lightbox-body figure.figure img{ max-height:70vh; }

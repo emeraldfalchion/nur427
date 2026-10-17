@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!-- SOURCES
+     A review page: built from earlier-course sources, and only from the slides and
+     transcript lines that review-map.md lists for the items in review-list.md.
+     Deck:        slides/medsurg1/Week 2 - 4 - Blood Product Administration VO Canvas-2-1.pptx (31 slides. Used: 2, 4-5, 7-8, 10-17, 20-21, 24-29)
+     Transcript:  transcripts/medsurg1/Week 2 - Blood Components.txt (lines 1-391)
+     Built:       2026-10-16, as two sections of review-hematology.html
+     Cross-checked against the deck: 2026-10-16
+     Moved to a page of its own on 2026-10-17 (Holly).
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transfusions — NUR427</title>
+<script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="assets/styles.css?v=20261017q">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<main id="content">
+<div class="page-inner">
+
+  <header class="page-head">
+    <p class="eyebrow">Review · Topic 6</p>
+    <h1>Transfusions</h1>
+  </header>
+
+  <h2 class="block" id="transfusions">Transfusions and Blood Products</h2>
+
+  <p class="further-study">For further study, see <b>Med Surg I Week 2 – Blood Components</b>.</p>
+
+  <h3 class="sub" id="blood-products">The Blood Products</h3>
+
+  <!-- The review item, from Day 1 Hematologic: the nurse's responsibility in transfusing,
+       how to do it, and the different blood products. Blood Product Administration slides
+       2-17 and lines 1-215.
+       Slide 2 ends "Cryoprecipitates??", and the recording teaches four products only. Cryo
+       and whole blood are on Day 1 (day1-hematologic.html#blood-product-types).
+       Left off: storage (platelets at room temperature for 1 to 5 days, FFP for a year),
+       several platelet units from one donor, and FFP's rate in slide 16's speaker notes,
+       never said aloud. "von Willebrand's": the recording has "Von Wilenbrand's".
+       When to give platelets: Med Surg I says under 20,000 "as a rule of thumb" (lines
+       178-179, and Cancer slide 28). NUR427 Day 1 says under 50,000, 40,000 or even
+       20,000, depending on active bleeding. The newest course wins (Holly, 2026-10-16):
+       Med Surg I's is left off, and a strip under the table points to Day 1.
+       PRBCs: the recording's "Only the buses" is left off since the move to this page
+       (2026-10-17). It leans on the bus analogy, which stays on review-hematology.html. -->
+  <div class="table-wrap" id="blood-product-guide"><table>
+    <thead><tr><th>Product</th><th>What It Is</th><th>Given For</th><th>Giving It</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Packed red blood cells (PRBCs)</td><td><ul>
+        <li><b>RBCs only:</b> no plasma, WBCs or platelets.</li>
+        <li>About 250 to 350 mL.</li>
+      </ul></td><td><ul>
+        <li>Severe anemia.</li>
+      </ul></td><td><ul>
+        <li><b>ABO and Rh compatibility</b>, by a type and <span class="gloss">crossmatch</span>.</li>
+        <li>See below for giving PRBCs.</li>
+      </ul></td></tr>
+      <tr><td class="term">Platelets</td><td><ul>
+        <li>Prepared from fresh whole blood.</li>
+        <li>About 30 to 60 mL.</li>
+      </ul></td><td><ul>
+        <li>Bleeding caused by thrombocytopenia. See below for the count.</li>
+        <li>Examples: chemotherapy.</li>
+      </ul></td><td><ul>
+        <li>ABO compatibility <b>not a factor</b>.</li>
+        <li>Agitate the bag periodically: platelets clump.</li>
+        <li><b>As fast as tolerated.</b></li>
+      </ul></td></tr>
+      <tr><td class="term">Fresh frozen plasma (FFP)</td><td><ul>
+        <li>The liquid portion of whole blood, frozen. About 250 mL.</li>
+        <li><b>Rich in clotting factors</b>, such as prothrombin. No platelets.</li>
+      </ul></td><td><ul>
+        <li>Bleeding from a <b>lack of clotting factors</b>.</li>
+        <li>Rarely, a fluid volume expander.</li>
+        <li>Examples: liver issues, hemophilia, von Willebrand's.</li>
+      </ul></td><td><ul>
+        <li>ABO compatibility <b>required</b>.</li>
+        <li>Used within 24 hours of thawing.</li>
+      </ul></td></tr>
+      <tr><td class="term">Albumin</td><td><ul>
+        <li>A colloid, prepared from plasma: a plasma volume expander.</li>
+        <li><b>Pulls fluid into the vascular space</b> and keeps it there.</li>
+        <li>5%, equal to plasma, or 25%, hypertonic.</li>
+      </ul></td><td><ul>
+        <li><b>Low albumin:</b> fluid shifts out to the <span class="gloss" data-term="third spacing">third space</span>, and the patient becomes very edematous.</li>
+        <li>25% for a patient in a really bad way.</li>
+        <li>Examples: a liver patient.</li>
+      </ul></td><td><ul>
+        <li>Compatibility <b>not a factor</b>.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="xref-line"><a class="xref" href="day1-hematologic.html#blood-product-types">
+    <span><b>When to give platelets,</b> by the count and active bleeding, is taught in <b>Hematologic Issues in Critical Care</b></span>
+  </a></p>
+
+  <div class="mnemonic" id="platelets-not-clotting-factors"><b>Platelets are not clotting factors.</b> Both enhance clotting, but not in the same way. Thrombocytopenia: give platelets. A lack of clotting factors: give FFP, the plasma.</div>
+
+  <h3 class="sub" id="blood-type">Blood Type and Compatibility</h3>
+
+  <!-- Slide 5's compatibility chart, a picture, transcribed as one row per recipient. The
+       recording: "you don't necessarily have to commit this chart to memory, but you do need
+       to understand this table". Its two worked examples, B positive and A negative, are
+       rows of it.
+       Left off: slide 6's most common blood types ("you don't need to know this"). -->
+  <div class="table-aside">
+    <div>
+      <div class="table-wrap" id="rbc-compatibility"><table>
+        <thead><tr><th>Recipient</th><th>Can Receive</th></tr></thead>
+        <tbody>
+          <tr><td class="term">O−</td><td>O−</td></tr>
+          <tr><td class="term">O+</td><td>O−, O+</td></tr>
+          <tr><td class="term">A−</td><td>O−, A−</td></tr>
+          <tr><td class="term">A+</td><td>O−, O+, A−, A+</td></tr>
+          <tr><td class="term">B−</td><td>O−, B−</td></tr>
+          <tr><td class="term">B+</td><td>O−, O+, B−, B+</td></tr>
+          <tr><td class="term">AB−</td><td>O−, A−, B−, AB−</td></tr>
+          <tr><td class="term">AB+</td><td>Every type</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="card alt" id="abo-and-rh">
+      <h4>What Makes Blood Compatible</h4>
+      <ul>
+        <li><b>Two sets of antigens:</b> ABO (A, B, both or neither) and Rh (present or absent).</li>
+        <li><b>A recipient can receive only antigens they already have.</b> One they lack causes a hemolytic reaction.</li>
+        <li><b>O negative: universal donor.</b> No A, B or Rh antigen, so it can go to anyone.</li>
+        <li><b>AB positive: universal recipient.</b> Every antigen already, so it can receive any blood.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="sub" id="when-to-transfuse">When PRBCs Are Given</h3>
+
+  <!-- Slide 7, the AABB guidelines, with what the recording adds to the 6 to 7 and 7 to 8
+       rows. -->
+  <p class="note"><b>Know the H&amp;H before hanging PRBCs.</b> The guidelines, for a <span class="gloss">hemodynamically stable</span> patient without active bleeding:</p>
+
+  <div class="table-wrap" id="transfusion-thresholds"><table>
+    <thead><tr><th>Hemoglobin</th><th>Transfusion</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Under 6 g/dL</td><td><b>Recommended,</b> except in exceptional circumstances.</td></tr>
+      <tr><td class="term">6 to 7 g/dL</td><td><b>Generally likely.</b> Is the patient symptomatic: BP low, HR high from compensating?</td></tr>
+      <tr><td class="term">7 to 8 g/dL</td><td><b>May be appropriate,</b> after evaluating the clinical status: orthopedic or cardiac surgery, stable cardiovascular disease.</td></tr>
+      <tr><td class="term">8 to 10 g/dL</td><td><b>Generally not.</b> Considered for some: symptomatic anemia, ongoing bleeding, acute coronary syndrome with ischemia, hematology and oncology patients with severe thrombocytopenia at risk of bleeding.</td></tr>
+      <tr><td class="term">Over 10 g/dL</td><td><b>Generally not,</b> except in exceptional circumstances.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub" id="giving-a-transfusion">Giving PRBCs</h3>
+
+  <!-- Slides 8 and 10-12, with the recording, in time order.
+       Dextrose and LR: the recording says both "could cause hemolysis of the cells". The
+       speaker notes on slides 7 and 8 say dextrose hemolyzes the cells and LR's calcium can
+       cause clots. Both are written.
+       Back pain: the recording has "Fat pain would definitely not be something that I
+       would expect". Slide 11 prints "back pain".
+       Generic names: acetaminophen for the recording's Tylenol. Diphenhydramine is the
+       recording's own word, beside Benadryl, and furosemide beside Lasix.
+       Left off as one unit's practice: barcode scanning as the second RN, hanging blood to
+       gravity in the ICU, an IV pump in acute and progressive care. -->
+  <div class="timeline" id="transfusion-timeline">
+    <div class="tl-item">
+      <span class="when">Before sending for the blood</span>
+      <p><b>Type and <span class="gloss">crossmatch</span> within the last 72 hours.</b> Premedicate as ordered: acetaminophen for a fever risk, diphenhydramine for an itching risk.</p>
+      <p><b>IV 20 gauge or larger</b>, 18 ideal: a smaller gauge can break down the RBCs. <b>Y tubing</b> with a filter, primed with NS. <b>NS only</b>, never dextrose or LR: they can hemolyze the cells, and LR's calcium can cause clots.</p>
+    </div>
+    <div class="tl-item">
+      <span class="when">Within 30 minutes of the blood reaching the floor</span>
+      <p><b>Start it, or take it back to the blood bank.</b> Never left on the floor or in the medication refrigerator. The final identity check is done <b>at the bedside</b>, by two RNs.</p>
+    </div>
+    <div class="tl-item">
+      <span class="when">First 15 minutes</span>
+      <p>Teach the patient to report anything unusual at once: <b>chills, SOB, itching, back pain</b>. Cold at the IV site is expected. Baseline vital signs, by the RN.</p>
+      <p><b>Start slowly: 1 to 2 mL/min (60 to 120 mL/hr).</b> The RN stays with the patient for the first <b>15 to 30 minutes</b>, per protocol.</p>
+    </div>
+    <div class="tl-item">
+      <span class="when">At 15 minutes</span>
+      <p>Vital signs. No reaction: increase the rate, to infuse in <b>about 2 hours</b>. With a risk for fluid volume excess, such as an older patient with heart failure or kidney failure, stretch it toward the 4 hours.</p>
+    </div>
+    <div class="tl-item">
+      <span class="when">Every hour, and at the end</span>
+      <p>Vital signs.</p>
+    </div>
+    <div class="tl-item key">
+      <span class="when">4 hours at most</span>
+      <p><b>The longest blood can ever hang:</b> after that, bacterial proliferation. Not in by then: take it down, document, and let the provider know. Never rush the rest in.</p>
+    </div>
+    <div class="tl-item">
+      <span class="when">After</span>
+      <p>NS through the tubing, for every last drop. Know the orders: furosemide between units with a risk for fluid volume excess, another unit, a repeat H&amp;H.</p>
+    </div>
+  </div>
+
+  <h2 class="block" id="transfusion-reactions">Transfusion Reactions</h2>
+
+  <!-- The review item, from Day 1 Hematologic: what to look for, and telling a reaction
+       that needs little from one that is a full stop. Blood Product Administration slides
+       20-21 and 24-29, and lines 216-391.
+       Left off, as prevention or outside the item: each reaction's Prevention line (slides
+       24-29), leukocyte-reduced products (slide 22), autologous donation and
+       autotransfusion (slides 30-31), a history of allergies making a mild allergic
+       reaction more likely. Slide 23's UpToDate chart is too small to read, and the
+       recording says it summarizes it. -->
+  <div class="card" id="reaction-first-steps">
+    <h4>When a Reaction Is Suspected</h4>
+    <ol>
+      <li><b>Stop the transfusion,</b> always first, to assess what is going on.</li>
+      <li><b>New tubing primed with NS,</b> at the same IV site. Not the saline on the blood tubing, which is still full of blood.</li>
+      <li>Assess the patient. Notify the provider and the blood bank.</li>
+      <li>Recheck the ID tags and numbers.</li>
+      <li>Monitor vital signs and <b>urine output</b>: a hemolytic reaction can shut the kidneys down.</li>
+      <li>Treat the symptoms, per the provider's orders.</li>
+      <li>Save the blood bag and tubing for the blood bank, which rechecks everything.</li>
+      <li>Complete the transfusion reaction report form. Collect specimens to evaluate for hemolysis.</li>
+    </ol>
+  </div>
+
+  <!-- Slide 21's six reactions, in its order, which slides 24-29 keep, with each slide's
+       signs and nursing response.
+       Most common: slide 25's title calls the febrile non-hemolytic reaction "(most
+       common)". Slide 21 has mild allergic as "sensitization to donor WBCs (most common),
+       platelets, or plasma proteins", and the recording reads it as "this is the most
+       common type". Holly, 2026-10-16: mild allergic is the most common, as the
+       recording reads it. Slide 25's title is not followed. See decisions.md.
+       Blood in the urine: slide 24 prints "Hemoglobinuria". The recording has "hemateria,
+       right? So that's blood in the urine".
+       Generic names: acetaminophen for slide 25's antipyretic, given as Tylenol in the
+       recording. -->
+  <div class="table-wrap" id="reaction-types"><table>
+    <thead><tr><th>Reaction</th><th>Cause</th><th>Signs and Symptoms</th><th>Nursing Response</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Acute hemolytic (AHTR)</td><td><b>Incompatible blood:</b> the wrong blood. The most life-threatening.</td><td><ul>
+        <li><b>Immediate onset.</b></li>
+        <li>Facial flushing, fever with or without chills, headache.</li>
+        <li><b>Low back pain</b>, from the kidneys in acute renal failure. Also abdominal, chest, flank pain.</li>
+        <li>Blood in the urine (hemoglobinuria).</li>
+        <li>Dyspnea, <span class="gloss">tachypnea</span>.</li>
+        <li><b>Hypotension.</b> Cardiac arrest, death.</li>
+      </ul></td><td><ul>
+        <li><b>Treat the shock:</b> keep the BP up with IV colloids, such as albumin.</li>
+        <li>Blood samples from the site.</li>
+        <li>First voided urine. A Foley to monitor urine output.</li>
+        <li>Send the unit, tubing and filter to the lab.</li>
+      </ul></td></tr>
+      <tr><td class="term">Febrile non-hemolytic (FNHTR)</td><td>Fever develops during the infusion, not from hemolysis.</td><td><ul>
+        <li>Sudden chills and fever, headache, flushing, anxiety, vomiting, muscle pain.</li>
+        <li><b>Not immediate:</b> the temperature may rise a degree over the hour.</li>
+        <li>No low back pain, no blood in the urine, no severe hemodynamic compromise. A sharp drop in BP points to a hemolytic reaction.</li>
+      </ul></td><td><ul>
+        <li>Antipyretic: acetaminophen.</li>
+        <li><b>Restart only if the provider orders it.</b></li>
+      </ul></td></tr>
+      <tr><td class="term">Mild allergic</td><td><b>The most common.</b> Sensitization to donor WBCs, platelets or plasma proteins.</td><td><ul>
+        <li>Flushing, itching, urticaria (hives).</li>
+      </ul></td><td><ul>
+        <li>Antihistamine (diphenhydramine) or corticosteroid, as ordered.</li>
+        <li>Mild and transient: <b>may restart slowly</b>, with the provider's order.</li>
+      </ul></td></tr>
+      <tr><td class="term">Anaphylactic and severe allergic</td><td>Sensitization to donor plasma proteins.</td><td><ul>
+        <li>Anxiety, urticaria, dyspnea and wheezing.</li>
+        <li><b>Progressing</b> to cyanosis, <span class="gloss">bronchospasm</span>, hypotension, shock and cardiac arrest.</li>
+      </ul></td><td><ul>
+        <li><b>Treated as a code:</b> CPR, oxygen, epinephrine.</li>
+        <li>Also antihistamines, corticosteroids, β2 agonists.</li>
+      </ul></td></tr>
+      <tr><td class="term">Bacterial or sepsis</td><td>Bacteria in the blood, as when it hangs too long.</td><td><ul>
+        <li><b>Rapid onset</b> of chills and high fever.</li>
+        <li>Vomiting and diarrhea.</li>
+        <li>Marked hypotension.</li>
+      </ul></td><td><ul>
+        <li>Blood culture. Return the blood bag to the lab.</li>
+        <li>Treat the septicemia: antibiotics, IV fluids, vasopressors.</li>
+      </ul></td></tr>
+      <tr><td class="term">Transfusion-associated circulatory overload (TACO)</td><td>Too much blood volume: the patient cannot handle the excess fluid.</td><td><ul>
+        <li>Cough and dyspnea.</li>
+        <li>Pulmonary congestion: crackles at the bases.</li>
+        <li>Headache, increased vital signs, distended neck veins.</li>
+      </ul></td><td><ul>
+        <li><b>Slow or stop</b> the infusion.</li>
+        <li>Diuretics (furosemide), oxygen, morphine: they ease the workload on the heart.</li>
+        <li>Stat chest x-ray.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- The recording, of TACO: "this is the only one where I say stop or slow the
+       infusion". Slides 25 and 26 are the only ones that give a restart. -->
+  <div class="callout-danger" id="stop-or-slow"><b>Only TACO may be slowed in place of stopped.</b> Only a febrile or a mild allergic reaction may restart, and only on the provider's order.</div>
+
+  <nav class="page-flip" data-page-flip></nav>
+  <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
+
+</div>
+</main>
+
+<script src="assets/site.js?v=20261017q"></script>
+<script src="data/glossary.js?v=20261017q"></script>
+<script src="assets/study.js?v=20261017q"></script>
+</body>
+</html>

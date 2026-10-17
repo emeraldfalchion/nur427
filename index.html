@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     HOME PAGE
+
+     One section, Topics by Day. Adding a page means adding a tile here
+     AND an entry in assets/site.js. The tiles are hand-written on
+     purpose, so they can be ordered freely.
+
+     Tiles carry the page title only, with no description line.
+
+     One .day-row per class day, each holding a square .day-badge (the
+     day number) and a .day-strip grid of tiles. A .day-strip shows 3
+     tiles per row on desktop, 2 below 900px, 1 below 560px.
+
+     DAYS RUN IN ORDER, Day 1 at the top, the same order as the nav. A
+     new day's .day-row goes at the BOTTOM of the section. Tiles inside
+     a day keep their teaching order, and the numbering restarts at 1 in
+     each day.
+
+     REVIEW PAGES have their own section under the days, built the same
+     way: one .day-row whose badge reads R, and one tile per review page.
+     It stays the LAST section, as the Review group is last in the nav.
+
+     A day looks like this:
+
+       <div class="day-row">
+         <span class="day-badge" aria-label="Day 1">1</span>
+         <div class="day-strip">
+           <a class="tile" href="day1-first-topic.html">
+             <span class="tnum">1</span>
+             <span class="tbody"><h3>First Topic</h3></span>
+           </a>
+           <a class="tile" href="day1-second-topic.html">
+             <span class="tnum">2</span>
+             <span class="tbody"><h3>Second Topic</h3></span>
+           </a>
+         </div>
+       </div>
+     ============================================================ -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NUR427 · Practice Readiness Study Guide</title>
+<script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="assets/styles.css?v=20261017q">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<main id="content">
+<div class="page-inner">
+
+  <section class="home-section home-days" aria-label="Topics by day">
+    <h2>Topics by Day</h2>
+
+    <div class="day-row">
+      <span class="day-badge" aria-label="Day 1">1</span>
+      <div class="day-strip">
+        <a class="tile" href="day1-respiratory.html">
+          <span class="tnum">1</span>
+          <span class="tbody"><h3>Respiratory and Progressive Issues in Critical Care</h3></span>
+        </a>
+        <a class="tile" href="day1-oxygen-therapy.html">
+          <span class="tnum">2</span>
+          <span class="tbody"><h3>Oxygen Therapy and Mechanical Ventilation</h3></span>
+        </a>
+        <a class="tile" href="day1-hematologic.html">
+          <span class="tnum">3</span>
+          <span class="tbody"><h3>Hematologic Issues in Critical Care</h3></span>
+        </a>
+        <a class="tile" href="day1-acute-pancreatitis.html">
+          <span class="tnum">4</span>
+          <span class="tbody"><h3>Acute Pancreatitis</h3></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <span class="day-badge" aria-label="Day 2">2</span>
+      <div class="day-strip">
+        <a class="tile" href="day2-cardiovascular.html">
+          <span class="tnum">1</span>
+          <span class="tbody"><h3>Cardiovascular Critical Care Issues</h3></span>
+        </a>
+        <a class="tile" href="day2-rhythms-pacemakers.html">
+          <span class="tnum">2</span>
+          <span class="tbody"><h3>Rhythms &amp; Pacemaker Review</h3></span>
+        </a>
+        <a class="tile" href="day2-acute-kidney-injury.html">
+          <span class="tnum">3</span>
+          <span class="tbody"><h3>Acute Kidney Injury</h3></span>
+        </a>
+        <a class="tile" href="day2-nutrition.html">
+          <span class="tnum">4</span>
+          <span class="tbody"><h3>Nutrition</h3></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <span class="day-badge" aria-label="Day 3">3</span>
+      <div class="day-strip">
+        <a class="tile" href="day3-gastrointestinal.html">
+          <span class="tnum">1</span>
+          <span class="tbody"><h3>GI Critical Care Issues</h3></span>
+        </a>
+        <a class="tile" href="day3-liver-failure.html">
+          <span class="tnum">2</span>
+          <span class="tbody"><h3>Hepatic Failure</h3></span>
+        </a>
+        <a class="tile" href="day3-neuro-assessment-icp.html">
+          <span class="tnum">3</span>
+          <span class="tbody"><h3>Neuro Assessment and Increased ICP</h3></span>
+        </a>
+        <a class="tile" href="day3-brain-injury-stroke.html">
+          <span class="tnum">4</span>
+          <span class="tbody"><h3>Brain Injury and Stroke</h3></span>
+        </a>
+        <a class="tile" href="day3-spinal-cord-injury.html">
+          <span class="tnum">5</span>
+          <span class="tbody"><h3>Spinal Cord Injury</h3></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="day-row">
+      <span class="day-badge" aria-label="Day 4">4</span>
+      <div class="day-strip">
+        <a class="tile" href="day4-hemodynamics.html">
+          <span class="tnum">1</span>
+          <span class="tbody"><h3>Hemodynamics</h3></span>
+        </a>
+        <a class="tile" href="day4-shock-sepsis-mods.html">
+          <span class="tnum">2</span>
+          <span class="tbody"><h3>Shock, Sepsis, MODS</h3></span>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="home-section home-days" aria-label="Review pages">
+    <h2>Review</h2>
+
+    <div class="day-row">
+      <span class="day-badge" aria-label="Review">R</span>
+      <div class="day-strip">
+        <a class="tile" href="review-respiratory.html">
+          <span class="tnum">1</span>
+          <span class="tbody"><h3>Respiratory</h3></span>
+        </a>
+        <a class="tile" href="review-respiratory-diseases.html">
+          <span class="tnum">2</span>
+          <span class="tbody"><h3>Respiratory Diseases</h3></span>
+        </a>
+        <a class="tile" href="review-chest-tubes.html">
+          <span class="tnum">3</span>
+          <span class="tbody"><h3>Chest Tubes</h3></span>
+        </a>
+        <a class="tile" href="review-abgs.html">
+          <span class="tnum">4</span>
+          <span class="tbody"><h3>ABGs</h3></span>
+        </a>
+        <a class="tile" href="review-hematology.html">
+          <span class="tnum">5</span>
+          <span class="tbody"><h3>Hematology</h3></span>
+        </a>
+        <a class="tile" href="review-transfusions.html">
+          <span class="tnum">6</span>
+          <span class="tbody"><h3>Transfusions</h3></span>
+        </a>
+        <a class="tile" href="review-cardiovascular.html">
+          <span class="tnum">7</span>
+          <span class="tbody"><h3>Cardiovascular</h3></span>
+        </a>
+        <a class="tile" href="review-heart-disease.html">
+          <span class="tnum">8</span>
+          <span class="tbody"><h3>Heart Disease</h3></span>
+        </a>
+        <a class="tile" href="review-dysrhythmias.html">
+          <span class="tnum">9</span>
+          <span class="tbody"><h3>Dysrhythmias</h3></span>
+        </a>
+        <a class="tile" href="review-renal.html">
+          <span class="tnum">10</span>
+          <span class="tbody"><h3>Renal</h3></span>
+        </a>
+        <a class="tile" href="review-gi.html">
+          <span class="tnum">11</span>
+          <span class="tbody"><h3>GI</h3></span>
+        </a>
+        <a class="tile" href="review-neuro.html">
+          <span class="tnum">12</span>
+          <span class="tbody"><h3>Neuro</h3></span>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
+
+</div>
+</main>
+
+<script src="assets/site.js?v=20261017q"></script>
+</body>
+</html>

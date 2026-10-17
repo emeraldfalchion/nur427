@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!-- SOURCES
+     A review page: built from earlier-course sources, and only from the slides and
+     transcript lines that review-map.md lists for the item in review-list.md.
+     Deck:        slides/pathopharm2/Week 2 - ABGs_student version.pptx (23 slides. Used: 3-23)
+     Deck:        slides/pathopharm2/Week 2 - ABG Interpretation_student version.pptx (19 slides. Used: 3-18)
+     Transcript:  transcripts/pathopharm2/Week 2 - abg - combined.txt (lines 1-258, 261-526)
+     The ABGs recording is lines 1-258, and the ABG Interpretation recording 261-526.
+     Built:       2026-10-16
+     Cross-checked against the decks: 2026-10-16
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ABGs — NUR427</title>
+<script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="assets/styles.css?v=20261017q">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<main id="content">
+<div class="page-inner">
+
+  <header class="page-head">
+    <p class="eyebrow">Review · Topic 4</p>
+    <h1>ABGs</h1>
+  </header>
+
+  <h2 class="block" id="abg-values">The ABG Values</h2>
+
+  <p class="further-study">For further study, see <b>Pathopharm II Week 2 – Arterial Blood Gas</b>.</p>
+
+  <!-- Scope, by Holly's ruling (2026-10-13): the normal values, what each value means,
+       ROME, the steps, the levels of compensation, and the causes and manifestations of
+       the four disorders. Not the two acid-base physiology decks.
+       Left out: the venous blood gas (ABGs slide 4), the definitions of primary event and
+       primary disorder (slide 5), the interventions and treatments on Interpretation
+       slides 6-9, the tic-tac-toe and ABG-lines methods as methods (slides 16-17), and the
+       two photos (slide 7's paper bag, slide 17's old textbook). See decisions.md.
+       The Low and High columns are what the ABG-lines method memorizes (Interpretation
+       slide 17: "AB, BA and AB"). -->
+  <div class="table-wrap" id="abg-normal-values"><table>
+    <thead><tr><th>Value</th><th>Normal</th><th>What It Means</th><th>Low</th><th>High</th></tr></thead>
+    <tbody>
+      <tr><td class="term">pH</td><td>7.35 to 7.45</td><td><ul>
+        <li>Balance of H+ (hydrogen ions).</li>
+      </ul></td><td>Acid</td><td>Base</td></tr>
+      <tr><td class="term">PaCO2</td><td>35 to 45 mmHg</td><td><ul>
+        <li><b>Respiratory</b> parameter: changes with the lungs.</li>
+        <li>Partial pressure of CO2 in the artery. Carbonic acid dissolves into CO2 and H2O.</li>
+      </ul></td><td><b>Base</b></td><td><b>Acid</b></td></tr>
+      <tr><td class="term">HCO3 (bicarb)</td><td>24 to 29 mEq/L</td><td><ul>
+        <li><b>Metabolic</b> parameter: changes with the kidneys.</li>
+        <li><b>Calculated</b> on the ABG, not measured.</li>
+        <li>Serum CO2 on a BMP is the same value, with the same normal.</li>
+      </ul></td><td>Acid</td><td>Base</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- PaO2: the NUR427 lecture names it with the other three values, and the pathopharm
+       ABG lectures never mention it. Day 1 Respiratory teaches it, so this strip points
+       there. See decisions.md. -->
+  <p class="xref-line"><a class="xref" href="day1-respiratory.html#oxygenation-vs-ventilatory">
+    <span><b>PaO2</b> is taught in <b>Respiratory and Progressive Issues in Critical Care</b></span>
+  </a></p>
+
+  <h2 class="block" id="four-disorders">The Four Disorders</h2>
+
+  <!-- ABGs slide 9's picture ("Primary Acid Base Disorders"), transcribed with each
+       disorder's ABG slide (10, 13, 16, 19). Rows in slide 7's order, which the
+       Interpretation deck keeps. Metabolic alkalosis: slide 10 prints "pH > 7.48". Every
+       other source has 7.45 as the top of normal, so the table says 7.45: flagged to Holly.
+       Respiratory alkalosis: slide 13's "carbonic acid deficit". The recording says
+       "there's a bicarb deficit" at that point. See decisions.md. -->
+  <div class="table-wrap" id="disorder-abg-patterns"><table>
+    <thead><tr><th>Disorder</th><th>pH</th><th>Primary Change</th><th>Compensation</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Respiratory acidosis</td><td>↓ Below 7.35</td><td><b>PaCO2 ↑ above 45:</b> carbonic acid excess. <span class="gloss">Hypoventilation</span> retains CO2.</td><td>HCO3 ↑, by the kidneys</td></tr>
+      <tr><td class="term">Respiratory alkalosis</td><td>↑ Above 7.45</td><td><b>PaCO2 ↓ below 35:</b> carbonic acid deficit. <span class="gloss">Hyperventilation</span> blows off CO2.</td><td>HCO3 ↓, by the kidneys</td></tr>
+      <tr><td class="term">Metabolic acidosis</td><td>↓ Below 7.35</td><td><b>HCO3 ↓ below 24:</b> bicarbonate deficit. Excess acids are added, or HCO3 is lost.</td><td>PaCO2 ↓, by the lungs</td></tr>
+      <tr><td class="term">Metabolic alkalosis</td><td>↑ Above 7.45</td><td><b>HCO3 ↑ above 29:</b> too much HCO3, or not enough carbonic acid.</td><td>PaCO2 ↑, by the lungs</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ABGs slide 8's picture, transcribed. -->
+  <div class="mnemonic" id="rome">
+    <b>ROME: Respiratory Opposite, Metabolic Equal.</b>
+    <ul>
+      <li><b>Respiratory Opposite:</b> pH ↑ and PaCO2 ↓ is alkalosis. pH ↓ and PaCO2 ↑ is acidosis.</li>
+      <li><b>Metabolic Equal:</b> pH ↑ and HCO3 ↑ is alkalosis. pH ↓ and HCO3 ↓ is acidosis.</li>
+    </ul>
+  </div>
+
+  <h3 class="sub" id="common-causes">Common Causes</h3>
+
+  <!-- Slides 11, 14, 17 and 20, with the causes on the pictures of slides 12, 15, 18 and
+       21 (atelectasis, fear, excessive NaHCO3) and the recording's account of each.
+       Generic name: sodium bicarbonate, for the slide's "baking soda, alka-seltzer". -->
+  <div class="table-wrap" id="causes-by-disorder"><table>
+    <thead><tr><th>Disorder</th><th>Common Causes</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Respiratory acidosis</td><td><ul>
+        <li>Cardiopulmonary arrest.</li>
+        <li>Head injury.</li>
+        <li><b>Narcotics or sedatives:</b> an overdose, or too much given.</li>
+        <li><b>Anesthesia</b>, and after it while the drugs are metabolized.</li>
+        <li><b>Pulmonary disorders:</b> acute asthma, COPD exacerbation, pneumonia, respiratory failure, atelectasis.</li>
+        <li><b>Pain:</b> shallow breathing, no deep breaths because it hurts.</li>
+        <li>Abdominal distension.</li>
+        <li>Airway obstruction.</li>
+        <li>Chest wall deformities.</li>
+        <li><b>Neuromuscular problems:</b> muscles too weak to ventilate, as in ALS or Guillain-Barré.</li>
+      </ul></td></tr>
+      <tr><td class="term">Respiratory alkalosis</td><td><ul>
+        <li><b><span class="gloss">Hyperventilation</span>:</b> acute anxiety, a panic attack, fear.</li>
+        <li><b>Increased metabolic demands:</b> fever, infection, sepsis.</li>
+        <li>Medications that increase the breathing rate.</li>
+        <li>Hypoxia.</li>
+        <li>PE or lung disease.</li>
+        <li><b>CNS lesions:</b> head injuries, brain lesions.</li>
+        <li><b>Ventilator settings:</b> rate set too high, or tidal volume too big.</li>
+      </ul></td></tr>
+      <tr><td class="term">Metabolic acidosis</td><td><ul>
+        <li><b>Renal failure:</b> the kidneys cannot excrete H+.</li>
+        <li><b>Fistulas:</b> HCO3 lost with the fluid and electrolytes.</li>
+        <li><b>Diabetes, type 1:</b> DKA. Ketones are acids.</li>
+        <li><b>Lactic acidosis:</b> lactate produced when the cells lack oxygen.</li>
+        <li><b>Prolonged diarrhea:</b> the HCO3 released into the intestines to neutralize stomach acid is lost.</li>
+        <li><b>Starvation:</b> body fat broken down, causing ketosis.</li>
+        <li><b>Medication overdose:</b> aspirin.</li>
+        <li><b>Shock and cardiac arrest:</b> lactic acid from tissues without enough oxygen.</li>
+      </ul></td></tr>
+      <tr><td class="term">Metabolic alkalosis</td><td><ul>
+        <li><b>Too much base:</b> excess baking soda (sodium bicarbonate) or antacids.</li>
+        <li><b>Prolonged vomiting:</b> stomach acid (hydrochloric acid) is lost, and H+ with it.</li>
+        <li><b>NG tube:</b> prolonged suctioning pulls hydrochloric acid out of the stomach.</li>
+        <li><b>Diuretics</b>, especially loop diuretics: H+ lost in the urine.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub" id="clinical-manifestations">Clinical Manifestations</h3>
+
+  <!-- Slides 11, 14, 17 and 20, merged with the pictures on slides 12, 15, 18 and 21,
+       transcribed, under the same labels in every row. Respiratory acidosis has no GI
+       bullet: no source gives it one. Garbles read from the slides: "syncopole" as
+       syncope, "tachymia" as tachypnea (slide 14), "Cusimals" as Kussmaul (slide 20). -->
+  <div class="table-wrap" id="manifestations-by-disorder"><table>
+    <thead><tr><th>Disorder</th><th>Clinical Manifestations</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Respiratory acidosis</td><td><ul>
+        <li><b>CNS:</b> <b>depression</b>. Headache, restlessness, confusion, drowsiness, dizziness, disorientation. Decreased LOC, stupor, coma. Muscle weakness, hyperreflexia.</li>
+        <li><b>Breathing:</b> <span class="gloss">hypoventilation</span>, slow, or rapid and shallow. Dyspnea, respiratory distress: the patient cannot catch their breath. Hypoxia.</li>
+        <li><b>Cardiovascular:</b> tachycardia, dysrhythmias. Decreased BP with vasodilation.</li>
+        <li><b>Potassium:</b> hyperkalemia.</li>
+      </ul></td></tr>
+      <tr><td class="term">Respiratory alkalosis</td><td><ul>
+        <li><b>CNS:</b> <b>over-excitability</b>. Light-headedness, syncope. Confusion, blurred vision, lethargy. <span class="gloss" data-term="paresthesia">Paresthesias</span> of the hands and feet, <span class="gloss">perioral</span>. Hyperactive reflexes, seizures, coma.</li>
+        <li><b>Breathing:</b> deep and rapid: <span class="gloss">tachypnea</span>, <span class="gloss">hyperventilation</span>. Once the patient passes out, breathing regulates and CO2 builds back up.</li>
+        <li><b>Cardiovascular:</b> tachycardia. Decreased or normal BP.</li>
+        <li><b>Potassium:</b> hypokalemia.</li>
+        <li><b>GI:</b> nausea, vomiting.</li>
+      </ul></td></tr>
+      <tr><td class="term">Metabolic acidosis</td><td><ul>
+        <li><b>CNS:</b> lethargy, drowsiness, confusion, headache. Tremors, muscle cramps, muscle twitching. <span class="gloss" data-term="paresthesia">Paresthesias</span> of the fingers or toes, <span class="gloss">perioral</span>.</li>
+        <li><b>Breathing:</b> <span class="gloss" data-term="Kussmaul's respiration">Kussmaul respirations</span> (DKA): the lungs' compensatory <span class="gloss">hyperventilation</span>, blowing off CO2. <b>Fruity odor breath</b> (DKA).</li>
+        <li><b>Cardiovascular:</b> hypotension. Warm, flushed skin from vasodilation.</li>
+        <li><b>Potassium:</b> <b>hyperkalemia</b>: H+ moves into the cells and K+ comes out.</li>
+        <li><b>GI:</b> nausea, vomiting, diarrhea.</li>
+      </ul></td></tr>
+      <tr><td class="term">Metabolic alkalosis</td><td><ul>
+        <li><b>CNS:</b> <b>over-excitability</b>. Restlessness followed by lethargy. Confusion, decreased LOC, dizziness, irritability. Tremors, muscle cramps. <span class="gloss" data-term="paresthesia">Paresthesias</span> of the fingers and toes, <span class="gloss">perioral</span>. Coma.</li>
+        <li><b>Breathing:</b> respiratory depression: compensatory <span class="gloss">hypoventilation</span>, holding on to CO2.</li>
+        <li><b>Cardiovascular:</b> dysrhythmias, tachycardia.</li>
+        <li><b>Potassium:</b> <b>hypokalemia</b>: H+ shifts out of the cells to buffer the alkalosis, and K+ moves in.</li>
+        <li><b>GI:</b> nausea, vomiting, diarrhea.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="compensation">Compensation</h2>
+
+  <p class="note"><b>Compensation brings the pH back toward normal without correcting the underlying cause.</b> The system not involved in the imbalance does it.</p>
+
+  <!-- ABGs slides 5, 22 and 23 and Interpretation slide 5's table. Metabolic acidosis:
+       the recording says once that with the lungs compensating "that CO2 is going to be
+       increased", then that the lungs breathe faster "to get rid of some of that CO2".
+       Every slide and the rest of the recording have CO2 going down, so the page does:
+       flagged to Holly. See decisions.md. -->
+  <div class="two-col" id="lungs-vs-kidneys">
+    <div class="card">
+      <h4>The Lungs: Respiratory Compensation</h4>
+      <ul>
+        <li><b>Compensate for:</b> a metabolic problem.</li>
+        <li><b>How:</b> <span class="gloss">hyperventilation</span> blows off CO2 to correct an acidosis. <span class="gloss">Hypoventilation</span> conserves CO2 to correct an alkalosis.</li>
+        <li><b>Speed:</b> rapid, <b>minutes to hours</b>.</li>
+        <li><b>How long:</b> cannot keep it up for long.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>The Kidneys: Metabolic Compensation</h4>
+      <ul>
+        <li><b>Compensate for:</b> a respiratory problem.</li>
+        <li><b>How:</b> retain (reabsorb) HCO3 to correct an acidosis. Excrete HCO3 to correct an alkalosis. Also retain or excrete H+.</li>
+        <li><b>Speed:</b> slow, <b>hours to days</b>.</li>
+        <li><b>How long:</b> can keep it up for longer, if functioning properly.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ABGs slide 16 and the recording. The recording's COPD figures (a PaCO2 of 60 with
+       an HCO3 of 32, then 75 with an infection) are the last bullet, without the numbers.
+       Slide 16's "(resp arrest vs COPD or oversedation)" sets oversedation beside COPD.
+       The recording gives only respiratory arrest and COPD, so oversedation stays in
+       the causes table. -->
+  <div class="two-col" id="acute-vs-chronic-respiratory-acidosis">
+    <div class="card">
+      <h4>Acute Respiratory Acidosis</h4>
+      <ul>
+        <li>pH low, PaCO2 high.</li>
+        <li><b>HCO3 normal:</b> no time for the kidneys to compensate.</li>
+        <li>Examples: respiratory arrest.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Chronic Respiratory Acidosis</h4>
+      <ul>
+        <li>PaCO2 high: CO2 retained over time.</li>
+        <li><b>HCO3 high:</b> the kidneys have had time to compensate. pH closer to normal, or normal when fully compensated.</li>
+        <li><b>Never a corrected ABG:</b> the CO2 and the HCO3 stay high.</li>
+        <li><b>Breathing worsens, as with an infection:</b> PaCO2 rises, HCO3 has not had time to follow, and the pH drops.</li>
+        <li>Examples: COPD.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="block" id="interpreting-abgs">Interpreting an ABG</h2>
+
+  <!-- Interpretation slides 10-12 and 14, in their order. -->
+  <div class="table-wrap" id="abg-steps"><table>
+    <thead><tr><th>Step</th><th>What to Do</th></tr></thead>
+    <tbody>
+      <tr><td class="term">1. pH</td><td><ul>
+        <li>Acid (below 7.35) or base (above 7.45)?</li>
+        <li><b>Normal, with PaCO2 or HCO3 abnormal:</b> compensation has occurred. Decide which way it leans: <b>7.40 is neutral</b>. Below 7.40 leans acid, above 7.40 leans base.</li>
+        <li>Examples: 7.36 and 7.38 lean acid, 7.45 leans base.</li>
+      </ul></td></tr>
+      <tr><td class="term">2. PaCO2</td><td><ul>
+        <li>Acid (above 45), base (below 35) or normal?</li>
+        <li>Abnormal: a <b>respiratory</b> problem. Moves <b>opposite</b> to the pH: one up, one down.</li>
+      </ul></td></tr>
+      <tr><td class="term">3. HCO3</td><td><ul>
+        <li>Acid (below 24), base (above 29) or normal?</li>
+        <li>Abnormal: a <b>metabolic</b> problem. Moves <b>with</b> the pH: both up or both down.</li>
+      </ul></td></tr>
+      <tr><td class="term">4. Compensation</td><td><ul>
+        <li>Is the body restoring the pH by altering the buffer system <b>not</b> involved in the imbalance?</li>
+        <li>If so, that value moves in the <b>same direction</b> as the other component: both up or both down. One reads acid, the other base.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- The hint on Interpretation slides 15 and 18, with slide 6's "with COMPENSATION,
+       the PH points the way". -->
+  <div class="mnemonic" id="ph-points-the-way"><b>The pH points the way.</b> The value that matches the pH, both acid or both base, names the problem. With a normal pH, match the way it leans.</div>
+
+  <h2 class="block" id="levels-of-compensation">The Four Levels of Compensation</h2>
+
+  <!-- Interpretation slide 13. "Fully compensated" is the name slides 2 and 6-9 and the
+       recording's examples use. Slide 13 calls it "Compensated". -->
+  <div class="continuum four" id="compensation-ladder">
+    <div class="cont-step ill">
+      <h4>Uncompensated</h4>
+      <p><b>pH abnormal.</b> PaCO2 <b>or</b> HCO3 abnormal, not both.</p>
+    </div>
+    <div class="cont-step warn">
+      <h4>Partially Compensated</h4>
+      <p><b>pH abnormal.</b> PaCO2 <b>and</b> HCO3 abnormal: the body has started to pull the pH back.</p>
+    </div>
+    <div class="cont-step mid">
+      <h4>Fully Compensated</h4>
+      <p><b>pH normal.</b> PaCO2 and HCO3 abnormal, but balanced. Neutralized, not corrected.</p>
+    </div>
+    <div class="cont-step well">
+      <h4>Corrected</h4>
+      <p><b>pH normal.</b> All values back to normal after the imbalance.</p>
+    </div>
+  </div>
+
+  <h2 class="block" id="practice-abgs">Practice ABGs</h2>
+
+  <!-- The worked examples of Interpretation slides 6-9 and 15-18, in the deck's order,
+       with the deck's answers. Kept as a self-test, though examples are usually cut:
+       interpreting an ABG is the skill the NUR427 lecture asks for. Flagged to Holly.
+       Left off: slide 9's uncompensated example (7.46, 37, 26), whose HCO3 of 26 is
+       inside the normal range, and slide 19's six practice ABGs, whose answers are only
+       in the speaker notes and give 7.69, 25, 24 as partially compensated metabolic
+       alkalosis. See decisions.md. -->
+  <div class="table-wrap" id="worked-abgs"><table>
+    <thead><tr><th>pH, PaCO2, HCO3</th><th>Interpretation</th></tr></thead>
+    <tbody>
+      <tr><td class="term">7.25, 56, 24</td><td><b>Uncompensated respiratory acidosis.</b> pH acid, PaCO2 acid, HCO3 normal.</td></tr>
+      <tr><td class="term">7.35, 56, 35</td><td><b>Fully compensated respiratory acidosis.</b> pH normal, leaning acid. PaCO2 acid, HCO3 base.</td></tr>
+      <tr><td class="term">7.60, 25, 24</td><td><b>Uncompensated respiratory alkalosis.</b> pH base, PaCO2 base, HCO3 normal.</td></tr>
+      <tr><td class="term">7.45, 30, 20</td><td><b>Fully compensated respiratory alkalosis.</b> pH normal, leaning base. PaCO2 base, HCO3 acid.</td></tr>
+      <tr><td class="term">7.26, 40, 18</td><td><b>Uncompensated metabolic acidosis.</b> pH acid, PaCO2 normal, HCO3 acid.</td></tr>
+      <tr><td class="term">7.35, 33, 20</td><td><b>Fully compensated metabolic acidosis.</b> pH normal, leaning acid. PaCO2 base, HCO3 acid.</td></tr>
+      <tr><td class="term">7.45, 49, 30</td><td><b>Fully compensated metabolic alkalosis.</b> pH normal, leaning base. PaCO2 acid, HCO3 base.</td></tr>
+      <tr><td class="term">7.30, 52, 30</td><td><b>Partially compensated respiratory acidosis.</b> pH acid, PaCO2 acid, HCO3 base.</td></tr>
+      <tr><td class="term">7.60, 31, 26</td><td><b>Uncompensated respiratory alkalosis.</b> pH base, PaCO2 base, HCO3 normal.</td></tr>
+      <tr><td class="term">7.30, 29, 21</td><td><b>Partially compensated metabolic acidosis.</b> pH acid, PaCO2 base, HCO3 acid.</td></tr>
+      <tr><td class="term">7.52, 48, 39</td><td><b>Partially compensated metabolic alkalosis.</b> pH base, PaCO2 acid, HCO3 base.</td></tr>
+    </tbody>
+  </table></div>
+
+  <nav class="page-flip" data-page-flip></nav>
+  <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
+
+</div>
+</main>
+
+<script src="assets/site.js?v=20261017q"></script>
+<script src="data/glossary.js?v=20261017q"></script>
+<script src="assets/study.js?v=20261017q"></script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!-- SOURCES
+     Deck:        slides/Day 3 - 2 Neuro.pptx (33 slides)
+     Transcript:  transcripts/Day 3 - Spinal.txt
+     Built:       2026-10-14
+     Cross-checked against the deck: 2026-10-14
+-->
+<!-- This page is slides 28 to 33 of the deck: the Spinal Cord Injury recording. Slides 2 to 14
+     are "Neuro Assessment and Increased ICP", and slides 15 to 27 are "Brain Injury and
+     Stroke" (Holly, 2026-10-14). -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spinal Cord Injury — NUR427</title>
+<script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="assets/styles.css?v=20261017q">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<main id="content">
+<div class="page-inner">
+
+  <header class="page-head">
+    <p class="eyebrow">Day 3 · Topic 5</p>
+    <h1>Spinal Cord Injury</h1>
+  </header>
+
+  <!-- No bring-forward card. The deck's "Pull forward" slide (slide 2) belongs to "Neuro
+       Assessment and Increased ICP", and the Spinal recording asks for nothing to be reviewed
+       and names no earlier course. Its passing mentions of earlier learning are in
+       review-list.md as skipped. -->
+
+  <h2 class="block" id="sci">Spinal Cord Injury (SCI)</h2>
+
+  <!-- Said over slide 28, and not on its text.
+       Left off: "I know there's a level like T6, maybe like T5, T4, there are sometimes you can
+       get stimulators for that", said unsure. Also the intro's "C4, C6 usually ends up needing
+       long-term ventilatory assistance": the recording's later breakdown by level replaces it
+       (see breathing-by-level below), and says C5 to C6 usually breathe with the diaphragm (Holly,
+       2026-10-14). -->
+  <div class="card" id="sci-essentials">
+    <h4>Who Gets SCI, and How</h4>
+    <ul>
+      <li><b>Most common at ages 16 to 30.</b></li>
+      <li><b>Causes:</b> motor vehicle accidents, falls, acts of violence (gunshots, stabbings), sports injuries, diving accidents.</li>
+      <li><b>TBI and SCI often go hand in hand.</b></li>
+      <li><b>The level of injury decides the long-term effects</b> to anticipate. C4 and C6 injuries: <span class="gloss">tetraplegia</span>. T6 and L1 injuries: <span class="gloss">paraplegia</span>.</li>
+    </ul>
+  </div>
+
+  <!-- Slide 28's drawing: "And you can see here at this picture if it's C4 or above, they are
+       tetraplegia". -->
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-injury-levels">View injury levels and paralysis</button>
+  <div class="fig-store" id="fig-injury-levels" hidden>
+    <figure class="figure">
+      <img src="images/day3-spinal-cord-injury/injury-levels.jpg" alt="A spine labelled cervical, thoracic, lumbar, sacral and coccygeal, with arrows from four levels to four figures. The area paralyzed is shaded on each: a C4 injury, everything from the neck down (tetraplegia). A C6 injury, the arms and body (tetraplegia). A T6 injury, from the chest down (paraplegia). An L1 injury, from the hips down (paraplegia)." loading="lazy">
+      <figcaption><b>C4 and C6 injuries:</b> tetraplegia. <b>T6 and L1 injuries:</b> paraplegia.</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="block" id="sci-pathophysiology">Pathophysiology of SCI</h2>
+
+  <!-- Slide 29's first bullet, with what the recording adds. -->
+  <div class="card" id="sci-injury-essentials">
+    <h4>What Happens to the Cord</h4>
+    <ul>
+      <li><b>With or without injury to the vertebrae,</b> which house the spinal cord.</li>
+      <li><b>Complex, multifaceted biochemical changes</b> in the cord: the secondary injury.</li>
+      <li><b>As in TBI and stroke,</b> the biochemical inflammatory response on top of the primary injury causes much of the damage.</li>
+    </ul>
+  </div>
+
+  <!-- The strip is the recording's chain, in its order. None of it is on the slides. -->
+  <div class="continuum four" id="secondary-injury-chain">
+    <div class="cont-step well">
+      <h4>Spinal Cord Edema</h4>
+      <p>From the inflammatory response. Compresses the tissue and the blood vessels. Can <b>ascend or descend</b> from the level of injury.</p>
+    </div>
+    <div class="cont-step mid">
+      <h4>Microscopic Hemorrhages</h4>
+      <p>Vascular changes: bleeding into the <b>gray and white matter</b>. The edema worsens.</p>
+    </div>
+    <div class="cont-step warn">
+      <h4>Ischemia</h4>
+      <p>Blood flow decreases further.</p>
+    </div>
+    <div class="cont-step ill">
+      <h4>Axonal Degeneration</h4>
+      <p>The nerves fail to conduct: the <b>permanent loss of function</b>.</p>
+    </div>
+  </div>
+
+  <p class="xref-line"><a class="xref" href="day3-brain-injury-stroke.html#primary-vs-secondary-injury">
+    <span><b>Secondary injury in TBI</b> is taught in <b>Brain Injury and Stroke</b></span>
+  </a></p>
+
+  <!-- Left off: slide 30's diagram of the secondary injury cascade (the cells, cytokines and
+       steps of the inflammatory response). "You don't need to memorize this by any means. But
+       this is to demonstrate how complicated and complex that secondary injury cascade is".
+       exam-hints.md keeps the quote. -->
+
+  <h3 class="sub" id="sci-shock-heading">Two Types of Shock</h3>
+
+  <!-- Slide 29's two shocks, with what the recording adds.
+       "Can occur during spinal shock": the recording first says "once that initial spinal shock
+       is done, there's something called neurogenic shock", then "you can have neurogenic shock
+       while spinal shock is occurring". The second is written.
+       "Sympathetic tone": the recording has "the return of sympathetic term. Tone, excuse me".
+       "More likely at T6 or higher" is said under the assessment's temperature. Distributive
+       shock has a strip to Day 4 Shock, whose recording says neurogenic shock is taught in the
+       spinal cord lecture. -->
+  <div class="two-col" id="spinal-vs-neurogenic-shock">
+    <div class="card">
+      <h4>Spinal Shock</h4>
+      <ul>
+        <li><b>Electrical silence of the cord</b> below the level of injury: <b>complete loss of motor, sensory and reflex activity</b>, at the level of injury and below.</li>
+        <li><b>Begins within minutes</b> of the injury. Can last <b>up to 6 weeks</b>.</li>
+        <li><b>The permanence of the injury is not known until it resolves:</b> the secondary injury can still spread up or down.</li>
+        <li><b>Resolution:</b> usually signaled by the return of <b>deep tendon reflexes</b>. Rarely, motor and sensory function return.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Neurogenic Shock</h4>
+      <ul>
+        <li><b>Disruption of autonomic function</b> below the level of injury: the pathways are damaged.</li>
+        <li><b>Sympathetic input lost:</b> vasodilation, a distributive shock.</li>
+        <li><b>Manifests as hypotension, bradycardia, hypothermia.</b></li>
+        <li><b>Can occur during spinal shock.</b> Duration variable.</li>
+        <li><b>Resolution:</b> signaled by the return of <b>sympathetic tone</b>.</li>
+        <li><b>Not always:</b> depends on whether the lesion is complete or incomplete. More likely with an injury at <b>T6 or higher</b>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="xref-line"><a class="xref" href="day4-shock-sepsis-mods.html#distributive-shock">
+    <span><b>Distributive shock</b> is taught in <b>Shock, Sepsis, MODS</b></span>
+  </a></p>
+
+  <h3 class="sub" id="sci-lesion-heading">Complete vs Incomplete Lesion</h3>
+
+  <!-- Slide 29's red box, which underlines both names, with the recording's "kind of like
+       severity of the injury". -->
+  <div class="table-wrap" id="complete-vs-incomplete-lesion"><table>
+    <thead><tr><th>Lesion</th><th>Function Below the Level of Injury</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Complete</td><td><b>Total, permanent loss</b> of sensory and motor function.</td></tr>
+      <tr><td class="term">Incomplete</td><td><b>Some</b> motor and sensory function <b>spared</b>.</td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="note"><b>The lesion type reflects the severity of the injury.</b></p>
+
+  <h2 class="block" id="sci-assessment">Assessment of SCI</h2>
+
+  <h3 class="sub" id="sci-airway-heading">Airway and Respiratory: The First Priority</h3>
+
+  <!-- Slide 31's first bullet, with what the recording adds. -->
+  <div class="card" id="sci-airway">
+    <h4>Why Breathing Is at Risk</h4>
+    <ul>
+      <li><b>An injury at the cervical or thoracic level can affect the diaphragm.</b></li>
+      <li><b>No nerve stimulation to the diaphragm:</b> no independent breathing.</li>
+      <li><b>Paralysis of the diaphragm:</b> intubation and mechanical ventilation.</li>
+    </ul>
+  </div>
+
+  <!-- The recording's breakdown by level, said under slide 31's airway bullet. "C4 or C5" and
+       "C5 to C6" overlap at C5, as said.
+       Phrenic nerve pacemaker: never explained here. Its glossary entry is Fundamentals II's
+       Oxygenation lecture, the phrenic nerve "controls your breathing and diaphragm"
+       (2026-10-16). See decisions.md. -->
+  <div class="continuum" id="breathing-by-level">
+    <div class="cont-step ill">
+      <h4>C1 to C3</h4>
+      <p><b>Ventilator dependent.</b></p>
+    </div>
+    <div class="cont-step warn">
+      <h4>C4 or C5</h4>
+      <p>Will need a <b><span class="gloss">phrenic nerve pacemaker</span></b>.</p>
+    </div>
+    <div class="cont-step mid">
+      <h4>C5 to C6</h4>
+      <p>Typically <b>intact diaphragmatic breathing</b>. Varying impairment of the intercostal and abdominal muscles.</p>
+    </div>
+  </div>
+  <div class="cont-axis"><span>← Higher on the spine</span><span>Lower on the spine →</span></div>
+
+  <p class="note"><b>T6 and above: very high risk for breathing issues.</b> An incomplete lesion above T6 varies: watch these patients very closely for airway and respiratory problems.</p>
+
+  <h3 class="sub" id="sci-systems-heading">Assessing the Other Systems</h3>
+
+  <!-- The rows are slide 31's list after the airway, in its order, with what the recording
+       adds. Slide 31 sets "TEMPERATURE management" under the neurologic bullet: it is a row of
+       its own here. The recording's venous stasis is under heparin and VTE prophylaxis in the
+       interventions, and its bladder program and bowel programs are under the bowel and bladder
+       regimen row there.
+       "Atony": the recording has "Spinal shock leads to acne of the bowel and bladder".
+       "Paralytic ileus": "paralytic ilius".
+       Psychosocial: "make sure that you're reaching out and getting the support that these
+       patients need, as well as providing it for you as a bedside nurse", read as giving the
+       support yourself, as the bedside nurse. -->
+  <div class="table-wrap" id="sci-assessment-areas"><table>
+    <thead><tr><th>Assessment</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Neurologic</td><td><ul>
+        <li>Sensory, motor and reflex function.</li>
+      </ul></td></tr>
+      <tr><td class="term">Temperature management</td><td><ul>
+        <li><b>T6 and higher: unable to regulate body temperature.</b></li>
+        <li><b>Febrile or hypothermic:</b> more likely to have prolonged issues.</li>
+        <li><b>Monitor closely and continuously,</b> especially in the first several days.</li>
+        <li>Example: a continuous bladder temperature.</li>
+      </ul></td></tr>
+      <tr><td class="term">Hemodynamics</td><td><ul>
+        <li><b>At risk from neurogenic shock,</b> especially T6 and higher.</li>
+        <li><b>A significant SCI: in the ICU at least 7 days</b> after the injury, for early detection and management of an unstable heart rate and BP.</li>
+        <li><b>Likely bradycardic:</b> from hypothermia, hypoxia or neurogenic shock.</li>
+      </ul></td></tr>
+      <tr><td class="term">Bowel and bladder function</td><td><ul>
+        <li><b>Function lost:</b> spinal shock leads to <span class="gloss">atony</span> of the bowel and bladder.</li>
+        <li><b>High risk for urinary retention.</b></li>
+        <li><b>High risk for paralytic ileus.</b></li>
+      </ul></td></tr>
+      <tr><td class="term">Skin</td><td><ul>
+        <li><b>High risk of pressure ulcers</b> and skin deterioration: motor and sensory function lost, impaired circulation, immobility.</li>
+      </ul></td></tr>
+      <tr><td class="term">Psychosocial</td><td><ul>
+        <li><b>A life-changing, unexpected, horrible event:</b> much psychosocial and psychological support needed.</li>
+        <li><b>Reach out</b> to get these patients the support they need, and provide it yourself as the bedside nurse.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="xref-line"><a class="xref" href="day3-gastrointestinal.html#paralytic-ileus">
+    <span><b>Paralytic ileus</b> is taught in <b>GI Critical Care Issues</b></span>
+  </a></p>
+
+  <p class="xref-line"><a class="xref" href="day3-neuro-assessment-icp.html#psychosocial-support">
+    <span><b>Psychosocial support</b> after a neurological injury is taught in <b>Neuro Assessment and Increased ICP</b></span>
+  </a></p>
+
+  <h2 class="block" id="sci-interventions">Interventions for SCI</h2>
+
+  <!-- Slide 32's first bullet, with the recording's "I don't know how many times I have to say
+       this". -->
+  <div class="mnemonic" id="brain-or-nerves-airway"><b>Anytime the brain or nerves are involved:</b> maintain a patent airway and respiratory function.</div>
+
+  <!-- The rows are slide 32's list after the airway, in its order, with what the recording
+       adds. "Bowel and bladder regimen" is slide 32's "NG tube, abdominal assessment and
+       bowel/bladder regimen". "VTE": the recording has "BTE prophylaxis". "Secondary injury":
+       "further cause secondary imagery". -->
+  <div class="table-wrap" id="sci-intervention-measures"><table>
+    <thead><tr><th>Intervention</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Skin assessment</td><td><ul>
+        <li><b>Thorough skin assessments,</b> for the pressure ulcer risk above.</li>
+      </ul></td></tr>
+      <tr><td class="term">Immobilization</td><td><ul>
+        <li><b>Usually immobilized until cleared</b> by the neurosurgery team.</li>
+        <li><b>Unstable vertebral fracture:</b> surgery, usually <b>within 24 hours</b>.</li>
+        <li><b>Stable fracture:</b> may need a <b>halo vest</b>, so the patient is not moving and further damaging the spinal cord.</li>
+      </ul></td></tr>
+      <tr><td class="term">Perfusion</td><td><ul>
+        <li><b>Goal MAP 85 to 90, for about 7 days:</b> a higher goal, for <b>spinal cord perfusion</b>.</li>
+        <li><b>Minimize systolic hypotension</b> during this time: it can cause further damage and secondary injury.</li>
+      </ul></td></tr>
+      <tr><td class="term">Bowel and bladder regimen</td><td><ul>
+        <li>Often an <b>NG tube</b> and <b>abdominal assessments</b>.</li>
+        <li><b>Bladder:</b> often long-term catheters, or a bladder program.</li>
+        <li><b>Bowel:</b> maintain bowel programs, with enemas.</li>
+      </ul></td></tr>
+      <tr><td class="term">Heparin and VTE prophylaxis</td><td><ul>
+        <li><b>Venous stasis:</b> limbs not moving, so a <b>very high risk for DVT and PE</b>.</li>
+      </ul></td></tr>
+      <tr><td class="term">Nutrition</td><td><ul>
+        <li><b>A <span class="gloss" data-term="hypermetabolism">hypermetabolic</span> state:</b> prompt nutritional support. Very important, as in TBI.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="xref-line"><a class="xref" href="review-respiratory-diseases.html#preventing-dvt-and-pe">
+    <span><b>Preventing DVTs and PEs</b> is taught in the <b>Respiratory Diseases</b> review</span>
+  </a></p>
+
+  <!-- Slide 32's photos: "this halo vest, which is the picture at the top". The cervical collar
+       is not spoken about, and shows immobilization. -->
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-immobilization">View a halo vest and a cervical collar</button>
+  <div class="fig-store" id="fig-immobilization" hidden>
+    <div class="figure-pair">
+      <figure class="figure">
+        <img src="images/day3-spinal-cord-injury/halo-vest.jpg" alt="A woman in a halo vest, from the front and from the side: a metal ring around the head, fixed by rods to a padded vest over the chest and back." loading="lazy">
+        <figcaption><b>Halo vest:</b> keeps the head and neck from moving.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/day3-spinal-cord-injury/cervical-collar.jpg" alt="A woman wearing a rigid cervical collar that supports the chin and holds the neck still." loading="lazy">
+        <figcaption><b>Cervical collar.</b></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <h2 class="block" id="autonomic-dysreflexia">Autonomic Dysreflexia</h2>
+
+  <!-- The rows are slide 33's list, in its order, with what the recording adds. "Who and when"
+       is slide 33's first two bullets.
+       "A kinked catheter": the recording has "like a kink in the bladder or their bladder is very
+       distended", read as a kink in the catheter. -->
+  <div class="table-wrap" id="autonomic-dysreflexia-essentials"><table>
+    <thead><tr><th>Autonomic Dysreflexia</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">What it is</td><td><ul>
+        <li><b>A chronic complication of SCI.</b></li>
+        <li><b>An exaggerated response from the sympathetic nervous system (SNS):</b> the SNS is completely activated, and the parasympathetic too.</li>
+        <li>The body's protective response.</li>
+      </ul></td></tr>
+      <tr><td class="term">Who and when</td><td><ul>
+        <li><b>An injury at T6 or above.</b></li>
+        <li>Typically <b>after the initial spinal shock resolves</b>.</li>
+      </ul></td></tr>
+      <tr><td class="term">Triggers</td><td><ul>
+        <li><b>Usually a problem the patient cannot sense.</b></li>
+        <li><b>Bladder:</b> a kinked catheter, a very distended bladder.</li>
+        <li><b>Bowel:</b> fecal impaction.</li>
+        <li><b>Skin:</b> clothes too tight, wrinkled bed sheets.</li>
+        <li><b>Temperature</b> not controlled adequately.</li>
+      </ul></td></tr>
+      <tr><td class="term">Signs and symptoms</td><td><ul>
+        <li><b>Pounding headache.</b></li>
+        <li><b>Bradycardia.</b></li>
+        <li><b>Elevated, uncontrolled BP.</b></li>
+        <li>Diaphoresis and flushing <b>above the level of injury</b>.</li>
+        <li>High levels of anxiety.</li>
+      </ul></td></tr>
+      <tr><td class="term">Treatment</td><td><ul>
+        <li><b>Fix whatever is causing it,</b> and it can resolve.</li>
+        <li>Supportive care.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- Slide 33's picture. It is not spoken about, and shows the two systems the recording says
+       are both activated. -->
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-autonomic-nervous-system">View the sympathetic and parasympathetic nervous systems</button>
+  <div class="fig-store" id="fig-autonomic-nervous-system" hidden>
+    <figure class="figure">
+      <img src="images/day3-spinal-cord-injury/autonomic-nervous-system.jpg" alt="The autonomic nervous system, with a figure showing the nerves. Sympathetic: norepinephrine and epinephrine, fight, flight or freeze. It increases heart rate, respiratory rate, blood pressure and pupil dilation, and decreases digestion and urine production. Parasympathetic: acetylcholine, rest and digest. It increases digestion, and decreases heart rate, respiratory rate, blood pressure and pupil dilation." loading="lazy">
+      <figcaption><b>Sympathetic</b> (fight or flight) and <b>parasympathetic</b> (rest and digest) effects.</figcaption>
+    </figure>
+  </div>
+
+  <nav class="page-flip" data-page-flip></nav>
+  <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
+
+</div>
+</main>
+
+<script src="assets/site.js?v=20261017q"></script>
+<script src="data/glossary.js?v=20261017q"></script>
+<script src="assets/study.js?v=20261017q"></script>
+</body>
+</html>

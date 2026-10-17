@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<!-- SOURCES
+     Deck:        slides/Day 3 - 1 GI.pptx (37 slides)
+     Transcript:  transcripts/Day 3 - GI.txt
+     Built:       2026-10-14
+     Cross-checked against the deck: 2026-10-14
+-->
+<!-- This page is slides 2 to 18 of the deck, the GI recording. Slides 19 to 26 are
+     acute pancreatitis, taught in day1-acute-pancreatitis.html. Slides 27 to 37 are the
+     Liver recording, for day3-liver-failure.html (Holly, 2026-10-14). -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GI Critical Care Issues — NUR427</title>
+<script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="assets/styles.css?v=20261017q">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<main id="content">
+<div class="page-inner">
+
+  <header class="page-head">
+    <p class="eyebrow">Day 3 · Topic 1</p>
+    <h1>GI Critical Care Issues</h1>
+  </header>
+
+  <h2 class="block" id="bring-forward">Things to Bring Forward</h2>
+
+  <div class="card" id="prior-content" data-nohide>
+    <h4>Earlier Content This Topic Builds On</h4>
+    <ul>
+      <!-- The first four bullets are slide 2's "Bring Forward" list, in its order, with
+           what the recording asks of each. Peptic ulcer disease ("We've learned about
+           peptic ulcer disease, pretty ad nauseum") sits with slide 2's "GI bleed/ulcers".
+           The last bullet is named later as already learned ("We talked a lot about how
+           age impacts the GI system and your fundamentals course").
+           Liver failure is on slide 2 and is named in this recording. Its content is the
+           Liver recording's, for the Hepatic Failure page.
+           Each lead links to its block on review-gi.html (2026-10-16). IBS and the GI
+           anatomy have no earlier-course source: their blocks there are brief explanations
+           from outside the lectures (Holly, 2026-10-16). review-list.md has each item's
+           status. -->
+      <li><b><a class="rev-link" href="review-gi.html#gi-anatomy-physiology">GI anatomy and physiology</a>:</b> understanding what is going on leads the interventions when these issues occur in a critical care patient.</li>
+      <li><b><a class="rev-link" href="review-gi.html#irritable-bowel-syndrome">IBS</a>, <a class="rev-link" href="review-gi.html#inflammatory-bowel-disease">inflammatory bowel disease</a>, <a class="rev-link" href="review-gi.html#upper-gi-bleed">GI bleeds and ulcers</a>, <a class="rev-link" href="review-gi.html#peptic-ulcer-disease">peptic ulcer disease</a>:</b> the bowel diseases.</li>
+      <li><b><a class="rev-link" href="review-gi.html#chronic-pancreatitis">Chronic pancreatitis</a>:</b> applied to acute pancreatitis, the kind that lands a patient in the ICU.</li>
+      <li><b><a class="rev-link" href="review-gi.html#liver-failure">Liver failure</a>:</b> liver disease and liver failure, and how their complications land a patient in the ICU. Portal hypertension and its complications.</li>
+      <li><b><a class="rev-link" href="review-gi.html#gi-and-age">How age affects the GI system</a>:</b> the changes that come with getting older, such as taste, smell and appetite.</li>
+    </ul>
+  </div>
+
+  <h2 class="block" id="gi-system">GI System: Things to Consider</h2>
+
+  <!-- The rows are slide 3's SmartArt, in its order.
+       "Cholinergic": the recording has "colonergic".
+       Left off: pregnancy. Slide 3 reads "Age and pregnancy can affect GI system". Of
+       pregnancy's effects on the gut, the recording says "I obviously won't be asking you
+       any questions about that or expect you to understand that".
+       Left off: the gut microbiome and long-term cardiovascular outcomes. An aside on
+       current research.
+       Checked against review-gi.html, 2026-10-16 (the 2026-10-14 rule): no row repeats it.
+       The age row is the lecture's own point, and the review page teaches the changes
+       themselves: the strip under the box points there. -->
+  <div class="table-wrap" id="gi-considerations"><table>
+    <thead><tr><th>Consideration</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Neural and hormonal factors</td><td>Parasympathetic, cholinergic stimulation drives <b>GI secretion and motility</b>, and stimulates the pancreas and gallbladder. Sight and smell stimulate gastric secretions. Easily influenced by problems elsewhere in the body.</td></tr>
+      <tr><td class="term">Largest endocrine organ</td><td>Secretes hormones and enzymes to digest food and absorb nutrients and vitamins. Also affects other body systems.</td></tr>
+      <tr><td class="term">Blood supply</td><td>The <b>largest share of cardiac output</b>, about 33%, across the intestines, liver, pancreas and gallbladder.</td></tr>
+      <tr><td class="term">Age</td><td>The older the patient, the <b>more susceptible</b> the GI system is to damage.</td></tr>
+      <tr><td class="term">Assessment</td><td>Two big indicators: <b>distension and bowel sounds</b>. Bowel sounds also show <b>perfusion to the gut</b>. Hypoactive or absent with no meds or anesthesia to explain it: a perfusion problem, usually with distension and rigidity.</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="mnemonic" id="gut-cut-off-first"><b>When the body needs blood flow, it cuts off the GI system first.</b> In hemorrhage or any big perfusion event, blood is diverted to the heart, lungs and brain, and the gut takes the brunt.</div>
+
+  <p class="xref-line"><a class="xref" href="review-gi.html#gi-and-age">
+    <span><b>How age affects the GI system</b> is taught in the <b>GI</b> review</span>
+  </a></p>
+
+  <h2 class="block" id="gi-bleeding">GI Bleeding</h2>
+
+  <!-- The rows are slide 4's sources, in its order. Gastric varices are said with
+       esophageal varices.
+       Stress ulcers: "homeostatic stress", as said.
+       Peptic ulcer disease: the risk of another ulcer is said under who is at risk.
+       Checked against review-gi.html, 2026-10-16 (the 2026-10-14 rule): the rows are the
+       lecture's own, and stay whole. The strip under the table points to the review page's
+       peptic ulcer disease and upper GI bleed. -->
+  <div class="table-wrap" id="gi-bleed-sources"><table>
+    <thead><tr><th>Source</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Peptic ulcer disease</td><td>A history of a peptic or duodenal ulcer puts the patient at <b>very high risk of another</b>, especially on an anticoagulant.</td></tr>
+      <tr><td class="term">Stress-related mucosal bleeding (stress ulcers)</td><td>From homeostatic stress: chronic disease or a very acutely ill state. <b>Critically ill patients are at high risk.</b></td></tr>
+      <tr><td class="term">Mallory-Weiss tear</td><td>Arterial hemorrhage from <b>longitudinal tears in the gastroesophageal mucosa</b>. After long, aggressive or projectile vomiting.</td></tr>
+      <tr><td class="term">Esophageal or gastric varices</td><td>A critical care emergency. See Variceal Bleeding below.</td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="xref-line"><a class="xref" href="review-gi.html#peptic-ulcer-disease">
+    <span><b>Peptic ulcer disease and the upper GI bleed</b> are taught in the <b>GI</b> review</span>
+  </a></p>
+
+  <!-- "Assess history" is slide 4's last bullet. The anticoagulants are said and are not
+       on the slide.
+       Generic names only: the recording has "Coumadin or a pixaban or Eliquis" and
+       "Lovanox". Warfarin and enoxaparin are supplied. -->
+  <div class="card" id="gi-bleed-risk">
+    <h4>Who Is at Risk for a GI Bleed</h4>
+    <ul>
+      <li><b>Critically ill:</b> high risk, for stress ulcers.</li>
+      <li><b>Anticoagulated:</b> a heparin drip, long-term warfarin or apixaban, heparin or enoxaparin injections. <b>Vastly increases the risk</b>, on top of the critical illness.</li>
+      <li><b>History to assess:</b> a blood <span class="gloss">coagulopathy</span> or known bleeding issue, anticoagulants at home, liver disease, cancer and chemo drugs, drug and alcohol use.</li>
+    </ul>
+  </div>
+
+  <!-- Slide 4 reads "Critical care prophylaxis: H2 receptor antagonists [pantoprazole]".
+       The recording says "That's not pentaprozol, pentaprozol is actually a PPI. But
+       again, we also use that", then "I'm talking about protonics here is what I'm
+       actually talking about with H2 receptor antagonists", then "So most of the time
+       we're giving protonics". Pantoprazole (Protonix) is written as a PPI, her own
+       correction (Holly, 2026-10-14). -->
+  <div class="card" id="stress-ulcer-prophylaxis">
+    <h4>Prophylaxis in Critical Care</h4>
+    <ul>
+      <li><b>Why:</b> to prevent stress ulcers in high-risk critically ill patients.</li>
+      <li><b>H2 receptor antagonists</b> are used a lot. <b>Pantoprazole is a PPI</b>, and is also used.</li>
+      <li><b>Conflicting evidence</b> on PPIs in the critically ill. Most of the time, pantoprazole is given.</li>
+    </ul>
+  </div>
+
+  <h3 class="sub" id="bleed-assessment-heading">Assessing for a GI Bleed</h3>
+
+  <!-- The rows are slide 4's "Assessment" list, in its order, with secretions and
+       drainage added: the recording calls them "the other thing that I don't mention up
+       here". The full lab list is under the severe bleed.
+       Bowel sounds: said under the severe bleed, and moved here.
+       "Melena": the recording has "melanin". -->
+  <div class="table-wrap" id="gi-bleed-assessment"><table>
+    <thead><tr><th>Assess</th><th>What to Look For</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Bowel sounds</td><td>In a severe bleed: <b>hyperactive</b> during the bleed, from the bowel's sensitivity to blood. <b>Hypoactive or absent</b> if the bowel begins dying from lack of perfusion.</td></tr>
+      <tr><td class="term">Stool and emesis</td><td><b>Bright red:</b> actively bleeding. <b>Dark or black</b> (melena): an older bleed.</td></tr>
+      <tr><td class="term">Secretions and drainage</td><td><b>Dark output</b> from an NG tube to low wall suction: an old upper GI bleed. Red drainage anywhere, wounds included.</td></tr>
+      <tr><td class="term">Labs</td><td>Trend the H&amp;H.</td></tr>
+      <tr><td class="term">Color</td><td><b>Getting paler.</b> Seems simple, but incredibly indicative.</td></tr>
+      <tr><td class="term">Vital signs</td><td>A GI bleed causes a <b>fluid volume deficit</b>. <b>Tachycardia is the first sign</b>, as compensation: the heart rate creeps into the 90s and low 100s. Then a dropping blood pressure, a rising respiratory rate, and a dropping SpO2 with no oxygenation problem to explain it.</td></tr>
+      <tr><td class="term">Urine output</td><td><b>Drops</b> with the fluid volume deficit, as the kidneys lose perfusion.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="severe-gi-bleed">Management of a Severe GI Bleed</h2>
+
+  <p class="note"><b><span class="gloss" data-term="hemodynamically unstable">Hemodynamically unstable</span>: the primary goal is to stabilize the vital signs.</b></p>
+
+  <!-- The rows follow slide 5, in its order, with continuous monitoring first, as said.
+       "LR" is as said. It is never spelled out.
+       Vasopressors: "we'll talk more about this on Wednesday's lecture or the next
+       lecture". The strip under the table points to Day 4 Shock's hypovolemic shock goal.
+       Pantoprazole drip: the recording has "a continuous IV protonic strip". -->
+  <div class="table-wrap" id="severe-bleed-management"><table>
+    <thead><tr><th>Intervention</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Continuous vital signs</td><td><ul>
+        <li>An arterial line, or a blood pressure cuff every 5 to 10 minutes, at minimum every 15.</li>
+        <li>Watch the tele: <b>EKG changes</b> from lack of blood flow in a very severe bleed.</li>
+      </ul></td></tr>
+      <tr><td class="term">Fluid resuscitation</td><td><ul>
+        <li>Isotonic IV fluids, such as normal saline or LR.</li>
+      </ul></td></tr>
+      <tr><td class="term">Blood transfusions</td><td><ul>
+        <li><b>Guided by the hemoglobin</b> at first.</li>
+        <li>The hematocrit may not change for <b>several hours</b> in an acute massive bleed, and says little after fluid resuscitation.</li>
+      </ul></td></tr>
+      <tr><td class="term">Vasopressors</td><td><ul>
+        <li><b>Fill the tank first:</b> fluid resuscitated, with an acceptable hemoglobin, before meds to raise the blood pressure.</li>
+      </ul></td></tr>
+      <tr><td class="term">Labs</td><td><ul>
+        <li><b>H&amp;H every 1 to 2 hours.</b> Electrolytes.</li>
+        <li><b>BUN, creatinine, LFTs:</b> is the bleed cutting perfusion to the kidneys and liver?</li>
+        <li><b>Lactate:</b> rises in an acidotic state, when too few RBCs carry oxygen and nutrients.</li>
+        <li><b>Clotting profiles:</b> a big bleed uses up clotting factors, and FFP may be needed.</li>
+        <li>ABGs, trended.</li>
+      </ul></td></tr>
+      <tr><td class="term">Gastric lavage</td><td><ul>
+        <li>An <b>NG tube to low wall suction</b> in a severe bleed, especially an upper one.</li>
+        <li>Lavage flushes the system: is it actively bleeding, old blood, or stopped? Also cleans it out quickly before surgery.</li>
+      </ul></td></tr>
+      <tr><td class="term">Medications</td><td><ul>
+        <li>H2 blockers, PPIs, sucralfate.</li>
+        <li>Usually a <b>continuous IV pantoprazole drip</b>.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="xref-line"><a class="xref" href="day1-hematologic.html#what-affects-coagulation">
+    <span><b>Clotting factors lost in a big bleed</b> are taught in <b>Hematologic Issues in Critical Care</b></span>
+  </a></p>
+
+  <p class="xref-line"><a class="xref" href="day4-shock-sepsis-mods.html#hypovolemic-goal">
+    <span><b>Vasopressors after fluid resuscitation</b> are taught in <b>Shock, Sepsis, MODS</b></span>
+  </a></p>
+
+  <h3 class="sub" id="acute-vs-chronic-heading">Acute Versus Chronic GI Bleed</h3>
+
+  <!-- Both cards are slide 6's two columns, with its two starred notes, each under the
+       column the slide puts it. -->
+  <div class="two-col" id="acute-vs-chronic-bleed">
+    <div class="card">
+      <h4>Acute GI Bleed: Symptoms</h4>
+      <ul>
+        <li>Weakness, shortness of breath, <span class="gloss">angina</span>, syncope.</li>
+        <li><b>Hypotension, tachycardia.</b></li>
+        <li>Anemia.</li>
+        <li>May also show fatigue, weakness and pallor, but these usually come with a chronic bleed.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Chronic GI Bleed: Symptoms</h4>
+      <ul>
+        <li>Fatigue, weakness, pale appearance.</li>
+        <li>Syncopal events.</li>
+        <li>Anemia.</li>
+        <li>An <b>unexplained increase in BUN or K+</b> can mean blood is being metabolized in the GI tract.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mnemonic" id="bleed-looks-like-anemia"><b>Both look like anemia, not like a GI problem.</b> Nausea, vomiting and abdominal pain may be there, but they are not the signs that point to the bleed.</div>
+
+  <h2 class="block" id="bleed-interventions">GI Bleed Interventions</h2>
+
+  <p class="note"><b>Most GI bleeds resolve on their own,</b> through platelet plugs. An intervention is needed when a bleed cannot be controlled: very severe, on anticoagulants, or a third or fourth bleeding ulcer.</p>
+
+  <!-- Both cards are slide 7, with what the recording adds. The slide's
+       "Maintain airway, monitor hemodynamics" is explained aloud as the vital signs.
+       Left off: a family member's endoclipping. An anecdote. -->
+  <div class="two-col" id="endoscopy-vs-surgery">
+    <div class="card">
+      <h4>Endoscopy</h4>
+      <ul>
+        <li><b>Used for:</b> the <b>treatment of choice for an upper GI bleed</b>, in the stomach or duodenum.</li>
+        <li><b>When:</b> once <span class="gloss">hemodynamically stable</span>, or within 24 hours if the patient cannot be stabilized. Often at the bedside.</li>
+        <li><b>Procedure:</b> sclerotherapy injects the bleeding ulcer with a necrotizing therapy. Endoclipping clips it with hemoclips, and <b>decreases rebleeding</b>.</li>
+        <li><b>Nurse:</b> maintain the airway and monitor the vital signs.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Surgical Therapy</h4>
+      <ul>
+        <li><b>Used for:</b> usually <b>massive rebleeding</b>, such as a dropping H&amp;H and bright red blood the day after an endoclip.</li>
+        <li><b>Procedure:</b> in the OR. May need a <b>gastric resection</b>, to remove the areas of the peptic ulcers.</li>
+        <li><b>Nurse:</b> fluid and electrolyte balance, drains, and <b>pain</b>, a big risk with any GI surgery.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="block" id="variceal-bleeding">Variceal Bleeding</h2>
+
+  <p class="note"><b>Usually from end-stage liver disease or acute liver failure.</b> Portal hypertension causes the varices.</p>
+
+  <div class="callout-danger" id="variceal-emergency"><b>Bleeding esophageal or gastric varices are a critical care emergency.</b> The patient rapidly becomes <span class="gloss">hemodynamically unstable</span> and quickly goes into hypovolemic shock. Without a history of liver issues or cirrhosis, the cause is often unknown at first: just a massive bleed.</div>
+
+  <!-- Slide 8 numbers the four priorities. The recording adds why the airway comes first. -->
+  <div class="card" id="variceal-priorities">
+    <h4>Priorities in a Variceal Bleed</h4>
+    <ol>
+      <li><b>Maintain the airway.</b> Esophageal and gastric bleeding can really impact it.</li>
+      <li><b>Hemodynamic stability.</b> Usually multiple transfusions and IV fluid resuscitation.</li>
+      <li><b>Gastric lavage,</b> to identify what is going on.</li>
+      <li><b>Diagnose through endoscopy,</b> at the bedside, to see what the varices are doing.</li>
+    </ol>
+  </div>
+
+  <h3 class="sub" id="variceal-treatment-heading">Treating a Variceal Bleed</h3>
+
+  <!-- The rows are slides 8 and 9, in their order.
+       "Somatostatin": the recording has "stomastatin", and slide 8 "somastatin".
+       "Splanchnic": the recording has "splintic", and slide 8's vasopressin line
+       "splanchnic". Its glossary definition is the usual one, from outside the lecture.
+       The recording's, "the artery that kind of provides perfusion to the esophagus and
+       to the upper stomach", is narrower (Holly, 2026-10-14).
+       "Band ligation": the recording has "banlage".
+       "Sengstaken-Blakemore": the recording has "Sengstein-Blakemore". Slide 9 calls it
+       the "Blakemore Tube", and adds "[other tubes are around]".
+       "Portocaval shunt": the recording has "portal cable shot".
+       Left off: who taught her the rule about clamping. -->
+  <div class="table-wrap" id="variceal-treatments"><table>
+    <thead><tr><th>Treatment</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Octreotide IV or somatostatin</td><td>Stop the bleeding. Decrease <span class="gloss">splanchnic</span> blood flow and reduce portal pressure. Octreotide: a <b>continuous IV</b> drip, very safe, often given to stabilize before definitive treatment. Sometimes given for an upper GI bleed too.</td></tr>
+      <tr><td class="term">Vasopressin</td><td>Lowers portal pressure through <b>vasoconstriction</b> of the <span class="gloss">splanchnic</span> arteriolar bed, so the bleeding slows. A drip, especially in the unit.</td></tr>
+      <tr><td class="term">Endoscopy</td><td>Usually needed eventually. <span class="gloss">Sclerotherapy</span> right into the varices, or <b>band ligation</b>.</td></tr>
+      <tr><td class="term">TIPS (transjugular intrahepatic portosystemic shunt)</td><td><b>Non-surgical.</b> For recurrent bleeding after <span class="gloss">sclerotherapy</span>. A shunt between the hepatic and portal veins lowers the <b>portal hypertension</b> that causes the varices. Not a permanent fix: used in the interim, and some patients keep bleeding.</td></tr>
+      <tr><td class="term">Esophagogastric tamponade (Sengstaken-Blakemore tube)</td><td>Presses on the varices: holding pressure on a wound, internally. Needs the right <b>traction</b>, tight against the esophageal or gastric wall. Other tubes exist.</td></tr>
+      <tr><td class="term">Portocaval shunt</td><td>Surgery. Diverts blood around the blocked portal system. <b>Decreases bleeding risk, but does not improve survival.</b></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="callout-danger" id="never-clamp-tamponade-tube"><b>Never clamp an esophagogastric tamponade tube.</b> The pressure is lost, and the varices start bleeding again.</div>
+
+  <!-- Slide 8's drawing of varices and slide 9's drawing of the tube. Neither is spoken
+       about. Kept because they show the anatomy and the device the recording describes. -->
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-varices">View varices and the tamponade tube</button>
+  <div class="fig-store" id="fig-varices" hidden>
+    <div class="figure-pair">
+      <figure class="figure">
+        <img src="images/day3-gastrointestinal/esophageal-varices.jpg" alt="A drawing of the esophagus joining the stomach, with swollen veins at the lower esophagus, and a close-up of the swollen veins labelled esophageal varices." loading="lazy">
+        <figcaption><b>Esophageal varices,</b> at the lower esophagus.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/day3-gastrointestinal/tamponade-tube.jpg" alt="A line drawing of a patient lying down with a tube through the nose into the esophagus and stomach. Its ports are labelled: esophageal balloon inflation, esophageal aspiration, gastric aspiration, gastric balloon inflation, and the pressure monitoring ports for each balloon." loading="lazy">
+        <figcaption><b>An esophagogastric tamponade tube,</b> with a balloon in the esophagus and one in the stomach.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <h2 class="block" id="ischemic-bowel-disease">Ischemic Bowel Disease</h2>
+
+  <p class="note"><b>A vascular condition: the bowel wall does not receive oxygenated blood,</b> and that part of the bowel dies. In the small intestine it is <b>mesenteric ischemia</b>. In the colon it is <b>ischemic colitis</b>.</p>
+
+  <!-- Slide 10's picture: "In this picture, you can see how much arterial blood flow goes
+       to different areas of the gut". -->
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-gut-arterial-supply">View the gut's arterial supply</button>
+  <div class="fig-store" id="fig-gut-arterial-supply" hidden>
+    <figure class="figure">
+      <img src="images/day3-gastrointestinal/gut-arterial-supply.jpg" alt="A drawing of the large and small intestine with the branching arteries that supply each part of them." loading="lazy">
+      <figcaption><b>The gut's arterial supply.</b> When one artery is blocked, the part of the bowel it feeds loses its blood flow.</figcaption>
+    </figure>
+  </div>
+
+  <!-- Causes are slide 11's list, in its order. The slide bolds the first two. The risk
+       factors are said and are not on the slide. Vasopressors are said after the
+       treatment, and sit here with the other risk factors.
+       Low blood pressure: why the gut takes the hit is in the mnemonic under GI System:
+       Things to Consider. -->
+  <div class="two-col" id="ischemic-causes-and-risks">
+    <div class="card">
+      <h4>Causes of Ischemic Bowel Disease</h4>
+      <ul>
+        <li><b>Low blood pressure:</b> the gut and skin take the hit first. Watch the bowel closely after a significant hypoperfusion event.</li>
+        <li><b>A blood clot or blockage in an artery.</b></li>
+        <li>A twisted or enlarged bowel.</li>
+        <li>Lupus and sickle cell anemia.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Risk Factors for Ischemic Bowel Disease</h4>
+      <ul>
+        <li>Atherosclerosis: fatty plaque can build up in the gut's arteries.</li>
+        <li>Age over 50.</li>
+        <li>Smoking: damages the lining of the vessels.</li>
+        <li>Heart failure and AFib: cardiac output issues.</li>
+        <li>Medications, mainly hormonal birth control: clots in the bowel.</li>
+        <li>Blood clotting disorders.</li>
+        <li>Cocaine and methamphetamine use.</li>
+        <li><b>High-dose vasopressors, especially norepinephrine:</b> clamp off the gut's arterial supply and shift it to vital areas. On prolonged high doses, monitor for ischemic bowel disease.</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="note"><b>Diagnosed by colonoscopy,</b> or a barium contrast study or CT with contrast. <b>Not seen on an X-ray:</b> the problem is perfusion and arterial flow.</p>
+
+  <!-- The bullets are slide 12's SmartArt, in its order, with what the recording adds.
+       "Bloody stool": the transcript has the word starred out ("****** stools"), and
+       slide 12 reads "Bloody stool with dark red clots". -->
+  <div class="card" id="ischemic-bowel-signs">
+    <h4>Signs and Symptoms of Ischemic Bowel Disease</h4>
+    <ul>
+      <li><b>Abdominal pain, especially after eating:</b> the gut cannot work. Pain at baseline too, as the gut dies.</li>
+      <li>Frequent, urgent need to have a bowel movement.</li>
+      <li>Loose stools or diarrhea.</li>
+      <li>Nausea and vomiting.</li>
+      <li><b>Bloody stool with dark red clots:</b> depends on the cause. Bloody stool points first to a lower GI bleed, with ischemic bowel second on the list.</li>
+      <li><b>Fever:</b> the inflammatory response to dead gut.</li>
+      <li><b>Labs:</b> <b>increasing lactate</b>, from the acidotic state ischemia or infarction causes. WBC altered, usually elevated.</li>
+    </ul>
+  </div>
+
+  <div class="mnemonic" id="trend-the-lactate"><b>Trend the lactate, very frequently.</b> A lactate that keeps rising, not stabilizing and not coming down, means continuing cell death in the gut.</div>
+
+  <!-- The rows are slide 13's, in its order.
+       Left off: "This is called a bowel obstruction", said of the surgery that removes the
+       infarcted area. It reads as a slip, and could be more than one thing. -->
+  <div class="table-wrap" id="ischemic-bowel-treatment"><table>
+    <thead><tr><th>Treatment</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Bowel rest</td><td>Not eating. Drinking depends on the severity.</td></tr>
+      <tr><td class="term">Fluid resuscitation</td><td>A lot of <b>fluid shifting</b>: often intravascularly depleted.</td></tr>
+      <tr><td class="term">Surgery</td><td>Removes the blockage or the infarcted area, cutting well into the healthy pink bowel, because the infarction can spread. Often ends in a <b>colostomy</b>, temporary or permanent, depending on how much gut is removed.</td></tr>
+      <tr><td class="term">Treat the cause</td><td>A clotting disorder, hormonal birth control, atherosclerosis, AFib or heart failure, a perfusion event.</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- Slide 13's photo, which the recording points to ("that nice pink is, obviously
+       perfused living gut bowel. That darker color is dead bowel"), and its drawing of a
+       colostomy. -->
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-bowel-resection">View dead bowel and a colostomy</button>
+  <div class="fig-store" id="fig-bowel-resection" hidden>
+    <div class="figure-pair">
+      <figure class="figure">
+        <img src="images/day3-gastrointestinal/dead-bowel.jpg" alt="A surgical photo of loops of bowel held in gloved hands. Some loops are pink and others are dark purple." loading="lazy">
+        <figcaption><b>Pink is perfused, living bowel. Dark is dead bowel.</b></figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/day3-gastrointestinal/colostomy.jpg" alt="A drawing of the colon with a diseased section removed, and an inset of the abdomen with a stoma and a bag over it." loading="lazy">
+        <figcaption><b>A colostomy:</b> the diseased section removed, with a stoma and a bag.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <h2 class="block" id="bowel-obstruction">Bowel Obstruction</h2>
+
+  <!-- Small bowel is slide 14, large bowel slide 15, with what the recording adds.
+       Metoclopramide: the recording has "Reglan". The generic is supplied.
+       "Strictures": the recording has "colonic structures", and slide 15 "stricture". -->
+  <div class="two-col" id="sbo-vs-lbo">
+    <div class="card">
+      <h4>Small Bowel Obstruction (SBO)</h4>
+      <ul>
+        <li><b>What it is:</b> occlusion of the intestinal lumen. <b>Mechanical:</b> something physically blocks it, such as a tumor, adhesion or hernia. <b>Functional:</b> no peristalsis, a paralytic ileus. See below.</li>
+        <li><b>Diagnosis:</b> an X-ray (KUB) or a CT of the abdomen and pelvis. The X-ray shows dilated loops of small bowel and a collapsed colon. <b>Partial or complete:</b> complete is more severe.</li>
+        <li><b>Treatment:</b> usually surgery to repair it. Before surgery, if not <span class="gloss">hemodynamically stable</span>: NPO, fluid resuscitation, an NG tube. Electrolytes. Meds such as metoclopramide. <b>Avoid opioids and anesthesia</b> when possible, especially in a functional obstruction.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Large Bowel Obstruction</h4>
+      <ul>
+        <li><b>What it is:</b> <b>usually a neoplasm</b>, such as colon or rectal cancer. Also diverticulitis, strictures (as in ulcerative colitis), a severe fecal impaction.</li>
+        <li><b>Diagnosis:</b> the same as an SBO.</li>
+        <li><b>Treatment:</b> the same as an SBO, depending on the cause: removing the neoplasm, fluid resuscitation, perhaps bowel rest.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Slide 14 gives the hallmark sign. The rest are said and are not on the slide. -->
+  <div class="card" id="sbo-signs">
+    <h4>Signs of a Small Bowel Obstruction</h4>
+    <ul>
+      <li><b>Hallmark sign: abdominal distension.</b> Can become a tympanic abdomen.</li>
+      <li>Cramping periumbilical pain in waves, with periods of comfort.</li>
+      <li>Tachycardia.</li>
+      <li>Cannot tolerate PO intake.</li>
+      <li><b>Large-volume bilious vomiting.</b></li>
+      <li><b>High-pitched, tinkling bowel sounds.</b></li>
+      <li>Cannot pass flatus or gas. Constipation.</li>
+      <li>Electrolyte imbalances: the small bowel absorbs nutrients and vitamins.</li>
+    </ul>
+  </div>
+
+  <!-- Slide 14's X-ray, which the recording reads: "dilated loops of the small bowel and
+       a collapsed colon". -->
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-sbo-xray">View an SBO on X-ray</button>
+  <div class="fig-store" id="fig-sbo-xray" hidden>
+    <figure class="figure">
+      <img src="images/day3-gastrointestinal/sbo-xray.jpg" alt="An abdominal X-ray with arrows pointing to dilated loops of small bowel and to a collapsed colon." loading="lazy">
+      <figcaption><b>A small bowel obstruction on X-ray:</b> dilated loops of small bowel, and a collapsed colon.</figcaption>
+    </figure>
+  </div>
+
+  <h3 class="sub" id="paralytic-ileus-heading">Paralytic Ileus</h3>
+
+  <!-- Slide 16, with what the recording adds. "Senna and docusate": the recording has
+       "Senna and Doc", given "like candy in the ICU". Acetaminophen: the recording has
+       "tylenol". Slide 16's X-ray is not spoken about, and is left off. -->
+  <div class="card" id="paralytic-ileus">
+    <h4>What Paralytic Ileus Is</h4>
+    <ul>
+      <li><b>A functional obstruction:</b> intestinal peristalsis is lost, with <b>no mechanical obstruction</b>.</li>
+      <li><b>Common in the ICU,</b> usually from opioids and anesthesia. Bowel regimens such as senna and docusate are given freely in the ICU to prevent it.</li>
+      <li><b>Same symptoms as a mechanical SBO, except absent to hypoactive bowel sounds:</b> no peristalsis is occurring.</li>
+      <li><b>Other causes:</b> muscle or nerve damage after surgery, higher risk after GI surgery than after cardiac or respiratory surgery. Intestinal ischemia or shock, a very high risk with ischemic bowel disease. A GI infection or peritonitis. Whenever the gut is sick, the risk is higher.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="ileus-treatment">
+    <h4>Treating Paralytic Ileus</h4>
+    <ul>
+      <li><b>Pain management:</b> it can be very painful. Acetaminophen or NSAIDs in place of a higher-dose opioid, if appropriate.</li>
+      <li><b>Motility:</b> moving increases peristalsis, though these patients often don't feel like moving. <b>Avoid opioids</b> and other meds that slow GI motility when possible.</li>
+      <li><b>Bowel rest,</b> IV fluids, electrolyte management.</li>
+      <li><b>NG decompression.</b></li>
+      <li><b>Aggressive bowel regimen:</b> a lot of enemas, to get the gut to wake up.</li>
+    </ul>
+  </div>
+
+  <h2 class="block" id="abdominal-compartment-syndrome">Abdominal Compartment Syndrome</h2>
+
+  <!-- The strip is slide 17's first bullet, a chain, with the pressures from slide 18's
+       picture, which the recording reads: "16 to 20 can result in organ ischemia. Greater
+       than 20 is gonna, multiple organ dysfunction syndrome". The picture's labels name
+       each organ's effects, are not spoken, and are left off. -->
+  <div class="continuum" id="acs-progression">
+    <div class="cont-step mid">
+      <h4>Intra-Abdominal Hypertension</h4>
+      <p>Fluid builds up in the abdominal compartment and presses on the abdominal organs. The <b>intra-abdominal pressure (IAP)</b> rises.</p>
+    </div>
+    <div class="cont-step warn">
+      <h4>Organ Ischemia</h4>
+      <p><b>IAP 16 to 20 mmHg.</b> Impaired blood flow to multiple organs.</p>
+    </div>
+    <div class="cont-step ill">
+      <h4>Multiple Organ Dysfunction</h4>
+      <p><b>IAP above 20 mmHg.</b> Tissue damage and organ failure.</p>
+    </div>
+  </div>
+
+  <!-- Said, and not on the slides. -->
+  <div class="card" id="acs-causes">
+    <h4>Causes of Abdominal Compartment Syndrome</h4>
+    <ul>
+      <li><b>Massive fluid volume resuscitation:</b> one of the big ones. Trauma patients who lost a lot of blood, as in a motor vehicle crash, stabbing or gunshot wound. Shock.</li>
+      <li><b><span class="gloss">Third spacing</span>:</b> severe albumin deficiency, as in liver disease. Severe cardiac output issues, as in heart failure.</li>
+      <li>Abdominal surgery and trauma: a leak, or bleeding into the abdominal compartment.</li>
+      <li>A severe ileus or bowel obstruction, and ischemic bowel disease especially.</li>
+      <li>A ruptured aortic aneurysm.</li>
+      <li><b>Pancreatitis:</b> <span class="gloss">third spacing</span>, and trouble keeping fluid in the vascular space.</li>
+    </ul>
+  </div>
+
+  <p class="xref-line"><a class="xref" href="day1-acute-pancreatitis.html">
+    <span><b>Acute pancreatitis</b> is taught in <b>Acute Pancreatitis</b></span>
+  </a></p>
+
+  <div class="card" id="acs-recognition">
+    <h4>Recognizing Abdominal Compartment Syndrome</h4>
+    <ul>
+      <li><b>Hugely distended,</b> possibly rigid: hard to the touch from the fluid, not hard like peritonitis.</li>
+      <li><b>Measured as bladder pressure:</b> a catheter in the bladder gives the IAP. Measurements taken directly in the abdomen exist, but are not used often.</li>
+    </ul>
+  </div>
+
+  <!-- The rows are slide 18's list, in its order, with what the recording adds.
+       "Reverse Trendelenburg": the recording has "Trandelenburg". -->
+  <div class="table-wrap" id="acs-management"><table>
+    <thead><tr><th>Management</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Supine, HOB flat</td><td><b>Completely flat.</b> Raising the head, even reverse Trendelenburg, increases abdominal pressure. One of the rare times a patient stays flat, along with some neuro injuries.</td></tr>
+      <tr><td class="term">Sedation and paralytics</td><td>Usually needed. Very painful, and pain or <b>fighting the ventilator</b> increases abdominal pressure. Usually ventilated, on a lot of IV pain meds.</td></tr>
+      <tr><td class="term">Surgical decompression</td><td>Usually, when severe. The <b>abdomen is left open</b> for a while, then closed slowly over time.</td></tr>
+      <tr><td class="term">Antibiotics</td><td>An open abdomen risks <b>peritonitis and sepsis</b>. Bacteria translocating out of the gut put an already very ill patient at very high risk of <b>septic shock</b>.</td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- Slide 17's drawing, shown while the recording describes fluid pressing on the
+       abdominal organs, and slide 18's photo: "leave it open like that bottom picture". -->
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-abdominal-compartment-syndrome">View abdominal compartment syndrome</button>
+  <div class="fig-store" id="fig-abdominal-compartment-syndrome" hidden>
+    <div class="figure-pair">
+      <figure class="figure">
+        <img src="images/day3-gastrointestinal/abdominal-fluid.jpg" alt="A side-on cross-section of a patient lying down, with fluid filling the abdomen around the organs and pressing on the inferior vena cava. Labels: intra-abdominal fluid, IVC compression." loading="lazy">
+        <figcaption><b>Fluid in the abdominal compartment</b> presses on the organs and the inferior vena cava.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/day3-gastrointestinal/open-abdomen.jpg" alt="A photograph of an abdomen left open after surgical decompression, with the bowel visible under a clear cover." loading="lazy">
+        <figcaption><b>An abdomen left open</b> after surgical decompression.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <nav class="page-flip" data-page-flip></nav>
+  <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
+
+</div>
+</main>
+
+<script src="assets/site.js?v=20261017q"></script>
+<script src="data/glossary.js?v=20261017q"></script>
+<script src="assets/study.js?v=20261017q"></script>
+</body>
+</html>

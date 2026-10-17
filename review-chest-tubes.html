@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- SOURCES
+     A review page: built from earlier-course sources, and only from the slides and
+     transcript lines that review-map.md lists for the item in review-list.md.
+     Deck:        slides/medsurg1/Week 2 Ticket to Clinical - Chest Tubes.pptx (50 slides. Used: 19-29, 32-42, 49-50)
+     Transcript:  transcripts/medsurg1/Week 2 Ticket to Clinical - chest tubes.txt (lines 113-223, 237-432, 475-519)
+     Built:       2026-10-13, as a section of review-respiratory.html
+     Cross-checked against the deck: 2026-10-13
+     Moved to a page of its own the same day, with Holly's calibration markup applied.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chest Tubes — NUR427</title>
+<script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="assets/styles.css?v=20261017q">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<main id="content">
+<div class="page-inner">
+
+  <header class="page-head">
+    <p class="eyebrow">Review · Topic 3</p>
+    <h1>Chest Tubes</h1>
+  </header>
+
+  <h2 class="block" id="chest-drainage-system">The Drainage System</h2>
+
+  <p class="further-study">For further study, see <b>Med Surg I Week 2 Ticket to Clinical – Chest Tubes</b>.</p>
+
+  <!-- Scope, by Holly's rulings (2026-10-13): care, normal and abnormal findings, expected
+       drainage. So: the three-chamber drainage system in brief (slides 19-29), assessment
+       and management (32-42), the FAQ and removal (49-50).
+       Left out: the four opening cases, the anatomy review, the definitions slide, who
+       needs a chest tube (slides 9 and 14), where the tube is placed, insertion (15-16
+       and 31), the Pneumostat and the PleurX. Cut at Holly's calibration markup: generic
+       patient care (vital signs, respiratory assessment, auscultation, pain control) and
+       the three reasons to clamp. See decisions.md. -->
+  <p class="note"><b>A chest drainage system gets air and fluid out of the pleural space and lets no atmospheric air back in.</b></p>
+
+  <!-- "When it fills, change to a new setup": the recording gives a figure for full that is
+       garbled ("it gets to come to 2400"). The figure is left off. See decisions.md. -->
+  <div class="table-wrap" id="drainage-system-chambers"><table>
+    <thead><tr><th>Chamber</th><th>What It Does</th></tr></thead>
+    <tbody>
+      <tr><td class="term">1. Collection chamber</td><td><ul>
+        <li>Accepts air or fluid through the extension tubing attached to the patient's chest tube.</li>
+        <li>When it fills, change to a new setup. No provider order is needed.</li>
+      </ul></td></tr>
+      <tr><td class="term">2. Water-seal chamber</td><td><ul>
+        <li><b>One-way valve:</b> air leaves the pleural space and cannot flow back into the patient.</li>
+        <li>Filled with <b>sterile water to the 2 cm mark</b> before first use. Add more as it evaporates.</li>
+      </ul></td></tr>
+      <tr><td class="term">3. Suction chamber</td><td><ul>
+        <li>Regulates the negative suction pressure on the intrapleural space.</li>
+        <li>Amount of suction is the <b>number dialed in</b>. The provider orders it and the nurse sets the dial. Most are at 20 cm.</li>
+        <li><b>Visual alert</b> shows the suction is working.</li>
+        <li>Turning the wall suction up further does <b>not</b> increase the pressure.</li>
+        <li>New order, such as 20 to 25 cm: turn the dial, then raise the wall suction until the visual alert comes back.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-chest-drainage-chambers">View the three chambers</button>
+  <div class="fig-store" id="fig-chest-drainage-chambers" hidden>
+    <figure class="figure">
+      <img src="images/review-chest-tubes/chest-drainage-chambers.jpg" alt="Photo of a Pleur-Evac chest drainage unit. Arrows label the suction system dial at the top left, the underwater seal at the bottom left, and the fluid level in the collection chamber on the right, which is marked in milliliters." loading="lazy">
+      <figcaption><b>One unit, three chambers.</b> Suction, water seal and collection sit side by side on every brand.</figcaption>
+    </figure>
+  </div>
+
+  <div class="two-col" id="suction-vs-underwater-seal">
+    <div class="card">
+      <h4>To Suction</h4>
+      <ul>
+        <li>The second extension tubing runs from the <b>air vent</b> to <b>wall suction</b>.</li>
+        <li>Nearly everyone starts on suction.</li>
+        <li>No walking in the hall while on wall suction.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>To Underwater Seal (UWS)</h4>
+      <ul>
+        <li>The air vent is <b>open to air</b>. No suction.</li>
+        <li>Turn off the wall suction <b>and take the tubing off the air vent</b>.</li>
+        <li>Tolerated well for a period of time, by respiratory status and chest x-ray: the provider discontinues the chest tube.</li>
+        <li>Walking in the hall is fine with two people. One carries the system below the level of the chest.</li>
+      </ul>
+    </div>
+  </div>
+
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-chest-drainage-tubing">View the two extension tubings</button>
+  <div class="fig-store" id="fig-chest-drainage-tubing" hidden>
+    <figure class="figure">
+      <img src="images/review-chest-tubes/chest-drainage-tubing.jpg" alt="Photo of an Atrium dry suction chest drain in use. Extension tubing number 1 connects the patient to the drainage chamber and holds bloody drainage. Extension tubing number 2 is either attached to the wall suction device or is open to air." loading="lazy">
+      <figcaption><b>Tubing 1 comes from the patient. Tubing 2 is the air vent,</b> which goes to wall suction or is left open to air.</figcaption>
+    </figure>
+  </div>
+
+  <div class="callout-danger" id="air-vent-never-occluded"><b>Never occlude or clamp the air vent.</b> It is either open to air or connected to wall suction. Suction turned off with the tubing left on traps the air, and the backed-up pressure causes a <b>tension pneumothorax</b>.</div>
+
+  <h2 class="block" id="chest-tube-assessment-management">Assessment and Management</h2>
+
+  <div class="card" id="chest-tube-patient-care">
+    <h4>The Patient</h4>
+    <ul>
+      <li><b>Out of bed</b> unless contraindicated, with aggressive <span class="gloss">pulmonary toilet</span>.</li>
+      <li><b>Head of bed up</b> (Fowler's). Ventilation is better than supine.</li>
+      <li>Keep the collection system <b>below the level of the chest</b>. Raised above it, the drainage runs back into the pleural space.</li>
+      <li><b>Range of motion</b> for the affected shoulder: active, or passive if necessary.</li>
+      <li><b>Teach:</b> never disconnect the chest tube, as for a trip to the bathroom.</li>
+    </ul>
+  </div>
+
+  <!-- Subcutaneous emphysema: the definition is Holly's wording (2026-10-13), in the
+       glossary. It replaces the card that taught it. The bleeding bullet sits above it
+       because it spells out DIT. See decisions.md. -->
+  <div class="table-wrap" id="chest-drainage-system-checks"><table>
+    <thead><tr><th>Where to Look</th><th>Assess and Manage</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Insertion site</td><td><ul>
+        <li>Dressing <span class="gloss" data-term="occlusive dressing">occlusive</span>, dry and intact. Reinforce or change it per hospital policy.</li>
+        <li>Bleeding on the dressing: mark the edge with a pen and the date, initials and time (DIT). Notify the provider if it increases.</li>
+        <li>Palpate around the dressing for <span class="gloss">subcutaneous emphysema</span>. Typically reabsorbs on its own with time. Mark the edge with a pen and DIT, and notify the provider. Trend it, and notify again if it increases.</li>
+      </ul></td></tr>
+      <tr><td class="term">Extension tubing</td><td><ul>
+        <li>Connections intact.</li>
+        <li>A straight shot to the collection chamber with no excessive <b>dependent loops</b>. Tubing that loops down makes the drainage work against gravity.</li>
+      </ul></td></tr>
+      <tr><td class="term">Collection chamber</td><td><ul>
+        <li>Routinely mark the level on the outside of the chamber with the time and date, and count it as output on the I&amp;O.</li>
+        <li>Assess the volume and the appearance, such as serosanguineous.</li>
+        <li><b>Expected:</b> drainage that decreases over time. It increases when the patient first gets up and walks.</li>
+        <li><b>Not expected:</b> a sudden large output after very little. Take vital signs and notify the provider.</li>
+      </ul></td></tr>
+      <tr><td class="term">Water-seal chamber</td><td><ul>
+        <li>Water at the 2 cm mark.</li>
+        <li>Abnormal bubbling is a sign of a leak in the system.</li>
+      </ul></td></tr>
+      <tr><td class="term">Suction chamber</td><td><ul>
+        <li>Visual indicator in view, and the dial set at the prescribed level.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="tidaling-and-bubbling">Tidaling and Bubbling</h2>
+
+  <p class="note"><b>Both are read in the water-seal chamber.</b></p>
+
+  <div class="two-col" id="tidaling-present-vs-absent">
+    <div class="card">
+      <h4>Tidaling</h4>
+      <ul>
+        <li>The water bobs up and down as the patient breathes.</li>
+        <li>Reflects the pressure changes in the pleural space.</li>
+        <li><b>Expected</b> when the chest tube is to UWS. It shows a straight shot from the water seal to the pleural space.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>No Tidaling Means One of Three Things</h4>
+      <ol>
+        <li>The lungs have re-expanded, and the chest tube is about ready to come out.</li>
+        <li>A kink or obstruction in the tubing.</li>
+        <li>Suction is on.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="two-col" id="bubbling-intermittent-vs-constant">
+    <div class="card">
+      <h4>Intermittent Bubbling</h4>
+      <ul>
+        <li><b>Normal and expected</b> when a pneumothorax is present. It is the air getting out.</li>
+        <li>Appears on exhalation, coughing or sneezing, which raise intrathoracic pressure.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Constant Bubbling</h4>
+      <ul>
+        <li><b>Never normal.</b> Ask whether there is a leak in the system.</li>
+        <li>Gently apply a <b>padded clamp</b> on the drainage tubing, close to the <span class="gloss" data-term="occlusive dressing">occlusive dressing</span>.</li>
+        <li><b>Bubbling stops:</b> the leak is at the exit site or inside the patient. Notify the provider.</li>
+        <li><b>Bubbling continues:</b> the leak is between the clamp and the drainage system. Check the connections or replace the system.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="block" id="clamping-and-accidents">Clamping and Accidents</h2>
+
+  <div class="callout-danger" id="no-clamping-transport-disconnection"><b>Never clamp a chest tube for transport, or when the tubing is accidentally disconnected.</b> Clamping risks a pneumothorax.</div>
+
+  <div class="table-wrap" id="chest-tube-accidents"><table>
+    <thead><tr><th>Accident</th><th>Next Best Nursing Action</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Whole chest tube pulled out of the chest</td><td>Cover the exit site with an <span class="gloss" data-term="occlusive dressing">occlusive dressing</span> at once, such as sterile petroleum (Vaseline) gauze on a 4x4. Atmospheric air entering the hole causes a <b>tension pneumothorax</b>.</td></tr>
+      <tr><td class="term">Tubing becomes disconnected</td><td>Put the end of the tube in a bottle of <b>sterile saline</b> to recreate the underwater seal, then get a new setup and reconnect the patient.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="chest-tube-removal">Chest Tube Removal</h2>
+
+  <div class="card" id="chest-tube-removal-steps">
+    <h4>Steps of Removal</h4>
+    <ol>
+      <li>Chest x-ray shows the lung has re-expanded, and fluid drainage has ceased.</li>
+      <li><b>Nurse:</b> premedicate with an analgesic, teach and support the patient.</li>
+      <li><b>Provider:</b> cuts the sutures and applies sterile petroleum gauze.</li>
+      <li>Patient takes a deep breath and <b>bears down</b>, which keeps atmospheric air from being sucked into the chest. The provider removes the tube.</li>
+      <li>An airtight dressing is applied. Mark any drainage with DIT, and reinforce or change the dressing per protocol.</li>
+    </ol>
+  </div>
+
+  <nav class="page-flip" data-page-flip></nav>
+  <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
+
+</div>
+</main>
+
+<script src="assets/site.js?v=20261017q"></script>
+<script src="data/glossary.js?v=20261017q"></script>
+<script src="assets/study.js?v=20261017q"></script>
+</body>
+</html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<!-- SOURCES
+     Deck:        slides/Day 1 - 2 Oxygen Therapy.pptx (15 slides)
+     Transcript:  transcripts/Day 1 - O2.txt
+     Built:       2026-10-12
+     Cross-checked against the deck: 2026-10-12
+     Revised:     2026-10-13, from Holly's markup. The same day, what the Respiratory
+                  Review already teaches came off the O2 Therapy Principles section
+     Revised:     2026-10-16. The Respiratory Review teaches the trach now: the
+                  Tracheostomy table is trimmed to what this lecture adds, with a strip
+                  to the review block, and the card's last two plain leads are linked
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oxygen Therapy and Mechanical Ventilation — NUR427</title>
+<script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="assets/styles.css?v=20261017q">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<main id="content">
+<div class="page-inner">
+
+  <header class="page-head">
+    <p class="eyebrow">Day 1 · Topic 2</p>
+    <h1>Oxygen Therapy and Mechanical Ventilation</h1>
+  </header>
+
+  <h2 class="block" id="bring-forward">Things to Bring Forward</h2>
+
+  <div class="card" id="prior-content" data-nohide>
+    <h4>Earlier Content This Topic Builds On</h4>
+    <ul>
+      <!-- Each bullet's bold lead links to the review block that teaches it (Holly,
+           2026-10-13). Monitoring oxygen therapy links to the SpO2 and SaO2 card, which
+           covers it with no new block (Holly, 2026-10-16). Tracheostomy links to its block
+           on the Respiratory Review, there for now (Holly, 2026-10-16).
+           CPAP and BiPAP were named as review later in the recording, not at the
+           start. The card lists those too (Holly, 2026-10-13). -->
+      <li><b><a class="rev-link" href="review-respiratory.html#oxygen-delivery-devices">Oxygen delivery devices</a>:</b> which device is in use.</li>
+      <li><b><a class="rev-link" href="review-respiratory.html#spo2-and-sao2">Monitoring oxygen therapy</a>:</b> how to tell whether it is effective.</li>
+      <li><b><a class="rev-link" href="review-respiratory.html#tracheostomy">Tracheostomy</a>:</b> how to care for a patient with a trach, the nurse's responsibility, how to suction and what indicates suctioning.</li>
+      <li><b><a class="rev-link" href="review-respiratory.html#cpap-and-bipap">CPAP and BiPAP</a>:</b> noninvasive positive-pressure ventilation.</li>
+    </ul>
+  </div>
+
+  <h2 class="block" id="oxygen-therapy-principles">O2 Therapy Principles</h2>
+
+  <!-- This section keeps only what this lecture adds to the Respiratory Review, and the
+       strip under the device table links to the rest (Holly, 2026-10-13). Taken off
+       because the review page teaches it: slide 2's "2 categories of therapies: low
+       flow, high flow" as a bullet, the list of low-flow devices, the nasal cannula's 2
+       to 6 L range, and how to tell a non-rebreather from a simple mask.
+       Humidification: slide 2 says "used in all methods of O2 therapy" and the recording
+       says "anything more than four liters per minute is required". Both are written.
+       The 4 L/min is on the review page too. It stays here: it is half of that pair. -->
+  <div class="card" id="o2-therapy-principles">
+    <h4>Principles of O2 Therapy</h4>
+    <ul>
+      <li><b>Needs an order,</b> usually an admission order set to maintain SpO2. An emergency is the exception.</li>
+      <li><b>Start low and progress up as needed.</b> A nasal cannula starts at 2 L, not 6. Use the lowest flow that maintains mental status and an acceptable SpO2.</li>
+      <li><b>Reported in percentages</b> once past a nasal cannula at 6 L. Lowest 35%, highest 100%.</li>
+      <li><b>Humidification:</b> used in all methods of O2 therapy, and required above 4 L/min. Monitor secretions to make sure it is adequate.</li>
+      <li>Inspired gas: about 37 degrees and 100% humidity, managed by respiratory therapy. Dry mucous membranes exchange gas less effectively.</li>
+    </ul>
+  </div>
+
+  <div class="two-col" id="low-flow-vs-high-flow">
+    <div class="card">
+      <h4>Low Flow</h4>
+      <ul>
+        <li><b>Patient does the work to breathe.</b> No pressure goes in.</li>
+        <li>Patient still pulls in some room air, so <span class="gloss">FiO2</span> is not as precisely controlled.</li>
+        <li>What most patients are on. An oxygen tent is low flow too.</li>
+        <li>More helpful for oxygenation.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>High Flow</h4>
+      <ul>
+        <li><b>More precise and more controlled.</b></li>
+        <li>Better to supplement ventilation: more effective <b>CO2 removal</b>.</li>
+        <li>Stays constant when the breathing pattern is irregular, shallow or deep.</li>
+        <li>Typically needed when level of consciousness is significantly altered.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="sub" id="devices-heading">O2 Therapy Devices</h3>
+
+  <!-- "Non-rebreather" and "Venturi": the recording has "honorary breather" and "VEDI
+       mask". Slide 3 pictures both masks.
+       Left off: where a high-flow nasal cannula is allowed at UK (not on acute floors, up
+       to about 30 L on progressive, common in the ICU). One hospital's unit policy. -->
+  <div class="table-wrap" id="o2-therapy-devices"><table>
+    <thead><tr><th>Device</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Nasal cannula</td><td><ul>
+        <li>Turning it above <b>6 L</b> is not really more effective.</li>
+      </ul></td></tr>
+      <tr><td class="term">High-flow nasal cannula</td><td><ul>
+        <li>Still a nasal cannula, but it gives <b>positive pressure</b>: it forces air into the airway.</li>
+        <li><b>14 to 40 L/min</b>, possibly higher, at about <b>60 to 100% O2</b>.</li>
+        <li>Helps CO2 expulsion, so a great device for irregular breathing patterns.</li>
+        <li>Better than CPAP or BiPAP for most patients who are hypoxic or hypercapnic.</li>
+        <li>Patient has to be able to maintain head and chin position.</li>
+        <li>Respiratory therapy sets it up and manages its temperature and humidification.</li>
+        <li>Nurse: check it is plugged in and working, and report the liters and the percentage shown on the machine.</li>
+      </ul></td></tr>
+      <tr><td class="term">Non-rebreather mask</td><td><ul>
+        <li>Bag should be <b>inflated</b>.</li>
+      </ul></td></tr>
+      <tr><td class="term">Venturi mask</td><td><ul>
+        <li>Liters set at the wall have to match the liters on the colored dial.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="xref-line"><a class="xref" href="review-respiratory.html#oxygen-delivery-devices">
+    <span><b>Each device's flow rate, FiO2 and best use,</b> and which devices are low flow or high flow, are taught in the <b>Respiratory</b> review</span>
+  </a></p>
+
+  <p class="note"><b>Charted oxygen has to be correct.</b> Check it at the wall at every assessment, usually every 4 hours. Oxygen comes unplugged.</p>
+
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-high-flow-nasal-cannula">View a high-flow nasal cannula</button>
+  <div class="fig-store" id="fig-high-flow-nasal-cannula" hidden>
+    <figure class="figure">
+      <img src="images/day1-oxygen-therapy/high-flow-nasal-cannula.jpg" alt="A man sitting beside a high-flow nasal cannula machine on a pole. Wide tubing runs from the machine to a cannula in his nose. A bag of water hangs at the top of the pole and the machine's display is at the bottom." loading="lazy">
+      <figcaption><b>High-flow nasal cannula.</b> The bag at the top supplies the humidification. The machine at the bottom manages the temperature.</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="block" id="nippv">Noninvasive Positive-Pressure Ventilation</h2>
+
+  <div class="table-wrap" id="nippv-types"><table>
+    <thead><tr><th>Term</th><th>What It Is</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Noninvasive positive-pressure ventilation</td><td><ul>
+        <li>Mode of ventilation <b>without an endotracheal (ET) tube</b>: gas exchange is supported in a patient who is not intubated.</li>
+        <li>Usually a face or nose mask. Can be whole face or just nose.</li>
+      </ul></td></tr>
+      <tr><td class="term">CPAP</td><td><ul>
+        <li>Continuous positive airway pressure.</li>
+        <li>Same air pressure on inhale and exhale.</li>
+      </ul></td></tr>
+      <tr><td class="term">BiPAP</td><td><ul>
+        <li>An inspiratory positive airway pressure (IPAP) and an expiratory positive airway pressure (EPAP).</li>
+        <li>Different pressures for inhalation and exhalation.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="card" id="nippv-uses-and-limits">
+    <h4>When It Is Used, and Its Limits</h4>
+    <ul>
+      <li>For many respiratory conditions, usually severe. <b>First line to prevent intubation</b>, or used right at extubation.</li>
+      <li>Very helpful for getting <b>CO2 off</b>. Not as helpful in oxygenation respiratory failure.</li>
+      <li>Patient has to be able to maintain their own airway.</li>
+      <li><b>Not a long-term solution,</b> though it can run continuously in the hospital: no eating or drinking with the mask on, and a lot of aspiration risk.</li>
+      <li>Respiratory therapy coordinates and controls the modes, usually based on pressure control or PEEP.</li>
+      <li>Examples: after a procedure, or while too much fentanyl wears off.</li>
+    </ul>
+  </div>
+
+  <p class="xref-line"><a class="xref" href="review-respiratory.html#cpap-and-bipap">
+    <span><b>CPAP and BiPAP</b> are taught in the <b>Respiratory</b> review</span>
+  </a></p>
+
+  <h2 class="block" id="airway-management">Airway Management</h2>
+
+  <div class="mnemonic" id="airway-most-important"><b>Airway is the most important aspect of any oxygenation or ventilation management.</b> The patient has to be able to maintain it, and it starts with positioning.</div>
+
+  <!-- Nasopharyngeal airway, "Better tolerated than an oral airway": the recording gives a
+       condition that is garbled ("if the patient is more weak but still pretty weak"). The
+       condition is left off, not guessed. -->
+  <div class="table-wrap" id="airway-adjuncts"><table>
+    <thead><tr><th>Method</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Positioning</td><td><ul>
+        <li><b>Head tilt-chin lift or jaw thrust.</b> Comes first: airway open and able to take in air.</li>
+        <li>Not always enough with an altered level of consciousness or weakness.</li>
+      </ul></td></tr>
+      <tr><td class="term">Oral airway<br>(oropharyngeal airway)</td><td><ul>
+        <li>Keeps the <b>tongue from falling back</b> and obstructing the pharynx.</li>
+        <li>For acute depression of level of consciousness. Short term only.</li>
+        <li>Often used in CPR until the patient can be intubated, with bag-mask ventilation over the top of it.</li>
+        <li><b>Correct size needed.</b> Too short does not work: it has to get up and around the back of the tongue.</li>
+        <li>Also helps with oral suctioning.</li>
+      </ul></td></tr>
+      <tr><td class="term">Nasopharyngeal airway<br>(nasal trumpet)</td><td><ul>
+        <li>Used to <b>suction through</b>: a red rubber or suction catheter goes down it when the cough is weak or secretions are hard to expel.</li>
+        <li>Second choice when an oral airway will not work: the patient is seizing or the jaw is too tight.</li>
+        <li>Better tolerated than an oral airway.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-oral-and-nasal-airways">View the oral and nasopharyngeal airways</button>
+  <div class="fig-store" id="fig-oral-and-nasal-airways" hidden>
+    <div class="figure-pair">
+      <figure class="figure">
+        <img src="images/day1-oxygen-therapy/oral-airways.jpg" alt="A row of curved plastic oral airways in eight sizes, each with a different colored tip. Below them, a drawing of a patient lying on her back with an oral airway in her mouth." loading="lazy">
+        <figcaption><b>Oral airways.</b> They come in sizes, and the curve has to reach up and around the back of the tongue.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/day1-oxygen-therapy/nasopharyngeal-airway.jpg" alt="Side view of a head in cross-section. A soft tube runs in through the nostril and curves down behind the tongue into the pharynx." loading="lazy">
+        <figcaption><b>Nasopharyngeal airway</b> (nasal trumpet), in place.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <h2 class="block" id="artificial-airways">Artificial Airways</h2>
+
+  <h3 class="sub" id="et-tube-heading">Endotracheal Tube</h3>
+
+  <!-- "Inline suctioning": the recording has "there's like a entitled suctioning". Read as
+       inline suctioning. Later the ventilator connection is said to have "its own suction
+       port just like we talked about with endotracheal tubes". Not in the deck. -->
+  <div class="card" id="et-tube-basics">
+    <h4>Endotracheal Tube (ETT or ET Tube)</h4>
+    <ul>
+      <li>The most common way to secure an airway. Inserted <b>through the mouth into the trachea</b>. Nose to trachea is possible with oral trauma, but not common.</li>
+      <li>Time to intubate when CPAP, BiPAP or an oral airway does not give the support needed. A big indication: a lot of secretions that are hard to contain.</li>
+      <li><b>Sized #6 to #9.</b> Most common: 7 to 7.5 for a female, 7.5 to 8 for a male.</li>
+      <li>Size is printed on the tube. Check that the size and the side of the mouth match what was reported.</li>
+      <li>Can usually be <b>suctioned through</b> if placed in the hospital, with a red rubber catheter or inline suctioning.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="intubation-nurse-responsibilities">
+    <h4>Preparing to Intubate: The Nurse's Responsibilities</h4>
+    <ul>
+      <li><b>A good working IV.</b></li>
+      <li>Anticipate IV sedation and analgesia, short term or long term. Being intubated is not comfortable.</li>
+      <li>Patient is typically paralyzed momentarily with rapid sequence intubation (RSI) drugs.</li>
+    </ul>
+  </div>
+
+  <div class="table-wrap" id="et-tube-parts"><table>
+    <thead><tr><th>Part or Marking</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Radiopaque line</td><td><ul>
+        <li>Shows on the chest x-ray that verifies where the tube is.</li>
+      </ul></td></tr>
+      <tr><td class="term">Cuff</td><td><ul>
+        <li>At the end of the tube. Inflated once the tube is known to be in the trachea, not the esophagus.</li>
+        <li>Seals the space between the tube and the trachea, and holds the tube in place.</li>
+        <li><b>Cuff inflated: the patient cannot speak.</b> An intubated patient who speaks is a big sign something is wrong.</li>
+        <li>Pressure too low: the tube may move. Too great: damage to the surrounding tissue.</li>
+      </ul></td></tr>
+      <tr><td class="term">Pilot balloon</td><td><ul>
+        <li>How the cuff is inflated and deflated. <b>Air in it means the cuff is inflated.</b></li>
+        <li>Nurse checks it at every assessment. Inflating, deflating and moving the tube belong to respiratory therapy.</li>
+      </ul></td></tr>
+      <tr><td class="term">Marking at the lip</td><td><ul>
+        <li>Where the tube sits, in centimeters: "26 at the lip".</li>
+        <li>Check it all the time.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="card" id="et-placement-confirmation">
+    <h4>Confirming Placement After Intubation</h4>
+    <ol>
+      <li><b>Bilateral breath sounds,</b> listened for by whoever intubated, often anesthesia or the ED.</li>
+      <li><b>CO2 sensed</b> by a marker hooked up to the ET tube.</li>
+      <li><b>Chest x-ray ASAP.</b></li>
+    </ol>
+  </div>
+
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-endotracheal-tube">View the parts of an endotracheal tube</button>
+  <div class="fig-store" id="fig-endotracheal-tube" hidden>
+    <figure class="figure">
+      <img src="images/day1-oxygen-therapy/endotracheal-tube.jpg" alt="A labelled endotracheal tube. Labels: standard 15 mm connector, above-the-cuff suction port, pilot balloon with a spring-loaded one-way valve, transparent PVC tubing, and an air-filled cuff near the tip, boxed in red, that typically holds about 10 mL." loading="lazy">
+      <figcaption><b>Endotracheal tube.</b> The cuff is boxed in red at the tip. The pilot balloon hangs from its own thin line.</figcaption>
+    </figure>
+  </div>
+
+  <h3 class="sub" id="intubated-care-heading">Care of the Intubated Patient</h3>
+
+  <div class="table-wrap" id="intubated-patient-care"><table>
+    <thead><tr><th>Check</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Verify placement,<br>every assessment</td><td><ul>
+        <li>Same side of the mouth, same size, same <b>centimeter marking at the lip</b>.</li>
+        <li>Chest x-rays are repeated routinely. The nurse does not interpret them, but reads the report that the tube is where it should be.</li>
+      </ul></td></tr>
+      <tr><td class="term">Oral care</td><td><ul>
+        <li>Patient cannot do it. <b>Every 2 hours</b> with an oral care kit: wash out the mouth and clean the tube.</li>
+        <li>Prevents <b>ventilator-associated pneumonia (VAP)</b>. Patients on a ventilator have a much higher risk of pneumonia.</li>
+      </ul></td></tr>
+      <tr><td class="term">Verify secure</td><td><ul>
+        <li>Same place, held by a securement device, not tape on the face: fewer ulcerations.</li>
+        <li>A patient fighting the tube can tongue it out, even unconsciously.</li>
+      </ul></td></tr>
+      <tr><td class="term">Cuff inflated</td><td><ul>
+        <li>Pilot balloon is inflated.</li>
+      </ul></td></tr>
+      <tr><td class="term">Tube clear</td><td><ul>
+        <li>Nothing obstructing it. Patients still cough through the tube, and secretions sit at mouth level: suction them out.</li>
+        <li>Humidity inside the tube is not a concern.</li>
+      </ul></td></tr>
+      <tr><td class="term">Not bitten</td><td><ul>
+        <li>Biting the tube is a big deal. Devices can be put in to prevent it.</li>
+        <li>Often why sedation is needed, when the patient cannot follow directions.</li>
+      </ul></td></tr>
+      <tr><td class="term">Sides of the mouth switched</td><td><ul>
+        <li>Usually done by respiratory therapy. The nurse monitors that it is done.</li>
+        <li>A tube left sitting on the tongue or in the mouth causes ulcerations.</li>
+      </ul></td></tr>
+      <tr><td class="term">Secure to the ventilator</td><td><ul>
+        <li>All connectors secure. They pop apart, and patients and family members pull them apart.</li>
+      </ul></td></tr>
+      <tr><td class="term">Skin intact</td><td><ul>
+        <li>In the mouth and at the tape or securement device. Pressure ulcers are common here.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="note"><b>Endotracheal intubation is not a long-term solution:</b> it invites pressure ulcers, VAP and injury to the trachea. A longer-term need means a transition to a tracheostomy.</p>
+
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-intubated-patient">View an intubated patient and a securement device</button>
+  <div class="fig-store" id="fig-intubated-patient" hidden>
+    <div class="figure-pair">
+      <figure class="figure">
+        <img src="images/day1-oxygen-therapy/intubated-patient.jpg" alt="A patient lying in a hospital bed with an endotracheal tube in his mouth, held by a securement device strapped across his face and connected to ventilator tubing on his chest." loading="lazy">
+        <figcaption><b>Intubated patient.</b> The tube is held by a securement device and connected to the ventilator.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/day1-oxygen-therapy/et-tube-securement.jpg" alt="Close view of an endotracheal tube at a patient's mouth, held in a plastic securement device, with moisture inside the tube and dried blood on the lips and cheek." loading="lazy">
+        <figcaption><b>Securement device, close up.</b> Humidity inside the tube is fine. The skin of the mouth and under the device is what needs watching.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <h3 class="sub" id="tracheostomy-heading">Tracheostomy</h3>
+
+  <!-- Trimmed 2026-10-16 to what this lecture adds, by the 2026-10-14 rule, once the
+       Respiratory Review taught the trach. Came off, because the review block teaches them:
+       the "Two primary types" row (Shiley, plastic, the most common. Jackson, metal, longer
+       term) and "Know what has to be at the bedside for an emergency". The strip under the
+       table links there. See decisions.md.
+       Cuff: the recording says "again cuff it's deflated um and kind of how you learn about
+       it in med surge but if they're on the vent it needs to be inflated". Only the
+       ventilator rule is clear, so only it is written here. The review block teaches when
+       the cuff is deflated. -->
+  <div class="table-wrap" id="tracheostomy-essentials"><table>
+    <thead><tr><th>Topic</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Why it is placed</td><td><ul>
+        <li><b>Preferred airway for a patient requiring a long-term airway.</b></li>
+        <li>Vent dependence: the patient cannot get off the ventilator. A patient with a trach may or may not be ventilated.</li>
+        <li>Weakness and a long-term inability to clear secretions, such as needing suction every 2 hours.</li>
+      </ul></td></tr>
+      <tr><td class="term">Documentation</td><td><ul>
+        <li>Document the type and size of the trach.</li>
+      </ul></td></tr>
+      <tr><td class="term">Cuff</td><td><ul>
+        <li><b>Inflated when the patient is on the ventilator,</b> as the ET tube cuff is. All the air given goes in, and exhaled CO2 does not go around the trach.</li>
+      </ul></td></tr>
+      <tr><td class="term">Care</td><td><ul>
+        <li>Oral care and trach care. <b>Skin integrity</b> around the trach is crucial.</li>
+      </ul></td></tr>
+      <tr><td class="term">Suctioning</td><td><ul>
+        <li>The connection to the ventilator can have its own suction port, as with an ET tube.</li>
+        <li>Otherwise a red rubber catheter, which is a little gentler on the airway, or a clear plastic one.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="xref-line"><a class="xref" href="review-respiratory.html#tracheostomy">
+    <span><b>The two types of trach, the nurse's job, the cuff, suctioning and what to keep at the bedside</b> are taught in the <b>Respiratory</b> review</span>
+  </a></p>
+
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-tracheostomy-tube">View the parts of a tracheostomy tube</button>
+  <div class="fig-store" id="fig-tracheostomy-tube" hidden>
+    <figure class="figure">
+      <img src="images/day1-oxygen-therapy/tracheostomy-tube.jpg" alt="A labelled tracheostomy tube. Labels: pilot balloon, flange, 15 mm hub, tube shaft and cuff." loading="lazy">
+      <figcaption><b>Tracheostomy tube.</b> It has a cuff and a pilot balloon, as an ET tube does.</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="block" id="mechanical-ventilation">Mechanical Ventilation</h2>
+
+  <div class="card" id="ventilation-purpose">
+    <h4>Purpose of Mechanical Ventilation</h4>
+    <ul>
+      <li><b>Support the respiratory system.</b></li>
+      <li>Respiratory failure: the patient cannot clear their own secretions or cannot perform adequate gas exchange.</li>
+      <li><b>Minimizing oxygen demand:</b> the patient is sedated and paralyzed, as in sepsis and trauma, even without a major respiratory problem. Sedation and paralysis lower level of consciousness, so the respiratory system has to be supported.</li>
+      <li>Usually or always <b>positive pressure ventilation</b>: air is forced into the lungs, not passively accepted, even when the patient fights it.</li>
+    </ul>
+  </div>
+
+  <h3 class="sub" id="settings-heading">Six Things the Nurse Is Responsible for Knowing</h3>
+
+  <!-- Mode: the six names from slide 12, and that pressure support is the weaning mode.
+       Nothing else about the modes (Holly, 2026-10-13).
+       Tidal volume: the recording defines it as "how much volume the lungs take on max
+       inspiration ... when they're taking a big deep breath". That is wrong, and the
+       definition is corrected (Holly, 2026-10-13). The recording's own account of the
+       setting agrees: "every single breath ... this person is getting 380 ml".
+       PEEP "5 to 20": the recording first guesses "the lowest peep you can do is like six
+       ... the max maybe is like 20 18 20", then reads slide 12's "5-20" and corrects
+       itself: "five is the minimum peep".
+       Rate "raised for acidosis": slide 12 prints "10-25 [↑acidosis]".
+       The four "Common setting" lines are the bottom row of slide 12, a picture. -->
+  <div class="table-wrap" id="ventilator-settings"><table>
+    <thead><tr><th>Setting</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Mode</td><td><ul>
+        <li>Synchronized intermittent mandatory ventilation (SIMV).</li>
+        <li>Pressure regulated volume control (PRVC).</li>
+        <li>Pressure controlled (PC).</li>
+        <li>Volume controlled (VC).</li>
+        <li>Pressure support (PS): <b>the weaning mode</b>.</li>
+        <li>Airway pressure release ventilation (APRV).</li>
+      </ul></td></tr>
+      <tr><td class="term">FiO2</td><td><ul>
+        <li><b>Percent of oxygen</b> the patient gets.</li>
+        <li>35 to 100%. Usually 40% at the lowest, and changed in increments of 10.</li>
+      </ul></td></tr>
+      <tr><td class="term">Tidal volume</td><td><ul>
+        <li><b>How much air goes into the lungs with each breath.</b><span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li>
+        <li>Set by the ventilator in some modes and controlled by the patient in others. Monitored closely.</li>
+        <li>Common setting: 6 to 10 mL/kg.</li>
+      </ul></td></tr>
+      <tr><td class="term">Inspiratory pressure</td><td><ul>
+        <li>How much force the ventilator needs to push air in. Tells about lung <span class="gloss">compliance</span> and how sick the lungs are.</li>
+        <li>Can be set, depending on the mode, but usually is not.</li>
+        <li><b>Peak inspiratory pressure</b> is watched, not set. 25 is pretty normal.</li>
+        <li>Common pressure control setting: 5 to 25.</li>
+      </ul></td></tr>
+      <tr><td class="term">Rate</td><td><ul>
+        <li>Respiratory rate. Controls <b>CO2 levels</b>.</li>
+        <li>Set by the ventilator or by the patient, depending on the mode. A set rate is the minimum: the patient can breathe more often.</li>
+        <li>Common setting: 10 to 25, raised for acidosis.</li>
+      </ul></td></tr>
+      <tr><td class="term">PEEP</td><td><ul>
+        <li><b>Positive end-expiratory pressure:</b> a little extra pressure at the end of expiration that <b>pops the alveoli open</b>, for alveoli that are collapsed or not working well.</li>
+        <li>Promotes oxygenation and gas exchange, and helps more than tidal volume does.</li>
+        <li><b>Can be very dangerous:</b> it forces the alveoli open and can cause a lot of trauma to the lungs. Tidal volume can be damaging too.</li>
+        <li>Kept at the <b>lowest level possible</b>.</li>
+        <li>Common setting: 5 to 20.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- Left off: the mean pressure reading (Pmean) on the ventilator screen. Said not to
+       need knowing: "the peep can give you a mean peep mean pressure don't worry about
+       that". -->
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-ventilator-screen">View a ventilator screen</button>
+  <div class="fig-store" id="fig-ventilator-screen" hidden>
+    <figure class="figure">
+      <img src="images/day1-oxygen-therapy/ventilator-screen.jpg" alt="A ventilator screen in Volume Control mode with three waveforms. Readings down the right side: Ppeak 25, PEEP 10, respiratory rate 28, O2 100%, inspired tidal volume 388 and expired tidal volume 386. Settings along the bottom: O2 concentration 100%, PEEP 10, respiratory rate 28, tidal volume 380." loading="lazy">
+      <figcaption><b>Volume control: tidal volume is the primary driver.</b> Set along the bottom: FiO2 100%, PEEP 10, rate 28, tidal volume 380 mL. Read on the right: peak pressure 25, volume in 388 and out 386. A significant amount of support.</figcaption>
+    </figure>
+  </div>
+
+  <!-- Left off: the ventilator modes table (slide 12, a picture), which said what each of
+       the six modes does, and the slide's "Indication" line. Said to be "just for your
+       information" (Holly, 2026-10-13). The Mode row above lists the six names, and the
+       slide's common settings are in the same table. -->
+
+  <h2 class="block" id="complications">Complications of Mechanical Ventilation</h2>
+
+  <!-- ET tube out of position: the recording has "is the tube still at the same rate is the
+       cuff inflated". "Rate" is a garble, and the bullet says only what is clear: check
+       whether the tube has moved and whether the cuff is inflated. -->
+  <div class="table-wrap" id="ventilation-complications"><table>
+    <thead><tr><th>Complication</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">ET tube out of position</td><td><ul>
+        <li>Securement issue: the patient tongues the tube out, or it moves during transport.</li>
+        <li>Monitored with chest x-rays and the ventilator settings.</li>
+        <li>Tidal volumes and pressures changing for no clear reason: check whether the tube has moved and whether the cuff is inflated.</li>
+      </ul></td></tr>
+      <tr><td class="term">Unplanned extubation</td><td><ul>
+        <li><b>Most of the time an emergency.</b> Sometimes it means the patient no longer needs to be intubated.</li>
+        <li>Monitor oxygenation and think about positioning. Bag-mask ventilation at 100% is probably needed, depending on level of consciousness. A code may need to be called.</li>
+        <li>The nurse makes that decision. A patient who was on pressure support is probably doing okay.</li>
+      </ul></td></tr>
+      <tr><td class="term">Laryngeal and tracheal injury</td><td><ul>
+        <li>Tube sits along the lining of the trachea. Tube movement (a thrashing head, the tube sliding up and down) and excess cuff pressure cause abrasions.</li>
+        <li>Respiratory team monitors cuff pressures.</li>
+      </ul></td></tr>
+      <tr><td class="term">Oral mucosa damage</td><td><ul>
+        <li>Oral care, rotating the tube, monitoring the skin. Moisturizer for the mouth helps.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 class="sub" id="pulmonary-issues-heading">Pulmonary Issues Related to Mechanical Ventilation</h3>
+
+  <!-- Dysphagia: the recording gives two thresholds, "intubated for more than 48 hours" and
+       then "more like 24-48 hours they're at high risk for aspiration". Written as more
+       than 24 hours (Holly, 2026-10-13). -->
+  <div class="table-wrap" id="ventilation-pulmonary-issues"><table>
+    <thead><tr><th>Issue</th><th>What to Know</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Barotrauma</td><td><ul>
+        <li><b>Pressure trauma:</b> injury to the lungs from ventilation. Alveoli are injured or ruptured by excessive pressure and excessive inflation.</li>
+        <li>Seen a lot in ARDS, where damaged alveoli need a lot of PEEP. Too high, too hard or too long causes it.</li>
+        <li>Air escapes: <span class="gloss">subcutaneous emphysema</span>, pneumothorax.</li>
+        <li>Why PEEP is used carefully and tidal volumes are kept appropriate for the patient.</li>
+      </ul></td></tr>
+      <tr><td class="term">Oxygen toxicity</td><td><ul>
+        <li>Too much oxygen leads to pathological changes. How bad depends on how long.</li>
+        <li>Titrate the O2 down as quickly as possible, within safe margins, monitored by PaO2 on an ABG or by SpO2.</li>
+        <li>Can mimic ARDS. Not seen much.</li>
+      </ul></td></tr>
+      <tr><td class="term">Respiratory acidosis or alkalosis</td><td><ul>
+        <li>Ventilator controls gas exchange, so it can blow off too much CO2 or retain too much.</li>
+        <li><b>ABGs, usually daily,</b> for a ventilated patient, whether by ET tube or trach.</li>
+      </ul></td></tr>
+      <tr><td class="term">Infection</td><td><ul>
+        <li><b>VAP</b> is the biggest concern, and the focus is prevention.</li>
+        <li>VAP bundle: managing oral secretions, good oral care, a cuff inflated appropriately, effective suctioning, a quicker transition to a trach.</li>
+      </ul></td></tr>
+      <tr><td class="term">Dysphagia or aspiration</td><td><ul>
+        <li>Intubated <b>more than 24 hours</b>: high risk of swallowing difficulty and aspiration after extubation.</li>
+        <li>The throat and the gag take a while to readjust.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <button type="button" class="fig-trigger" data-lightbox-target="fig-barotrauma">View where the air goes in barotrauma</button>
+  <div class="fig-store" id="fig-barotrauma" hidden>
+    <figure class="figure">
+      <img src="images/day1-oxygen-therapy/barotrauma.jpg" alt="Diagram titled Rupture of alveolar walls, with arrows from a drawing of the lungs to three places. Mediastinum: mediastinal emphysema and subcutaneous emphysema. Pleural cavity: pneumothorax. Pulmonary veins: gas embolism." loading="lazy">
+      <figcaption><b>Rupture of alveolar walls.</b> Air reaches the mediastinum, the pleural cavity or the pulmonary veins.</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="block" id="weaning">Weaning Considerations</h2>
+
+  <div class="two-col" id="weaning-and-extubation">
+    <div class="card">
+      <h4>Readiness and Weaning Trials</h4>
+      <ul>
+        <li>Approached in a systematic fashion, always thinking about <b>readiness</b>: can the patient breathe on their own?</li>
+        <li><b>Weaning trial:</b> a pressure support trial, which makes the patient do the work. Done every day.</li>
+        <li>Not appropriate for a patient who is sedated and paralyzed.</li>
+        <li>Tried for a few minutes first, then for longer. Sometimes 15 to 30 minutes is enough.</li>
+        <li>Ready: awake, following instructions, squeezing hands, understanding what is going on. Assess the cough and how weak the patient is too.</li>
+      </ul>
+    </div>
+    <div class="card alt">
+      <h4>Extubation</h4>
+      <ul>
+        <li><b>Emergency supplies ready.</b></li>
+        <li>Positioning: sitting as high as possible, head of bed at 90 degrees.</li>
+        <li>Calm environment, usually without family at the bedside.</li>
+        <li>Lights on.</li>
+        <li>Pain managed, but level of consciousness not depressed.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout-danger" id="post-extubation-swallow"><b>Nothing to drink until a bedside swallow is done,</b> even after intubation for a procedure only. The patient will be thirsty. Start with ice chips and advance slowly to water as tolerated. Coughing: go back a step, and a speech evaluation may be needed.</div>
+
+  <nav class="page-flip" data-page-flip></nav>
+  <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
+
+</div>
+</main>
+
+<script src="assets/site.js?v=20261017q"></script>
+<script src="data/glossary.js?v=20261017q"></script>
+<script src="assets/study.js?v=20261017q"></script>
+</body>
+</html>
