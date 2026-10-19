@@ -5,6 +5,7 @@
      Built:       2026-10-12
      Cross-checked against the deck: 2026-10-12
      Revised:     2026-10-12, from Holly's calibration markup
+     Revised:     2026-10-18, from Holly's markup
 -->
 <html lang="en">
 <head>
@@ -12,7 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Respiratory and Progressive Issues in Critical Care — NUR427</title>
 <script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
-<link rel="stylesheet" href="assets/styles.css?v=20261017q">
+<link rel="stylesheet" href="assets/styles.css?v=20261018c">
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
@@ -128,7 +129,7 @@
 
   <p class="note">A patient is not usually labelled as one type. Look at the clinical picture and decide whether it is both, or primarily an oxygen problem.</p>
 
-  <h3 class="sub" id="oxygenation-mechanisms">Five Mechanisms of Oxygenation Failure</h3>
+  <h3 class="sub" id="oxygenation-mechanisms">Mechanisms of Hypoxemia (Oxygenation Failure)</h3>
 
   <div class="table-wrap" id="oxygenation-failure-mechanisms"><table>
     <thead><tr><th>Mechanism</th><th>What Happens</th></tr></thead>
@@ -158,10 +159,16 @@
       <tr><td class="term">Decreased barometric pressure</td><td><ul>
         <li>Example: high altitude.</li>
       </ul></td></tr>
+      <!-- The last two rows were a note under the table until 2026-10-18 (Holly). The
+           recording names five primary mechanisms, then adds these two. -->
+      <tr><td class="term">Low cardiac output</td><td><ul>
+        <li>Heart is not pumping oxygenated blood where it needs to go.</li>
+      </ul></td></tr>
+      <tr><td class="term">Low hemoglobin</td><td><ul>
+        <li>Too anemic to carry oxygen to the tissues.</li>
+      </ul></td></tr>
     </tbody>
   </table></div>
-
-  <p class="note">Oxygenation also fails with <b>low cardiac output</b> (the heart is not pumping oxygenated blood where it needs to go) and <b>low hemoglobin</b> (too anemic to carry oxygen to the tissues).</p>
 
   <h3 class="sub" id="recognizing-failure">How Respiratory Failure Is Recognized</h3>
 
@@ -274,8 +281,8 @@
       <li><b>Acute and diffuse injury</b> to the lungs.</li>
       <li><b>Inflammatory response:</b> a cell-mediated, overly aggressive immune response damages the <b>alveolar-capillary membrane</b>.</li>
       <li>Massive platelet aggregation and intravascular thrombi. Sputum is often blood-tinged or pink.</li>
-      <li>The membrane becomes very permeable. Fluid, protein and blood cells leak into the alveoli, and massive fluid leakage throughout the body causes <b>edema</b>.</li>
-      <li><b>Alveolar flooding:</b> noncardiogenic pulmonary edema (not heart failure), shunting, V/Q mismatch, decreased <span class="gloss">compliance</span>, hypoxemia. The edema sitting in the lungs puts the patient at very high risk of pneumonia.</li>
+      <li>The membrane becomes very permeable. Fluid, protein and blood cells leak into the alveoli, and massive fluid leakage causes <b>pulmonary edema</b>.</li>
+      <li><b>Alveolar flooding:</b> <span class="gloss">noncardiogenic</span> pulmonary edema, shunting, V/Q mismatch, decreased <span class="gloss">compliance</span>, hypoxemia. The edema sitting in the lungs puts the patient at very high risk of pneumonia.</li>
       <li><span class="gloss">Pulmonary hypertension</span> causes further shunting. Dead space grows and surfactant is not produced.</li>
     </ol>
   </div>
@@ -296,7 +303,7 @@
       <h4>Acute Onset, Not Yet Intubated</h4>
       <ul>
         <li>Dyspnea, <span class="gloss">tachypnea</span>.</li>
-        <li><b>Hypoxemia not responding to supplemental O2</b> (refractory hypoxemia). <span class="gloss">FiO2</span> goes up through high flow, CPAP and intubation, and PaO2 and SpO2 still do not rise.</li>
+        <li><b><span class="gloss">Refractory hypoxemia</span>:</b> <span class="gloss">FiO2</span> goes up through high flow, CPAP and intubation, and PaO2 and SpO2 still do not rise.</li>
         <li>Fine crackles from fluid in the alveoli. Often no breath sounds at all.</li>
         <li>Restlessness, disorientation, decreasing LOC.</li>
         <li>Pulse and temperature may increase.</li>
@@ -432,7 +439,7 @@
     </div>
   </div>
 
-  <div class="mnemonic" id="pe-priority-concerns"><b>Two worries in a PE:</b> hypotension, and no ability to perform gas exchange because a huge embolism is blocking blood flow.</div>
+  <div class="callout-danger" id="pe-priority-concerns"><b>Two worries in a PE:</b> hypotension, and no ability to perform gas exchange because a huge embolism is blocking blood flow.</div>
 
   <button type="button" class="fig-trigger" data-lightbox-target="fig-pe-diagrams">View shunt, dead space and the death spiral</button>
   <div class="fig-store" id="fig-pe-diagrams" hidden>
@@ -492,6 +499,8 @@
     </tbody>
   </table></div>
 
+  <p class="note"><b>Usual order:</b> chest x-ray shows nothing, D-dimer comes back positive, then a CT scan confirms the PE.</p>
+
   <h3 class="sub" id="pe-treatment">PE Treatment</h3>
 
   <!-- Drug names here are read from a garbled recording: "a Pixivan at home, or Eliquiz
@@ -513,12 +522,13 @@
       <p>Surgical or catheter embolectomy. EKOS catheter: ultrasound with heparin, placed right in the pulmonary circulation. ECMO when very severe.</p>
     </div>
   </div>
-  <div class="cont-axis"><span>← Less severe</span><span>Massive PE →</span></div>
 
+  <!-- Left off: "often placed", about the IVC filter (Holly, 2026-10-18). The recording
+       says it. -->
   <div class="card" id="pe-supportive-care">
     <h4>IVC Filter, Oxygenation and Prevention</h4>
     <ul>
-      <li><b>IVC filter:</b> often placed. Sits in the inferior vena cava to catch clots that dislodge from the lower extremities.</li>
+      <li><b>IVC filter:</b> sits in the inferior vena cava to catch clots that dislodge from the lower extremities.</li>
       <li><b>Optimize oxygenation</b> acutely, as well as you can. Intubation may be needed but does not solve the problem, which is blood flow to the lungs.</li>
       <li><b>Prevention:</b> heparin shots or enoxaparin, SCDs, mobilizing.</li>
     </ul>
@@ -600,8 +610,8 @@
 </div>
 </main>
 
-<script src="assets/site.js?v=20261017q"></script>
-<script src="data/glossary.js?v=20261017q"></script>
-<script src="assets/study.js?v=20261017q"></script>
+<script src="assets/site.js?v=20261018c"></script>
+<script src="data/glossary.js?v=20261018c"></script>
+<script src="assets/study.js?v=20261018c"></script>
 </body>
 </html>
