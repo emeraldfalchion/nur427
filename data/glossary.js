@@ -77,6 +77,7 @@ window.GLOSSARY = {
   "Hepatomegaly": { def: "The liver is enlarged.", from: "review-heart-disease.html" },
   "Homonymous hemianopsia": { def: "Blindness in the same half of the visual field of each eye: half the visual field is lost.", from: "review-neuro.html" },
   "Hypermetabolism": { def: "A raised metabolic rate: the body burns energy and breaks down protein faster than normal, a stress response to severe injury or illness. Needs more calories and protein.", from: "day3-brain-injury-stroke.html", outside: true },
+  "Hyperoxemia": { def: "Too much oxygen in the blood.", from: "review-abgs.html", outside: true },
   "Hyperpnea": { def: "Respirations are labored, with increased depth and rate (greater than 20 breaths/min). Occurs normally during exercise.", from: "review-respiratory.html" },
   "Hyperventilation": { def: "Rate and depth of respirations increase. Hypocarbia sometimes occurs.", from: "review-respiratory.html" },
   "Hypoventilation": { def: "Rate or depth of respirations severely decreased: slow and deep (4 to 6 breaths a minute), or a normal rate but very shallow. The alveoli do not get the oxygen they need, and CO2 problems often come with it.", from: "day1-respiratory.html" },

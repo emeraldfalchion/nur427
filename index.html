@@ -17,6 +17,10 @@
      a day keep their teaching order, and the numbering restarts at 1 in
      each day.
 
+     THE SIGNATURE ASSESSMENT has its own section ABOVE the days, built
+     the same way: one .day-row whose badge reads S. It stays the FIRST
+     section, as its group is first in the nav.
+
      REVIEW PAGES have their own section under the days, built the same
      way: one .day-row whose badge reads R, and one tile per review page.
      It stays the LAST section, as the Review group is last in the nav.
@@ -43,13 +47,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NUR427 · Practice Readiness Study Guide</title>
 <script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
-<link rel="stylesheet" href="assets/styles.css?v=20261019">
+<link rel="stylesheet" href="assets/styles.css?v=20261022l">
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
 
 <main id="content">
 <div class="page-inner">
+
+  <section class="home-section home-days" aria-label="Signature assessment">
+    <h2>Signature Assessment</h2>
+
+    <div class="day-row">
+      <span class="day-badge" aria-label="Signature Assessment">S</span>
+      <div class="day-strip">
+        <a class="tile" href="signature-exemplar.html">
+          <span class="tnum">1</span>
+          <span class="tbody"><h3>Overview – Start Here</h3></span>
+        </a>
+        <a class="tile" href="signature-hematologic.html">
+          <span class="tnum">2</span>
+          <span class="tbody"><h3>Hematologic</h3></span>
+        </a>
+        <a class="tile" href="signature-cardiovascular.html">
+          <span class="tnum">3</span>
+          <span class="tbody"><h3>Cardiovascular</h3></span>
+        </a>
+        <a class="tile" href="signature-renal.html">
+          <span class="tnum">4</span>
+          <span class="tbody"><h3>Renal</h3></span>
+        </a>
+        <a class="tile" href="signature-gi-hepatic.html">
+          <span class="tnum">5</span>
+          <span class="tbody"><h3>GI and Hepatic</h3></span>
+        </a>
+        <a class="tile" href="signature-neuro.html">
+          <span class="tnum">6</span>
+          <span class="tbody"><h3>Neuro</h3></span>
+        </a>
+        <a class="tile" href="signature-priority-problems.html">
+          <span class="tnum">7</span>
+          <span class="tbody"><h3>Priority Problem Bank</h3></span>
+        </a>
+      </div>
+    </div>
+
+  </section>
 
   <section class="home-section home-days" aria-label="Topics by day">
     <h2>Topics by Day</h2>
@@ -204,6 +247,6 @@
 </div>
 </main>
 
-<script src="assets/site.js?v=20261019"></script>
+<script src="assets/site.js?v=20261022l"></script>
 </body>
 </html>

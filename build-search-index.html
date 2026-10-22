@@ -33,7 +33,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Build Search Index</title>
-<link rel="stylesheet" href="assets/styles.css?v=20261019">
+<link rel="stylesheet" href="assets/styles.css?v=20261022l">
 <style>
   #actions{display:flex;gap:12px;margin:16px 0;}
   #log{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;white-space:pre-wrap;
@@ -68,6 +68,13 @@
    tools/verify.js fails if a page listed in assets/site.js is in
    neither this array nor NOT_INDEXED. */
 const PAGES = [
+  "signature-exemplar.html",
+  "signature-hematologic.html",
+  "signature-cardiovascular.html",
+  "signature-renal.html",
+  "signature-gi-hepatic.html",
+  "signature-neuro.html",
+  "signature-priority-problems.html",
   "day1-respiratory.html",
   "day1-oxygen-therapy.html",
   "day1-hematologic.html",
@@ -101,6 +108,8 @@ const PAGES = [
    content is drawn by JavaScript at runtime, so there is no static text to
    extract. The home page and this tool are never indexed and need no entry. */
 const NOT_INDEXED = [
+  // signature-practice.html goes here when it comes back from archive/:
+  // a practice tool whose deal and feedback are drawn by its script.
 ];
 
 /* First line of the generated file. tools/build-search-index.js reads it

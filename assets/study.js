@@ -171,6 +171,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  /* The column each body cell sits in. A cell with a rowspan also fills
+     its column in the rows below it, so a later row's first cell may sit
+     in column 2. Without rowspans, a cell's column is its index. Kept in
+     step with columnsOf() in tools/verify.js. */
+  function cellColumns(table) {
+    const cols = new Map();
+    let carried = [], body = null;   // carried[c]: rows a span above still fills at column c
+    table.querySelectorAll("tbody tr").forEach(tr => {
+      if (tr.parentElement !== body) { body = tr.parentElement; carried = []; }
+      const filled = carried.slice();
+      let c = 0;
+      Array.from(tr.children).filter(x => x.tagName === "TD").forEach(td => {
+        while (filled[c] > 0) c++;
+        cols.set(td, c);
+        for (let k = 0; k < (td.colSpan || 1); k++) carried[c + k] = td.rowSpan || 1;
+        c += td.colSpan || 1;
+      });
+      carried = carried.map(n => Math.max(0, (n || 0) - 1));
+    });
+    return cols;
+  }
+
   /* ---- Mobile stacked-table labels ----
      Copy each column header onto its cells (data-label) so the
      mobile CSS can render each row as a labeled card. Cells marked
@@ -179,12 +201,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const headerCells = table.querySelectorAll("thead th");
     if (!headerCells.length) return;
     const headerTexts = Array.from(headerCells).map(th => th.textContent.trim());
-    table.querySelectorAll("tbody tr").forEach(row => {
-      const cells = Array.from(row.children).filter(c => c.tagName === "TD");
-      cells.forEach((td, i) => {
-        if (td.classList.contains("term")) return;
-        if (headerTexts[i]) td.setAttribute("data-label", headerTexts[i]);
-      });
+    cellColumns(table).forEach((i, td) => {
+      if (td.classList.contains("term")) return;
+      if (headerTexts[i]) td.setAttribute("data-label", headerTexts[i]);
     });
   });
 
@@ -211,13 +230,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (table.hasAttribute("data-nohide")) return;
     const hideAll = table.getAttribute("data-hide-mode") === "all";
     const headRow = table.querySelector("thead tr");
-    const lastTh = headRow && headRow.lastElementChild;
+    // A wide table scrolls sideways, so its eye goes in the frozen column 1.
+    const lastTh = headRow && (table.closest(".wide-table") ? headRow.firstElementChild : headRow.lastElementChild);
     if (!lastTh) return;
 
     const targets = [];
+    const cols = cellColumns(table);
     table.querySelectorAll("tbody tr").forEach(tr => {
       const cells = Array.from(tr.children).filter(c => c.tagName === "TD");
-      const rowTargets = hideAll ? cells : cells.slice(1);
+      const rowTargets = hideAll ? cells : cells.filter(td => cols.get(td) > 0);
       rowTargets.forEach(td => {
         td.classList.add("def-cell");
         td.innerHTML = '<span class="def-text">' + td.innerHTML + "</span>";

@@ -55,6 +55,22 @@ const SITE = {
        },
   */
   groups: [
+    /* The signature assessment: the overview, then one page per body system
+       with a completed exemplar per diagnosis, in the order the systems were
+       taught, then the priority problem bank. This group stays FIRST, before
+       Day 1 (Holly, 2026-10-21). The practice page is archived in archive/. */
+    {
+      label: "Signature Assessment",
+      items: [
+        { id: "signature-exemplar", num: "1", title: "Overview – Start Here", file: "signature-exemplar.html" },
+        { id: "signature-hematologic", num: "2", title: "Hematologic", file: "signature-hematologic.html" },
+        { id: "signature-cardiovascular", num: "3", title: "Cardiovascular", file: "signature-cardiovascular.html" },
+        { id: "signature-renal", num: "4", title: "Renal", file: "signature-renal.html" },
+        { id: "signature-gi-hepatic", num: "5", title: "GI and Hepatic", file: "signature-gi-hepatic.html" },
+        { id: "signature-neuro", num: "6", title: "Neuro", file: "signature-neuro.html" },
+        { id: "signature-priority-problems", num: "7", title: "Priority Problem Bank", file: "signature-priority-problems.html" },
+      ]
+    },
     {
       label: "Day 1",
       items: [

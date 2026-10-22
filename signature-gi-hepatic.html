@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<!-- SOURCES
+     Handout:     assignments/Patient Exemplar 1 - template.docx
+     Handout:     assignments/Patient Exemplar 2 - template.docx
+     Handout:     assignments/Signature Practice Feedback.docx
+     Transcript:  transcripts/Day 1 - Pancreatitis.txt
+     Transcript:  transcripts/Day 3 - GI.txt
+     Transcript:  transcripts/Day 3 - Liver.txt
+     Transcript:  transcripts/Day 1 - Resp.txt
+     Transcript:  transcripts/Day 2 - AKI.txt
+     Transcript:  transcripts/Day 4 - Shock.txt
+     Built:       2026-10-21
+     Cross-checked against the site's own pages: 2026-10-21
+     Revised:     2026-10-22 (Holly): malnutrition came off the section, and the
+                  Compare tables became one table that scrolls sideways.
+
+     Built from the site's pages, which are already checked against the sources:
+     day1-acute-pancreatitis.html, day3-gastrointestinal.html, day3-liver-failure.html
+     and review-gi.html, with day1-respiratory.html and
+     day1-oxygen-therapy.html for the pancreatitis complication (ARDS),
+     review-transfusions.html for the GI bleed complication (TACO),
+     day2-acute-kidney-injury.html for the hepatic failure complication (AKI), and
+     day4-shock-sepsis-mods.html for hypovolemic shock and decreasing oxygen
+     consumption. The format is signature-exemplar.html's, with the class feedback in
+     signature-assessment.md.
+     Each patient is invented: names, ages, histories, home medications and every
+     number are example details. Two lines are from outside the lectures, each
+     marked and logged in decisions.md: the pancreas making insulin
+     (#pan-priority-chart) and the CT of the head (#hep-exam).
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GI and Hepatic — NUR427</title>
+<script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="assets/styles.css?v=20261022l">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<main id="content">
+<div class="page-inner">
+
+  <header class="page-head">
+    <p class="eyebrow">Signature Assessment · Topic 5</p>
+    <h1>GI and Hepatic</h1>
+  </header>
+
+  <div class="tab-panel" id="tab-compare" data-tab-label="Compare">
+
+  <h2 class="block" id="compare-diagnoses">The GI and Hepatic Diagnoses</h2>
+
+  <!-- The rows run in the order of signature-exemplar.html#diagnoses-by-day: the three
+       taught at length first, each linking to its tab, then the three taught briefly,
+       from Day 3 GI. Malnutrition (Day 2) is off the section (Holly, 2026-10-22).
+       Priority problem names are the nursing problems in plain words. Every link to the
+       diagnosis comes from its page: the cell's facts are taught there.
+       "None taught": no source on the site names a complication in another system for
+       ischemic bowel or for bowel obstruction and paralytic ileus, and no lab for
+       abdominal compartment syndrome. Left as "None taught", not filled from outside the
+       lectures, and listed for Holly.
+       One table, the patient picture then the course, that scrolls sideways with the
+       diagnosis frozen in column 1 (Holly, 2026-10-22). -->
+  <div class="table-wrap wide-table" id="gi-compare-picture"><table data-nohide>
+    <thead><tr><th>Diagnosis</th><th>Why They Are Here</th><th>Key Cues and Findings</th><th>Labs and Diagnostics</th><th>Priority Problems</th><th>How It Worsens</th><th>Key Actions</th><th>Complications in Other Systems</th></tr></thead>
+    <tbody>
+      <tr><td class="term"><a href="#pan-the-patient">Acute pancreatitis</a></td><td><ul>
+        <li><b>Alcohol or biliary disease:</b> the most common causes.</li>
+        <li>I GET SMASHED: also trauma, steroids, hypercalcemia, hypertriglyceridemia, ERCP, drugs.</li>
+        <li><b>Severe</b> pancreatitis is what leads to critical care.</li>
+      </ul></td><td><ul>
+        <li><b>Epigastric pain</b> radiating to the flank or back, constant and dull, <b>worse lying supine</b>.</li>
+        <li>Guarding, distension, heavy nausea and vomiting, quick dehydration.</li>
+        <li>Fever, tachycardia, jaundice, restlessness. <span class="gloss">Cullen's sign</span> and <span class="gloss">Grey Turner's sign</span>.</li>
+      </ul></td><td><ul>
+        <li><b>Lipase: the most diagnostic</b>, trended, with amylase.</li>
+        <li><b>A low calcium within 48 hours:</b> very high risk for severe problems.</li>
+        <li>Albumin, for fluid status. Glucose, potassium, magnesium, CRP.</li>
+      </ul></td><td><ul>
+        <li><b>Deficient fluid volume:</b> fluid collects in the retroperitoneal space, up to a third of the plasma volume.</li>
+        <li><b>Unstable blood glucose:</b> hyperglycemia, or hypoglycemia when severe.</li>
+        <li>Acute pain: a general concern.</li>
+      </ul></td><td><ul>
+        <li>Starts localized, then can accelerate to a <b>systemic inflammatory state</b>.</li>
+        <li><b>Hypovolemic shock:</b> the primary cause of death.</li>
+        <li>Necrotizing or hemorrhagic pancreatitis, a <span class="gloss">pseudocyst</span>, abdominal compartment syndrome.</li>
+      </ul></td><td><ul>
+        <li><b>Rest the GI tract: NPO.</b> An NG tube. TPN when severe.</li>
+        <li><b>Fluid replacement:</b> usually colloids, such as albumin. LR. Potassium, <b>calcium</b> and magnesium replaced.</li>
+        <li>Glucose closely: an insulin or a dextrose drip. Pain management, quite a bit.</li>
+      </ul></td><td><ul>
+        <li><b>ARDS:</b> pancreatitis is one of the biggest risk factors. Hypoxemia, pleural effusions.</li>
+        <li><b>AKI</b>, from the fluid shifting. Pericardial effusion, DIC, sepsis, decreased LOC.</li>
+      </ul></td></tr>
+      <tr><td class="term"><a href="#gib-the-patient">GI bleed, including variceal</a></td><td><ul>
+        <li><b>A peptic ulcer before:</b> very high risk of another, especially on an <b>anticoagulant</b>.</li>
+        <li>Critically ill: stress ulcers. A Mallory-Weiss tear after aggressive vomiting.</li>
+        <li><b>Varices:</b> end-stage liver disease or acute liver failure, from portal hypertension.</li>
+      </ul></td><td><ul>
+        <li><b>Tachycardia first</b>, then a falling BP, a rising RR and a falling urine output.</li>
+        <li><b>Getting paler.</b> Bright red stool or emesis: active. Dark or melena: older.</li>
+        <li><b>Looks like anemia:</b> weakness, shortness of breath, <span class="gloss">angina</span>, syncope.</li>
+      </ul></td><td><ul>
+        <li><b>H&amp;H every 1 to 2 hours.</b> The hematocrit may not change for several hours.</li>
+        <li><b>BUN up with no kidney cause:</b> blood metabolized in the GI tract. Lactate, clotting profiles, LFTs.</li>
+        <li><b>Endoscopy</b> finds the bleed. Gastric lavage: active, old or stopped?</li>
+      </ul></td><td><ul>
+        <li><b>Deficient fluid volume:</b> blood lost from the vessels.</li>
+        <li><b>Decreased cardiac tissue perfusion:</b> too little hemoglobin to carry oxygen, with <span class="gloss">angina</span>.</li>
+        <li><b>Aspiration</b> in a variceal bleed: the airway comes first.</li>
+      </ul></td><td><ul>
+        <li><b>Hypovolemic shock</b>, from the fluid volume deficit.</li>
+        <li><b>Massive rebleeding</b>, such as the day after an endoclip.</li>
+        <li><b>Variceal:</b> rapidly <span class="gloss">hemodynamically unstable</span>, and quickly in hypovolemic shock.</li>
+      </ul></td><td><ul>
+        <li><b>Stabilize the vital signs:</b> isotonic fluids, <b>transfusions guided by the hemoglobin</b>. Vasopressors only once the tank is full.</li>
+        <li><b>Endoscopy</b> for an upper bleed. Surgery for massive rebleeding. A continuous pantoprazole drip.</li>
+        <li><b>Variceal: the airway first.</b> Octreotide or vasopressin, banding, TIPS, a tamponade tube: <b>never clamp it</b>.</li>
+      </ul></td><td><ul>
+        <li><b>Kidneys and liver</b> lose perfusion: BUN, creatinine, LFTs.</li>
+        <li><b>EKG changes</b> from lack of blood flow, in a very severe bleed.</li>
+        <li>Clotting factors used up: FFP may be needed. In liver disease, blood in the gut drives up the ammonia.</li>
+      </ul></td></tr>
+      <tr><td class="term"><a href="#hep-the-patient">Hepatic failure</a></td><td><ul>
+        <li><b>Acetaminophen overdose: the biggest cause</b>, especially with binge drinking.</li>
+        <li>Binge drinking, hepatotoxic drugs, a virus, a loss of perfusion, <span class="gloss">HELLP syndrome</span>.</li>
+        <li><b>Chronic liver disease exacerbating</b>, or damage to a healthy liver.</li>
+      </ul></td><td><ul>
+        <li><b>Neurologic, from lost detoxification:</b> decreased LOC, irritability, convulsions, coma. <span class="gloss">Asterixis</span>.</li>
+        <li>Jaundice, a sudden high fever, nausea and vomiting, lethargy.</li>
+        <li><b>Bleeding:</b> from falls, GI bleeds, varices. Ascites.</li>
+      </ul></td><td><ul>
+        <li><b>Ammonia:</b> the level of hepatic encephalopathy. Above 150, a risk of cerebral edema.</li>
+        <li><b>INR above 1.5</b>, platelets below 150,000, low fibrinogen.</li>
+        <li>Albumin, bilirubin, liver enzymes. A liver biopsy when the cause is unknown: very dangerous.</li>
+      </ul></td><td><ul>
+        <li><b>Acute confusion:</b> toxins such as ammonia build up and depress the brain.</li>
+        <li><b>Bleeding:</b> the failing liver makes too few clotting factors.</li>
+        <li>Excess fluid volume: albumin production falls, and fluid <span class="gloss" data-term="third spacing">third spaces</span>.</li>
+      </ul></td><td><ul>
+        <li><b>Hepatic encephalopathy</b>, grades 1 to 4. Grades 3 and 4: worse outcomes.</li>
+        <li><b>Cerebral edema:</b> life-threatening. Ammonia above 200: brain herniation.</li>
+        <li>Bleeding, GI and variceal. Hypoglycemia.</li>
+      </ul></td><td><ul>
+        <li><b>Lactulose</b>, titrated to 2 to 4 bowel movements a day and the neurologic status.</li>
+        <li><b><span class="gloss">Coagulopathy</span>:</b> vitamin K, platelets when very low, FFP when bleeding with an INR above 1.5.</li>
+        <li><b>Focused neurologic assessments:</b> seizures and the airway. Fluid status.</li>
+      </ul></td><td><ul>
+        <li><b>AKI.</b> Infection, a higher risk.</li>
+        <li><b>Cardiopulmonary:</b> the hyperdynamic state, then acute, severe heart failure (cardiohepatic syndrome).</li>
+      </ul></td></tr>
+      <tr><td class="term"><a href="day3-gastrointestinal.html#ischemic-bowel-disease">Ischemic bowel</a></td><td><ul>
+        <li><b>Low blood pressure:</b> the gut takes the hit first. <b>A clot or blockage</b> in an artery.</li>
+        <li>Atherosclerosis, age over 50, smoking, heart failure and AFib, clotting disorders.</li>
+        <li><b>High-dose vasopressors</b>, especially norepinephrine.</li>
+      </ul></td><td><ul>
+        <li><b>Abdominal pain, especially after eating</b>, then at baseline.</li>
+        <li>Urgent, loose stools. <b>Bloody stool with dark red clots.</b> Nausea, vomiting.</li>
+        <li>Fever, from dead gut.</li>
+      </ul></td><td><ul>
+        <li><b>Lactate increasing:</b> trended very frequently. WBC usually elevated.</li>
+        <li><b>Colonoscopy</b>, or a barium study or CT with contrast. <b>Not seen on an X-ray.</b></li>
+      </ul></td><td><ul>
+        <li><b>Ineffective GI tissue perfusion:</b> the bowel wall gets no oxygenated blood, and dies.</li>
+        <li><b>Deficient fluid volume:</b> fluid shifting, often intravascularly depleted.</li>
+      </ul></td><td><ul>
+        <li><b>The infarction can spread:</b> a lactate that keeps rising means the gut is still dying.</li>
+        <li>A paralytic ileus, abdominal compartment syndrome.</li>
+      </ul></td><td><ul>
+        <li><b>Bowel rest.</b> Fluid resuscitation.</li>
+        <li><b>Surgery</b> into healthy pink bowel, often ending in a colostomy.</li>
+        <li>Treat the cause. Trend the lactate.</li>
+      </ul></td><td><ul>
+        <li>None taught.</li>
+      </ul></td></tr>
+      <tr><td class="term"><a href="day3-gastrointestinal.html#bowel-obstruction">Bowel obstruction and paralytic ileus</a></td><td><ul>
+        <li><b>Mechanical SBO:</b> a tumor, adhesion or hernia. <b>Large bowel:</b> usually a neoplasm.</li>
+        <li><b>Paralytic ileus, common in the ICU:</b> opioids and anesthesia, GI surgery, ischemia or shock, peritonitis.</li>
+      </ul></td><td><ul>
+        <li><b>Distension: the hallmark.</b> Cramping periumbilical pain in waves.</li>
+        <li><b>Large-volume bilious vomiting.</b> No flatus.</li>
+        <li><b>Bowel sounds:</b> high-pitched and tinkling in a mechanical SBO, <b>absent to hypoactive in an ileus</b>.</li>
+      </ul></td><td><ul>
+        <li><b>X-ray (KUB) or CT:</b> dilated loops of small bowel, a collapsed colon.</li>
+        <li>Electrolytes: the small bowel absorbs nutrients and vitamins.</li>
+      </ul></td><td><ul>
+        <li><b>Dysfunctional GI motility:</b> peristalsis is lost or blocked.</li>
+        <li><b>Deficient fluid volume:</b> vomiting, and no PO intake.</li>
+      </ul></td><td><ul>
+        <li><b>Partial to complete:</b> complete is more severe.</li>
+        <li>A severe ileus or obstruction can cause abdominal compartment syndrome.</li>
+      </ul></td><td><ul>
+        <li><b>NPO, fluid resuscitation, an NG tube</b>, electrolytes, metoclopramide. Usually surgery for a mechanical SBO.</li>
+        <li><b>Avoid opioids and anesthesia</b> when possible.</li>
+        <li>Ileus: moving, an aggressive bowel regimen, acetaminophen or NSAIDs for pain.</li>
+      </ul></td><td><ul>
+        <li>None taught.</li>
+      </ul></td></tr>
+      <tr><td class="term"><a href="day3-gastrointestinal.html#abdominal-compartment-syndrome">Abdominal compartment syndrome</a></td><td><ul>
+        <li><b>Massive fluid resuscitation:</b> trauma, shock.</li>
+        <li><span class="gloss">Third spacing</span>: liver disease, heart failure, <b>pancreatitis</b>.</li>
+        <li>Abdominal surgery, a severe ileus, ischemic bowel, a ruptured aortic aneurysm.</li>
+      </ul></td><td><ul>
+        <li><b>Hugely distended</b>, possibly rigid: hard from the fluid.</li>
+        <li>Organs lose their blood flow as the pressure rises.</li>
+      </ul></td><td><ul>
+        <li><b>Bladder pressure gives the IAP:</b> 16 to 20 mmHg organ ischemia, above 20 multiple organ dysfunction.</li>
+        <li>Labs: none taught.</li>
+      </ul></td><td><ul>
+        <li><b>Ineffective tissue perfusion:</b> fluid presses on the abdominal organs.</li>
+        <li><b>Acute pain:</b> very painful, and pain raises the abdominal pressure.</li>
+      </ul></td><td><ul>
+        <li>IAP 16 to 20 mmHg: organ ischemia. Above 20: <b>multiple organ dysfunction</b>.</li>
+      </ul></td><td><ul>
+        <li><b>HOB completely flat:</b> even reverse Trendelenburg raises the pressure.</li>
+        <li>Sedation and paralytics: pain and fighting the ventilator raise the pressure.</li>
+        <li><b>Surgical decompression:</b> the abdomen left open. Antibiotics.</li>
+      </ul></td><td><ul>
+        <li><b>Multiple organ dysfunction:</b> impaired blood flow to multiple organs.</li>
+        <li>An open abdomen: <b>peritonitis, sepsis, septic shock</b>, as bacteria translocate out of the gut.</li>
+      </ul></td></tr>
+    
+    </tbody>
+  </table></div>
+
+  </div>
+
+  <div class="tab-panel" id="tab-pancreatitis" data-tab-label="Acute Pancreatitis">
+
+  <h2 class="block" id="pan-the-patient">The Patient</h2>
+
+  <!-- Who and why: biliary disease, one of the two most common causes
+       (day1-acute-pancreatitis.html#causes-and-pathophysiology), with hypertriglyceridemia
+       from I GET SMASHED. The second chronic disease is type 2 diabetes, for the second
+       problem. Pain epigastric, radiating to the back, constant, dull, worse supine; heavy
+       vomiting; quick dehydration; fever and tachycardia (#signs-and-symptoms). Lipase the
+       most diagnostic, with amylase (#pancreatitis-labs). The NG tube is the procedure
+       (#rest-the-gi-tract): no lecture names a diagnostic for pancreatitis. Room to get
+       worse: she opens before hypovolemic shock. Edema is stated (graded feedback,
+       2026-10-20). Her husband and the gallstones keep her apart from the hepatic
+       failure patient, whose story has the binge drinking. -->
+  <div class="card" id="pan-history" data-nohide data-prose>
+    <h4>Histories, Vital Signs and Medications</h4>
+    <p><b>HPI:</b> Linda Morales is a 56-year-old Hispanic woman brought to the ED by her husband at 0300. Yesterday at 1600 she felt pain in her upper middle abdomen. It grew severe over the evening and now bores through to her back. It is constant, dull and aching, and worse when she lies flat: she can bear it only curled on her side. She has vomited 8 times since 1800 and cannot keep down sips of water. She feels thirsty and lightheaded when she stands. She denies chest pain, shortness of breath, blood in her vomit, black stools and diarrhea. Her gallstone pain in the past came in short bouts and eased within a few hours. This pain has not eased in 11 hours.</p>
+    <p><b>PMH:</b> Gallstones with biliary colic, 2 years, waiting for elective gallbladder surgery. Type 2 diabetes, 9 years. Hypertriglyceridemia, 6 years. Hypertension, 12 years: her BP usually runs in the 140s over 80s.</p>
+    <p><b>SH:</b> Married, lives with her husband in a one-story house. School bus driver. Never smoked. A glass of wine on holidays only. No drug use.</p>
+    <p><b>FH:</b> Mother had gallstones and type 2 diabetes. Father died of an MI at 70.</p>
+    <p><b>Admission VS:</b> BP 100/62, HR 124 (sinus tachycardia), RR 24, SpO2 95% on room air, temperature 38.2 °C (100.8 °F), pain 9/10.</p>
+    <p><b>Home medications:</b></p>
+    <ul>
+      <li>Metformin, for diabetes</li>
+      <li>Lisinopril, for hypertension</li>
+      <li>Fenofibrate, for high triglycerides</li>
+      <li>Acetaminophen, for gallstone pain</li>
+    </ul>
+    <p><b>Allergies:</b> Latex (hives).</p>
+  </div>
+
+  <div class="card" id="pan-exam" data-nohide data-prose>
+    <h4>General Survey, Physical Exam, Labs and Diagnostics</h4>
+    <ul>
+      <li><b>General survey:</b> 56-year-old woman lying on her left side with her knees drawn up, arms guarding her abdomen. Grimacing and restless, unable to get comfortable. Speaks in full sentences between waves of nausea. Face flushed, lips dry and cracked. Hair uncombed, in her own pajamas, holding an emesis bag. Her husband at the bedside. Alert and oriented × 4, GCS 15.</li>
+      <li><b>Pain:</b> 9/10 constant, dull, aching pain in the epigastrium, radiating to her back, worse lying supine, since 1600 yesterday.</li>
+      <li><b>Gastrointestinal:</b> Abdomen distended, with guarding. Tender to light palpation across the upper abdomen. Bowel sounds hypoactive in all 4 quadrants. No bruising around the umbilicus or on the flanks. Sclera white, skin not jaundiced. Vomited 300 mL of green fluid in the ED. Last bowel movement yesterday morning: formed, brown, no blood.</li>
+      <li><b>Cardiovascular:</b> S1 and S2 present, rapid and regular. No murmur, gallop or rub. Telemetry: sinus tachycardia at 124. Neck veins flat at 45 degrees. No edema of the hands, legs, ankles or feet bilaterally. Radial and pedal pulses 1+ and weak bilaterally. Capillary refill 4 seconds in fingers and toes. Skin warm and dry, mucous membranes dry and sticky.</li>
+      <li><b>Respiratory:</b> RR 24, shallow: she splints her breathing against the pain. No use of the neck or thoracic accessory muscles. Breath sounds clear in the anterior and lateral fields, diminished in the posterior bases bilaterally. No cough.</li>
+      <li><b>Labs:</b> Lipase 2,850 U/L and amylase 1,120 U/L, both elevated. BMP: sodium 135, potassium 3.4, chloride 97, CO2 21, BUN 30, creatinine 1.2, glucose 338, calcium 8.6.</li>
+      <li><b>Procedure:</b> NG tube placed in the ED at 0400, to low wall suction: 250 mL of green fluid in the first hour.</li>
+    </ul>
+  </div>
+
+  <h2 class="block" id="pan-priority-problems">Priority Problems</h2>
+
+  <!-- Problem 1: autodigestion and the inflammatory response
+       (day1-acute-pancreatitis.html#pancreatitis-pathophysiology), fluid in the
+       retroperitoneal space, up to a third of the plasma volume, shock and hypovolemia
+       the primary cause of death (#pancreatitis-treatment), quick dehydration from lost
+       appetite (#signs-and-symptoms). Tachycardia the first compensation, weak pulses:
+       day4-shock-sepsis-mods.html#hypovolemic-findings. Very dehydrated as a pre-renal
+       cause: day2-acute-kidney-injury.html#aki-causes.
+       Problem 2: pancreatitis can cause hyperglycemia, or hypoglycemia when severe enough,
+       with close monitoring and an insulin or dextrose drip (#pancreatitis-treatment).
+       Poor glycemic control varies oxygen consumption
+       (day4-shock-sepsis-mods.html#delivery-vs-consumption). No lecture says why
+       pancreatitis raises the glucose: the line that the pancreas makes insulin is from
+       outside the lectures, marked, and logged in decisions.md. It is on
+       review-gi.html#gi-organ-functions, also from outside. -->
+  <div class="table-wrap" id="pan-priority-chart"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>Problem 1</th><th>Problem 2</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Priority nursing problem</td><td><ul>
+        <li><b>Deficient fluid volume</b></li>
+      </ul></td><td><ul>
+        <li><b>Unstable blood glucose</b></li>
+      </ul></td></tr>
+      <tr><td class="term">Supporting cues</td><td><ul>
+        <li>BP 100/62, down from her usual 140s, with HR 124: tachycardia compensating for too little volume in her vessels.</li>
+        <li>Vomited 8 times, nothing kept down since 1600: fluid lost, and none taken in.</li>
+        <li>Radial pulses 1+ and weak, capillary refill 4 seconds, dry and sticky mucous membranes.</li>
+        <li>BUN 30 and creatinine 1.2: her kidneys are getting less blood.</li>
+      </ul></td><td><ul>
+        <li>Glucose 338: hyperglycemia.</li>
+        <li>Type 2 diabetes for 9 years: her glucose was already hard to control.</li>
+        <li>Lipase 2,850 with fever and tachycardia: a severe case, which can swing her glucose low instead.</li>
+      </ul></td></tr>
+      <tr><td class="term">Relevance to the diagnosis</td><td><ul>
+        <li>Biliary disease is one of the two most common causes of acute pancreatitis. Her pancreatic enzymes leaked into the pancreas's own tissue, and it began digesting itself. The dying cells set off the inflammatory response, and fluid is collecting in her retroperitoneal space: pancreatitis can sequester as much as a third of the plasma volume. Her heavy vomiting and lost appetite dehydrate her quickly on top of it. Shock and hypovolemia are the primary cause of death in acute pancreatitis.</li>
+      </ul></td><td><ul>
+        <li>Pancreatitis can cause hyperglycemia, and her diabetes already makes her glucose hard to control. The pancreas makes insulin, and its inflamed, dying cells release less of it.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span> Severe enough, pancreatitis can cause hypoglycemia instead, so her glucose can swing either way. Poor glycemic control varies oxygen consumption in a body already under stress. She needs close monitoring and an insulin drip.</li>
+      </ul></td></tr>
+      <tr><td class="term">Concern rating</td><td><ul>
+        <li><b>2, urgent.</b> The fluid keeps shifting, and hypovolemic shock is the primary cause of death. She is alert, compensating, and her systolic BP is above 90: she is not expected to die within the hour.</li>
+      </ul></td><td><ul>
+        <li><b>2, urgent.</b> A glucose this high, or a swing low, must be caught quickly. She is alert and talking, with no sign of a low glucose yet.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="pan-story-goes-on">The Story Goes On</h2>
+
+  <!-- How pancreatitis worsens: hypovolemic shock from the fluid shifting, the primary
+       cause of death (day1-acute-pancreatitis.html#pancreatitis-treatment). Hypovolemic
+       shock's findings: altered LOC as agitation, weak and thready pulse, cool and clammy
+       skin, low and dark urine (day4-shock-sepsis-mods.html#hypovolemic-findings).
+       Cullen's sign (#signs-and-symptoms). A low calcium within 48 hours: very high risk
+       for severe problems (#pancreatitis-labs). Pain managed with an opioid: opioids are
+       used, cautiously (review-gi.html#chronic-pancreatitis-care). -->
+  <div class="card" id="pan-story" data-nohide data-prose>
+    <h4>Early the Next Morning</h4>
+    <p>Mrs. Morales came to the ICU at 0600 for close hemodynamic monitoring. She was kept NPO, her NG tube to low wall suction, and given LR, to replace her volume, an opioid, for her pain, and an insulin drip, for her glucose. A Foley was placed. By evening her pain was 5/10 and her glucose 190. At 0400 she is restless and keeps trying to climb out of bed. Her BP has fallen to 82/50 and her heart rate has climbed to 138. Her hands and feet are cool and clammy, her radial pulses thready. Her urine has been dark and 15 mL/hr for 3 hours. Her abdomen is more distended and firm, and a bluish discoloration has appeared around her umbilicus. Her NG tube put out 600 mL overnight.</p>
+    <p><b>Updated VS:</b> BP 82/50, HR 138 (sinus tachycardia), RR 28, SpO2 93% on 2 L/min by nasal cannula, temperature 38.6 °C (101.5 °F), pain 7/10.</p>
+    <p><b>Lab:</b> Calcium 7.1, down from 8.6 on admission.</p>
+  </div>
+
+  <h2 class="block" id="pan-sbar-heading">SBAR</h2>
+
+  <!-- In the class's form. Colloids such as albumin pull volume back into the vessels
+       (day1-acute-pancreatitis.html#pancreatitis-treatment). Calcium is replaced, and a low
+       calcium points to severe pancreatitis (#pancreatitis-labs). Fluid shifting into the
+       abdomen, the bladder pressure, and the IAP thresholds:
+       day3-gastrointestinal.html#acs-causes, #acs-recognition, #acs-progression. -->
+  <div class="table-wrap" id="pan-sbar"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>The Call</th></tr></thead>
+    <tbody>
+      <tr><td class="term">S</td><td>This is Casey Nguyen, RN in the ICU. I'm calling about Linda Morales in room 12, admitted yesterday at 0600 with severe acute pancreatitis from gallstones. I'm calling because her blood pressure is dropping and her urine output has fallen.</td></tr>
+      <tr><td class="term">B</td><td>She is 56, with gallstones, type 2 diabetes, hypertriglyceridemia and hypertension, and her BP usually runs in the 140s. She is NPO with her NG tube to suction, on LR and an insulin drip. Since 0400 she has been restless. Her BP is 82/50, down from 100/62 on admission, and her HR 138, sinus tach. RR 28, SpO2 93% on 2 L, temperature 38.6. Her hands and feet are cool and clammy, her radial pulses thready. Urine output 15 mL/hr for 3 hours, and dark. Her abdomen is more distended and firm, with a new bluish discoloration around the umbilicus. NG output 600 mL overnight. Her calcium is 7.1, down from 8.6 yesterday. Glucose 182 on the insulin drip.</td></tr>
+      <tr><td class="term">A</td><td>I'm worried she is going into hypovolemic shock as fluid keeps shifting out of her vessels.</td></tr>
+      <tr><td class="term">R</td><td>I recommend albumin, a colloid, to pull volume back into her vessels, since the LR is not holding her pressure. I'd like her calcium replaced now: it is falling, a sign of severe pancreatitis. And I'd like to measure her bladder pressure, since her abdomen is more distended and fluid shifting into it puts her at high risk for abdominal compartment syndrome.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="pan-take-action">Take Action and Evaluation</h2>
+
+  <!-- Decrease the total work of the body, movement, pain and anxiety
+       (day4-shock-sepsis-mods.html#delivery-vs-consumption). Albumin as the colloid
+       (day1-acute-pancreatitis.html#pancreatitis-treatment). Fluid resuscitate first, then
+       vasopressors if still not doing well (day4-shock-sepsis-mods.html#hypovolemic-goal).
+       The bladder pressure, the IAP thresholds and surgical decompression:
+       day3-gastrointestinal.html#acs-recognition, #acs-progression, #acs-management. -->
+  <p class="note"><b>Priority problem: deficient fluid volume.</b> She is going into hypovolemic shock, the primary cause of death in acute pancreatitis. The fluid leaving her vessels has left her kidneys (15 mL/hr) and her brain (the restlessness) short of blood. Her glucose is controlled on the insulin drip.</p>
+
+  <div class="table-wrap" id="pan-actions"><table data-prose data-nohide>
+    <thead><tr><th>Type</th><th>Action</th><th>Why</th><th>Expected Outcome and Timing</th><th>Met or Not Met</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Independent</td><td>Bed rest. Cluster care, a quiet room, and stay with her, reorienting her each time she tries to get up.</td><td>Movement, pain and anxiety all raise the body's oxygen consumption, which a body short of volume cannot deliver.</td><td>Resting in bed, HR 130 or less, within 1 hour.</td><td><b>Met.</b> At 0515, resting with her eyes closed, HR 128.</td></tr>
+      <tr><td class="term">Dependent</td><td>Albumin per order, a colloid, to restore her volume.</td><td>Pulls volume back into the vascular system from the tissues, where the LR she was given leaks out.</td><td>Systolic BP 90 or more, and urine output 30 mL/hr or more, within 2 hours.</td><td><b>Not met.</b> At 0700, BP 86/52, urine 18 mL/hr. Next: a vasopressor per order, to tighten her vessels and raise her BP now that she has been fluid resuscitated.</td></tr>
+      <tr><td class="term">Interdisciplinary</td><td>The surgical team: her bladder pressure measured every 4 hours, with surgical decompression if it climbs.</td><td>Fluid shifting into the abdominal compartment raises the pressure on her organs. At 16 to 20 mmHg, their blood flow is impaired.</td><td>Bladder pressure under 16 mmHg through the next 24 hours.</td><td><b>Met.</b> 11 to 14 mmHg through 0700 the next day. Abdomen distended, no more rigid.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="pan-complication-heading">A Complication in Another System</h2>
+
+  <!-- ARDS: pancreatitis is one of the biggest risk factors, because of the systemic
+       inflammatory response (day1-acute-pancreatitis.html#pancreatitis-treatment), an
+       indirect cause (day1-respiratory.html#ards-causes). The mediators injure the vessels
+       and further organs (#pancreatitis-pathophysiology), the alveolar-capillary membrane
+       (day1-respiratory.html#ards-pathophysiology). Within 1 week, both lungs whited out
+       (#ards-criteria). Refractory hypoxemia, fine crackles, restlessness
+       (#ards-assessment-findings). The PaO2 and SpO2 goal, sitting up, minimizing demand
+       (#arf-interventions). High-flow nasal cannula: day1-oxygen-therapy.html#o2-therapy-devices.
+       No ventilator care: not asked. -->
+  <div class="table-wrap" id="pan-complication"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>Answer</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Complication</td><td><b>Acute respiratory distress syndrome, ARDS (respiratory).</b> The morning of her third day in the ICU.</td></tr>
+      <tr><td class="term">Why it could occur</td><td>Pancreatitis is one of the biggest risk factors for ARDS, through its systemic inflammatory response. Inflammatory mediators in her bloodstream injure the vessels of other organs, and in her lungs they damage the alveolar-capillary membrane. Fluid, protein and blood cells leak into the alveoli: <span class="gloss">noncardiogenic</span> pulmonary edema.</td></tr>
+      <tr><td class="term">Priority cues</td><td>SpO2 86% on 6 L/min by nasal cannula, up from 2 L yesterday, not rising as the oxygen goes up: <span class="gloss">refractory hypoxemia</span>. PaO2 52 on the ABG: under 60, hypoxemia. RR 34 and dyspneic: <span class="gloss">tachypnea</span>. Fine crackles in the posterior and lateral fields to the mid lungs bilaterally, absent yesterday. Restless again. Chest x-ray: both lungs whited out.</td></tr>
+      <tr><td class="term">Actions</td><td><b>Dependent:</b> a high-flow nasal cannula per order, set up by respiratory therapy, its oxygen turned up toward an SpO2 above 90% and a PaO2 above 60. A repeat ABG in 1 hour. <b>Independent:</b> sit her upright with the airway open, and minimize her oxygen demand: no bath, no turning she does not need, care clustered. Her SpO2 is watched continuously and a fall reported at once.</td></tr>
+      <tr><td class="term">Evaluation</td><td><b>SpO2:</b> above 90% on the high-flow cannula, with a PaO2 above 60. An SpO2 that will not rise means she will likely need intubation.</td></tr>
+    </tbody>
+  </table></div>
+
+  </div>
+
+  <div class="tab-panel" id="tab-gi-bleed" data-tab-label="GI Bleed">
+
+  <h2 class="block" id="gib-the-patient">The Patient</h2>
+
+  <!-- An upper GI bleed from a duodenal ulcer, not a variceal bleed: the variceal bleed is
+       the hepatic failure patient's story (#hep-story-goes-on), so the two tabs between
+       them cover both. Who and why: a past ulcer, very high risk of another, especially
+       anticoagulated (day3-gastrointestinal.html#gi-bleed-sources, #gi-bleed-risk), NSAIDs
+       the most common drug cause (review-gi.html#pud-causes, #ugi-bleed-causes). Pain may
+       decrease as blood neutralizes the acid (review-gi.html#pud-complications). Melena,
+       bright red hematemesis, hyperactive bowel sounds, getting paler, tachycardia first
+       (day3-gastrointestinal.html#gi-bleed-assessment). Weakness, shortness of breath,
+       angina, syncope (#acute-vs-chronic-bleed). BUN up with no kidney cause
+       (#acute-vs-chronic-bleed, review-gi.html#ugi-bleed-nursing). Lavage: active, old or
+       stopped (#severe-bleed-management). The second chronic disease is heart failure,
+       for the complication (TACO). -->
+  <div class="card" id="gib-history" data-nohide data-prose>
+    <h4>Histories, Vital Signs and Medications</h4>
+    <p><b>HPI:</b> Harold Jensen is a 74-year-old white man brought to the ED by his wife at 1100, after he fainted in the bathroom at 1030. For 2 days his stools have been black, tarry and foul-smelling. This morning he vomited bright red blood twice, about a cup each time. He feels weak and dizzy when he stands, got short of breath walking to the bathroom, and has had a tightness in his chest since he fainted. For 3 weeks he has taken ibuprofen several times a day for a flare of knee arthritis. A burning ache in his upper abdomen, there for a week, eased yesterday. He denies fever, diarrhea, nosebleeds and blood in his urine.</p>
+    <p><b>PMH:</b> Atrial fibrillation, 5 years, on an anticoagulant. Heart failure, 3 years, ejection fraction 40% a year ago. Duodenal ulcer, 6 years ago, with H. pylori, treated. Osteoarthritis of both knees, 10 years. Hypertension, 15 years.</p>
+    <p><b>SH:</b> Married, lives with his wife in a two-story house. Retired mail carrier. Former smoker, quit 20 years ago. One or two beers on weekends. No drug use.</p>
+    <p><b>FH:</b> Brother had stomach ulcers. Father died of heart failure at 79.</p>
+    <p><b>Admission VS:</b> BP 96/58, HR 118 (atrial fibrillation), RR 24, SpO2 93% on room air, temperature 36.6 °C (97.9 °F), pain 4/10.</p>
+    <p><b>Home medications:</b></p>
+    <ul>
+      <li>Apixaban, an anticoagulant, for atrial fibrillation</li>
+      <li>Metoprolol, for atrial fibrillation and heart failure</li>
+      <li>Furosemide, a diuretic, for heart failure</li>
+      <li>Lisinopril, for heart failure and hypertension</li>
+      <li>Ibuprofen, an NSAID, over the counter, for knee pain</li>
+    </ul>
+    <p><b>Allergies:</b> Penicillin (rash).</p>
+  </div>
+
+  <div class="card" id="gib-exam" data-nohide data-prose>
+    <h4>General Survey, Physical Exam, Labs and Diagnostics</h4>
+    <ul>
+      <li><b>General survey:</b> 74-year-old man lying flat on the stretcher, pale, dried blood at the corners of his mouth. Restless, picking at his sheets. Anxious: "Am I bleeding inside?" Speaks in full sentences, slowly. Clean-shaven, in a hospital gown. His wife at the bedside. Alert and oriented × 4, GCS 15.</li>
+      <li><b>Pain:</b> 4/10 tightness in the center of his chest since he fainted, worse when he sits up. No abdominal pain now.</li>
+      <li><b>Gastrointestinal:</b> Abdomen soft and not distended, mildly tender in the epigastrium, no guarding or rigidity. Bowel sounds hyperactive in all 4 quadrants. Passed 300 mL of black, tarry, foul-smelling stool in the ED.</li>
+      <li><b>Cardiovascular:</b> S1 and S2 present, rapid and irregularly irregular. No murmur, gallop or rub. Telemetry: atrial fibrillation at 118. Neck veins flat at 45 degrees. Trace edema of both ankles, none in the hands, legs or feet. Radial and pedal pulses 1+ and weak bilaterally. Capillary refill 4 seconds in fingers and toes. Skin pale, cool and clammy. Conjunctivae pale.</li>
+      <li><b>Respiratory:</b> RR 24, unlabored at rest. No use of the neck or thoracic accessory muscles. Breath sounds clear in the anterior, posterior and lateral fields bilaterally. No cough.</li>
+      <li><b>Labs:</b> CBC: hemoglobin 7.8 (13.5 at his last checkup), hematocrit 25%, platelets 210,000. BMP: sodium 138, potassium 4.6, chloride 102, CO2 22, BUN 52, creatinine 1.0, glucose 128.</li>
+      <li><b>Procedure:</b> NG tube to low wall suction, with gastric lavage: bright red blood that clears to pink after 1 L.</li>
+    </ul>
+  </div>
+
+  <h2 class="block" id="gib-priority-problems">Priority Problems</h2>
+
+  <!-- Problem 1: a GI bleed causes a fluid volume deficit, tachycardia the first sign
+       (day3-gastrointestinal.html#gi-bleed-assessment). The hematocrit may not change for
+       several hours (#severe-bleed-management). Bright red: active. Dark: older.
+       Problem 2: an acute bleed looks like anemia, with angina (#acute-vs-chronic-bleed).
+       Low hemoglobin: too anemic to carry oxygen to the tissues
+       (day1-respiratory.html#oxygenation-failure-mechanisms). EKG changes from lack of
+       blood flow in a very severe bleed (#severe-bleed-management). Heart failure and AFib
+       as cardiac output issues (#ischemic-causes-and-risks). -->
+  <div class="table-wrap" id="gib-priority-chart"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>Problem 1</th><th>Problem 2</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Priority nursing problem</td><td><ul>
+        <li><b>Deficient fluid volume</b></li>
+      </ul></td><td><ul>
+        <li><b>Decreased cardiac tissue perfusion</b></li>
+      </ul></td></tr>
+      <tr><td class="term">Supporting cues</td><td><ul>
+        <li>Bright red hematemesis and a bright red lavage: actively bleeding. Melena for 2 days: older blood too.</li>
+        <li>HR 118, the first sign, compensating. Then BP 96/58.</li>
+        <li>Pale, cool and clammy, capillary refill 4 seconds, weak pulses: getting paler.</li>
+        <li>Hemoglobin 7.8, down from 13.5. BUN 52 with creatinine 1.0: blood metabolized in his GI tract, not a kidney problem.</li>
+      </ul></td><td><ul>
+        <li>Chest tightness 4/10 since he fainted, worse when he sits up: <span class="gloss">angina</span>.</li>
+        <li>Hemoglobin 7.8: too few red cells to carry oxygen.</li>
+        <li>HR 118 in atrial fibrillation: a faster heart needs more oxygen.</li>
+        <li>Short of breath walking to the bathroom, SpO2 93%, fainted at home.</li>
+      </ul></td></tr>
+      <tr><td class="term">Relevance to the diagnosis</td><td><ul>
+        <li>A past duodenal ulcer puts him at very high risk of another, and 3 weeks of ibuprofen, an NSAID, is the most common drug cause. His apixaban vastly increases the risk of bleeding. A new ulcer is bleeding into his duodenum and stomach: he vomits the fresh blood, and the older blood passes as melena. The blood lost from his vessels leaves a fluid volume deficit. His heart rate rises first to compensate, then his BP falls. His hemoglobin may not yet show the full loss: the hematocrit can lag for hours.</li>
+      </ul></td><td><ul>
+        <li>An acute GI bleed looks like anemia: weakness, shortness of breath, <span class="gloss">angina</span>, syncope. With so little hemoglobin, his blood carries too little oxygen to his tissues, his own <span class="gloss">myocardium</span> included. His heart, already weakened by heart failure, beats faster to make up for the lost volume, so it needs more oxygen while it gets less. A very severe bleed brings EKG changes from the lack of blood flow.</li>
+      </ul></td></tr>
+      <tr><td class="term">Concern rating</td><td><ul>
+        <li><b>2, urgent.</b> He is actively bleeding and could go into hypovolemic shock. He is alert and his systolic BP is in the 90s: he is not expected to die within the hour.</li>
+      </ul></td><td><ul>
+        <li><b>2, urgent.</b> His heart muscle is short of oxygen, and it will worsen if the bleeding continues. The pain is moderate and his rhythm is his usual one.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="gib-story-goes-on">The Story Goes On</h2>
+
+  <!-- Isotonic fluids, transfusions guided by the hemoglobin, a continuous IV pantoprazole
+       drip (day3-gastrointestinal.html#severe-bleed-management). Endoscopy once
+       hemodynamically stable, endoclipping (#endoscopy-vs-surgery). How a GI bleed worsens:
+       massive rebleeding, such as a dropping H&H and bright red blood the day after an
+       endoclip (#endoscopy-vs-surgery). Restlessness: always investigate
+       (review-gi.html#ugi-bleed-nursing). -->
+  <div class="card" id="gib-story" data-nohide data-prose>
+    <h4>Early the Next Morning</h4>
+    <p>In the ED Mr. Jensen was given 2 units of packed red blood cells, normal saline, and a continuous pantoprazole drip, a PPI, for his ulcer. He came to the ICU at 1300. At 1600, once he was <span class="gloss">hemodynamically stable</span>, an endoscopy at the bedside found a bleeding ulcer in his duodenum, and it was clipped. By 2200 his hemoglobin was 9.1, his chest tightness was gone and his HR was 98. At 0500 he vomits 400 mL of bright red blood. His NG output is bright red again. He is restless and pale, says he feels faint, and his chest tightness is back at 5/10. His urine output has been 20 mL/hr for the last hour.</p>
+    <p><b>Updated VS:</b> BP 84/50, HR 132 (atrial fibrillation), RR 28, SpO2 91% on 2 L/min by nasal cannula, temperature 36.4 °C (97.5 °F), pain 5/10.</p>
+    <p><b>Lab:</b> Hemoglobin 6.6, down from 9.1 at 2200.</p>
+  </div>
+
+  <h2 class="block" id="gib-sbar-heading">SBAR</h2>
+
+  <!-- Transfusions guided by the hemoglobin, clotting profiles, a big bleed using up
+       clotting factors and FFP (day3-gastrointestinal.html#severe-bleed-management).
+       Surgery for massive rebleeding (#endoscopy-vs-surgery). Vasopressors are not asked
+       for: the tank is not yet full (#severe-bleed-management). -->
+  <div class="table-wrap" id="gib-sbar"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>The Call</th></tr></thead>
+    <tbody>
+      <tr><td class="term">S</td><td>This is Casey Nguyen, RN in the ICU. I'm calling about Harold Jensen in room 8, admitted yesterday at 1300 with an upper GI bleed from a duodenal ulcer, clipped at 1600. I'm calling because he is bleeding again.</td></tr>
+      <tr><td class="term">B</td><td>He is 74, with atrial fibrillation on apixaban at home, heart failure with an ejection fraction of 40%, hypertension, a duodenal ulcer 6 years ago, and 3 weeks of ibuprofen. He had 2 units of packed cells yesterday and is on a pantoprazole drip. At 0500 he vomited 400 mL of bright red blood, and his NG output is bright red. His BP is 84/50, down from 112/68 at 2200. HR 132 in atrial fibrillation, RR 28, SpO2 91% on 2 L. He is restless, pale, cool and clammy, with a capillary refill of 4 seconds. His chest tightness is back at 5/10. Urine output 20 mL/hr for the last hour. His lungs are clear, with no JVD. His hemoglobin is 6.6, down from 9.1.</td></tr>
+      <tr><td class="term">A</td><td>I think his ulcer is rebleeding massively, despite the clip.</td></tr>
+      <tr><td class="term">R</td><td>I recommend 2 units of packed red cells now, guided by his hemoglobin, to replace the blood and its oxygen-carrying capacity. I'd like a clotting profile, since a bleed this big uses up clotting factors and he may need FFP. And I'd ask GI and surgery to see him now, since a massive rebleed after an endoclip usually needs surgery.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="gib-take-action">Take Action and Evaluation</h2>
+
+  <!-- Decrease the total work of the body (day4-shock-sepsis-mods.html#delivery-vs-consumption),
+       avoid physical activity (day1-respiratory.html#arf-interventions). Transfusions guided
+       by the hemoglobin, FFP for the clotting factors a big bleed uses up
+       (day3-gastrointestinal.html#severe-bleed-management). Surgery for massive rebleeding,
+       a gastric resection to remove the ulcer, and the nurse's part after it
+       (#endoscopy-vs-surgery). -->
+  <p class="note"><b>Priority problem: deficient fluid volume.</b> He is bleeding faster than he is being replaced. The lost volume and hemoglobin are behind his low BP, his chest tightness and his restlessness, and none of them improves until the bleeding stops.</p>
+
+  <div class="table-wrap" id="gib-actions"><table data-prose data-nohide>
+    <thead><tr><th>Type</th><th>Action</th><th>Why</th><th>Expected Outcome and Timing</th><th>Met or Not Met</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Independent</td><td>Bed rest, no getting up. Cluster care, keep him calm, and stay with him.</td><td>Movement and anxiety raise the body's oxygen consumption, while his blood carries too little oxygen to meet it.</td><td>Chest tightness 3/10 or less, and resting quietly, within 30 minutes.</td><td><b>Met.</b> At 0530, chest tightness 3/10, lying still.</td></tr>
+      <tr><td class="term">Dependent</td><td>2 units of packed red blood cells per order.</td><td>Replaces the lost blood and its oxygen-carrying capacity. Guided by the hemoglobin, since the hematocrit can lag for hours.</td><td>Hemoglobin 7.5 or more and systolic BP 90 or more within 2 hours.</td><td><b>Not met.</b> At 0700, hemoglobin 6.9, BP 86/54, NG output still red. INR 1.8: the bleed has used up his clotting factors. Next: FFP per order, with 2 more units of packed cells.</td></tr>
+      <tr><td class="term">Interdisciplinary</td><td>GI and surgery: surgery to remove the bleeding ulcer.</td><td>A massive rebleed after an endoclip usually needs surgery to stop it. Nothing else holds his volume until it stops.</td><td>No new blood, and a hemoglobin stable over 6 hours, after surgery.</td><td><b>Met.</b> To the OR at 0730. By 1600, no new blood, NG output pale green, hemoglobin 8.4 and stable, BP 110/66. Incision pain 4/10.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="gib-complication-heading">A Complication in Another System</h2>
+
+  <!-- TACO: too much blood volume, the patient cannot handle the excess fluid. Cough,
+       dyspnea, crackles at the bases, increased vital signs, distended neck veins,
+       headache. Slow or stop the infusion, furosemide, oxygen, a stat chest x-ray
+       (review-transfusions.html#reaction-types). Never overload a heart failure patient
+       (day4-shock-sepsis-mods.html#cardiogenic-goals). Sitting up:
+       day1-respiratory.html#arf-interventions. A hemoglobin around 7 when the cause is
+       blood loss (day4-shock-sepsis-mods.html#hypovolemic-goal). -->
+  <div class="table-wrap" id="gib-complication"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>Answer</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Complication</td><td><b>Transfusion-associated circulatory overload, TACO (cardiovascular and respiratory).</b> At 0600 on his third day, an hour into a unit of packed cells ordered for a hemoglobin of 7.0.</td></tr>
+      <tr><td class="term">Why it could occur</td><td>In 2 days he has had 7 units of packed cells, FFP and liters of saline. TACO is too much blood volume for the patient to handle. His heart, weakened by heart failure, cannot pump the excess forward, and it backs up into his lungs: a heart failure patient is never overloaded.</td></tr>
+      <tr><td class="term">Priority cues</td><td>A new cough, and short of breath at rest. RR 30, SpO2 89% on 2 L. Crackles in the posterior bases bilaterally, clear yesterday. Neck veins distended at 45 degrees. BP 166/90, up from 118/70, HR 112. A new headache.</td></tr>
+      <tr><td class="term">Actions</td><td><b>Independent:</b> stop the transfusion, keep the line open, and sit him upright. Report it to the provider at once. <b>Dependent:</b> furosemide per order, to pull off the excess fluid and ease his heart's workload, oxygen turned up to an SpO2 above 90%, and a stat chest x-ray.</td></tr>
+      <tr><td class="term">Evaluation</td><td><b>Crackles:</b> clearing from the bases, with the SpO2 back above 92% on 2 L.</td></tr>
+    </tbody>
+  </table></div>
+
+  </div>
+
+  <div class="tab-panel" id="tab-hepatic-failure" data-tab-label="Hepatic Failure">
+
+  <h2 class="block" id="hep-the-patient">The Patient</h2>
+
+  <!-- Who and why: chronic liver disease leads to acute liver failure through an
+       exacerbation, and acetaminophen overdose is the biggest cause, especially with
+       binge drinking. No acetaminophen for a hangover (day3-liver-failure.html#chronic-vs-acute-liver,
+       #alf-causes). Chronic patients take lactulose daily (#he-treatment). Constipation
+       increases the ammonia (review-gi.html#he-care). The neurologic signs, jaundice, high
+       fever, nausea and vomiting (#fulminant-failure-signs). Asterixis
+       (review-gi.html#rising-ammonia). Ascites and engorged vessels from portal
+       hypertension (review-gi.html#portal-hypertension-complications). Ammonia above 150
+       (#cerebral-edema-risk). INR above 1.5, platelets below 150,000 (#liver-coagulopathy).
+       Diagnostic: no lecture names one for liver failure, and the liver biopsy is for an
+       unknown cause and very dangerous (#liver-biopsy-bleeding). The CT of the head is from
+       outside the lectures, marked, and logged in decisions.md. Room to get worse: GCS 13,
+       not yet bleeding. -->
+  <div class="card" id="hep-history" data-nohide data-prose>
+    <h4>Histories, Vital Signs and Medications</h4>
+    <p><b>HPI:</b> Andre Thompson is a 52-year-old Black man brought to the ED by his sister at 1500. Over 2 days he has grown confused and sleepy: he forgets where he is, mixes up the days, and snaps at her, and this morning he could not finish a sentence. She says he drank heavily at his son's wedding on Saturday, his first drinks in 3 years, and since Sunday has taken extra-strength acetaminophen several times a day for a headache. Yesterday she noticed his eyes were yellow and new bruises on his arms. He has vomited twice and felt feverish. She does not think he has taken his lactulose since the wedding, and he has had no bowel movement for 3 days. She has seen no black stools, no blood in his vomit and no falls.</p>
+    <p><b>PMH:</b> Cirrhosis (chronic liver disease), 6 years, with ascites. Esophageal varices, banded 2 years ago. Hepatic encephalopathy, one admission a year ago, on lactulose since. Type 2 diabetes, 8 years.</p>
+    <p><b>SH:</b> Divorced, lives with his sister. Warehouse supervisor. Sober 3 years until Saturday. Never smoked. No drug use.</p>
+    <p><b>FH:</b> Mother had type 2 diabetes. Father died of colon cancer at 64.</p>
+    <p><b>Admission VS:</b> BP 104/62, HR 108 (sinus tachycardia), RR 20, SpO2 96% on room air, temperature 38.4 °C (101.1 °F), pain: denies.</p>
+    <p><b>Home medications:</b></p>
+    <ul>
+      <li>Lactulose, for hepatic encephalopathy</li>
+      <li>Spironolactone, a diuretic, for ascites</li>
+      <li>Furosemide, a diuretic, for ascites</li>
+      <li>Insulin glargine, for diabetes</li>
+    </ul>
+    <p><b>Allergies:</b> Ciprofloxacin (hives).</p>
+  </div>
+
+  <div class="card" id="hep-exam" data-nohide data-prose>
+    <h4>General Survey, Physical Exam, Labs and Diagnostics</h4>
+    <ul>
+      <li><b>General survey:</b> 52-year-old man lying in bed, drowsy, opening his eyes to voice and drifting off mid-answer. Irritable, pulling at his IV. Speech slow. Skin and sclera yellow. Scattered bruises on both forearms, and his gums ooze. Unshaven, his shirt stained with vomit. His sister at the bedside.</li>
+      <li><b>Pain:</b> denies pain when asked. No grimacing or guarding.</li>
+      <li><b>Neurologic:</b> GCS 13: opens eyes to voice (3), confused (4), obeys commands (6). Oriented to himself only. Pupils 3 mm, equal and briskly reactive to light. Moves all 4 extremities, grips equal and strong. <span class="gloss">Asterixis</span>: his hands flap when held out. No seizure activity.</li>
+      <li><b>Gastrointestinal:</b> Abdomen distended with ascites, girth 112 cm, not tender. Spider angiomas on his chest, and dilated veins on his abdomen (caput medusae). Bowel sounds hypoactive in all 4 quadrants. No bowel movement for 3 days. Nauseated.</li>
+      <li><b>Cardiovascular:</b> S1 and S2 present, rapid and regular. No murmur, gallop or rub. Telemetry: sinus tachycardia at 108. No JVD at 45 degrees. 2+ pitting edema of both ankles and feet, none in the hands. Radial and pedal pulses 2+ bilaterally. Capillary refill 3 seconds. Skin warm and dry.</li>
+      <li><b>Labs:</b> Ammonia 168 mcg/dL, high. Coagulation: INR 2.6, platelets 58,000.</li>
+      <li><b>Diagnostic:</b> CT of the head: no bleeding, and no cerebral edema.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li>
+    </ul>
+  </div>
+
+  <h2 class="block" id="hep-priority-problems">Priority Problems</h2>
+
+  <!-- Problem 1: detoxification lost (day3-liver-failure.html#liver-functions,
+       #fulminant-failure-signs). Toxins of hepatic origin, such as ammonia (#he-essentials).
+       Ammonia crosses the blood-brain barrier, a CNS depressant (review-gi.html#he-cause).
+       Seizures and the airway (#he-nursing-concerns). Ammonia above 150
+       (#cerebral-edema-risk).
+       Problem 2: the liver makes clotting factors II, V, VII, IX, X, bleeding times are
+       prolonged, the body cannot self-correct (#liver-coagulopathy). Varices and
+       prothrombin: review-gi.html#portal-hypertension-complications. A variceal bleed is a
+       critical care emergency (day3-gastrointestinal.html#variceal-emergency). -->
+  <div class="table-wrap" id="hep-priority-chart"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>Problem 1</th><th>Problem 2</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Priority nursing problem</td><td><ul>
+        <li><b>Acute confusion</b></li>
+      </ul></td><td><ul>
+        <li><b>Bleeding</b></li>
+      </ul></td></tr>
+      <tr><td class="term">Supporting cues</td><td><ul>
+        <li>GCS 13, oriented to himself only, drowsy and irritable: a decreased level of consciousness.</li>
+        <li><span class="gloss">Asterixis</span>: his hands flap when held out.</li>
+        <li>Ammonia 168: hepatic encephalopathy, and above 150, a raised risk of cerebral edema.</li>
+        <li>No lactulose and no bowel movement for 3 days: the ammonia stays in his gut.</li>
+      </ul></td><td><ul>
+        <li>INR 2.6: above 1.5, his blood is slow to clot.</li>
+        <li>Platelets 58,000: thrombocytopenia, under 150,000.</li>
+        <li>New bruises on his arms, and his gums ooze.</li>
+        <li>Esophageal varices, banded 2 years ago.</li>
+      </ul></td></tr>
+      <tr><td class="term">Relevance to the diagnosis</td><td><ul>
+        <li>His liver, already scarred by cirrhosis, was hit by a binge and by days of acetaminophen, the biggest cause of acute liver failure, especially with binge drinking. A failing liver cannot detoxify. Toxins such as ammonia build up, cross the blood-brain barrier and depress his brain: his confusion, drowsiness and asterixis. Without his lactulose, and 3 days constipated, more ammonia stays in his gut. Hepatic encephalopathy also raises his risk of seizures, and as his level of consciousness falls, his airway is at risk.</li>
+      </ul></td><td><ul>
+        <li>The liver makes clotting factors II, V, VII, IX and X. His failing liver makes too few, so his bleeding times are prolonged, and his platelets are low. His body cannot correct a bleed on its own. His portal hypertension has engorged the veins of his esophagus into varices, and a bleeding varix in a patient short of clotting factors is a critical care emergency.</li>
+      </ul></td></tr>
+      <tr><td class="term">Concern rating</td><td><ul>
+        <li><b>2, urgent.</b> His ammonia is above 150 and his level of consciousness is falling, so it must be brought down quickly. At GCS 13 he still protects his airway: he is not expected to die within the hour.</li>
+      </ul></td><td><ul>
+        <li><b>2, urgent.</b> He is oozing, not bleeding briskly, and his vital signs are holding. A variceal bleed could come at any time.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="hep-story-goes-on">The Story Goes On</h2>
+
+  <!-- Lactulose (day3-liver-failure.html#he-treatment) and vitamin K (#coagulopathy-treatment).
+       How it worsens: a variceal bleed, with the coagulopathy behind it (#liver-coagulopathy),
+       rapidly hemodynamically unstable (day3-gastrointestinal.html#variceal-emergency). Blood
+       in the GI tract drives up the ammonia (review-gi.html#he-care): the GCS falls to 10, in
+       the 9 to 12 range where the airway is the concern (day1-respiratory.html#gcs-airway). -->
+  <div class="card" id="hep-story" data-nohide data-prose>
+    <h4>That Night</h4>
+    <p>Mr. Thompson came to the ICU at 1700. He was given lactulose, to clear the ammonia through his bowels, and vitamin K, so his liver can make clotting factors. He had one loose bowel movement. At 0200 he retches and vomits about 500 mL of bright red blood, then more. He is harder to rouse: he opens his eyes only to pain and mumbles words that make no sense. He is pale, cool and clammy, and his BP is falling.</p>
+    <p><b>Updated VS:</b> BP 82/48, HR 128 (sinus tachycardia), RR 26, SpO2 92% on 2 L/min by nasal cannula, temperature 38.2 °C (100.8 °F). Pain: unable to rate, grimaces when his abdomen is touched. GCS 10: opens eyes to pain (2), inappropriate words (3), localizes pain (5).</p>
+    <p><b>Lab:</b> Hemoglobin 7.2, down from 10.4 on admission.</p>
+  </div>
+
+  <h2 class="block" id="hep-sbar-heading">SBAR</h2>
+
+  <!-- The variceal priorities, the airway first (day3-gastrointestinal.html#variceal-priorities).
+       Intubation if needed (day1-respiratory.html#arf-interventions). Octreotide decreases
+       splanchnic blood flow and reduces portal pressure (#variceal-treatments). FFP when
+       bleeding with an INR above 1.5, packed cells when actively bleeding
+       (day3-liver-failure.html#coagulopathy-treatment). Endoscopy, band ligation
+       (#variceal-treatments). -->
+  <div class="table-wrap" id="hep-sbar"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>The Call</th></tr></thead>
+    <tbody>
+      <tr><td class="term">S</td><td>This is Casey Nguyen, RN in the ICU. I'm calling about Andre Thompson in room 4, admitted yesterday at 1700 with acute liver failure on cirrhosis, with hepatic encephalopathy. I'm calling because he is vomiting bright red blood.</td></tr>
+      <tr><td class="term">B</td><td>He is 52, with cirrhosis and ascites, esophageal varices banded 2 years ago, past hepatic encephalopathy and type 2 diabetes. He binge drank on Saturday and took acetaminophen for days after. On admission his INR was 2.6 and his platelets 58,000. He has had lactulose and vitamin K. At 0200 he vomited about 500 mL of bright red blood, and he is still retching. His BP is 82/48, down from 104/62, HR 128, RR 26, SpO2 92% on 2 L. His GCS is 10, down from 13: he opens his eyes only to pain and mumbles. He is pale, cool and clammy. His hemoglobin is 7.2, down from 10.4.</td></tr>
+      <tr><td class="term">A</td><td>I think his varices are bleeding, and with a GCS of 10 I'm worried he cannot protect his airway.</td></tr>
+      <tr><td class="term">R</td><td>I recommend intubating him now to protect his airway, before he aspirates blood. I'd like an octreotide drip, to reduce his portal pressure and slow the bleeding. I'd like packed red cells and FFP, since he is actively bleeding with an INR above 1.5. And I'd ask GI to come for an endoscopy at the bedside, to band the varices.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="hep-take-action">Take Action and Evaluation</h2>
+
+  <!-- The airway first, then hemodynamic stability, with multiple transfusions and fluid
+       resuscitation (day3-gastrointestinal.html#variceal-priorities). Large-bore IVs,
+       18-gauge preferred (review-gi.html#ugi-bleed-nursing). Octreotide and the tamponade
+       tube, never clamped (#variceal-treatments, #never-clamp-tamponade-tube). Endoscopy,
+       band ligation, eventually needed (#variceal-treatments). No ventilator care: not
+       asked. -->
+  <p class="note"><b>Priority problem: deficient fluid volume.</b> His airway, the first priority in a variceal bleed, was secured when he was intubated at 0230. Hemodynamic stability comes next. A variceal bleed quickly brings hypovolemic shock, and with too few clotting factors his body cannot stop it.</p>
+
+  <div class="table-wrap" id="hep-actions"><table data-prose data-nohide>
+    <thead><tr><th>Type</th><th>Action</th><th>Why</th><th>Expected Outcome and Timing</th><th>Met or Not Met</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Independent</td><td>A second large-bore IV, 18-gauge, so blood products and fluid can run at the same time.</td><td>A variceal bleed usually needs multiple transfusions and fluid resuscitation, given fast.</td><td>Two 18-gauge IVs running, and packed cells and FFP hanging, within 15 minutes.</td><td><b>Met.</b> At 0240, both lines running, the first units of packed cells and FFP hanging.</td></tr>
+      <tr><td class="term">Dependent</td><td>An octreotide drip per order, to slow the bleeding.</td><td>Decreases <span class="gloss">splanchnic</span> blood flow and reduces the portal pressure that swells the varices, so they bleed less. Very safe, given to stabilize before definitive treatment.</td><td>No new bright red blood, and systolic BP 90 or more, within 1 hour.</td><td><b>Not met.</b> At 0340, another 300 mL of bright red blood through his NG tube, BP 80/46. Next: an esophagogastric tamponade tube, placed by the provider, to press on the varices until the endoscopy. Never clamped: the pressure is lost and they bleed again.</td></tr>
+      <tr><td class="term">Interdisciplinary</td><td>GI: an endoscopy at the bedside with band ligation.</td><td>Endoscopy shows what the varices are doing, and the bands close off the bleeding veins.</td><td>Bleeding stopped, with a stable hemoglobin, within 6 hours.</td><td><b>Met.</b> At 0600, two bleeding varices banded. No new blood since. Hemoglobin 8.0 and stable after 3 units of packed cells and 2 of FFP. BP 104/60.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="hep-complication-heading">A Complication in Another System</h2>
+
+  <!-- AKI is a complication of acute liver failure (day3-liver-failure.html#alf-complications).
+       Pre-renal: a lot of blood lost, a sudden drop in BP
+       (day2-acute-kidney-injury.html#aki-causes). The kidneys take 20 to 25% of cardiac
+       output (#why-aki-is-common). Oliguria under about 30 mL/hr (#aki-primary-features).
+       Several hours of poor perfusion bump the BUN and creatinine (#aki-onset-and-prognosis).
+       A GI bleed raises the BUN too (review-gi.html#ugi-bleed-nursing), so the creatinine is
+       the cue. The kidneys primarily excrete potassium (#kidney-functions). Albumin, a
+       colloid, when third spacing is a concern (day4-shock-sepsis-mods.html#delivery-vs-consumption),
+       raises the oncotic pressure (review-gi.html#ascites-care). Diuretics assume working
+       kidneys (#ascites-care). -->
+  <div class="table-wrap" id="hep-complication"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>Answer</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Complication</td><td><b>Acute kidney injury (renal).</b> The next morning, a day after the bleed.</td></tr>
+      <tr><td class="term">Why it could occur</td><td>Pre-renal: for hours during the bleed his BP was low, and the kidneys take 20 to 25% of cardiac output. AKI is also a complication of acute liver failure itself. His low albumin lets fluid <span class="gloss" data-term="third spacing">third space</span> into his abdomen instead of staying in his vessels to perfuse his kidneys.</td></tr>
+      <tr><td class="term">Priority cues</td><td>Urine output 12 mL/hr for 6 hours: oliguria, under 30 mL/hr. Creatinine 2.4, up from 0.9 on admission: the cue to trust, since blood in his gut also raises his BUN. Potassium 5.5: his kidneys are not excreting it.</td></tr>
+      <tr><td class="term">Actions</td><td><b>Dependent:</b> IV albumin per order, a colloid, to raise his oncotic pressure and pull fluid back into his vessels, where it can perfuse his kidneys. <b>Independent:</b> strict intake and output, the urine output every hour, his weight daily and his abdominal girth every shift, and the monitor watched for dysrhythmias from the high potassium.</td></tr>
+      <tr><td class="term">Evaluation</td><td><b>Urine output:</b> back to 30 mL/hr or more. Then the creatinine, trending down.</td></tr>
+    </tbody>
+  </table></div>
+
+  </div>
+
+  <nav class="page-flip" data-page-flip></nav>
+  <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
+
+</div>
+</main>
+
+<script src="assets/site.js?v=20261022l"></script>
+<script src="data/glossary.js?v=20261022l"></script>
+<script src="assets/study.js?v=20261022l"></script>
+</body>
+</html>

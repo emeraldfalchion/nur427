@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<!-- SOURCES
+     Handout:     assignments/Patient Exemplar 1 - template.docx
+     Handout:     assignments/Patient Exemplar 2 - template.docx
+     Handout:     assignments/Signature Practice Feedback.docx
+     Transcript:  transcripts/Day 3 - Neuro.txt
+     Transcript:  transcripts/Day 3 - TBI.txt
+     Transcript:  transcripts/Day 3 - Stroke.txt
+     Transcript:  transcripts/Day 3 - Spinal.txt
+     Built:       2026-10-21
+     Cross-checked against the site's own pages: 2026-10-21
+
+     Built from the site's pages, which are already checked against the sources:
+     day3-neuro-assessment-icp.html, day3-brain-injury-stroke.html,
+     day3-spinal-cord-injury.html and review-neuro.html, with day1-respiratory.html for
+     the GCS and the airway, review-abgs.html for reading the ABGs,
+     review-respiratory-diseases.html for asthma and the stroke complication (aspiration
+     pneumonia), day3-gastrointestinal.html for the spinal cord injury complication
+     (paralytic ileus), day4-shock-sepsis-mods.html for distributive shock and the lactate,
+     and review-dysrhythmias.html for atropine. The format is signature-exemplar.html's,
+     with the class feedback in signature-assessment.md.
+     Each patient is invented: names, ages, histories, home medications and every
+     number are example details. One line is from outside the lectures, marked and logged
+     in decisions.md: the CT of the head as the TBI patient's diagnostic.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neuro — NUR427</title>
+<script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="assets/styles.css?v=20261022l">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<main id="content">
+<div class="page-inner">
+
+  <header class="page-head">
+    <p class="eyebrow">Signature Assessment · Topic 6</p>
+    <h1>Neuro</h1>
+  </header>
+
+  <div class="tab-panel" id="tab-compare" data-tab-label="Compare">
+
+  <h2 class="block" id="compare-diagnoses">The Neuro Diagnoses</h2>
+
+  <!-- The rows run in the order of signature-exemplar.html#diagnoses-by-day: the three
+       taught at length first, each linking to its tab, then meningitis and seizures, taught
+       briefly. TBI and increased ICP are one diagnosis (decisions.md, 2026-10-21): the TBI
+       row draws on day3-brain-injury-stroke.html#tbi and
+       day3-neuro-assessment-icp.html#increased-icp. Priority problem names are the nursing
+       problems in plain words. Each fact is taught on the page its diagnosis links to, or on
+       review-neuro.html.
+       "None taught": no source on the site names a lab or a diagnostic for spinal cord
+       injury, a lab for seizures, or a complication in another system for meningitis or for
+       seizures. Left as "None taught", not filled from outside the lectures, as on the
+       Cardiovascular and GI and Hepatic pages. Waiting on Holly (decisions.md, Open
+       Questions).
+       One table, the patient picture then the course, that scrolls sideways with the
+       diagnosis frozen in column 1 (Holly, 2026-10-22). -->
+  <div class="table-wrap wide-table" id="neuro-compare-picture"><table data-nohide>
+    <thead><tr><th>Diagnosis</th><th>Why They Are Here</th><th>Key Cues and Findings</th><th>Labs and Diagnostics</th><th>Priority Problems</th><th>How It Worsens</th><th>Key Actions</th><th>Complications in Other Systems</th></tr></thead>
+    <tbody>
+      <tr><td class="term"><a href="#tbi-the-patient">TBI with increased ICP</a></td><td><ul>
+        <li><b>An external impact to the head.</b> Falls the leading cause, then struck by or against, motor vehicle crashes, assaults.</li>
+        <li>Highest risk: males, children under 4, young adults 15 to 19.</li>
+      </ul></td><td><ul>
+        <li><b>If awake: a significant headache,</b> vomiting, blurred vision, lethargy, changes in behavior.</li>
+        <li><b>A falling GCS.</b> One pupil a different size: pressure on one side of the brain.</li>
+        <li>Late: <b><span class="gloss">Cushing's triad</span></b>, bradycardia, irregular respirations and a <span class="gloss">widened pulse pressure</span>.</li>
+      </ul></td><td><ul>
+        <li><b>ICP above 20</b> on an ICP monitor, usually placed for a GCS of 3 to 8. <b>CPP = MAP − ICP</b>, the goal above 70.</li>
+        <li>Urine output and sodium, for DI, SIADH and cerebral salt wasting.</li>
+        <li>PaO2: below 50 increases ICP.</li>
+      </ul></td><td><ul>
+        <li><b>Ineffective cerebral tissue perfusion:</b> swelling in a skull that cannot give raises the ICP and lowers the CPP.</li>
+        <li><b>Ineffective airway clearance:</b> a falling GCS. Can the patient maintain the airway?</li>
+        <li>Seizures: a higher risk with any TBI.</li>
+      </ul></td><td><ul>
+        <li><b>Secondary injury:</b> ischemia, inflammation, swelling, <span class="gloss" data-term="hematoma">hematomas</span>. Decreased cerebral perfusion is the primary driver.</li>
+        <li><b>Herniation:</b> downward the most damaging. Recovery very unlikely. Then brain death.</li>
+      </ul></td><td><ul>
+        <li><b>Airway and oxygenation: the priority.</b></li>
+        <li><b>ICP below 20, CPP above 70:</b> head of the bed at least 30°, head midline, no fever, mannitol, sedation.</li>
+        <li>Surgery: burr holes for a subdural <span class="gloss">hematoma</span>, a craniectomy.</li>
+      </ul></td><td><ul>
+        <li><b>Endocrine: DI, SIADH, cerebral salt wasting.</b> The pituitary is damaged. Monitor urine output.</li>
+        <li><b><span class="gloss">Hypermetabolism</span>:</b> higher nutritional needs.</li>
+      </ul></td></tr>
+      <tr><td class="term"><a href="#stroke-the-patient">Stroke</a></td><td><ul>
+        <li><b>Ischemic, 87%:</b> large artery atherosclerosis, the biggest risk factor. Cardioembolic, as from <b>AFib</b>. Lacunar.</li>
+        <li><b>Hemorrhagic:</b> uncontrolled hypertension the most common cause. A ruptured aneurysm, an AV malformation.</li>
+        <li>A TIA before: a warning.</li>
+      </ul></td><td><ul>
+        <li><b>Sudden weakness or numbness of one side,</b> on the side opposite the stroke. Slurred speech, a visual disturbance, dizziness.</li>
+        <li>A sudden-onset severe headache: "worst headache of my life".</li>
+        <li><b>The time of onset:</b> critical information.</li>
+      </ul></td><td><ul>
+        <li><b>A stat CT without contrast:</b> hemorrhagic or ischemic, which decides what is done next.</li>
+        <li><b>The NIHSS:</b> the higher the score, the more severe the stroke. Trended with the GCS.</li>
+        <li>Blood glucose: hypoglycemia can mimic a stroke.</li>
+      </ul></td><td><ul>
+        <li><b>Ineffective cerebral tissue perfusion:</b> brain cells survive 3 to 4 minutes without oxygen. The <span class="gloss">penumbra</span> can still be saved.</li>
+        <li><b>Aspiration:</b> swallowing and the gag reflex impaired. A suspected stroke is NPO.</li>
+        <li>Bleeding after <span class="gloss">tPA</span>.</li>
+      </ul></td><td><ul>
+        <li><b>Many worsen in the first 24 to 48 hours.</b></li>
+        <li>The dying cells, and secondary cerebral edema. A severe stroke raises the ICP.</li>
+        <li>Hemorrhagic: a very poor prognosis.</li>
+      </ul></td><td><ul>
+        <li><b>Ischemic: bust the clot.</b> <span class="gloss">tPA</span> first-line, within 4.5 hours of onset. A thrombectomy through interventional radiology.</li>
+        <li><b>Hemorrhagic: BP control</b> and surgery.</li>
+        <li>Once stable: anticoagulants, antiplatelets, statins.</li>
+      </ul></td><td><ul>
+        <li><b>Bleeding after <span class="gloss">tPA</span>:</b> anyone who gets it is at high risk.</li>
+        <li><b>Aspiration pneumonia:</b> impaired swallowing and a decreased level of consciousness.</li>
+        <li>Airway, breathing and circulation, in a severe stroke.</li>
+      </ul></td></tr>
+      <tr><td class="term"><a href="#sci-the-patient">Spinal cord injury</a></td><td><ul>
+        <li><b>Most common at ages 16 to 30.</b> Motor vehicle accidents, falls, violence, sports, <b>diving</b>.</li>
+        <li>Often with a TBI.</li>
+      </ul></td><td><ul>
+        <li><b>Spinal shock:</b> complete loss of motor, sensory and reflex activity below the injury.</li>
+        <li><b>Neurogenic shock:</b> hypotension, bradycardia, hypothermia. More likely at T6 or higher.</li>
+        <li>The level decides the loss: C4 and C6 <span class="gloss">tetraplegia</span>, T6 and L1 <span class="gloss">paraplegia</span>.</li>
+      </ul></td><td><ul>
+        <li>None taught.</li>
+      </ul></td><td><ul>
+        <li><b>Ineffective breathing pattern:</b> a cervical or thoracic injury can affect the diaphragm.</li>
+        <li><b>Ineffective tissue perfusion:</b> neurogenic shock lowers the BP, and the cord needs a MAP of 85 to 90.</li>
+        <li>Pressure ulcers: no movement or sensation, impaired circulation.</li>
+      </ul></td><td><ul>
+        <li><b>Cord edema can ascend or descend,</b> then microscopic hemorrhages, ischemia and axonal degeneration: a permanent loss.</li>
+        <li><b>Neurogenic shock.</b> The permanence is not known until spinal shock resolves.</li>
+      </ul></td><td><ul>
+        <li><b>Airway first:</b> a paralyzed diaphragm needs intubation.</li>
+        <li><b>MAP 85 to 90 for about 7 days:</b> no systolic hypotension.</li>
+        <li>Immobilized until cleared. Unstable fracture: surgery within 24 hours.</li>
+      </ul></td><td><ul>
+        <li><b>GI: paralytic ileus.</b> GU: urinary retention. Spinal shock leaves the bowel and bladder with <span class="gloss">atony</span>.</li>
+        <li><b>DVT and PE:</b> venous stasis. Pressure ulcers.</li>
+        <li>Later, at T6 or above: autonomic dysreflexia, an elevated, uncontrolled BP.</li>
+      </ul></td></tr>
+      <tr><td class="term"><a href="day3-brain-injury-stroke.html#meningitis">Meningitis</a></td><td><ul>
+        <li><b>A nearby local infection:</b> an open skull fracture, an abscess on the skull or in the brain, <b>an eye abscess or infection</b>.</li>
+        <li>A basilar skull fracture leads to it more quickly.</li>
+      </ul></td><td><ul>
+        <li><b>Headache, stiff neck and vomiting,</b> over 1 to 2 days.</li>
+        <li>Fever, a throbbing headache, <span class="gloss">nuchal rigidity</span>.</li>
+      </ul></td><td><ul>
+        <li><b>Spinal tap:</b> WBCs in the CSF indicate bacterial meningitis. There should be none.</li>
+      </ul></td><td><ul>
+        <li><b>Hyperthermia:</b> infection of the meninges and the CSF.</li>
+        <li><b>Ineffective cerebral tissue perfusion:</b> the inflammation can cause cerebral edema and increased ICP.</li>
+      </ul></td><td><ul>
+        <li><b>Cerebral edema and increased ICP</b> from the inflammation.</li>
+        <li>Bacterial: a very high risk of neurologic problems.</li>
+      </ul></td><td><ul>
+        <li><b>Bacterial: IV antibiotics STAT,</b> a neurological emergency.</li>
+        <li>Droplet precautions, seizure precautions, temperature management, ICP monitoring.</li>
+      </ul></td><td><ul>
+        <li>None taught.</li>
+      </ul></td></tr>
+      <tr><td class="term"><a href="day3-brain-injury-stroke.html#seizures">Seizures</a></td><td><ul>
+        <li><b>A complication of TBI, stroke, really any brain damage.</b> After a TBI, blood on the brain irritates the tissue.</li>
+      </ul></td><td><ul>
+        <li><b>A decreased neurologic status with no clear cause.</b></li>
+        <li><b><span class="gloss">Status epilepticus</span>:</b> a seizure longer than 5 minutes, or repeated seizures over 30 minutes.</li>
+      </ul></td><td><ul>
+        <li><b>EEG monitoring,</b> continuous or a snapshot: brain activity and seizure activity.</li>
+        <li>Labs: none taught.</li>
+      </ul></td><td><ul>
+        <li><b>Injury:</b> seizure precautions, nothing forced into the mouth, no restraint.</li>
+        <li><b>Ineffective airway clearance:</b> maintain the airway, during and after the seizure.</li>
+      </ul></td><td><ul>
+        <li><b>Seizures greatly increase ICP.</b></li>
+        <li><b><span class="gloss">Status epilepticus</span>:</b> a medical emergency. Over 10 minutes can cause death.</li>
+      </ul></td><td><ul>
+        <li><b>Seizure precautions:</b> suction, oxygen, padded rails, an Ambu bag.</li>
+        <li><b>IV benzodiazepines</b> for status epilepticus: lorazepam or diazepam. IV access kept.</li>
+        <li>Levetiracetam: continuously, preventatively, or as treatment.</li>
+      </ul></td><td><ul>
+        <li>None taught.</li>
+      </ul></td></tr>
+    
+    </tbody>
+  </table></div>
+
+  </div>
+
+  <div class="tab-panel" id="tab-tbi" data-tab-label="TBI with Increased ICP">
+
+  <h2 class="block" id="tbi-the-patient">The Patient</h2>
+
+  <!-- Who and why: a fall, the leading cause of TBI, in a man (highest risk). An
+       acceleration and deceleration injury: the impact at the back, the injury opposite
+       (day3-brain-injury-stroke.html#tbi-mechanisms). The contusion is primary, the subdural
+       hematoma and the swelling secondary (#primary-vs-secondary-injury). The scalp bleeds a
+       lot (#skull-fractures). CSF from the nose or ears checked (#basilar-skull-fracture).
+       The second chronic disease is epilepsy, for the second problem: the fall follows a
+       seizure. Increased ICP if awake: headache, vomiting, lethargy
+       (day3-neuro-assessment-icp.html#increased-icp-signs). GCS 12, airway risk at 9 to 12
+       (day1-respiratory.html#gcs-airway). Room to get worse: equal pupils, no Cushing's triad.
+       The diagnostic, a CT of the head, is from outside the lectures: no lecture names a
+       diagnostic for TBI, and the signature asks for 1. Marked, and logged in decisions.md. -->
+  <div class="card" id="tbi-history" data-nohide data-prose>
+    <h4>Histories, Vital Signs and Medications</h4>
+    <p><b>HPI:</b> Luis Ortega is a 44-year-old Hispanic man brought to the ED by ambulance at 1640. At 1600 he was on a ladder cleaning his gutters when his wife saw him stiffen and jerk for about a minute, then fall about 10 feet onto the concrete driveway, landing on the back of his head. He did not respond for a few minutes, then woke confused and vomited. He vomited again in the ambulance. He reports a pounding headache. His wife says he takes his seizure medication every day, and his last seizure was 8 months ago. He bit his tongue and was incontinent of urine during the seizure. He denies neck or back pain, and no other injury is found. No fluid has come from his nose or ears.</p>
+    <p><b>PMH:</b> Epilepsy (a seizure disorder) since age 24, controlled on medication. Hypertension, 5 years. GERD, 3 years.</p>
+    <p><b>SH:</b> Married, two teenage children, lives in a two-story house. Electrician. Never smoked. One or two beers on weekends. No drug use.</p>
+    <p><b>FH:</b> Father has hypertension. Mother has type 2 diabetes.</p>
+    <p><b>Admission VS:</b> BP 156/88, HR 66 (normal sinus rhythm), RR 18, SpO2 95% on room air, temperature 37.2 °C (99.0 °F), pain 6/10.</p>
+    <p><b>Home medications:</b></p>
+    <ul>
+      <li>Levetiracetam, for seizures</li>
+      <li>Lisinopril, for hypertension</li>
+      <li>Pantoprazole, for GERD</li>
+    </ul>
+    <p><b>Allergies:</b> Codeine (nausea and vomiting).</p>
+  </div>
+
+  <div class="card" id="tbi-exam" data-nohide data-prose>
+    <h4>General Survey, Physical Exam, Labs and Diagnostics</h4>
+    <ul>
+      <li><b>General survey:</b> 44-year-old man lying on the stretcher with his eyes closed. Opens his eyes when his name is said, then drifts off. Confused: knows his name, not where he is or the date. Restless, pulling at his blanket. A 4 cm laceration at the back of his scalp, closed with staples in the ED, his hair matted with dried blood. A bitten tongue. In a hospital gown, his wet clothes removed. His wife at the bedside, tearful. GCS 12.</li>
+      <li><b>Pain:</b> 6/10 pounding headache at the back of his head and behind his eyes, constant since the fall.</li>
+      <li><b>Neurologic:</b> GCS 12: eyes open to speech (3), confused (4), localizes pain (5). Pushes the examiner's hand away from a nail bed squeeze, but does not follow commands. Pupils equal, 3 mm, round and brisk to light. Moves all four limbs, strength equal bilaterally. Face symmetrical. No clear fluid from the nose or ears. Gag reflex present.</li>
+      <li><b>Respiratory:</b> RR 18, regular and unlabored. No use of the neck or thoracic accessory muscles. Breath sounds clear in the anterior, posterior and lateral fields bilaterally. Infrequent, nonproductive cough.</li>
+      <li><b>Cardiovascular:</b> S1 and S2 present and regular, no murmur. Monitor: normal sinus rhythm at 66. No JVD at 30 degrees. No edema of the hands, legs, ankles or feet bilaterally. Radial and pedal pulses 2+ and equal bilaterally. Capillary refill under 3 seconds in fingers and toes. Skin warm and dry.</li>
+      <li><b>Labs:</b> BMP: sodium 139, potassium 4.0, chloride 103, CO2 25, BUN 14, creatinine 0.9, glucose 108. Serum osmolality 286, normal (270 to 290).</li>
+      <li><b>Diagnostic:</b> CT of the head: a small subdural <span class="gloss">hematoma</span> over the right side of the brain, and a contusion at the front, opposite the impact. Mild cerebral edema. No skull fracture.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li>
+    </ul>
+  </div>
+
+  <h2 class="block" id="tbi-priority-problems">Priority Problems</h2>
+
+  <!-- Problem 1: three balloons in a bucket (day3-neuro-assessment-icp.html#balloons-in-a-bucket),
+       CPP = MAP − ICP (#cpp-formula), systolic below about 160 (#icp-medical-management),
+       decreased cerebral perfusion the primary driver of secondary injury
+       (day3-brain-injury-stroke.html#primary-vs-secondary-injury).
+       Problem 2: higher seizure risk with any TBI (#tbi-complications), blood on the brain
+       irritates the tissue (review-neuro.html#seizure-precautions-room), seizures greatly
+       increase ICP (day3-neuro-assessment-icp.html#metabolic-demand-measures).
+       Concern ratings: 1 only when the patient could die within the hour (graded feedback,
+       2026-10-20). -->
+  <div class="table-wrap" id="tbi-priority-chart"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>Problem 1</th><th>Problem 2</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Priority nursing problem</td><td><ul>
+        <li><b>Ineffective cerebral tissue perfusion</b></li>
+      </ul></td><td><ul>
+        <li><b>Seizures</b></li>
+      </ul></td></tr>
+      <tr><td class="term">Supporting cues</td><td><ul>
+        <li>GCS 12, down from his normal 15: opens his eyes to speech, confused, localizes but does not obey.</li>
+        <li>A pounding headache, 6/10, and vomiting twice: signs of increased ICP in an awake patient.</li>
+        <li>CT: a subdural <span class="gloss">hematoma</span>, a contusion and mild cerebral edema, more volume inside the skull.</li>
+        <li>BP 156/88: the systolic still below 160.</li>
+      </ul></td><td><ul>
+        <li>Epilepsy for 20 years, and a seizure today despite his levetiracetam.</li>
+        <li>The seizure his wife saw: a minute of stiffening and jerking, a bitten tongue, incontinence.</li>
+        <li>Blood on his brain from the subdural <span class="gloss">hematoma</span>.</li>
+      </ul></td></tr>
+      <tr><td class="term">Relevance to the diagnosis</td><td><ul>
+        <li>His fall was an acceleration and deceleration injury. The back of his head struck the concrete, and his brain rebounded into the front of his skull: two impacts, two areas of the brain. The contusion is the primary injury. The <span class="gloss">hematoma</span> and the swelling are the secondary injury, the brain's biochemical response, and they keep growing. Brain tissue, blood and CSF share a skull that cannot give, so as they expand, his ICP rises. CPP is the MAP minus the ICP: a rising ICP leaves less blood reaching his brain, and decreased cerebral perfusion is the primary driver of more secondary injury.</li>
+      </ul></td><td><ul>
+        <li>His seizure disorder already makes him prone to seizures, and a seizure caused today's fall. Any TBI raises the risk further: blood on the brain irritates the tissue. A seizure now would greatly increase his ICP and his brain's metabolic demand, worsening the injury, and could cost him his airway. He needs seizure precautions and his anti-seizure medication.</li>
+      </ul></td></tr>
+      <tr><td class="term">Concern rating</td><td><ul>
+        <li><b>2, urgent.</b> His ICP is rising and needs neuro checks every hour. His pupils are equal and brisk, he localizes, and his vital signs show no <span class="gloss">Cushing's triad</span>: he is not expected to die within the hour.</li>
+      </ul></td><td><ul>
+        <li><b>2, urgent.</b> A seizure would raise his ICP and threaten his airway, so the precautions must be in place quickly. He has not seized since the fall.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="tbi-story-goes-on">The Story Goes On</h2>
+
+  <!-- How it worsens: the hematoma grows, and the ICP with it, toward herniation
+       (day3-brain-injury-stroke.html#brain-herniation). A blown pupil, decorticate posturing
+       (GCS motor 3), Cushing's triad (day3-neuro-assessment-icp.html#pupil-checks,
+       #decorticate-vs-decerebrate, #increased-icp-signs). The ABG: less cerebral blood flow,
+       a lower PaO2 and a higher PaCO2 lead to vasodilation and more volume (#fig-icp-cycle),
+       PaO2 below 50 increases ICP, above 80 the goal (#icp-medical-management). Seizure
+       precautions: review-neuro.html#seizure-precautions-room and
+       day3-brain-injury-stroke.html#seizure-management. -->
+  <div class="card" id="tbi-story" data-nohide data-prose>
+    <h4>Early the Next Morning</h4>
+    <p>Mr. Ortega came to the neuro ICU at 1900. He was kept with the head of the bed at 30 degrees and his head midline, with neuro checks every hour. He was placed on seizure precautions, with suction, oxygen, padded rails and an Ambu bag in the room, and given levetiracetam, to prevent seizures. At 0300 his nurse can no longer wake him with his name. He opens his eyes only to a nail bed squeeze and moans without words, and both arms curl in to his chest: decorticate posturing. His right pupil is 6 mm and sluggish, his left 3 mm and brisk. He vomits again. His heart rate has slowed, his BP has climbed with a widening gap, and his breathing is slow and irregular.</p>
+    <p><b>Updated VS:</b> BP 184/74, HR 52 (sinus bradycardia), RR 10 and irregular, SpO2 92% on room air, temperature 37.4 °C (99.3 °F), pain unable to rate: grimaces to a nail bed squeeze. GCS 7.</p>
+    <p><b>Lab:</b> ABG on room air: pH 7.31, PaCO2 52, HCO3 25, PaO2 64.</p>
+  </div>
+
+  <h2 class="block" id="tbi-sbar-heading">SBAR</h2>
+
+  <!-- In the class's form. The R: intubation for a GCS below 8 or 9
+       (day3-brain-injury-stroke.html#tbi-management), mannitol working in minutes
+       (day3-neuro-assessment-icp.html#icp-medical-management), burr holes for subdural
+       hematomas (#tbi-management) and a ventricular device that drains CSF and monitors ICP
+       (day3-neuro-assessment-icp.html#icp-monitoring-essentials). -->
+  <div class="table-wrap" id="tbi-sbar"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>The Call</th></tr></thead>
+    <tbody>
+      <tr><td class="term">S</td><td>This is Riley Morgan, RN in the neuro ICU. I'm calling about Luis Ortega in room 4, admitted last night at 1900 with a traumatic brain injury. I'm calling because his neuro status has suddenly worsened and his right pupil is dilated.</td></tr>
+      <tr><td class="term">B</td><td>He is 44, with epilepsy, hypertension and GERD. Yesterday at 1600 he had a seizure on a ladder and fell 10 feet onto the back of his head. He has a small right subdural <span class="gloss">hematoma</span>, a frontal contusion and mild cerebral edema. At 1900 his GCS was 12. He is on levetiracetam and seizure precautions, and has not seized. At 0300 his GCS is 7: eyes open to pain only, moaning without words, and decorticate posturing. His right pupil is 6 mm and sluggish, his left 3 mm and brisk. He vomited again. HR 52, BP 184/74, up from 156/88, RR 10 and irregular, SpO2 92% on room air. ABG: pH 7.31, PaCO2 52, PaO2 64.</td></tr>
+      <tr><td class="term">A</td><td>I think his <span class="gloss">hematoma</span> is growing and his ICP is rising fast, and I'm worried he is starting to herniate.</td></tr>
+      <tr><td class="term">R</td><td>I recommend intubation now: with a GCS of 7 he cannot protect his airway, and his low oxygen and rising CO2 are raising his ICP further. I recommend mannitol now, an osmotic diuretic that works in minutes to lower the ICP. And I'd ask neurosurgery to see him now about draining the <span class="gloss">hematoma</span> through burr holes, with a ventricular drain to monitor his ICP.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="tbi-take-action">Take Action and Evaluation</h2>
+
+  <!-- Increased ICP is a medical emergency (day3-neuro-assessment-icp.html#icp-medical-emergency).
+       Positioning, turning and family, the ICP back to baseline within 5 minutes, brain
+       perfusion more important than skin (#high-icp-nursing). Raised by suctioning, turning,
+       pain and head flexion (#icp-causes). Mannitol: watch for hypotension and electrolyte
+       problems (#icp-medical-management). Goals: ICP below 20, CPP above 70 (#icp-cpp-goals). -->
+  <p class="note"><b>Priority problem: ineffective cerebral tissue perfusion.</b> The blown pupil, the posturing and <span class="gloss">Cushing's triad</span> say his ICP is pressing on his brain, and herniation may be near. Once the ICP rises above the MAP, his brain receives no oxygen. He was intubated at 0320, to protect his airway.</p>
+
+  <div class="table-wrap" id="tbi-actions"><table data-prose data-nohide>
+    <thead><tr><th>Type</th><th>Action</th><th>Why</th><th>Expected Outcome and Timing</th><th>Met or Not Met</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Independent</td><td>After surgery: the head of the bed at 30 degrees, his head neutral and midline, propped so it does not sink forward. Care clustered, the room quiet, and each turn slow and gentle.</td><td>The head of the bed at 30 degrees promotes cerebral blood flow and CSF drainage. Turning, pain, suctioning and a flexed head all raise the cerebral blood volume and the ICP.</td><td>ICP back to baseline within 5 minutes of each turn or bath.</td><td><b>Not met.</b> At 1000, after a bath and a turn, his ICP climbed to 28 and was still 25 after 10 minutes. Next: care spaced through the shift, and only small, very gentle turns, because brain perfusion comes before skin. His wife sits with him, talking softly and holding his hand: family presence and gentle touch decrease ICP.</td></tr>
+      <tr><td class="term">Dependent</td><td>Mannitol per order at 0325, to lower the ICP, with the BP watched for hypotension and the electrolytes checked.</td><td>An osmotic diuretic, working in minutes: it decreases the cerebral blood volume, and the ICP falls.</td><td>Within 30 minutes: the right pupil smaller and reacting, HR above 60, no further posturing.</td><td><b>Met.</b> At 0355, right pupil 4 mm and sluggish, HR 64, BP 168/86. To the OR at 0430.</td></tr>
+      <tr><td class="term">Interdisciplinary</td><td>Neurosurgery: burr holes to drain the subdural <span class="gloss">hematoma</span>, and a ventricular drain.</td><td>Burr holes for a subdural <span class="gloss">hematoma</span> decrease the ICP. The ventricular drain drains CSF in a controlled manner and shows the ICP, so his response to therapy can be measured.</td><td>ICP below 20 and CPP above 70 within 1 hour of his return.</td><td><b>Met.</b> At 0715, ICP 14, MAP 88, CPP 74. Pupils equal at 3 mm and reacting.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="tbi-complication-heading">A Complication in Another System</h2>
+
+  <!-- DI, an endocrine complication of TBI: the pituitary, monitor urine output
+       (day3-brain-injury-stroke.html#tbi-complications). ADH from the posterior pituitary
+       (review-neuro.html#adh-feedback). Neurogenic DI after head trauma: abrupt, the most
+       severe signs, self-limiting. Polyuria as dilute as water, hypernatremia, serum
+       osmolality 300 or higher (#siadh-vs-di). Desmopressin with IV fluids, the urine
+       specific gravity 1.010 to 1.030, and when to notify the provider (#siadh-vs-di-care).
+       Sodium either way, a confused patient (#sodium-either-way). -->
+  <div class="table-wrap" id="tbi-complication"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>Answer</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Complication</td><td><b>Diabetes insipidus (endocrine).</b> The afternoon of his second day, about 36 hours after the fall.</td></tr>
+      <tr><td class="term">Why it could occur</td><td>ADH is released from the posterior pituitary, in the brain, and head trauma can damage it: the cause of neurogenic DI. With too little ADH, his kidneys reabsorb less water, and he loses pure water. He becomes dehydrated and hemoconcentrated, and his sodium rises. After head trauma it comes on abruptly, with the most severe signs.</td></tr>
+      <tr><td class="term">Priority cues</td><td>Urine output 450, 520 and 480 mL in the last 3 hours, as pale as water. Urine specific gravity 1.002: very dilute. Serum sodium 151, up from 139: hypernatremia. Serum osmolality 309, up from 286. BP 108/62 and HR 106 as his volume falls. His last mannitol was 36 hours ago.</td></tr>
+      <tr><td class="term">Actions</td><td><b>Dependent:</b> desmopressin per order, a synthetic ADH, so his kidneys hold water again, with IV fluids per order to replace what he has lost. <b>Independent:</b> strict intake and output, the urine output and specific gravity every hour, and a daily weight. The provider is told at once if the urine volume rises while the specific gravity falls: he is getting worse. Neuro checks continue, because a shifting sodium shrinks and swells brain cells.</td></tr>
+      <tr><td class="term">Evaluation</td><td><b>Urine output:</b> falling within hours of the desmopressin, with the specific gravity rising toward 1.010 to 1.030.</td></tr>
+    </tbody>
+  </table></div>
+
+  </div>
+
+  <div class="tab-panel" id="tab-stroke" data-tab-label="Stroke">
+
+  <h2 class="block" id="stroke-the-patient">The Patient</h2>
+
+  <!-- Who and why: an ischemic stroke, large artery atherosclerosis the biggest risk factor
+       (day3-brain-injury-stroke.html#ischemic-vs-hemorrhagic), a thrombotic clot on a
+       ruptured plaque (review-neuro.html#stroke-types), a TIA 2 weeks before (#tia). The
+       signs (day3-brain-injury-stroke.html#stroke-signs) on the side opposite the stroke
+       (review-neuro.html#stroke-manifestations). FAST, then the time of onset
+       (#stroke-acute-care). Hypoglycemia can mimic a stroke (#four-hs). A stat CT without
+       contrast (day3-brain-injury-stroke.html#stroke-assessment-steps), the NIHSS
+       (#nihss-scores). The second chronic disease is her earlier small stroke, for the
+       second problem. Room to get worse: NIHSS 9, a moderate stroke, with tPA to come. -->
+  <div class="card" id="stroke-history" data-nohide data-prose>
+    <h4>Histories, Vital Signs and Medications</h4>
+    <p><b>HPI:</b> Gloria Mitchell is a 66-year-old Black woman brought to the ED by ambulance at 1045. At 1010, at a church luncheon, her friend saw the right side of her face droop. Her speech became slurred, she struggled to find her words, and she dropped her fork and could not lift her right arm. Her friend recognized a stroke with <span class="gloss">FAST</span>, called 911 and noted the time. Mrs. Mitchell shakes her head to any headache, chest pain or fall, and her friend saw no seizure. Two weeks ago her right hand went numb for about 20 minutes and then recovered, and she told no one.</p>
+    <p><b>PMH:</b> Hypertension, 18 years: she often skips her medication. Hyperlipidemia, 10 years. Type 2 diabetes, 12 years. A small stroke 3 years ago: she recovered, except that she sometimes coughs when she drinks thin liquids.</p>
+    <p><b>SH:</b> Widowed, lives with her sister in a one-story house. Retired postal worker. Smokes half a pack a day, for 45 years. No alcohol or drug use.</p>
+    <p><b>FH:</b> Mother died of a stroke at 72. Brother had an MI at 60.</p>
+    <p><b>Admission VS:</b> BP 178/96, HR 88 (normal sinus rhythm), RR 18, SpO2 95% on room air, temperature 36.9 °C (98.4 °F), pain 0/10.</p>
+    <p><b>Home medications:</b></p>
+    <ul>
+      <li>Amlodipine, for hypertension</li>
+      <li>Atorvastatin, for hyperlipidemia</li>
+      <li>Metformin, for diabetes</li>
+      <li>Aspirin, an antiplatelet, since her first stroke</li>
+    </ul>
+    <p><b>Allergies:</b> Latex (rash).</p>
+  </div>
+
+  <div class="card" id="stroke-exam" data-nohide data-prose>
+    <h4>General Survey, Physical Exam, Labs and Diagnostics</h4>
+    <ul>
+      <li><b>General survey:</b> 66-year-old woman lying on the stretcher, the right side of her face drooping, saliva running from the right corner of her mouth. Speech slurred, and she struggles to find words, but she understands and follows commands. Anxious and tearful, gripping her friend's hand with her left. Neatly dressed in church clothes, hair styled. Her friend at the bedside. GCS 14.</li>
+      <li><b>Pain:</b> Denies pain, 0/10. No headache.</li>
+      <li><b>Neurologic:</b> GCS 14: eyes open spontaneously (4), confused words (4), obeys commands (6). Right facial droop. Right arm drifts down and cannot be raised against gravity. Right leg weak, right hand grasp weak. Left arm and leg strong. Sensation decreased on the right side. Pupils equal, 3 mm and brisk. Gag reflex weak. Slurred speech (<span class="gloss">dysarthria</span>) and trouble finding words (<span class="gloss">expressive aphasia</span>). NIHSS 9: a moderate stroke.</li>
+      <li><b>Respiratory:</b> RR 18, regular and unlabored. No use of the neck or thoracic accessory muscles. Breath sounds clear in the anterior, posterior and lateral fields bilaterally. Infrequent, weak, nonproductive cough. Voice wet and gurgling after she swallows her saliva.</li>
+      <li><b>Cardiovascular:</b> S1 and S2 present and regular, no murmur. Monitor: normal sinus rhythm at 88. No JVD at 45 degrees. No edema of the hands, legs, ankles or feet bilaterally. Radial and pedal pulses 2+ and equal bilaterally. Capillary refill under 3 seconds in fingers and toes. Skin warm and dry.</li>
+      <li><b>Labs:</b> Blood glucose 186: high, and not hypoglycemia, which can mimic a stroke. BMP: sodium 140, potassium 4.1, chloride 102, CO2 24, BUN 16, creatinine 0.9.</li>
+      <li><b>Diagnostic:</b> CT of the head without contrast at 1055: no bleeding.</li>
+    </ul>
+  </div>
+
+  <h2 class="block" id="stroke-priority-problems">Priority Problems</h2>
+
+  <!-- Problem 1: brain cells survive 3 to 4 minutes, the penumbra, the metabolic
+       disturbances as neurons die (day3-brain-injury-stroke.html#stroke-essentials,
+       #neuron-death-disturbances). Time is brain cells (#time-is-brain). tPA within 4.5
+       hours (review-neuro.html#stroke-acute-care).
+       Problem 2: impaired swallowing and gag reflex (review-neuro.html#stroke-manifestations),
+       a suspected stroke NPO, the risk aspiration (#focused-neuro-assessment). Aspiration's
+       risk factors and silent aspiration: review-respiratory-diseases.html#pneumonia-types. -->
+  <div class="table-wrap" id="stroke-priority-chart"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>Problem 1</th><th>Problem 2</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Priority nursing problem</td><td><ul>
+        <li><b>Ineffective cerebral tissue perfusion</b></li>
+      </ul></td><td><ul>
+        <li><b>Aspiration</b></li>
+      </ul></td></tr>
+      <tr><td class="term">Supporting cues</td><td><ul>
+        <li>Sudden right facial droop, right arm and leg weakness, slurred speech and trouble finding words: one side of the body, from the left side of the brain.</li>
+        <li>NIHSS 9: a moderate stroke.</li>
+        <li>CT without contrast: no bleeding, so ischemic.</li>
+        <li>Onset at 1010, a clear time: inside the window for <span class="gloss">tPA</span>.</li>
+        <li>Her right hand numb for 20 minutes 2 weeks ago: a TIA, the warning.</li>
+      </ul></td><td><ul>
+        <li>Saliva running from the right corner of her mouth, and a weak gag reflex.</li>
+        <li>A wet, gurgling voice after swallowing her saliva, with a weak cough.</li>
+        <li>Slurred speech: the muscles of her mouth and throat are weak.</li>
+        <li>Coughing on thin liquids since her first stroke.</li>
+      </ul></td></tr>
+      <tr><td class="term">Relevance to the diagnosis</td><td><ul>
+        <li>Eighteen years of poorly controlled hypertension, with hyperlipidemia, diabetes and 45 years of smoking, built atherosclerotic plaque in the large arteries of her head and neck: the biggest risk factor for an ischemic stroke. Today a clot formed on a ruptured plaque and blocked one, and the part of her left brain it feeds lost its blood supply. Brain cells survive about 3 to 4 minutes without oxygen. Around the dying core lies the <span class="gloss">penumbra</span>, which can still be saved if blood flow returns soon. As neurons die, glutamate is released, lactic acid builds and cytotoxic edema follows, injuring more cells.</li>
+      </ul></td><td><ul>
+        <li>A stroke impairs motor function, swallowing and the gag reflex included, and her first stroke had already left her swallow weak. Saliva or fluid can slip past it into her trachea and lungs, and aspiration may be silent, with no cough at all. Dysphagia and a decreased level of consciousness are both risk factors for aspiration pneumonia. A suspected stroke is kept NPO for this reason.</li>
+      </ul></td></tr>
+      <tr><td class="term">Concern rating</td><td><ul>
+        <li><b>2, urgent.</b> Time is brain cells: every minute without blood flow loses more of the <span class="gloss">penumbra</span>, so she needs <span class="gloss">tPA</span> quickly. Her airway, breathing and circulation are stable, and she is not expected to die within the hour.</li>
+      </ul></td><td><ul>
+        <li><b>2, urgent.</b> One unsafe sip could become an aspiration pneumonia, so she must stay NPO. She is alert and her lungs are clear: no harm yet, and nothing life-threatening within the hour.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="stroke-story-goes-on">The Story Goes On</h2>
+
+  <!-- How it worsens: many worsen in the first 24 to 48 hours (review-neuro.html#stroke-acute-care).
+       The NIHSS trended, the higher the more severe (day3-brain-injury-stroke.html#nihss-scores).
+       A decreased level of consciousness and pooling saliva set up the complication.
+       Hydrating adequately promotes perfusion (review-neuro.html#stroke-acute-care). -->
+  <div class="card" id="stroke-story" data-nohide data-prose>
+    <h4>That Night</h4>
+    <p>In the ED Mrs. Mitchell was given <span class="gloss">tPA</span> (alteplase) at 1125, to bust the clot. She came to the neuro ICU at 1300, NPO, with IV fluid at a slow rate and the head of the bed up. By 2000 she could lift her right arm a little, and her NIHSS was 7. At 0200 her nurse finds her hard to wake: she opens her eyes only when her name is called loudly, then drifts off, and speaks only a few jumbled words. Her right arm and leg are now flaccid, with no movement, and her NIHSS is 17. She shows no sign of a headache and has not vomited. Her pupils are still equal and brisk. Saliva is pooling in her mouth. Her urine has been dark and scant, 20 mL/hr for 3 hours.</p>
+    <p><b>Updated VS:</b> BP 168/90, HR 94 (normal sinus rhythm), RR 20, SpO2 94% on room air, temperature 37.3 °C (99.1 °F), pain: no grimacing or guarding. GCS 12.</p>
+    <p><b>Lab:</b> BMP: sodium 147, up from 140. BUN 30, up from 16. Creatinine 1.1.</p>
+  </div>
+
+  <h2 class="block" id="stroke-sbar-heading">SBAR</h2>
+
+  <!-- The R: a stat CT without contrast decides what is done next
+       (day3-brain-injury-stroke.html#stroke-assessment-steps), anyone who gets tPA is at high
+       risk for bleeding (#tpa-bleeding-risk). A mechanical thrombectomy with a stent
+       retriever (review-neuro.html#stroke-acute-care), through interventional radiology, a
+       brain cath (day3-brain-injury-stroke.html#stroke-management). -->
+  <div class="table-wrap" id="stroke-sbar"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>The Call</th></tr></thead>
+    <tbody>
+      <tr><td class="term">S</td><td>This is Riley Morgan, RN in the neuro ICU. I'm calling about Gloria Mitchell in room 12, admitted yesterday at 1300 with an acute ischemic stroke. I'm calling because her neuro status has worsened: her NIHSS has risen from 7 to 17.</td></tr>
+      <tr><td class="term">B</td><td>She is 66, with hypertension, hyperlipidemia, type 2 diabetes and a small stroke 3 years ago, and she smokes. Her symptoms began at 1010 yesterday, and she was given <span class="gloss">tPA</span> at 1125. By 2000 her NIHSS had improved to 7. At 0200 her GCS is 12, down from 14: she opens her eyes only to a loud voice and speaks only a few jumbled words. Her right arm and leg are flaccid. Her pupils are equal and brisk, and she has not vomited. BP 168/90, HR 94 in sinus rhythm, RR 20, SpO2 94% on room air, temperature 37.3. She is NPO, saliva is pooling in her mouth, and her urine has been 20 mL/hr and dark for 3 hours. Her sodium is 147, up from 140, and her BUN 30, up from 16.</td></tr>
+      <tr><td class="term">A</td><td>I'm worried her stroke is extending: the blocked artery is cutting off blood to more of her brain.</td></tr>
+      <tr><td class="term">R</td><td>I recommend a stat CT without contrast now, to see whether she is bleeding after the <span class="gloss">tPA</span>, because that decides what we do next. If there is no bleed, I'd ask neurology about a thrombectomy through interventional radiology, to pull out the clot before more of the <span class="gloss">penumbra</span> dies. And I recommend a fluid bolus: she is dry, and adequate hydration promotes her brain's perfusion.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="stroke-take-action">Take Action and Evaluation</h2>
+
+  <!-- Head of the bed at 30 degrees and the head midline promote cerebral blood flow
+       (day3-neuro-assessment-icp.html#high-icp-nursing). Interventions that improve venous
+       drainage, and adequate hydration (review-neuro.html#stroke-acute-care). Trend the NIHSS
+       and GCS (day3-brain-injury-stroke.html#stroke-assessment-steps). The thrombectomy
+       improves perfusion (review-neuro.html#stroke-acute-care). -->
+  <p class="note"><b>Priority problem: ineffective cerebral tissue perfusion.</b> The <span class="gloss">penumbra</span> the <span class="gloss">tPA</span> saved is dying, and every minute without blood flow adds to a permanent deficit. Her airway is a growing concern at a GCS of 12, so she stays NPO with suction at the bedside. The stat CT at 0230 showed no bleeding.</p>
+
+  <div class="table-wrap" id="stroke-actions"><table data-prose data-nohide>
+    <thead><tr><th>Type</th><th>Action</th><th>Why</th><th>Expected Outcome and Timing</th><th>Met or Not Met</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Independent</td><td>The head of the bed at 30 degrees, her head neutral and midline. The room quiet, care clustered. The GCS and NIHSS every hour, trended.</td><td>Improves venous drainage and cerebral blood flow. Trending the NIHSS and GCS shows at once whether her brain function is improving or getting worse.</td><td>GCS no lower than 12 and NIHSS no higher than 17 until the thrombectomy.</td><td><b>Met.</b> At 0330, GCS 12, NIHSS 17. To interventional radiology at 0340.</td></tr>
+      <tr><td class="term">Dependent</td><td>A normal saline bolus per order at 0240, to hydrate her.</td><td>Adequate hydration promotes perfusion and decreases further brain injury. Her rising sodium and BUN and her dark, scant urine show she is dry.</td><td>Urine output 30 mL/hr or more within 2 hours.</td><td><b>Not met.</b> At 0445, back from the thrombectomy, 22 mL/hr and still dark. Next: a second bolus per order, with her lungs checked first for crackles.</td></tr>
+      <tr><td class="term">Interdisciplinary</td><td>Neurology and interventional radiology: a mechanical thrombectomy with a stent retriever, a brain cath like a heart cath.</td><td>Pulls the clot from the artery, restoring blood flow to the <span class="gloss">penumbra</span> before it dies.</td><td>NIHSS falling within 24 hours.</td><td><b>Met.</b> The clot was removed at 0410. By 1000, NIHSS 11, GCS 14, and she lifts her right arm off the bed.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="stroke-complication-heading">A Complication in Another System</h2>
+
+  <!-- Aspiration pneumonia: material from the mouth or stomach into the lungs, its risk
+       factors (a decreased level of consciousness, dysphagia, NG tubes), silent
+       (review-respiratory-diseases.html#pneumonia-types). HAP 48 hours or more after
+       admission (#cap-vs-hap). Secretions in the lower lungs a breeding ground for a patient
+       who cannot expectorate them (the note under #pneumonia). Manifestations, new-onset
+       confusion in the elderly (#pneumonia-manifestations). Chest x-ray, WBC, sputum C&S
+       (#pneumonia-diagnosis). Oxygen above 95%, pulmonary toilet, antibiotics if bacterial
+       (#pneumonia-acute-interventions). -->
+  <div class="table-wrap" id="stroke-complication"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>Answer</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Complication</td><td><b>Aspiration pneumonia (respiratory).</b> The afternoon of her third day, 52 hours after admission.</td></tr>
+      <tr><td class="term">Why it could occur</td><td>Her stroke left her swallow and gag weak, and her level of consciousness was low for hours. An NG tube was placed for feeding on her second day. Saliva or feeding slipped silently into her lungs. Secretions sitting in the lower lungs are a perfect breeding ground, and she cannot cough them up.</td></tr>
+      <tr><td class="term">Priority cues</td><td>Temperature 38.7 °C (101.7 °F). RR 28 and SpO2 89% on room air, down from 96%: <span class="gloss">tachypnea</span> and hypoxemia. Coarse crackles in the right posterior and lateral base. A wet cough too weak to bring up her thick, yellow-green sputum. WBC 16,400: <span class="gloss">leukocytosis</span>. Chest x-ray: <span class="gloss">infiltrates</span> in the right lower lobe. More drowsy and confused than this morning.</td></tr>
+      <tr><td class="term">Actions</td><td><b>Dependent:</b> oxygen per order, to keep her SpO2 above 95%. A sputum culture, then an antibiotic per order, for the bacterial pneumonia: the culture names the bacteria and the antibiotics that will kill it. <b>Independent:</b> <span class="gloss">pulmonary toilet</span> every 2 hours, turning her with the head of the bed at 30 degrees or more, and oral suction to clear what she cannot <span class="gloss">expectorate</span>.</td></tr>
+      <tr><td class="term">Evaluation</td><td><b>SpO2:</b> 95% or more on oxygen. Then her temperature and WBC, trending down.</td></tr>
+    </tbody>
+  </table></div>
+
+  </div>
+
+  <div class="tab-panel" id="tab-sci" data-tab-label="Spinal Cord Injury">
+
+  <h2 class="block" id="sci-the-patient">The Patient</h2>
+
+  <!-- Who and why: a young man (most common at 16 to 30), a diving accident
+       (day3-spinal-cord-injury.html#sci-essentials). C6: tetraplegia. C5 to C6 typically
+       breathe with the diaphragm, the intercostal and abdominal muscles impaired, T6 and above
+       a very high risk for breathing issues (#breathing-by-level). Spinal shock below the
+       injury, neurogenic shock as hypotension, bradycardia and hypothermia
+       (#spinal-vs-neurogenic-shock). T6 and higher cannot regulate temperature, a continuous
+       bladder temperature (#sci-assessment-areas). Urinary retention from the bladder's
+       atony: the Foley is the procedure. The second chronic disease is asthma
+       (review-respiratory-diseases.html#asthma), for the second problem. The imaging that
+       found the fracture is not named: no lecture names one, and the procedure meets the
+       signature's minimum. Room to get worse: a MAP of 69, before the shock deepens. -->
+  <div class="card" id="sci-history" data-nohide data-prose>
+    <h4>Histories, Vital Signs and Medications</h4>
+    <p><b>HPI:</b> Ethan Tran is a 20-year-old Asian American man flown to the ED at 1530. At 1450, at a lake, he dove headfirst from a dock into shallow water and struck his head on the bottom. His friends pulled him out at once, his face above the water. He told them he could not move or feel his arms or legs. EMS placed a cervical collar. He reports neck pain and shortness of breath, and says he cannot feel anything below his upper chest. He denies losing consciousness, a headache, vomiting or swallowing water. Imaging in the ED showed an unstable fracture of C6.</p>
+    <p><b>PMH:</b> Asthma since childhood, well controlled, last hospitalized at 14. Seasonal allergic rhinitis. Generalized anxiety disorder, 2 years.</p>
+    <p><b>SH:</b> Single, a college junior, lives in an apartment with two roommates. Never smoked. Four or five beers at weekend parties, two today. No drug use.</p>
+    <p><b>FH:</b> Father has type 2 diabetes. Mother has asthma.</p>
+    <p><b>Admission VS:</b> BP 94/56 (MAP 69), HR 54 (sinus bradycardia), RR 24 and shallow, SpO2 93% on room air, temperature 36.0 °C (96.8 °F), pain 7/10.</p>
+    <p><b>Home medications:</b></p>
+    <ul>
+      <li>Fluticasone, a controller, for asthma</li>
+      <li>Albuterol, a reliever, for wheezing</li>
+      <li>Cetirizine, for allergies</li>
+      <li>Sertraline, for anxiety</li>
+    </ul>
+    <p><b>Allergies:</b> No known drug allergies. Peanuts (hives).</p>
+  </div>
+
+  <div class="card" id="sci-exam" data-nohide data-prose>
+    <h4>General Survey, Physical Exam, Labs and Diagnostics</h4>
+    <ul>
+      <li><b>General survey:</b> 20-year-old man lying flat in a cervical collar. Awake, alert and oriented × 4, GCS 15. Frightened: "Am I going to walk again?" Speaks in short sentences, pausing for breath. Wet swim trunks cut off, now in a hospital gown. A friend at the bedside, his mother on her way.</li>
+      <li><b>Pain:</b> 7/10 sharp pain at the back of his neck, constant since the dive.</li>
+      <li><b>Neurologic:</b> GCS 15. Shrugs both shoulders and bends both elbows weakly. No movement of his hands, trunk or legs. No sensation from the upper chest down, or in his hands. No deep tendon reflexes in his legs. Pupils equal, 3 mm and brisk.</li>
+      <li><b>Respiratory:</b> RR 24 and shallow. His abdomen rises with each breath while his chest wall barely moves: breathing with the diaphragm. Using his neck muscles with each breath. Breath sounds decreased in the posterior bases bilaterally, with faint expiratory wheezes in the posterior upper lobes. Anterior and lateral fields clear. Cough weak and nonproductive.</li>
+      <li><b>Cardiovascular:</b> S1 and S2 present, slow and regular, no murmur. Monitor: sinus bradycardia at 54. No JVD. No edema of the hands, legs, ankles or feet bilaterally. Radial and pedal pulses 2+ and equal bilaterally. Capillary refill 3 seconds in fingers and toes. Skin cool and dry.</li>
+      <li><b>Labs:</b> ABG on room air: pH 7.34, PaCO2 48, HCO3 25, PaO2 68. Lactate 1.8.</li>
+      <li><b>Procedure:</b> Foley catheter placed in the ED: 1,100 mL of clear yellow urine drained at once, urinary retention.</li>
+    </ul>
+  </div>
+
+  <h2 class="block" id="sci-priority-problems">Priority Problems</h2>
+
+  <!-- Problem 1: neurogenic shock, the sympathetic input lost, vasodilation, a distributive
+       shock (day3-spinal-cord-injury.html#spinal-vs-neurogenic-shock), the cord edema and
+       ischemia (#secondary-injury-chain), a MAP of 85 to 90 for about 7 days, systolic
+       hypotension causing further damage (#sci-intervention-measures).
+       Problem 2: #breathing-by-level, #sci-airway. The ABG: review-abgs.html. Asthma, a
+       chronic inflammatory airway disorder with diffuse obstructive airway disease
+       (review-respiratory-diseases.html#asthma-pathophysiology). Cord edema can ascend
+       (#secondary-injury-chain). -->
+  <div class="table-wrap" id="sci-priority-chart"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>Problem 1</th><th>Problem 2</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Priority nursing problem</td><td><ul>
+        <li><b>Ineffective tissue perfusion: the spinal cord</b></li>
+      </ul></td><td><ul>
+        <li><b>Ineffective breathing pattern</b></li>
+      </ul></td></tr>
+      <tr><td class="term">Supporting cues</td><td><ul>
+        <li>BP 94/56, a MAP of 69: well below the goal of 85 to 90 for spinal cord perfusion.</li>
+        <li>HR 54, sinus bradycardia.</li>
+        <li>Temperature 36.0 °C: an injury at T6 or higher cannot regulate body temperature.</li>
+        <li>An injury at C6, with no movement, sensation or reflexes below it: neurogenic shock is more likely at T6 or higher.</li>
+      </ul></td><td><ul>
+        <li>RR 24 and shallow, breathing with his diaphragm, his chest wall barely moving, his neck muscles in use.</li>
+        <li>ABG: pH 7.34, PaCO2 48, HCO3 25: an uncompensated respiratory acidosis, the shallow breaths not blowing off CO2.</li>
+        <li>PaO2 68 and SpO2 93% on room air: hypoxemia.</li>
+        <li>A weak cough, and expiratory wheezes from his asthma.</li>
+      </ul></td></tr>
+      <tr><td class="term">Relevance to the diagnosis</td><td><ul>
+        <li>The injury disrupted his autonomic pathways below C6: neurogenic shock. With the sympathetic input lost, his vessels dilate, a distributive shock, so his BP falls, his heart rate slows and he loses heat. His cord is already swelling from the inflammatory response, and a low BP brings ischemia, more secondary injury and a permanent loss of function. That is why the MAP is kept at 85 to 90 for about 7 days.</li>
+      </ul></td><td><ul>
+        <li>At C5 to C6 the diaphragm usually still works, but the intercostal and abdominal muscles are weakened, so each breath is shallow and his cough cannot clear secretions. Any injury at T6 or above is a very high risk for breathing problems. His asthma, a chronic inflammatory airway disease, narrows his airways, adding work his weakened muscles cannot meet. If the cord's swelling climbs toward the nerves to his diaphragm, he could lose his breathing altogether.</li>
+      </ul></td></tr>
+      <tr><td class="term">Concern rating</td><td><ul>
+        <li><b>2, urgent.</b> Every hour of low pressure risks more cord damage, so his MAP must come up quickly. He is awake and oriented, perfusing his brain, and not expected to die within the hour.</li>
+      </ul></td><td><ul>
+        <li><b>2, urgent.</b> His breathing is shallow and his CO2 rising, and he must be watched very closely. He speaks in short sentences, and his SpO2 rises to 96% on 2 L/min by nasal cannula: not life-threatening within the hour.</li>
+      </ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="sci-story-goes-on">The Story Goes On</h2>
+
+  <!-- How it worsens: neurogenic shock deepens (day3-spinal-cord-injury.html#spinal-vs-neurogenic-shock).
+       Likely bradycardic from hypothermia, hypoxia or neurogenic shock (#sci-assessment-areas).
+       The lactate, one of the best trenders of shock and perfusion
+       (day4-shock-sepsis-mods.html, the lactate row). Surgery within 24 hours
+       (#sci-intervention-measures). -->
+  <div class="card" id="sci-story" data-nohide data-prose>
+    <h4>That Night</h4>
+    <p>Mr. Tran came to the neuro ICU at 1730, in his collar, with surgery to stabilize the fracture planned for 0800. He had 1 L of normal saline in the ED and oxygen at 2 L/min by nasal cannula, with a continuous bladder temperature. At 0100 his BP has fallen to 76/42 and his heart rate to 42. His bladder temperature is 35.2 °C, and his urine output has dropped to 15 mL/hr for 2 hours. He is drowsy, but wakes to his name and is oriented. His breathing is unchanged.</p>
+    <p><b>Updated VS:</b> BP 76/42 (MAP 53), HR 42 (sinus bradycardia), RR 22, SpO2 95% on 2 L/min by nasal cannula, temperature 35.2 °C (95.4 °F), pain 5/10.</p>
+    <p><b>Lab:</b> Lactate 3.2, up from 1.8.</p>
+  </div>
+
+  <h2 class="block" id="sci-sbar-heading">SBAR</h2>
+
+  <!-- The R: distributive shock takes vasopressors and IV fluids
+       (day4-shock-sepsis-mods.html, the shock comparison table). Norepinephrine as a
+       vasopressor: day3-gastrointestinal.html#ischemic-causes-and-risks. Symptomatic
+       bradycardia: IV atropine (review-dysrhythmias.html). The warming is the nurse's own
+       action, and is not one of the recommendations. -->
+  <div class="table-wrap" id="sci-sbar"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>The Call</th></tr></thead>
+    <tbody>
+      <tr><td class="term">S</td><td>This is Riley Morgan, RN in the neuro ICU. I'm calling about Ethan Tran in room 8, admitted last night at 1730 with a C6 spinal cord injury. I'm calling because his blood pressure and heart rate have dropped.</td></tr>
+      <tr><td class="term">B</td><td>He is 20, with asthma, allergic rhinitis and anxiety. Yesterday at 1450 he dove into shallow water and fractured C6, with no movement or sensation below the injury. Surgery is planned for 0800. He had 1 L of normal saline in the ED. At 0100 his BP is 76/42, a MAP of 53, down from 94/56, against a goal of 85 to 90. HR 42, sinus brady. Bladder temperature 35.2, down from 36.0. Urine output 15 mL/hr for 2 hours. He is drowsy but oriented. RR 22, SpO2 95% on 2 L, his lungs unchanged, decreased at the bases with faint wheezes. His lactate is 3.2, up from 1.8.</td></tr>
+      <tr><td class="term">A</td><td>I think his neurogenic shock is worsening, and his spinal cord is not being perfused.</td></tr>
+      <tr><td class="term">R</td><td>I recommend a fluid bolus now, and if his MAP stays below 85, a vasopressor such as norepinephrine, to raise his blood pressure. I recommend atropine for his heart rate of 42 with this low a BP. And I'd like a repeat lactate in an hour, to trend his perfusion.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="sci-take-action">Take Action and Evaluation</h2>
+
+  <!-- Temperature: T6 and higher cannot regulate it, monitored continuously, hypothermia a
+       cause of bradycardia (day3-spinal-cord-injury.html#sci-assessment-areas). Warming is
+       read as that row's temperature management, for a hypothermic patient (decisions.md).
+       Distributive shock: fluids refill the tank, but the vessels stay open
+       (day4-shock-sepsis-mods.html#distributive-essentials). Unstable fracture: surgery
+       within 24 hours (#sci-intervention-measures). -->
+  <p class="note"><b>Priority problem: ineffective tissue perfusion of the spinal cord.</b> A MAP of 53 cannot perfuse a swollen cord. Systolic hypotension now causes further damage and secondary injury, and can make his loss of function permanent. His breathing is holding steady on 2 L.</p>
+
+  <div class="table-wrap" id="sci-actions"><table data-prose data-nohide>
+    <thead><tr><th>Type</th><th>Action</th><th>Why</th><th>Expected Outcome and Timing</th><th>Met or Not Met</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Independent</td><td>Warm blankets and a warm room, with the bladder temperature watched continuously.</td><td>An injury at T6 or higher cannot regulate body temperature, and hypothermia is one cause of his bradycardia.</td><td>Bladder temperature 36.5 °C or higher within 2 hours.</td><td><b>Met.</b> At 0300, 36.6 °C (97.9 °F), HR 50.</td></tr>
+      <tr><td class="term">Dependent</td><td>A 1 L normal saline bolus per order.</td><td>His dilated vessels leave him relatively hypovolemic: the fluid refills the tank.</td><td>MAP 85 or more within 1 hour.</td><td><b>Not met.</b> At 0215, BP 82/46, a MAP of 58. In distributive shock fluid refills the tank, but the vessels stay open. Next: norepinephrine per order, a vasopressor, titrated to a MAP of 85 to 90.</td></tr>
+      <tr><td class="term">Interdisciplinary</td><td>Neurosurgery: surgery to stabilize the unstable C6 fracture.</td><td>An unstable vertebral fracture is repaired, usually within 24 hours, so that movement does not further damage the cord.</td><td>Spine stabilized within 24 hours of the injury, with no loss of function above C6.</td><td><b>Met.</b> Stabilized at 0930, 19 hours after the injury, on norepinephrine with a MAP of 88. Shoulder shrug and elbow bend unchanged.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="sci-complication-heading">A Complication in Another System</h2>
+
+  <!-- Paralytic ileus: spinal shock leads to atony of the bowel, a high risk
+       (day3-spinal-cord-injury.html#sci-assessment-areas). Opioids, shock (day3-gastrointestinal.html#paralytic-ileus).
+       Signs: an SBO's, with absent to hypoactive bowel sounds (#sbo-signs, #paralytic-ileus).
+       Treatment: avoid opioids, acetaminophen in their place, motility, bowel rest, IV
+       fluids, electrolytes, NG decompression, an aggressive bowel regimen (#ileus-treatment).
+       An NG tube and abdominal assessments in SCI (#sci-intervention-measures). -->
+  <div class="table-wrap" id="sci-complication"><table data-prose data-nohide>
+    <thead><tr><th>Part</th><th>Answer</th></tr></thead>
+    <tbody>
+      <tr><td class="term">Complication</td><td><b>Paralytic ileus (GI).</b> The morning of his third day.</td></tr>
+      <tr><td class="term">Why it could occur</td><td>Spinal shock leaves his bowel with <span class="gloss">atony</span>: no peristalsis, a high risk for paralytic ileus. Morphine for his neck pain since surgery slows his gut further, and so did the hours of shock.</td></tr>
+      <tr><td class="term">Priority cues</td><td>Abdomen distended, firm and tympanic. Bowel sounds absent in all 4 quadrants. Vomited 400 mL of green, bilious fluid at 0700. No stool or flatus since the injury. He cannot feel abdominal pain, but feels full and nauseated.</td></tr>
+      <tr><td class="term">Actions</td><td><b>Dependent:</b> an NG tube per order for decompression, with bowel rest, IV fluids and electrolytes per order. Acetaminophen per order for pain in place of morphine where it is enough: opioids slow the gut. <b>Independent:</b> his abdomen, bowel sounds and NG output assessed every 4 hours, and a turn every 2 hours: movement increases peristalsis.</td></tr>
+      <tr><td class="term">Evaluation</td><td><b>Bowel sounds:</b> returning, with flatus and a falling NG output.</td></tr>
+    </tbody>
+  </table></div>
+
+  </div>
+
+  <nav class="page-flip" data-page-flip></nav>
+  <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
+
+</div>
+</main>
+
+<script src="assets/site.js?v=20261022l"></script>
+<script src="data/glossary.js?v=20261022l"></script>
+<script src="assets/study.js?v=20261022l"></script>
+</body>
+</html>
