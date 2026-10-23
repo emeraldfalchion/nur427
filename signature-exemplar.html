@@ -14,8 +14,12 @@
      Revised:     2026-10-22 (Holly): titled "Overview – Start Here", the first section
                   "How to Use This Section", the system pages a list, the System column
                   unlinked, malnutrition off.
+     Revised:     2026-10-23 (Holly): every diagnosis's vital signs, hallmark symptoms
+                  and priority problems, built from the site's own pages, added under
+                  the possible diagnoses. "How to Use This Section" came off. Briefly
+                  two tabs the same day, combined into one page at Holly's request.
 
-     The section's resources, then the diagnoses that can be given. The
+     The diagnoses that can be given, then each one at a glance. The
      signature's format and the class feedback live on in signature-assessment.md,
      and every exemplar tab on the system pages is built to them.
 -->
@@ -25,7 +29,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Overview – Start Here — NUR427</title>
 <script>(function(){try{var p=new URLSearchParams(location.search).get('theme');var t=p||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(p){try{localStorage.setItem('theme',p)}catch(e){}}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
-<link rel="stylesheet" href="assets/styles.css?v=20261023b">
+<link rel="stylesheet" href="assets/styles.css?v=20261023k">
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
@@ -37,17 +41,6 @@
     <p class="eyebrow">Signature Assessment · Topic 1</p>
     <h1>Overview – Start Here</h1>
   </header>
-
-  <h2 class="block" id="section-resources-heading">How to Use This Section</h2>
-
-  <div class="table-wrap" id="section-resources"><table data-nohide>
-    <thead><tr><th>Page</th><th>What It Holds</th></tr></thead>
-    <tbody>
-      <tr><td class="term">Overview – Start Here</td><td><ul><li>The <b>possible diagnoses</b>, by day and body system, and what is ruled out.</li></ul></td></tr>
-      <tr><td class="term">System pages<ul><li><a href="signature-hematologic.html">Hematologic</a></li><li><a href="signature-cardiovascular.html">Cardiovascular</a></li><li><a href="signature-renal.html">Renal</a></li><li><a href="signature-gi-hepatic.html">GI and Hepatic</a></li><li><a href="signature-neuro.html">Neuro</a></li></ul></td><td><ul><li><b>Compare tab:</b> the system's diagnoses side by side, the patient picture and the course.</li><li><b>One tab per diagnosis taught at length:</b> a <b>completed example</b> of the whole assessment, from the HPI to the complication in another system.</li></ul></td></tr>
-      <tr><td class="term"><a href="signature-priority-problems.html">Priority Problem Bank</a></td><td><ul><li>Every diagnosis's <b>priority problems</b>, key cues and pathophysiology links, one table per system.</li></ul></td></tr>
-    </tbody>
-  </table></div>
 
   <h2 class="block" id="possible-diagnoses">Possible Diagnoses, Days 1 to 3</h2>
 
@@ -90,14 +83,136 @@
 
   <p class="note"><b>Ruled out</b> as the diagnosis given: the respiratory diagnoses, <b>pulmonary embolism</b> included, and <b>aortic dissection</b>. The respiratory diagnoses still turn up as complications.</p>
 
+  <!-- Holly, 2026-10-23: every possible diagnosis in two tables, as minimal as possible,
+       no explanations. Vital signs: one ↑ bullet and one ↓ bullet, only the vital signs
+       the diagnosis moves. Hallmark symptoms: a few top ones, grouped by what causes
+       them. Priority problems: 1 or 2, only those tied to the diagnosis itself, so the
+       exemplars' "with CKD", "with COPD" second problems and the general acute pain are
+       left off. Acute kidney injury is one row, pre-renal (Holly, 2026-10-23).
+       Built from the site's pages: the Compare tabs, the Priority Problem Bank and the
+       topic pages they draw on. Each vital sign is one a topic page or review page gives
+       for the diagnosis. Aortic aneurysm's are read from "very hypovolemic" with
+       day2-rhythms-pacemakers.html#dysrhythmia-causes (tachycardia, the number one sign of
+       a fluid volume deficit) and day1-hematologic.html#bleeding-interventions (a bleeding
+       patient eventually becomes hypotensive). The vital signs of ACS, pericarditis,
+       abdominal compartment syndrome and seizures are from outside the lectures: no page
+       gives them (Holly, 2026-10-23, decisions.md). -->
+  <h2 class="block" id="glance-at-length-heading">Diagnoses Taught at Length</h2>
+
+  <div class="table-wrap" id="glance-at-length"><table data-nohide>
+    <thead><tr><th>Diagnosis</th><th>Vital Signs</th><th>Hallmark Symptoms</th><th>Priority Problems</th></tr></thead>
+    <tbody>
+      <tr><td class="term"><a href="signature-hematologic.html#tab-dic">DIC</a></td>
+        <td><ul><li>↓ BP, SpO2.</li></ul></td>
+        <td><ul><li><b>Bleeding:</b> oozing from insertion sites, <span class="gloss">petechiae</span>, <span class="gloss">ecchymosis</span>.</li><li><b>Microclots:</b> organ ischemia, skin signs on the toe tips, severe pain.</li></ul></td>
+        <td><ul><li>Bleeding.</li><li>Ineffective peripheral tissue perfusion.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-hematologic.html#tab-anemia">The bleeding patient and anemia</a></td>
+        <td><ul><li>↑ HR, RR.</li><li>↓ BP.</li></ul></td>
+        <td><ul><li><b>Hypoxia:</b> fatigue, SOB, <span class="gloss">angina</span>, <span class="gloss">intermittent claudication</span>, headache.</li><li><b>Low volume:</b> pale, cool skin, low urine output.</li></ul></td>
+        <td><ul><li>Deficient fluid volume.</li><li>Activity intolerance.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-gi-hepatic.html#tab-pancreatitis">Acute pancreatitis</a></td>
+        <td><ul><li>↑ HR, temp.</li><li>↓ BP.</li></ul></td>
+        <td><ul><li><b>Pancreas digesting itself:</b> epigastric pain radiating to the back, worse supine, guarding, distension.</li><li><b>Fluid loss:</b> heavy nausea and vomiting, quick dehydration.</li><li><b>Severe:</b> <span class="gloss">Cullen's sign</span>, <span class="gloss">Grey Turner's sign</span>.</li></ul></td>
+        <td><ul><li>Deficient fluid volume.</li><li>Unstable blood glucose.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-cardiovascular.html#tab-acs">Acute coronary syndrome (ACS)</a></td>
+        <td><ul><li>↑ HR, RR.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li></ul></td>
+        <td><ul><li><b>Myocardial ischemia:</b> chest pressure not relieved by rest or nitrates, nausea, diaphoresis, dyspnea.</li><li><b>Ischemic conducting cells:</b> dysrhythmias.</li></ul></td>
+        <td><ul><li>Decreased cardiac tissue perfusion.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-cardiovascular.html#tab-ahf">Acute heart failure</a></td>
+        <td><ul><li>↑ HR, RR.</li><li>↓ BP, SpO2.</li></ul></td>
+        <td><ul><li><b>Backup into the lungs:</b> SOB, crackles, blood-tinged sputum, orthopnea.</li><li><b>Backup into the veins:</b> JVD, pitting edema, ascites, <span class="gloss">hepatomegaly</span>.</li><li><b>Low cardiac output:</b> fatigue.</li></ul></td>
+        <td><ul><li>Impaired gas exchange.</li><li>Excess fluid volume.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-renal.html#renal-compare-picture">Pre-renal AKI</a></td>
+        <td><ul><li>↑ HR.</li><li>↓ BP.</li></ul></td>
+        <td><ul><li><b>Kidneys underperfused:</b> oliguria, about 1 day after a hypotensive event.</li></ul></td>
+        <td><ul><li>Deficient fluid volume.</li><li>Electrolyte imbalance: a high potassium.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-gi-hepatic.html#tab-gi-bleed">GI bleed, including variceal</a></td>
+        <td><ul><li>↑ HR, RR.</li><li>↓ BP, SpO2.</li></ul></td>
+        <td><ul><li><b>Blood in the GI tract:</b> bright red emesis or stool if active, melena if older.</li><li><b>Low volume:</b> pale, cool, clammy, falling urine output.</li><li><b>Low hemoglobin:</b> weakness, SOB, <span class="gloss">angina</span>, syncope.</li></ul></td>
+        <td><ul><li>Deficient fluid volume.</li><li>Aspiration, in a variceal bleed.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-gi-hepatic.html#tab-hepatic-failure">Hepatic failure</a></td>
+        <td><ul><li>↑ Temp.</li></ul></td>
+        <td><ul><li><b>Ammonia:</b> decreased LOC, irritability, <span class="gloss">asterixis</span>, convulsions.</li><li><b>Too few clotting factors:</b> bruising, bleeding, varices.</li><li><b>Low albumin:</b> ascites.</li></ul></td>
+        <td><ul><li>Acute confusion.</li><li>Bleeding.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-neuro.html#tab-tbi">TBI with increased ICP</a></td>
+        <td><ul><li>↑ Temp, <span class="gloss">pulse pressure</span>.</li><li>↓ HR.</li></ul></td>
+        <td><ul><li><b>Increased ICP, awake:</b> severe headache, vomiting, blurred vision, lethargy.</li><li><b>Pressure on the brain:</b> falling GCS, unequal pupils.</li><li><b>Late:</b> <span class="gloss">Cushing's triad</span>.</li></ul></td>
+        <td><ul><li>Ineffective cerebral tissue perfusion.</li><li>Ineffective airway clearance.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-neuro.html#tab-stroke">Stroke</a></td>
+        <td><ul><li>↑ BP, when hemorrhagic.</li></ul></td>
+        <td><ul><li><b>Lost blood flow to one side of the brain:</b> sudden one-sided weakness or numbness, slurred speech, visual disturbance.</li><li><b>Sudden severe headache:</b> "worst headache of my life".</li></ul></td>
+        <td><ul><li>Ineffective cerebral tissue perfusion.</li><li>Aspiration.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-neuro.html#tab-sci">Spinal cord injury</a></td>
+        <td><ul><li>↓ BP, HR, temp.</li></ul></td>
+        <td><ul><li><b>Spinal shock:</b> no movement, sensation or reflexes below the injury.</li><li><b>Diaphragm affected, cervical or thoracic:</b> impaired breathing.</li></ul></td>
+        <td><ul><li>Ineffective breathing pattern.</li><li>Ineffective tissue perfusion: the spinal cord.</li></ul></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="block" id="glance-briefly-heading">Diagnoses Taught Briefly</h2>
+
+  <div class="table-wrap" id="glance-briefly"><table data-nohide>
+    <thead><tr><th>Diagnosis</th><th>Vital Signs</th><th>Hallmark Symptoms</th><th>Priority Problems</th></tr></thead>
+    <tbody>
+      <tr><td class="term"><a href="signature-hematologic.html#heme-compare-picture">Thrombocytopenia and HIT</a></td>
+        <td><ul><li>↑ Temp, when chemo or the bone marrow is the cause.</li></ul></td>
+        <td><ul><li><b>Too few platelets:</b> <span class="gloss">petechiae</span>, <span class="gloss">purpura</span>, <span class="gloss">ecchymosis</span>, oozing mucous membranes, bleeding in stool and urine.</li></ul></td>
+        <td><ul><li>Bleeding.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-hematologic.html#heme-compare-picture">The immunocompromised patient</a></td>
+        <td><ul><li>↑ Temp.</li></ul></td>
+        <td><ul><li><b>No white cell response:</b> no symptoms until an infection.</li><li><b>Opportunistic pneumonia:</b> chills, cough, dyspnea, fatigue.</li></ul></td>
+        <td><ul><li>Infection.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-cardiovascular.html#cv-compare-picture">Aortic aneurysm</a></td>
+        <td><ul><li>↑ HR, when ruptured.</li><li>↓ BP, when ruptured.</li></ul></td>
+        <td><ul><li><b>Intact:</b> usually none. Sometimes back or abdominal pain.</li><li><b>Ruptured, bleeding out:</b> chest pain, diaphoresis.</li></ul></td>
+        <td><ul><li>Deficient fluid volume.</li><li>Ineffective tissue perfusion.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-cardiovascular.html#cv-compare-picture">Cardiac tamponade</a></td>
+        <td><ul><li>↑ HR.</li><li>↓ BP.</li></ul></td>
+        <td><ul><li><b>Blood compressing the heart:</b> Beck's triad, low BP, JVD, muffled heart sounds.</li><li><b>After surgery:</b> chest tube output stops abruptly.</li></ul></td>
+        <td><ul><li>Decreased cardiac output.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-cardiovascular.html#cv-compare-picture">Pericarditis</a></td>
+        <td><ul><li>↑ HR, temp.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li></ul></td>
+        <td><ul><li><b>Inflamed <span class="gloss">pericardium</span>:</b> friction rub, pain that mimics an MI, dyspnea.</li></ul></td>
+        <td><ul><li>Acute pain.</li><li>Decreased cardiac output.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-cardiovascular.html#cv-compare-picture">Valve disease and infective endocarditis</a></td>
+        <td><ul><li>↑ Temp, in endocarditis.</li><li>↓ BP.</li></ul></td>
+        <td><ul><li><b>Blood backing up behind the valve:</b> exertional dyspnea, fatigue, chest pain, a murmur.</li><li><b>Endocarditis infection:</b> chills, diaphoresis.</li></ul></td>
+        <td><ul><li>Decreased cardiac output.</li><li>Hyperthermia, in endocarditis.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-cardiovascular.html#cv-compare-picture">AV blocks</a></td>
+        <td><ul><li>↓ HR.</li></ul></td>
+        <td><ul><li><b>Rate too slow:</b> compromised cardiac output, more symptomatic with each degree.</li></ul></td>
+        <td><ul><li>Decreased cardiac output.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-gi-hepatic.html#gi-compare-picture">Ischemic bowel</a></td>
+        <td><ul><li>↑ Temp.</li></ul></td>
+        <td><ul><li><b>Bowel wall dying:</b> abdominal pain after eating, urgent loose stools, bloody stool with dark red clots.</li></ul></td>
+        <td><ul><li>Ineffective GI tissue perfusion.</li><li>Deficient fluid volume.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-gi-hepatic.html#gi-compare-picture">Bowel obstruction and paralytic ileus</a></td>
+        <td><ul><li>↑ HR.</li></ul></td>
+        <td><ul><li><b>Peristalsis blocked or lost:</b> distension, cramping pain in waves, bilious vomiting, no flatus.</li><li><b>Bowel sounds:</b> high-pitched and tinkling in an SBO, absent to hypoactive in an ileus.</li></ul></td>
+        <td><ul><li>Dysfunctional GI motility.</li><li>Deficient fluid volume.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-gi-hepatic.html#gi-compare-picture">Abdominal compartment syndrome</a></td>
+        <td><ul><li>↑ HR, RR.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li><li>↓ BP.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li></ul></td>
+        <td><ul><li><b>Fluid pressing on the organs:</b> hugely distended, possibly rigid, very painful.</li></ul></td>
+        <td><ul><li>Ineffective tissue perfusion.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-neuro.html#neuro-compare-picture">Meningitis</a></td>
+        <td><ul><li>↑ Temp.</li></ul></td>
+        <td><ul><li><b>Inflamed meninges:</b> throbbing headache, <span class="gloss">nuchal rigidity</span>, vomiting.</li></ul></td>
+        <td><ul><li>Hyperthermia.</li><li>Ineffective cerebral tissue perfusion.</li></ul></td></tr>
+      <tr><td class="term"><a href="signature-neuro.html#neuro-compare-picture">Seizures</a></td>
+        <td><ul><li>↑ HR, BP, temp.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li><li>↓ SpO2.<span class="outside" role="img" title="Added from outside the course lectures" aria-label="Added from outside the course lectures"></span></li></ul></td>
+        <td><ul><li><b>Brain injury irritating the tissue:</b> decreased neurologic status with no clear cause.</li><li><b>Emergency:</b> <span class="gloss">status epilepticus</span>.</li></ul></td>
+        <td><ul><li>Injury.</li><li>Ineffective airway clearance.</li></ul></td></tr>
+    </tbody>
+  </table></div>
+
   <nav class="page-flip" data-page-flip></nav>
   <footer class="site-foot">Built from the course lecture material — for personal study use.</footer>
 
 </div>
 </main>
 
-<script src="assets/site.js?v=20261023b"></script>
-<script src="data/glossary.js?v=20261023b"></script>
-<script src="assets/study.js?v=20261023b"></script>
+<script src="assets/site.js?v=20261023k"></script>
+<script src="data/glossary.js?v=20261023k"></script>
+<script src="assets/study.js?v=20261023k"></script>
 </body>
 </html>
