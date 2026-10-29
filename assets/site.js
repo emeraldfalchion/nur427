@@ -106,6 +106,13 @@ const SITE = {
         { id: "day4-shock-sepsis-mods", num: "2", title: "Shock, Sepsis, MODS", file: "day4-shock-sepsis-mods.html" },
       ]
     },
+    {
+      label: "Day 5",
+      items: [
+        { id: "day5-iv-medications", num: "1", title: "IV Medication Management", file: "day5-iv-medications.html" },
+        { id: "day5-end-of-life", num: "2", title: "End-of-Life Care", file: "day5-end-of-life.html" },
+      ]
+    },
     /* Review pages: what the lectures say to bring forward from earlier
        courses, one page per subject. This group stays LAST, after the
        final day. */
@@ -124,6 +131,7 @@ const SITE = {
         { id: "review-renal", num: "10", title: "Renal", file: "review-renal.html" },
         { id: "review-gi", num: "11", title: "GI", file: "review-gi.html" },
         { id: "review-neuro", num: "12", title: "Neuro", file: "review-neuro.html" },
+        { id: "review-pain", num: "13", title: "Pain Management", file: "review-pain.html" },
       ]
     },
   ]
